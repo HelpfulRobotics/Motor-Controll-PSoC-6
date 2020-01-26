@@ -1,0 +1,96 @@
+--------------- Rebuild Started: 12/27/2019 13:56:12 Project: PSoC6_PWM_MotorControll, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\main_cm0p.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_ipc_config.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cyfitter_cfg.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cymetadata.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\PWM_Motor1.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\PWM_Motor2.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_sysint.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_ipc_drv.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_ipc_sema.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_ipc_pipe.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_sysclk.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_wdt.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_tcpwm_counter.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_tcpwm_pwm.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_tcpwm_quaddec.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_efuse.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_flash.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_gpio.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_sysanalog.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_syspm.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_syslib.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_syslib_gcc.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_trigmux.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_systick.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_profile.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_prot.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_lvd.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\PSoC6_PWM_MotorControll.hex"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\PSoC6_PWM_MotorControll.elf"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\PSoC6_PWM_MotorControll.map"
+Deleting file ".\PSoC6_PWM_MotorControll.cycdx"
+Deleting file ".\PSoC6_PWM_MotorControll.rpt"
+Deleting file ".\PSoC6_PWM_MotorControll_timing.html"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\.deps\SOURCE_C__ARM_GCC_GENERIC.P"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\main_cm4.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_ipc_config.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cymetadata.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\PWM_Motor1.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\PWM_Motor2.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_sysint.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_ipc_drv.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_ipc_sema.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_sysclk.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_wdt.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_counter.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_pwm.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_quaddec.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_efuse.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_flash.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_gpio.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_sysanalog.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_syspm.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_syslib.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_syslib_gcc.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_trigmux.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_systick.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_profile.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_prot.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_lvd.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\PSoC6_PWM_MotorControll.hex"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\PSoC6_PWM_MotorControll.elf"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\PSoC6_PWM_MotorControll.map"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\.deps\SOURCE_C__ARM_GCC_GENERIC.P"
+cydsfit.exe -.appdatapath "C:\Users\quint\AppData\Local\Cypress Semiconductor\PSoC Creator\4.2" -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p "D:\GIT\Knight Guard\PSoC6_PWM_MotorControll\PSoC6_PWM_MotorControll.cydsn\PSoC6_PWM_MotorControll.cyprj" -d CYBLE-416045-02 -s "D:\GIT\Knight Guard\PSoC6_PWM_MotorControll\PSoC6_PWM_MotorControll.cydsn\Generated_Source\PSoC6" -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
+Elaborating Design...
+HDL Generation...
+Synthesis...
+Tech Mapping...
+ADD: pft.M0040: information: The following 1 pin(s) will be assigned a location by the fitter: Motor2(0)
+Info: plm.M0038: The pin named CY_CPUSS_SWJ_SWCLK_TCLK(0) at location P6[7] prevents usage of special purposes: TCPWM[3].line_compl. (App=cydsfit)
+Info: plm.M0038: The pin named CY_CPUSS_SWJ_SWCLK_TCLK(0) at location P6[7] prevents usage of special purposes: TCPWM[19].line_compl. (App=cydsfit)
+Info: plm.M0038: The pin named CY_CPUSS_SWJ_SWDIO_TMS(0) at location P6[6] prevents usage of special purposes: TCPWM[3].line. (App=cydsfit)
+Info: plm.M0038: The pin named CY_CPUSS_SWJ_SWDIO_TMS(0) at location P6[6] prevents usage of special purposes: TCPWM[19].line. (App=cydsfit)
+Analog Placement...
+Analog Routing...
+Analog Code Generation...
+Digital Placement...
+Digital Routing...
+Bitstream Generation...
+Bitstream Verification...
+Static timing analysis...
+API Generation...
+Dependency Generation...
+Cleanup...
+arm-none-eabi-gcc.exe -mcpu=cortex-m0plus -mthumb -I. -IGenerated_Source\PSoC6 -IGenerated_Source\PSoC6\pdl\cmsis/include/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/ -Wa,-alh=.\CortexM0p\ARM_GCC_541\Debug/main_cm0p.lst -g -D DEBUG -D CY_CORE_ID=0 -D CY_PSOC_CREATOR_USED=1 -Wall -ffunction-sections -ffat-lto-objects -Og -c main_cm0p.c -o .\CortexM0p\ARM_GCC_541\Debug\main_cm0p.o
+In file included from Generated_Source\PSoC6\pdl\drivers/peripheral/sysint/cy_sysint.h:158:0,
+                 from Generated_Source\PSoC6/project.h:17,
+                 from main_cm0p.c:12:
+Generated_Source\PSoC6\pdl\drivers/peripheral/syslib/cy_syslib.h:174:31: fatal error: cy_device_headers.h: No such file or directory
+compilation terminated.
+The command 'arm-none-eabi-gcc.exe' failed with exit code '1'.
+--------------- Rebuild Failed: 12/27/2019 13:56:37 ---------------

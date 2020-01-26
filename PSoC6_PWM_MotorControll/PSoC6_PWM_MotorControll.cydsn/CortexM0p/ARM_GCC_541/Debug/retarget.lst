@@ -1,0 +1,2951 @@
+ARM GAS  C:\Users\quint\AppData\Local\Temp\ccDVaTK5.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m0plus
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 0
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"retarget.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.syntax divided
+  20              		.global _printf_float
+  21              		.global _scanf_float
+  22              		.thumb
+  23              		.syntax unified
+  24              		.section	.text._write,"ax",%progbits
+  25              		.align	2
+  26              		.weak	_write
+  27              		.code	16
+  28              		.thumb_func
+  29              		.type	_write, %function
+  30              	_write:
+  31              	.LFB536:
+  32              		.file 1 "Generated_Source\\PSoC6\\pdl\\utilities\\retarget_io\\retarget.c"
+   1:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** /***************************************************************************//**
+   2:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** * \file retarget.c
+   3:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** * \version 1.20
+   4:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** *
+   5:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** * \brief
+   6:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** * 'Retarget' layer for target-dependent low level function.
+   7:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** *
+   8:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** ********************************************************************************
+   9:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** * \copyright
+  10:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** * Copyright 2016-2018, Cypress Semiconductor Corporation. All rights reserved.
+  11:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** * You may use this file only in accordance with the license, terms, conditions,
+  12:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** * disclaimers, and limitations in the end user license agreement accompanying
+  13:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** * the software package with which this file was provided.
+  14:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** *******************************************************************************/
+  15:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** 
+  16:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** #include <stdio.h>
+  17:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** #include "stdio_user.h"
+  18:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** 
+  19:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** #if defined(__cplusplus)
+  20:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** extern "C" {
+  21:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** #endif
+  22:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** 
+  23:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** #ifdef IO_STDOUT_ENABLE
+  24:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** 
+  25:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** #if defined(__ARMCC_VERSION) /* ARM-MDK */
+ARM GAS  C:\Users\quint\AppData\Local\Temp\ccDVaTK5.s 			page 2
+
+
+  26:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     /***************************************************************************
+  27:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     * Function Name: fputc
+  28:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     ***************************************************************************/
+  29:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     __attribute__((weak)) int fputc(int ch, FILE *f)
+  30:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     {
+  31:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         (void)f;
+  32:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     #if (STDOUT_CR_LF != 0)
+  33:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         if ((char)ch == '\n')
+  34:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         {
+  35:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****             STDIO_PutChar('\r');
+  36:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         }
+  37:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     #endif /* STDOUT_CR_LF != 0 */
+  38:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         STDIO_PutChar(ch);
+  39:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         return (ch);
+  40:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     }
+  41:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** #elif defined (__ICCARM__) /* IAR */
+  42:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     #include <yfuns.h>
+  43:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** 
+  44:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     /***************************************************************************
+  45:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     * Function Name: __write
+  46:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     ***************************************************************************/
+  47:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     __weak size_t __write(int handle, const unsigned char * buffer, size_t size)
+  48:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     {
+  49:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         size_t nChars = 0;
+  50:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         /* This template only writes to "standard out", for all other file
+  51:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         * handles it returns failure. */
+  52:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         if (handle != _LLIO_STDOUT)
+  53:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         {
+  54:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****             return (_LLIO_ERROR);
+  55:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         }
+  56:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         if (buffer != NULL)
+  57:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         {
+  58:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****             for (/* Empty */; nChars < size; ++nChars)
+  59:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****             {
+  60:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****             #if (STDOUT_CR_LF != 0)
+  61:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****                 if(*buffer == '\n')
+  62:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****                 {
+  63:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****                     STDIO_PutChar('\r');
+  64:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****                 }
+  65:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****             #endif /* STDOUT_CR_LF != 0 */
+  66:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****                 STDIO_PutChar(*buffer);
+  67:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****                 ++buffer;
+  68:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****             }
+  69:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         }
+  70:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         return (nChars);
+  71:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     }
+  72:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** #else /* (__GNUC__)  GCC */    
+  73:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     /* Add an explicit reference to the floating point printf library to allow
+  74:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     the usage of floating point conversion specifier. */
+  75:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     __asm (".global _printf_float");
+  76:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     /***************************************************************************
+  77:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     * Function Name: _write
+  78:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     ***************************************************************************/
+  79:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     __attribute__((weak)) int _write (int fd, const char *ptr, int len)
+  80:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     {
+  33              		.loc 1 80 0
+  34              		.cfi_startproc
+ARM GAS  C:\Users\quint\AppData\Local\Temp\ccDVaTK5.s 			page 3
+
+
+  35              		@ args = 0, pretend = 0, frame = 0
+  36              		@ frame_needed = 0, uses_anonymous_args = 0
+  37              	.LVL0:
+  38 0000 70B5     		push	{r4, r5, r6, lr}
+  39              		.cfi_def_cfa_offset 16
+  40              		.cfi_offset 4, -16
+  41              		.cfi_offset 5, -12
+  42              		.cfi_offset 6, -8
+  43              		.cfi_offset 14, -4
+  44 0002 0D00     		movs	r5, r1
+  45 0004 1600     		movs	r6, r2
+  46              	.LVL1:
+  81:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         int nChars = 0;
+  82:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         (void)fd;
+  83:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         if (ptr != NULL)
+  47              		.loc 1 83 0
+  48 0006 0029     		cmp	r1, #0
+  49 0008 07D1     		bne	.L5
+  81:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         int nChars = 0;
+  50              		.loc 1 81 0
+  51 000a 0024     		movs	r4, #0
+  52 000c 08E0     		b	.L3
+  53              	.LVL2:
+  54              	.L4:
+  84:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         {
+  85:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****             for (/* Empty */; nChars < len; ++nChars)
+  86:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****             {
+  87:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****             #if (STDOUT_CR_LF != 0)
+  88:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****                 if(*ptr == '\n')
+  89:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****                 {
+  90:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****                     STDIO_PutChar('\r');
+  91:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****                 }
+  92:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****             #endif /* STDOUT_CR_LF != 0 */
+  93:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****                 STDIO_PutChar((uint32_t)*ptr);
+  55              		.loc 1 93 0 discriminator 2
+  56 000e 2878     		ldrb	r0, [r5]
+  57 0010 FFF7FEFF 		bl	STDIO_PutChar
+  58              	.LVL3:
+  94:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****                 ++ptr;
+  59              		.loc 1 94 0 discriminator 2
+  60 0014 0135     		adds	r5, r5, #1
+  61              	.LVL4:
+  85:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****             {
+  62              		.loc 1 85 0 discriminator 2
+  63 0016 0134     		adds	r4, r4, #1
+  64              	.LVL5:
+  65 0018 00E0     		b	.L2
+  66              	.LVL6:
+  67              	.L5:
+  68 001a 0024     		movs	r4, #0
+  69              	.LVL7:
+  70              	.L2:
+  85:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****             {
+  71              		.loc 1 85 0 is_stmt 0 discriminator 1
+  72 001c B442     		cmp	r4, r6
+  73 001e F6DB     		blt	.L4
+  74              	.LVL8:
+ARM GAS  C:\Users\quint\AppData\Local\Temp\ccDVaTK5.s 			page 4
+
+
+  75              	.L3:
+  95:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****             }
+  96:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         }
+  97:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         return (nChars);
+  98:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     }
+  76              		.loc 1 98 0 is_stmt 1
+  77 0020 2000     		movs	r0, r4
+  78              		@ sp needed
+  79              	.LVL9:
+  80              	.LVL10:
+  81              	.LVL11:
+  82 0022 70BD     		pop	{r4, r5, r6, pc}
+  83              		.cfi_endproc
+  84              	.LFE536:
+  85              		.size	_write, .-_write
+  86              		.section	.text._read,"ax",%progbits
+  87              		.align	2
+  88              		.weak	_read
+  89              		.code	16
+  90              		.thumb_func
+  91              		.type	_read, %function
+  92              	_read:
+  93              	.LFB537:
+  99:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** #endif
+ 100:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** 
+ 101:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** #endif /* IO_STDOUT_ENABLE */
+ 102:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** 
+ 103:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** #if defined(IO_STDIN_ENABLE)
+ 104:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** 
+ 105:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** #if defined(__ARMCC_VERSION) /* ARM-MDK */
+ 106:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     /***************************************************************************
+ 107:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     * Function Name: fgetc
+ 108:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     ***************************************************************************/
+ 109:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     __attribute__((weak)) int fgetc(FILE *f) 
+ 110:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     {
+ 111:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         (void)f;
+ 112:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         return (STDIO_GetChar());
+ 113:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     }
+ 114:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** #elif defined (__ICCARM__) /* IAR */
+ 115:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     __weak size_t __read(int handle, unsigned char * buffer, size_t size)
+ 116:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     {
+ 117:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         /* This template only reads from "standard in", for all other file
+ 118:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         handles it returns failure. */
+ 119:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         if ((handle != _LLIO_STDIN) || (buffer == NULL))
+ 120:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         {
+ 121:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****             return (_LLIO_ERROR);
+ 122:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         }
+ 123:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         else
+ 124:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         {
+ 125:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****             *buffer = STDIO_GetChar();
+ 126:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****             return (1);
+ 127:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         }
+ 128:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     }
+ 129:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c **** #else /* (__GNUC__)  GCC */
+ 130:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     /* Add an explicit reference to the floating point scanf library to allow
+ 131:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     the usage of floating point conversion specifier. */
+ 132:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     __asm (".global _scanf_float");
+ARM GAS  C:\Users\quint\AppData\Local\Temp\ccDVaTK5.s 			page 5
+
+
+ 133:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     __attribute__((weak)) int _read (int fd, char *ptr, int len)
+ 134:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     {
+  94              		.loc 1 134 0
+  95              		.cfi_startproc
+  96              		@ args = 0, pretend = 0, frame = 0
+  97              		@ frame_needed = 0, uses_anonymous_args = 0
+  98              	.LVL12:
+  99 0000 70B5     		push	{r4, r5, r6, lr}
+ 100              		.cfi_def_cfa_offset 16
+ 101              		.cfi_offset 4, -16
+ 102              		.cfi_offset 5, -12
+ 103              		.cfi_offset 6, -8
+ 104              		.cfi_offset 14, -4
+ 105 0002 0D00     		movs	r5, r1
+ 106 0004 1600     		movs	r6, r2
+ 107              	.LVL13:
+ 135:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         int nChars = 0;
+ 136:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         (void)fd;
+ 137:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         if (ptr != NULL)
+ 108              		.loc 1 137 0
+ 109 0006 0029     		cmp	r1, #0
+ 110 0008 0CD1     		bne	.L10
+ 135:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         int nChars = 0;
+ 111              		.loc 1 135 0
+ 112 000a 0024     		movs	r4, #0
+ 113 000c 0DE0     		b	.L8
+ 114              	.LVL14:
+ 115              	.L9:
+ 138:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         {
+ 139:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****             for(/* Empty */;nChars < len;++ptr)
+ 140:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****             {
+ 141:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****                 *ptr = (char)STDIO_GetChar();
+ 116              		.loc 1 141 0
+ 117 000e FFF7FEFF 		bl	STDIO_GetChar
+ 118              	.LVL15:
+ 119 0012 C0B2     		uxtb	r0, r0
+ 120 0014 2870     		strb	r0, [r5]
+ 142:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****                 ++nChars;
+ 121              		.loc 1 142 0
+ 122 0016 0134     		adds	r4, r4, #1
+ 123              	.LVL16:
+ 143:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****                 if((*ptr == '\n') || (*ptr == '\r'))
+ 124              		.loc 1 143 0
+ 125 0018 0A28     		cmp	r0, #10
+ 126 001a 06D0     		beq	.L8
+ 127              		.loc 1 143 0 is_stmt 0 discriminator 1
+ 128 001c 0D28     		cmp	r0, #13
+ 129 001e 04D0     		beq	.L8
+ 139:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****             {
+ 130              		.loc 1 139 0 is_stmt 1
+ 131 0020 0135     		adds	r5, r5, #1
+ 132              	.LVL17:
+ 133 0022 00E0     		b	.L7
+ 134              	.LVL18:
+ 135              	.L10:
+ 136 0024 0024     		movs	r4, #0
+ 137              	.LVL19:
+ARM GAS  C:\Users\quint\AppData\Local\Temp\ccDVaTK5.s 			page 6
+
+
+ 138              	.L7:
+ 139:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****             {
+ 139              		.loc 1 139 0 is_stmt 0 discriminator 1
+ 140 0026 B442     		cmp	r4, r6
+ 141 0028 F1DB     		blt	.L9
+ 142              	.LVL20:
+ 143              	.L8:
+ 144:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****                 {
+ 145:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****                     break;
+ 146:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****                 }
+ 147:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****             }
+ 148:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         }
+ 149:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****         return (nChars);
+ 150:Generated_Source\PSoC6\pdl\utilities\retarget_io/retarget.c ****     }
+ 144              		.loc 1 150 0 is_stmt 1
+ 145 002a 2000     		movs	r0, r4
+ 146              		@ sp needed
+ 147              	.LVL21:
+ 148              	.LVL22:
+ 149              	.LVL23:
+ 150 002c 70BD     		pop	{r4, r5, r6, pc}
+ 151              		.cfi_endproc
+ 152              	.LFE537:
+ 153              		.size	_read, .-_read
+ 154 002e C046     		.text
+ 155              	.Letext0:
+ 156              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+ 157              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+ 158              		.file 4 "Generated_Source\\PSoC6\\pdl\\drivers/peripheral/device/cy_device.h"
+ 159              		.file 5 "Generated_Source\\PSoC6\\pdl\\drivers/peripheral/scb/cy_scb_spi.h"
+ 160              		.file 6 "Generated_Source\\PSoC6\\pdl\\drivers/peripheral/scb/cy_scb_uart.h"
+ 161              		.file 7 "Generated_Source\\PSoC6\\pdl\\drivers/peripheral/tcpwm/cy_tcpwm_pwm.h"
+ 162              		.file 8 "Generated_Source\\PSoC6/PWM_Motor1.h"
+ 163              		.file 9 "Generated_Source\\PSoC6/PWM_Motor2.h"
+ 164              		.file 10 "Generated_Source\\PSoC6/UART_1.h"
+ 165              		.file 11 "Generated_Source\\PSoC6/SPI_1.h"
+ 166              		.file 12 "./stdio_user.h"
+ 167              		.section	.debug_info,"",%progbits
+ 168              	.Ldebug_info0:
+ 169 0000 03090000 		.4byte	0x903
+ 170 0004 0400     		.2byte	0x4
+ 171 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 172 000a 04       		.byte	0x4
+ 173 000b 01       		.uleb128 0x1
+ 174 000c 51070000 		.4byte	.LASF169
+ 175 0010 0C       		.byte	0xc
+ 176 0011 030A0000 		.4byte	.LASF170
+ 177 0015 37010000 		.4byte	.LASF171
+ 178 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 179 001d 00000000 		.4byte	0
+ 180 0021 00000000 		.4byte	.Ldebug_line0
+ 181 0025 02       		.uleb128 0x2
+ 182 0026 01       		.byte	0x1
+ 183 0027 06       		.byte	0x6
+ 184 0028 E0010000 		.4byte	.LASF0
+ 185 002c 03       		.uleb128 0x3
+ 186 002d 9A000000 		.4byte	.LASF2
+ARM GAS  C:\Users\quint\AppData\Local\Temp\ccDVaTK5.s 			page 7
+
+
+ 187 0031 02       		.byte	0x2
+ 188 0032 1D       		.byte	0x1d
+ 189 0033 37000000 		.4byte	0x37
+ 190 0037 02       		.uleb128 0x2
+ 191 0038 01       		.byte	0x1
+ 192 0039 08       		.byte	0x8
+ 193 003a 8E060000 		.4byte	.LASF1
+ 194 003e 03       		.uleb128 0x3
+ 195 003f 82030000 		.4byte	.LASF3
+ 196 0043 02       		.byte	0x2
+ 197 0044 29       		.byte	0x29
+ 198 0045 49000000 		.4byte	0x49
+ 199 0049 02       		.uleb128 0x2
+ 200 004a 02       		.byte	0x2
+ 201 004b 05       		.byte	0x5
+ 202 004c B0060000 		.4byte	.LASF4
+ 203 0050 03       		.uleb128 0x3
+ 204 0051 22080000 		.4byte	.LASF5
+ 205 0055 02       		.byte	0x2
+ 206 0056 2B       		.byte	0x2b
+ 207 0057 5B000000 		.4byte	0x5b
+ 208 005b 02       		.uleb128 0x2
+ 209 005c 02       		.byte	0x2
+ 210 005d 07       		.byte	0x7
+ 211 005e 79080000 		.4byte	.LASF6
+ 212 0062 02       		.uleb128 0x2
+ 213 0063 04       		.byte	0x4
+ 214 0064 05       		.byte	0x5
+ 215 0065 AF020000 		.4byte	.LASF7
+ 216 0069 03       		.uleb128 0x3
+ 217 006a 67030000 		.4byte	.LASF8
+ 218 006e 02       		.byte	0x2
+ 219 006f 41       		.byte	0x41
+ 220 0070 74000000 		.4byte	0x74
+ 221 0074 02       		.uleb128 0x2
+ 222 0075 04       		.byte	0x4
+ 223 0076 07       		.byte	0x7
+ 224 0077 27040000 		.4byte	.LASF9
+ 225 007b 02       		.uleb128 0x2
+ 226 007c 08       		.byte	0x8
+ 227 007d 05       		.byte	0x5
+ 228 007e D2010000 		.4byte	.LASF10
+ 229 0082 02       		.uleb128 0x2
+ 230 0083 08       		.byte	0x8
+ 231 0084 07       		.byte	0x7
+ 232 0085 E9000000 		.4byte	.LASF11
+ 233 0089 04       		.uleb128 0x4
+ 234 008a 04       		.byte	0x4
+ 235 008b 05       		.byte	0x5
+ 236 008c 696E7400 		.ascii	"int\000"
+ 237 0090 02       		.uleb128 0x2
+ 238 0091 04       		.byte	0x4
+ 239 0092 07       		.byte	0x7
+ 240 0093 EB030000 		.4byte	.LASF12
+ 241 0097 02       		.uleb128 0x2
+ 242 0098 08       		.byte	0x8
+ 243 0099 04       		.byte	0x4
+ARM GAS  C:\Users\quint\AppData\Local\Temp\ccDVaTK5.s 			page 8
+
+
+ 244 009a EC070000 		.4byte	.LASF13
+ 245 009e 05       		.uleb128 0x5
+ 246 009f 04       		.byte	0x4
+ 247 00a0 02       		.uleb128 0x2
+ 248 00a1 04       		.byte	0x4
+ 249 00a2 07       		.byte	0x7
+ 250 00a3 97050000 		.4byte	.LASF14
+ 251 00a7 06       		.uleb128 0x6
+ 252 00a8 04       		.byte	0x4
+ 253 00a9 AD000000 		.4byte	0xad
+ 254 00ad 02       		.uleb128 0x2
+ 255 00ae 01       		.byte	0x1
+ 256 00af 08       		.byte	0x8
+ 257 00b0 F8070000 		.4byte	.LASF15
+ 258 00b4 06       		.uleb128 0x6
+ 259 00b5 04       		.byte	0x4
+ 260 00b6 BA000000 		.4byte	0xba
+ 261 00ba 07       		.uleb128 0x7
+ 262 00bb AD000000 		.4byte	0xad
+ 263 00bf 03       		.uleb128 0x3
+ 264 00c0 62090000 		.4byte	.LASF16
+ 265 00c4 03       		.byte	0x3
+ 266 00c5 18       		.byte	0x18
+ 267 00c6 2C000000 		.4byte	0x2c
+ 268 00ca 03       		.uleb128 0x3
+ 269 00cb CA010000 		.4byte	.LASF17
+ 270 00cf 03       		.byte	0x3
+ 271 00d0 20       		.byte	0x20
+ 272 00d1 3E000000 		.4byte	0x3e
+ 273 00d5 03       		.uleb128 0x3
+ 274 00d6 F8030000 		.4byte	.LASF18
+ 275 00da 03       		.byte	0x3
+ 276 00db 24       		.byte	0x24
+ 277 00dc 50000000 		.4byte	0x50
+ 278 00e0 03       		.uleb128 0x3
+ 279 00e1 33070000 		.4byte	.LASF19
+ 280 00e5 03       		.byte	0x3
+ 281 00e6 30       		.byte	0x30
+ 282 00e7 69000000 		.4byte	0x69
+ 283 00eb 08       		.uleb128 0x8
+ 284 00ec E0000000 		.4byte	0xe0
+ 285 00f0 09       		.uleb128 0x9
+ 286 00f1 B8       		.byte	0xb8
+ 287 00f2 04       		.byte	0x4
+ 288 00f3 34       		.byte	0x34
+ 289 00f4 01050000 		.4byte	0x501
+ 290 00f8 0A       		.uleb128 0xa
+ 291 00f9 D0000000 		.4byte	.LASF20
+ 292 00fd 04       		.byte	0x4
+ 293 00fe 37       		.byte	0x37
+ 294 00ff E0000000 		.4byte	0xe0
+ 295 0103 00       		.byte	0
+ 296 0104 0A       		.uleb128 0xa
+ 297 0105 00070000 		.4byte	.LASF21
+ 298 0109 04       		.byte	0x4
+ 299 010a 38       		.byte	0x38
+ 300 010b E0000000 		.4byte	0xe0
+ARM GAS  C:\Users\quint\AppData\Local\Temp\ccDVaTK5.s 			page 9
+
+
+ 301 010f 04       		.byte	0x4
+ 302 0110 0A       		.uleb128 0xa
+ 303 0111 E7020000 		.4byte	.LASF22
+ 304 0115 04       		.byte	0x4
+ 305 0116 39       		.byte	0x39
+ 306 0117 E0000000 		.4byte	0xe0
+ 307 011b 08       		.byte	0x8
+ 308 011c 0A       		.uleb128 0xa
+ 309 011d 80060000 		.4byte	.LASF23
+ 310 0121 04       		.byte	0x4
+ 311 0122 3A       		.byte	0x3a
+ 312 0123 E0000000 		.4byte	0xe0
+ 313 0127 0C       		.byte	0xc
+ 314 0128 0A       		.uleb128 0xa
+ 315 0129 37020000 		.4byte	.LASF24
+ 316 012d 04       		.byte	0x4
+ 317 012e 3B       		.byte	0x3b
+ 318 012f E0000000 		.4byte	0xe0
+ 319 0133 10       		.byte	0x10
+ 320 0134 0A       		.uleb128 0xa
+ 321 0135 8D020000 		.4byte	.LASF25
+ 322 0139 04       		.byte	0x4
+ 323 013a 3C       		.byte	0x3c
+ 324 013b E0000000 		.4byte	0xe0
+ 325 013f 14       		.byte	0x14
+ 326 0140 0A       		.uleb128 0xa
+ 327 0141 75040000 		.4byte	.LASF26
+ 328 0145 04       		.byte	0x4
+ 329 0146 3D       		.byte	0x3d
+ 330 0147 E0000000 		.4byte	0xe0
+ 331 014b 18       		.byte	0x18
+ 332 014c 0A       		.uleb128 0xa
+ 333 014d 83000000 		.4byte	.LASF27
+ 334 0151 04       		.byte	0x4
+ 335 0152 3E       		.byte	0x3e
+ 336 0153 E0000000 		.4byte	0xe0
+ 337 0157 1C       		.byte	0x1c
+ 338 0158 0A       		.uleb128 0xa
+ 339 0159 490A0000 		.4byte	.LASF28
+ 340 015d 04       		.byte	0x4
+ 341 015e 3F       		.byte	0x3f
+ 342 015f E0000000 		.4byte	0xe0
+ 343 0163 20       		.byte	0x20
+ 344 0164 0A       		.uleb128 0xa
+ 345 0165 14060000 		.4byte	.LASF29
+ 346 0169 04       		.byte	0x4
+ 347 016a 40       		.byte	0x40
+ 348 016b E0000000 		.4byte	0xe0
+ 349 016f 24       		.byte	0x24
+ 350 0170 0A       		.uleb128 0xa
+ 351 0171 69050000 		.4byte	.LASF30
+ 352 0175 04       		.byte	0x4
+ 353 0176 43       		.byte	0x43
+ 354 0177 BF000000 		.4byte	0xbf
+ 355 017b 28       		.byte	0x28
+ 356 017c 0A       		.uleb128 0xa
+ 357 017d 69000000 		.4byte	.LASF31
+ARM GAS  C:\Users\quint\AppData\Local\Temp\ccDVaTK5.s 			page 10
+
+
+ 358 0181 04       		.byte	0x4
+ 359 0182 44       		.byte	0x44
+ 360 0183 BF000000 		.4byte	0xbf
+ 361 0187 29       		.byte	0x29
+ 362 0188 0A       		.uleb128 0xa
+ 363 0189 3F0A0000 		.4byte	.LASF32
+ 364 018d 04       		.byte	0x4
+ 365 018e 45       		.byte	0x45
+ 366 018f BF000000 		.4byte	0xbf
+ 367 0193 2A       		.byte	0x2a
+ 368 0194 0A       		.uleb128 0xa
+ 369 0195 06060000 		.4byte	.LASF33
+ 370 0199 04       		.byte	0x4
+ 371 019a 46       		.byte	0x46
+ 372 019b BF000000 		.4byte	0xbf
+ 373 019f 2B       		.byte	0x2b
+ 374 01a0 0A       		.uleb128 0xa
+ 375 01a1 E2040000 		.4byte	.LASF34
+ 376 01a5 04       		.byte	0x4
+ 377 01a6 47       		.byte	0x47
+ 378 01a7 BF000000 		.4byte	0xbf
+ 379 01ab 2C       		.byte	0x2c
+ 380 01ac 0A       		.uleb128 0xa
+ 381 01ad 40080000 		.4byte	.LASF35
+ 382 01b1 04       		.byte	0x4
+ 383 01b2 48       		.byte	0x48
+ 384 01b3 BF000000 		.4byte	0xbf
+ 385 01b7 2D       		.byte	0x2d
+ 386 01b8 0A       		.uleb128 0xa
+ 387 01b9 40020000 		.4byte	.LASF36
+ 388 01bd 04       		.byte	0x4
+ 389 01be 49       		.byte	0x49
+ 390 01bf BF000000 		.4byte	0xbf
+ 391 01c3 2E       		.byte	0x2e
+ 392 01c4 0A       		.uleb128 0xa
+ 393 01c5 76050000 		.4byte	.LASF37
+ 394 01c9 04       		.byte	0x4
+ 395 01ca 4A       		.byte	0x4a
+ 396 01cb BF000000 		.4byte	0xbf
+ 397 01cf 2F       		.byte	0x2f
+ 398 01d0 0A       		.uleb128 0xa
+ 399 01d1 08080000 		.4byte	.LASF38
+ 400 01d5 04       		.byte	0x4
+ 401 01d6 4B       		.byte	0x4b
+ 402 01d7 BF000000 		.4byte	0xbf
+ 403 01db 30       		.byte	0x30
+ 404 01dc 0A       		.uleb128 0xa
+ 405 01dd 6A040000 		.4byte	.LASF39
+ 406 01e1 04       		.byte	0x4
+ 407 01e2 4E       		.byte	0x4e
+ 408 01e3 BF000000 		.4byte	0xbf
+ 409 01e7 31       		.byte	0x31
+ 410 01e8 0A       		.uleb128 0xa
+ 411 01e9 8C000000 		.4byte	.LASF40
+ 412 01ed 04       		.byte	0x4
+ 413 01ee 4F       		.byte	0x4f
+ 414 01ef BF000000 		.4byte	0xbf
+ARM GAS  C:\Users\quint\AppData\Local\Temp\ccDVaTK5.s 			page 11
+
+
+ 415 01f3 32       		.byte	0x32
+ 416 01f4 0A       		.uleb128 0xa
+ 417 01f5 DF030000 		.4byte	.LASF41
+ 418 01f9 04       		.byte	0x4
+ 419 01fa 50       		.byte	0x50
+ 420 01fb BF000000 		.4byte	0xbf
+ 421 01ff 33       		.byte	0x33
+ 422 0200 0A       		.uleb128 0xa
+ 423 0201 AB050000 		.4byte	.LASF42
+ 424 0205 04       		.byte	0x4
+ 425 0206 51       		.byte	0x51
+ 426 0207 BF000000 		.4byte	0xbf
+ 427 020b 34       		.byte	0x34
+ 428 020c 0A       		.uleb128 0xa
+ 429 020d B2080000 		.4byte	.LASF43
+ 430 0211 04       		.byte	0x4
+ 431 0212 52       		.byte	0x52
+ 432 0213 CA000000 		.4byte	0xca
+ 433 0217 36       		.byte	0x36
+ 434 0218 0A       		.uleb128 0xa
+ 435 0219 01030000 		.4byte	.LASF44
+ 436 021d 04       		.byte	0x4
+ 437 021e 53       		.byte	0x53
+ 438 021f CA000000 		.4byte	0xca
+ 439 0223 38       		.byte	0x38
+ 440 0224 0A       		.uleb128 0xa
+ 441 0225 2F090000 		.4byte	.LASF45
+ 442 0229 04       		.byte	0x4
+ 443 022a 54       		.byte	0x54
+ 444 022b CA000000 		.4byte	0xca
+ 445 022f 3A       		.byte	0x3a
+ 446 0230 0A       		.uleb128 0xa
+ 447 0231 7E020000 		.4byte	.LASF46
+ 448 0235 04       		.byte	0x4
+ 449 0236 55       		.byte	0x55
+ 450 0237 BF000000 		.4byte	0xbf
+ 451 023b 3C       		.byte	0x3c
+ 452 023c 0A       		.uleb128 0xa
+ 453 023d 28030000 		.4byte	.LASF47
+ 454 0241 04       		.byte	0x4
+ 455 0242 56       		.byte	0x56
+ 456 0243 BF000000 		.4byte	0xbf
+ 457 0247 3D       		.byte	0x3d
+ 458 0248 0A       		.uleb128 0xa
+ 459 0249 15070000 		.4byte	.LASF48
+ 460 024d 04       		.byte	0x4
+ 461 024e 57       		.byte	0x57
+ 462 024f BF000000 		.4byte	0xbf
+ 463 0253 3E       		.byte	0x3e
+ 464 0254 0A       		.uleb128 0xa
+ 465 0255 77000000 		.4byte	.LASF49
+ 466 0259 04       		.byte	0x4
+ 467 025a 58       		.byte	0x58
+ 468 025b BF000000 		.4byte	0xbf
+ 469 025f 3F       		.byte	0x3f
+ 470 0260 0A       		.uleb128 0xa
+ 471 0261 1F060000 		.4byte	.LASF50
+ARM GAS  C:\Users\quint\AppData\Local\Temp\ccDVaTK5.s 			page 12
+
+
+ 472 0265 04       		.byte	0x4
+ 473 0266 59       		.byte	0x59
+ 474 0267 BF000000 		.4byte	0xbf
+ 475 026b 40       		.byte	0x40
+ 476 026c 0A       		.uleb128 0xa
+ 477 026d 72030000 		.4byte	.LASF51
+ 478 0271 04       		.byte	0x4
+ 479 0272 5A       		.byte	0x5a
+ 480 0273 BF000000 		.4byte	0xbf
+ 481 0277 41       		.byte	0x41
+ 482 0278 0A       		.uleb128 0xa
+ 483 0279 7E040000 		.4byte	.LASF52
+ 484 027d 04       		.byte	0x4
+ 485 027e 5B       		.byte	0x5b
+ 486 027f BF000000 		.4byte	0xbf
+ 487 0283 42       		.byte	0x42
+ 488 0284 0A       		.uleb128 0xa
+ 489 0285 F2050000 		.4byte	.LASF53
+ 490 0289 04       		.byte	0x4
+ 491 028a 5C       		.byte	0x5c
+ 492 028b BF000000 		.4byte	0xbf
+ 493 028f 43       		.byte	0x43
+ 494 0290 0A       		.uleb128 0xa
+ 495 0291 F0020000 		.4byte	.LASF54
+ 496 0295 04       		.byte	0x4
+ 497 0296 5D       		.byte	0x5d
+ 498 0297 BF000000 		.4byte	0xbf
+ 499 029b 44       		.byte	0x44
+ 500 029c 0A       		.uleb128 0xa
+ 501 029d 00000000 		.4byte	.LASF55
+ 502 02a1 04       		.byte	0x4
+ 503 02a2 5E       		.byte	0x5e
+ 504 02a3 E0000000 		.4byte	0xe0
+ 505 02a7 48       		.byte	0x48
+ 506 02a8 0A       		.uleb128 0xa
+ 507 02a9 C7020000 		.4byte	.LASF56
+ 508 02ad 04       		.byte	0x4
+ 509 02ae 5F       		.byte	0x5f
+ 510 02af E0000000 		.4byte	0xe0
+ 511 02b3 4C       		.byte	0x4c
+ 512 02b4 0A       		.uleb128 0xa
+ 513 02b5 7F0A0000 		.4byte	.LASF57
+ 514 02b9 04       		.byte	0x4
+ 515 02ba 60       		.byte	0x60
+ 516 02bb BF000000 		.4byte	0xbf
+ 517 02bf 50       		.byte	0x50
+ 518 02c0 0A       		.uleb128 0xa
+ 519 02c1 A4010000 		.4byte	.LASF58
+ 520 02c5 04       		.byte	0x4
+ 521 02c6 61       		.byte	0x61
+ 522 02c7 BF000000 		.4byte	0xbf
+ 523 02cb 51       		.byte	0x51
+ 524 02cc 0A       		.uleb128 0xa
+ 525 02cd 52090000 		.4byte	.LASF59
+ 526 02d1 04       		.byte	0x4
+ 527 02d2 62       		.byte	0x62
+ 528 02d3 BF000000 		.4byte	0xbf
+ARM GAS  C:\Users\quint\AppData\Local\Temp\ccDVaTK5.s 			page 13
+
+
+ 529 02d7 52       		.byte	0x52
+ 530 02d8 0A       		.uleb128 0xa
+ 531 02d9 4D080000 		.4byte	.LASF60
+ 532 02dd 04       		.byte	0x4
+ 533 02de 63       		.byte	0x63
+ 534 02df BF000000 		.4byte	0xbf
+ 535 02e3 53       		.byte	0x53
+ 536 02e4 0A       		.uleb128 0xa
+ 537 02e5 23070000 		.4byte	.LASF61
+ 538 02e9 04       		.byte	0x4
+ 539 02ea 64       		.byte	0x64
+ 540 02eb BF000000 		.4byte	0xbf
+ 541 02ef 54       		.byte	0x54
+ 542 02f0 0A       		.uleb128 0xa
+ 543 02f1 B6010000 		.4byte	.LASF62
+ 544 02f5 04       		.byte	0x4
+ 545 02f6 65       		.byte	0x65
+ 546 02f7 BF000000 		.4byte	0xbf
+ 547 02fb 55       		.byte	0x55
+ 548 02fc 0A       		.uleb128 0xa
+ 549 02fd 13040000 		.4byte	.LASF63
+ 550 0301 04       		.byte	0x4
+ 551 0302 66       		.byte	0x66
+ 552 0303 BF000000 		.4byte	0xbf
+ 553 0307 56       		.byte	0x56
+ 554 0308 0A       		.uleb128 0xa
+ 555 0309 DB060000 		.4byte	.LASF64
+ 556 030d 04       		.byte	0x4
+ 557 030e 67       		.byte	0x67
+ 558 030f BF000000 		.4byte	0xbf
+ 559 0313 57       		.byte	0x57
+ 560 0314 0A       		.uleb128 0xa
+ 561 0315 24000000 		.4byte	.LASF65
+ 562 0319 04       		.byte	0x4
+ 563 031a 68       		.byte	0x68
+ 564 031b BF000000 		.4byte	0xbf
+ 565 031f 58       		.byte	0x58
+ 566 0320 0A       		.uleb128 0xa
+ 567 0321 9C060000 		.4byte	.LASF66
+ 568 0325 04       		.byte	0x4
+ 569 0326 69       		.byte	0x69
+ 570 0327 BF000000 		.4byte	0xbf
+ 571 032b 59       		.byte	0x59
+ 572 032c 0A       		.uleb128 0xa
+ 573 032d A0050000 		.4byte	.LASF67
+ 574 0331 04       		.byte	0x4
+ 575 0332 6E       		.byte	0x6e
+ 576 0333 D5000000 		.4byte	0xd5
+ 577 0337 5A       		.byte	0x5a
+ 578 0338 0A       		.uleb128 0xa
+ 579 0339 8C080000 		.4byte	.LASF68
+ 580 033d 04       		.byte	0x4
+ 581 033e 6F       		.byte	0x6f
+ 582 033f D5000000 		.4byte	0xd5
+ 583 0343 5C       		.byte	0x5c
+ 584 0344 0A       		.uleb128 0xa
+ 585 0345 DA000000 		.4byte	.LASF69
+ARM GAS  C:\Users\quint\AppData\Local\Temp\ccDVaTK5.s 			page 14
+
+
+ 586 0349 04       		.byte	0x4
+ 587 034a 70       		.byte	0x70
+ 588 034b BF000000 		.4byte	0xbf
+ 589 034f 5E       		.byte	0x5e
+ 590 0350 0A       		.uleb128 0xa
+ 591 0351 61060000 		.4byte	.LASF70
+ 592 0355 04       		.byte	0x4
+ 593 0356 71       		.byte	0x71
+ 594 0357 BF000000 		.4byte	0xbf
+ 595 035b 5F       		.byte	0x5f
+ 596 035c 0A       		.uleb128 0xa
+ 597 035d E1050000 		.4byte	.LASF71
+ 598 0361 04       		.byte	0x4
+ 599 0362 72       		.byte	0x72
+ 600 0363 BF000000 		.4byte	0xbf
+ 601 0367 60       		.byte	0x60
+ 602 0368 0A       		.uleb128 0xa
+ 603 0369 3A060000 		.4byte	.LASF72
+ 604 036d 04       		.byte	0x4
+ 605 036e 73       		.byte	0x73
+ 606 036f E0000000 		.4byte	0xe0
+ 607 0373 64       		.byte	0x64
+ 608 0374 0A       		.uleb128 0xa
+ 609 0375 1D010000 		.4byte	.LASF73
+ 610 0379 04       		.byte	0x4
+ 611 037a 76       		.byte	0x76
+ 612 037b D5000000 		.4byte	0xd5
+ 613 037f 68       		.byte	0x68
+ 614 0380 0A       		.uleb128 0xa
+ 615 0381 01040000 		.4byte	.LASF74
+ 616 0385 04       		.byte	0x4
+ 617 0386 77       		.byte	0x77
+ 618 0387 D5000000 		.4byte	0xd5
+ 619 038b 6A       		.byte	0x6a
+ 620 038c 0A       		.uleb128 0xa
+ 621 038d A1040000 		.4byte	.LASF75
+ 622 0391 04       		.byte	0x4
+ 623 0392 78       		.byte	0x78
+ 624 0393 D5000000 		.4byte	0xd5
+ 625 0397 6C       		.byte	0x6c
+ 626 0398 0A       		.uleb128 0xa
+ 627 0399 D5040000 		.4byte	.LASF76
+ 628 039d 04       		.byte	0x4
+ 629 039e 79       		.byte	0x79
+ 630 039f D5000000 		.4byte	0xd5
+ 631 03a3 6E       		.byte	0x6e
+ 632 03a4 0A       		.uleb128 0xa
+ 633 03a5 C7060000 		.4byte	.LASF77
+ 634 03a9 04       		.byte	0x4
+ 635 03aa 7B       		.byte	0x7b
+ 636 03ab BF000000 		.4byte	0xbf
+ 637 03af 70       		.byte	0x70
+ 638 03b0 0A       		.uleb128 0xa
+ 639 03b1 03020000 		.4byte	.LASF78
+ 640 03b5 04       		.byte	0x4
+ 641 03b6 7C       		.byte	0x7c
+ 642 03b7 BF000000 		.4byte	0xbf
+ARM GAS  C:\Users\quint\AppData\Local\Temp\ccDVaTK5.s 			page 15
+
+
+ 643 03bb 71       		.byte	0x71
+ 644 03bc 0A       		.uleb128 0xa
+ 645 03bd 510A0000 		.4byte	.LASF79
+ 646 03c1 04       		.byte	0x4
+ 647 03c2 7D       		.byte	0x7d
+ 648 03c3 BF000000 		.4byte	0xbf
+ 649 03c7 72       		.byte	0x72
+ 650 03c8 0A       		.uleb128 0xa
+ 651 03c9 BC050000 		.4byte	.LASF80
+ 652 03cd 04       		.byte	0x4
+ 653 03ce 7E       		.byte	0x7e
+ 654 03cf BF000000 		.4byte	0xbf
+ 655 03d3 73       		.byte	0x73
+ 656 03d4 0A       		.uleb128 0xa
+ 657 03d5 41030000 		.4byte	.LASF81
+ 658 03d9 04       		.byte	0x4
+ 659 03da 80       		.byte	0x80
+ 660 03db D5000000 		.4byte	0xd5
+ 661 03df 74       		.byte	0x74
+ 662 03e0 0A       		.uleb128 0xa
+ 663 03e1 2D080000 		.4byte	.LASF82
+ 664 03e5 04       		.byte	0x4
+ 665 03e6 81       		.byte	0x81
+ 666 03e7 D5000000 		.4byte	0xd5
+ 667 03eb 76       		.byte	0x76
+ 668 03ec 0A       		.uleb128 0xa
+ 669 03ed 13030000 		.4byte	.LASF83
+ 670 03f1 04       		.byte	0x4
+ 671 03f2 82       		.byte	0x82
+ 672 03f3 D5000000 		.4byte	0xd5
+ 673 03f7 78       		.byte	0x78
+ 674 03f8 0A       		.uleb128 0xa
+ 675 03f9 A4000000 		.4byte	.LASF84
+ 676 03fd 04       		.byte	0x4
+ 677 03fe 83       		.byte	0x83
+ 678 03ff D5000000 		.4byte	0xd5
+ 679 0403 7A       		.byte	0x7a
+ 680 0404 0A       		.uleb128 0xa
+ 681 0405 91090000 		.4byte	.LASF85
+ 682 0409 04       		.byte	0x4
+ 683 040a 86       		.byte	0x86
+ 684 040b BF000000 		.4byte	0xbf
+ 685 040f 7C       		.byte	0x7c
+ 686 0410 0A       		.uleb128 0xa
+ 687 0411 EF080000 		.4byte	.LASF86
+ 688 0415 04       		.byte	0x4
+ 689 0416 87       		.byte	0x87
+ 690 0417 BF000000 		.4byte	0xbf
+ 691 041b 7D       		.byte	0x7d
+ 692 041c 0A       		.uleb128 0xa
+ 693 041d 38000000 		.4byte	.LASF87
+ 694 0421 04       		.byte	0x4
+ 695 0422 88       		.byte	0x88
+ 696 0423 BF000000 		.4byte	0xbf
+ 697 0427 7E       		.byte	0x7e
+ 698 0428 0A       		.uleb128 0xa
+ 699 0429 53030000 		.4byte	.LASF88
+ARM GAS  C:\Users\quint\AppData\Local\Temp\ccDVaTK5.s 			page 16
+
+
+ 700 042d 04       		.byte	0x4
+ 701 042e 89       		.byte	0x89
+ 702 042f BF000000 		.4byte	0xbf
+ 703 0433 7F       		.byte	0x7f
+ 704 0434 0A       		.uleb128 0xa
+ 705 0435 CB030000 		.4byte	.LASF89
+ 706 0439 04       		.byte	0x4
+ 707 043a 8A       		.byte	0x8a
+ 708 043b BF000000 		.4byte	0xbf
+ 709 043f 80       		.byte	0x80
+ 710 0440 0A       		.uleb128 0xa
+ 711 0441 D8080000 		.4byte	.LASF90
+ 712 0445 04       		.byte	0x4
+ 713 0446 8D       		.byte	0x8d
+ 714 0447 E0000000 		.4byte	0xe0
+ 715 044b 84       		.byte	0x84
+ 716 044c 0A       		.uleb128 0xa
+ 717 044d B9000000 		.4byte	.LASF91
+ 718 0451 04       		.byte	0x4
+ 719 0452 8E       		.byte	0x8e
+ 720 0453 E0000000 		.4byte	0xe0
+ 721 0457 88       		.byte	0x88
+ 722 0458 0A       		.uleb128 0xa
+ 723 0459 7C090000 		.4byte	.LASF92
+ 724 045d 04       		.byte	0x4
+ 725 045e 8F       		.byte	0x8f
+ 726 045f E0000000 		.4byte	0xe0
+ 727 0463 8C       		.byte	0x8c
+ 728 0464 0A       		.uleb128 0xa
+ 729 0465 82050000 		.4byte	.LASF93
+ 730 0469 04       		.byte	0x4
+ 731 046a 90       		.byte	0x90
+ 732 046b E0000000 		.4byte	0xe0
+ 733 046f 90       		.byte	0x90
+ 734 0470 0A       		.uleb128 0xa
+ 735 0471 9B030000 		.4byte	.LASF94
+ 736 0475 04       		.byte	0x4
+ 737 0476 91       		.byte	0x91
+ 738 0477 E0000000 		.4byte	0xe0
+ 739 047b 94       		.byte	0x94
+ 740 047c 0A       		.uleb128 0xa
+ 741 047d 41050000 		.4byte	.LASF95
+ 742 0481 04       		.byte	0x4
+ 743 0482 92       		.byte	0x92
+ 744 0483 E0000000 		.4byte	0xe0
+ 745 0487 98       		.byte	0x98
+ 746 0488 0A       		.uleb128 0xa
+ 747 0489 DE090000 		.4byte	.LASF96
+ 748 048d 04       		.byte	0x4
+ 749 048e 93       		.byte	0x93
+ 750 048f E0000000 		.4byte	0xe0
+ 751 0493 9C       		.byte	0x9c
+ 752 0494 0A       		.uleb128 0xa
+ 753 0495 81010000 		.4byte	.LASF97
+ 754 0499 04       		.byte	0x4
+ 755 049a 94       		.byte	0x94
+ 756 049b E0000000 		.4byte	0xe0
+ARM GAS  C:\Users\quint\AppData\Local\Temp\ccDVaTK5.s 			page 17
+
+
+ 757 049f A0       		.byte	0xa0
+ 758 04a0 0A       		.uleb128 0xa
+ 759 04a1 4B020000 		.4byte	.LASF98
+ 760 04a5 04       		.byte	0x4
+ 761 04a6 95       		.byte	0x95
+ 762 04a7 D5000000 		.4byte	0xd5
+ 763 04ab A4       		.byte	0xa4
+ 764 04ac 0A       		.uleb128 0xa
+ 765 04ad 3C070000 		.4byte	.LASF99
+ 766 04b1 04       		.byte	0x4
+ 767 04b2 96       		.byte	0x96
+ 768 04b3 D5000000 		.4byte	0xd5
+ 769 04b7 A6       		.byte	0xa6
+ 770 04b8 0A       		.uleb128 0xa
+ 771 04b9 55060000 		.4byte	.LASF100
+ 772 04bd 04       		.byte	0x4
+ 773 04be 97       		.byte	0x97
+ 774 04bf D5000000 		.4byte	0xd5
+ 775 04c3 A8       		.byte	0xa8
+ 776 04c4 0A       		.uleb128 0xa
+ 777 04c5 14080000 		.4byte	.LASF101
+ 778 04c9 04       		.byte	0x4
+ 779 04ca 98       		.byte	0x98
+ 780 04cb D5000000 		.4byte	0xd5
+ 781 04cf AA       		.byte	0xaa
+ 782 04d0 0A       		.uleb128 0xa
+ 783 04d1 B0040000 		.4byte	.LASF102
+ 784 04d5 04       		.byte	0x4
+ 785 04d6 99       		.byte	0x99
+ 786 04d7 D5000000 		.4byte	0xd5
+ 787 04db AC       		.byte	0xac
+ 788 04dc 0A       		.uleb128 0xa
+ 789 04dd D3050000 		.4byte	.LASF103
+ 790 04e1 04       		.byte	0x4
+ 791 04e2 9A       		.byte	0x9a
+ 792 04e3 D5000000 		.4byte	0xd5
+ 793 04e7 AE       		.byte	0xae
+ 794 04e8 0A       		.uleb128 0xa
+ 795 04e9 95080000 		.4byte	.LASF104
+ 796 04ed 04       		.byte	0x4
+ 797 04ee 9D       		.byte	0x9d
+ 798 04ef D5000000 		.4byte	0xd5
+ 799 04f3 B0       		.byte	0xb0
+ 800 04f4 0A       		.uleb128 0xa
+ 801 04f5 55000000 		.4byte	.LASF105
+ 802 04f9 04       		.byte	0x4
+ 803 04fa 9E       		.byte	0x9e
+ 804 04fb E0000000 		.4byte	0xe0
+ 805 04ff B4       		.byte	0xb4
+ 806 0500 00       		.byte	0
+ 807 0501 03       		.uleb128 0x3
+ 808 0502 EE040000 		.4byte	.LASF106
+ 809 0506 04       		.byte	0x4
+ 810 0507 9F       		.byte	0x9f
+ 811 0508 F0000000 		.4byte	0xf0
+ 812 050c 02       		.uleb128 0x2
+ 813 050d 04       		.byte	0x4
+ARM GAS  C:\Users\quint\AppData\Local\Temp\ccDVaTK5.s 			page 18
+
+
+ 814 050e 04       		.byte	0x4
+ 815 050f 34060000 		.4byte	.LASF107
+ 816 0513 02       		.uleb128 0x2
+ 817 0514 08       		.byte	0x8
+ 818 0515 04       		.byte	0x4
+ 819 0516 0C030000 		.4byte	.LASF108
+ 820 051a 02       		.uleb128 0x2
+ 821 051b 01       		.byte	0x1
+ 822 051c 02       		.byte	0x2
+ 823 051d 88060000 		.4byte	.LASF109
+ 824 0521 06       		.uleb128 0x6
+ 825 0522 04       		.byte	0x4
+ 826 0523 27050000 		.4byte	0x527
+ 827 0527 0B       		.uleb128 0xb
+ 828 0528 32050000 		.4byte	0x532
+ 829 052c 0C       		.uleb128 0xc
+ 830 052d E0000000 		.4byte	0xe0
+ 831 0531 00       		.byte	0
+ 832 0532 0D       		.uleb128 0xd
+ 833 0533 60020000 		.4byte	.LASF110
+ 834 0537 05       		.byte	0x5
+ 835 0538 F201     		.2byte	0x1f2
+ 836 053a 21050000 		.4byte	0x521
+ 837 053e 0E       		.uleb128 0xe
+ 838 053f EC010000 		.4byte	.LASF122
+ 839 0543 24       		.byte	0x24
+ 840 0544 05       		.byte	0x5
+ 841 0545 7402     		.2byte	0x274
+ 842 0547 C1050000 		.4byte	0x5c1
+ 843 054b 0F       		.uleb128 0xf
+ 844 054c 28090000 		.4byte	.LASF111
+ 845 0550 05       		.byte	0x5
+ 846 0551 7702     		.2byte	0x277
+ 847 0553 EB000000 		.4byte	0xeb
+ 848 0557 00       		.byte	0
+ 849 0558 0F       		.uleb128 0xf
+ 850 0559 08090000 		.4byte	.LASF112
+ 851 055d 05       		.byte	0x5
+ 852 055e 7902     		.2byte	0x279
+ 853 0560 9E000000 		.4byte	0x9e
+ 854 0564 04       		.byte	0x4
+ 855 0565 0F       		.uleb128 0xf
+ 856 0566 1A000000 		.4byte	.LASF113
+ 857 056a 05       		.byte	0x5
+ 858 056b 7A02     		.2byte	0x27a
+ 859 056d E0000000 		.4byte	0xe0
+ 860 0571 08       		.byte	0x8
+ 861 0572 0F       		.uleb128 0xf
+ 862 0573 8C030000 		.4byte	.LASF114
+ 863 0577 05       		.byte	0x5
+ 864 0578 7B02     		.2byte	0x27b
+ 865 057a EB000000 		.4byte	0xeb
+ 866 057e 0C       		.byte	0xc
+ 867 057f 0F       		.uleb128 0xf
+ 868 0580 97010000 		.4byte	.LASF115
+ 869 0584 05       		.byte	0x5
+ 870 0585 7D02     		.2byte	0x27d
+ARM GAS  C:\Users\quint\AppData\Local\Temp\ccDVaTK5.s 			page 19
+
+
+ 871 0587 9E000000 		.4byte	0x9e
+ 872 058b 10       		.byte	0x10
+ 873 058c 0F       		.uleb128 0xf
+ 874 058d B0030000 		.4byte	.LASF116
+ 875 0591 05       		.byte	0x5
+ 876 0592 7E02     		.2byte	0x27e
+ 877 0594 E0000000 		.4byte	0xe0
+ 878 0598 14       		.byte	0x14
+ 879 0599 0F       		.uleb128 0xf
+ 880 059a 900A0000 		.4byte	.LASF117
+ 881 059e 05       		.byte	0x5
+ 882 059f 7F02     		.2byte	0x27f
+ 883 05a1 EB000000 		.4byte	0xeb
+ 884 05a5 18       		.byte	0x18
+ 885 05a6 0F       		.uleb128 0xf
+ 886 05a7 CC040000 		.4byte	.LASF118
+ 887 05ab 05       		.byte	0x5
+ 888 05ac 8502     		.2byte	0x285
+ 889 05ae 32050000 		.4byte	0x532
+ 890 05b2 1C       		.byte	0x1c
+ 891 05b3 0F       		.uleb128 0xf
+ 892 05b4 00090000 		.4byte	.LASF119
+ 893 05b8 05       		.byte	0x5
+ 894 05b9 8802     		.2byte	0x288
+ 895 05bb E0000000 		.4byte	0xe0
+ 896 05bf 20       		.byte	0x20
+ 897 05c0 00       		.byte	0
+ 898 05c1 0D       		.uleb128 0xd
+ 899 05c2 FE040000 		.4byte	.LASF120
+ 900 05c6 05       		.byte	0x5
+ 901 05c7 8B02     		.2byte	0x28b
+ 902 05c9 3E050000 		.4byte	0x53e
+ 903 05cd 0D       		.uleb128 0xd
+ 904 05ce 4B040000 		.4byte	.LASF121
+ 905 05d2 06       		.byte	0x6
+ 906 05d3 D901     		.2byte	0x1d9
+ 907 05d5 21050000 		.4byte	0x521
+ 908 05d9 0E       		.uleb128 0xe
+ 909 05da 670A0000 		.4byte	.LASF123
+ 910 05de 38       		.byte	0x38
+ 911 05df 06       		.byte	0x6
+ 912 05e0 7502     		.2byte	0x275
+ 913 05e2 9D060000 		.4byte	0x69d
+ 914 05e6 0F       		.uleb128 0xf
+ 915 05e7 8A040000 		.4byte	.LASF124
+ 916 05eb 06       		.byte	0x6
+ 917 05ec 7802     		.2byte	0x278
+ 918 05ee EB000000 		.4byte	0xeb
+ 919 05f2 00       		.byte	0
+ 920 05f3 0F       		.uleb128 0xf
+ 921 05f4 FD050000 		.4byte	.LASF125
+ 922 05f8 06       		.byte	0x6
+ 923 05f9 7902     		.2byte	0x279
+ 924 05fb EB000000 		.4byte	0xeb
+ 925 05ff 04       		.byte	0x4
+ 926 0600 0F       		.uleb128 0xf
+ 927 0601 2D010000 		.4byte	.LASF126
+ARM GAS  C:\Users\quint\AppData\Local\Temp\ccDVaTK5.s 			page 20
+
+
+ 928 0605 06       		.byte	0x6
+ 929 0606 7B02     		.2byte	0x27b
+ 930 0608 9E000000 		.4byte	0x9e
+ 931 060c 08       		.byte	0x8
+ 932 060d 0F       		.uleb128 0xf
+ 933 060e 5F080000 		.4byte	.LASF127
+ 934 0612 06       		.byte	0x6
+ 935 0613 7C02     		.2byte	0x27c
+ 936 0615 E0000000 		.4byte	0xe0
+ 937 0619 0C       		.byte	0xc
+ 938 061a 0F       		.uleb128 0xf
+ 939 061b 33050000 		.4byte	.LASF128
+ 940 061f 06       		.byte	0x6
+ 941 0620 7D02     		.2byte	0x27d
+ 942 0622 EB000000 		.4byte	0xeb
+ 943 0626 10       		.byte	0x10
+ 944 0627 0F       		.uleb128 0xf
+ 945 0628 D0090000 		.4byte	.LASF129
+ 946 062c 06       		.byte	0x6
+ 947 062d 7E02     		.2byte	0x27e
+ 948 062f EB000000 		.4byte	0xeb
+ 949 0633 14       		.byte	0x14
+ 950 0634 0F       		.uleb128 0xf
+ 951 0635 08090000 		.4byte	.LASF112
+ 952 0639 06       		.byte	0x6
+ 953 063a 8002     		.2byte	0x280
+ 954 063c 9E000000 		.4byte	0x9e
+ 955 0640 18       		.byte	0x18
+ 956 0641 0F       		.uleb128 0xf
+ 957 0642 1A000000 		.4byte	.LASF113
+ 958 0646 06       		.byte	0x6
+ 959 0647 8102     		.2byte	0x281
+ 960 0649 E0000000 		.4byte	0xe0
+ 961 064d 1C       		.byte	0x1c
+ 962 064e 0F       		.uleb128 0xf
+ 963 064f 8C030000 		.4byte	.LASF114
+ 964 0653 06       		.byte	0x6
+ 965 0654 8202     		.2byte	0x282
+ 966 0656 EB000000 		.4byte	0xeb
+ 967 065a 20       		.byte	0x20
+ 968 065b 0F       		.uleb128 0xf
+ 969 065c 97010000 		.4byte	.LASF115
+ 970 0660 06       		.byte	0x6
+ 971 0661 8402     		.2byte	0x284
+ 972 0663 9E000000 		.4byte	0x9e
+ 973 0667 24       		.byte	0x24
+ 974 0668 0F       		.uleb128 0xf
+ 975 0669 B0030000 		.4byte	.LASF116
+ 976 066d 06       		.byte	0x6
+ 977 066e 8502     		.2byte	0x285
+ 978 0670 E0000000 		.4byte	0xe0
+ 979 0674 28       		.byte	0x28
+ 980 0675 0F       		.uleb128 0xf
+ 981 0676 18020000 		.4byte	.LASF130
+ 982 067a 06       		.byte	0x6
+ 983 067b 8602     		.2byte	0x286
+ 984 067d EB000000 		.4byte	0xeb
+ARM GAS  C:\Users\quint\AppData\Local\Temp\ccDVaTK5.s 			page 21
+
+
+ 985 0681 2C       		.byte	0x2c
+ 986 0682 0F       		.uleb128 0xf
+ 987 0683 CC040000 		.4byte	.LASF118
+ 988 0687 06       		.byte	0x6
+ 989 0688 8B02     		.2byte	0x28b
+ 990 068a CD050000 		.4byte	0x5cd
+ 991 068e 30       		.byte	0x30
+ 992 068f 0F       		.uleb128 0xf
+ 993 0690 00090000 		.4byte	.LASF119
+ 994 0694 06       		.byte	0x6
+ 995 0695 8E02     		.2byte	0x28e
+ 996 0697 E0000000 		.4byte	0xe0
+ 997 069b 34       		.byte	0x34
+ 998 069c 00       		.byte	0
+ 999 069d 0D       		.uleb128 0xd
+ 1000 069e 0E090000 		.4byte	.LASF131
+ 1001 06a2 06       		.byte	0x6
+ 1002 06a3 9102     		.2byte	0x291
+ 1003 06a5 D9050000 		.4byte	0x5d9
+ 1004 06a9 10       		.uleb128 0x10
+ 1005 06aa 97020000 		.4byte	.LASF132
+ 1006 06ae 64       		.byte	0x64
+ 1007 06af 07       		.byte	0x7
+ 1008 06b0 2F       		.byte	0x2f
+ 1009 06b1 E2070000 		.4byte	0x7e2
+ 1010 06b5 0A       		.uleb128 0xa
+ 1011 06b6 2C060000 		.4byte	.LASF133
+ 1012 06ba 07       		.byte	0x7
+ 1013 06bb 31       		.byte	0x31
+ 1014 06bc E0000000 		.4byte	0xe0
+ 1015 06c0 00       		.byte	0
+ 1016 06c1 0A       		.uleb128 0xa
+ 1017 06c2 00010000 		.4byte	.LASF134
+ 1018 06c6 07       		.byte	0x7
+ 1019 06c7 33       		.byte	0x33
+ 1020 06c8 E0000000 		.4byte	0xe0
+ 1021 06cc 04       		.byte	0x4
+ 1022 06cd 0A       		.uleb128 0xa
+ 1023 06ce BA060000 		.4byte	.LASF135
+ 1024 06d2 07       		.byte	0x7
+ 1025 06d3 34       		.byte	0x34
+ 1026 06d4 E0000000 		.4byte	0xe0
+ 1027 06d8 08       		.byte	0x8
+ 1028 06d9 0A       		.uleb128 0xa
+ 1029 06da 24050000 		.4byte	.LASF136
+ 1030 06de 07       		.byte	0x7
+ 1031 06df 35       		.byte	0x35
+ 1032 06e0 E0000000 		.4byte	0xe0
+ 1033 06e4 0C       		.byte	0xc
+ 1034 06e5 0A       		.uleb128 0xa
+ 1035 06e6 12000000 		.4byte	.LASF137
+ 1036 06ea 07       		.byte	0x7
+ 1037 06eb 36       		.byte	0x36
+ 1038 06ec E0000000 		.4byte	0xe0
+ 1039 06f0 10       		.byte	0x10
+ 1040 06f1 0A       		.uleb128 0xa
+ 1041 06f2 BF080000 		.4byte	.LASF138
+ARM GAS  C:\Users\quint\AppData\Local\Temp\ccDVaTK5.s 			page 22
+
+
+ 1042 06f6 07       		.byte	0x7
+ 1043 06f7 37       		.byte	0x37
+ 1044 06f8 E0000000 		.4byte	0xe0
+ 1045 06fc 14       		.byte	0x14
+ 1046 06fd 0A       		.uleb128 0xa
+ 1047 06fe C7080000 		.4byte	.LASF139
+ 1048 0702 07       		.byte	0x7
+ 1049 0703 38       		.byte	0x38
+ 1050 0704 E0000000 		.4byte	0xe0
+ 1051 0708 18       		.byte	0x18
+ 1052 0709 0A       		.uleb128 0xa
+ 1053 070a EF060000 		.4byte	.LASF140
+ 1054 070e 07       		.byte	0x7
+ 1055 070f 39       		.byte	0x39
+ 1056 0710 1A050000 		.4byte	0x51a
+ 1057 0714 1C       		.byte	0x1c
+ 1058 0715 0A       		.uleb128 0xa
+ 1059 0716 E3070000 		.4byte	.LASF141
+ 1060 071a 07       		.byte	0x7
+ 1061 071b 3A       		.byte	0x3a
+ 1062 071c E0000000 		.4byte	0xe0
+ 1063 0720 20       		.byte	0x20
+ 1064 0721 0A       		.uleb128 0xa
+ 1065 0722 CF080000 		.4byte	.LASF142
+ 1066 0726 07       		.byte	0x7
+ 1067 0727 3B       		.byte	0x3b
+ 1068 0728 E0000000 		.4byte	0xe0
+ 1069 072c 24       		.byte	0x24
+ 1070 072d 0A       		.uleb128 0xa
+ 1071 072e 39040000 		.4byte	.LASF143
+ 1072 0732 07       		.byte	0x7
+ 1073 0733 3C       		.byte	0x3c
+ 1074 0734 1A050000 		.4byte	0x51a
+ 1075 0738 28       		.byte	0x28
+ 1076 0739 0A       		.uleb128 0xa
+ 1077 073a BA030000 		.4byte	.LASF144
+ 1078 073e 07       		.byte	0x7
+ 1079 073f 3E       		.byte	0x3e
+ 1080 0740 E0000000 		.4byte	0xe0
+ 1081 0744 2C       		.byte	0x2c
+ 1082 0745 0A       		.uleb128 0xa
+ 1083 0746 17050000 		.4byte	.LASF145
+ 1084 074a 07       		.byte	0x7
+ 1085 074b 3F       		.byte	0x3f
+ 1086 074c E0000000 		.4byte	0xe0
+ 1087 0750 30       		.byte	0x30
+ 1088 0751 0A       		.uleb128 0xa
+ 1089 0752 44090000 		.4byte	.LASF146
+ 1090 0756 07       		.byte	0x7
+ 1091 0757 40       		.byte	0x40
+ 1092 0758 E0000000 		.4byte	0xe0
+ 1093 075c 34       		.byte	0x34
+ 1094 075d 0A       		.uleb128 0xa
+ 1095 075e 77060000 		.4byte	.LASF147
+ 1096 0762 07       		.byte	0x7
+ 1097 0763 41       		.byte	0x41
+ 1098 0764 E0000000 		.4byte	0xe0
+ARM GAS  C:\Users\quint\AppData\Local\Temp\ccDVaTK5.s 			page 23
+
+
+ 1099 0768 38       		.byte	0x38
+ 1100 0769 0A       		.uleb128 0xa
+ 1101 076a 93040000 		.4byte	.LASF148
+ 1102 076e 07       		.byte	0x7
+ 1103 076f 42       		.byte	0x42
+ 1104 0770 E0000000 		.4byte	0xe0
+ 1105 0774 3C       		.byte	0x3c
+ 1106 0775 0A       		.uleb128 0xa
+ 1107 0776 0B070000 		.4byte	.LASF149
+ 1108 077a 07       		.byte	0x7
+ 1109 077b 44       		.byte	0x44
+ 1110 077c E0000000 		.4byte	0xe0
+ 1111 0780 40       		.byte	0x40
+ 1112 0781 0A       		.uleb128 0xa
+ 1113 0782 C0090000 		.4byte	.LASF150
+ 1114 0786 07       		.byte	0x7
+ 1115 0787 45       		.byte	0x45
+ 1116 0788 E0000000 		.4byte	0xe0
+ 1117 078c 44       		.byte	0x44
+ 1118 078d 0A       		.uleb128 0xa
+ 1119 078e 6D080000 		.4byte	.LASF151
+ 1120 0792 07       		.byte	0x7
+ 1121 0793 47       		.byte	0x47
+ 1122 0794 E0000000 		.4byte	0xe0
+ 1123 0798 48       		.byte	0x48
+ 1124 0799 0A       		.uleb128 0xa
+ 1125 079a A3080000 		.4byte	.LASF152
+ 1126 079e 07       		.byte	0x7
+ 1127 079f 48       		.byte	0x48
+ 1128 07a0 E0000000 		.4byte	0xe0
+ 1129 07a4 4C       		.byte	0x4c
+ 1130 07a5 0A       		.uleb128 0xa
+ 1131 07a6 57050000 		.4byte	.LASF153
+ 1132 07aa 07       		.byte	0x7
+ 1133 07ab 4A       		.byte	0x4a
+ 1134 07ac E0000000 		.4byte	0xe0
+ 1135 07b0 50       		.byte	0x50
+ 1136 07b1 0A       		.uleb128 0xa
+ 1137 07b2 BE040000 		.4byte	.LASF154
+ 1138 07b6 07       		.byte	0x7
+ 1139 07b7 4B       		.byte	0x4b
+ 1140 07b8 E0000000 		.4byte	0xe0
+ 1141 07bc 54       		.byte	0x54
+ 1142 07bd 0A       		.uleb128 0xa
+ 1143 07be 4B000000 		.4byte	.LASF155
+ 1144 07c2 07       		.byte	0x7
+ 1145 07c3 4D       		.byte	0x4d
+ 1146 07c4 E0000000 		.4byte	0xe0
+ 1147 07c8 58       		.byte	0x58
+ 1148 07c9 0A       		.uleb128 0xa
+ 1149 07ca F4090000 		.4byte	.LASF156
+ 1150 07ce 07       		.byte	0x7
+ 1151 07cf 4E       		.byte	0x4e
+ 1152 07d0 E0000000 		.4byte	0xe0
+ 1153 07d4 5C       		.byte	0x5c
+ 1154 07d5 0A       		.uleb128 0xa
+ 1155 07d6 FD070000 		.4byte	.LASF157
+ARM GAS  C:\Users\quint\AppData\Local\Temp\ccDVaTK5.s 			page 24
+
+
+ 1156 07da 07       		.byte	0x7
+ 1157 07db 50       		.byte	0x50
+ 1158 07dc E0000000 		.4byte	0xe0
+ 1159 07e0 60       		.byte	0x60
+ 1160 07e1 00       		.byte	0
+ 1161 07e2 03       		.uleb128 0x3
+ 1162 07e3 A6090000 		.4byte	.LASF158
+ 1163 07e7 07       		.byte	0x7
+ 1164 07e8 51       		.byte	0x51
+ 1165 07e9 A9060000 		.4byte	0x6a9
+ 1166 07ed 11       		.uleb128 0x11
+ 1167 07ee 62050000 		.4byte	.LASF159
+ 1168 07f2 01       		.byte	0x1
+ 1169 07f3 4F       		.byte	0x4f
+ 1170 07f4 89000000 		.4byte	0x89
+ 1171 07f8 00000000 		.4byte	.LFB536
+ 1172 07fc 24000000 		.4byte	.LFE536-.LFB536
+ 1173 0800 01       		.uleb128 0x1
+ 1174 0801 9C       		.byte	0x9c
+ 1175 0802 4B080000 		.4byte	0x84b
+ 1176 0806 12       		.uleb128 0x12
+ 1177 0807 666400   		.ascii	"fd\000"
+ 1178 080a 01       		.byte	0x1
+ 1179 080b 4F       		.byte	0x4f
+ 1180 080c 89000000 		.4byte	0x89
+ 1181 0810 00000000 		.4byte	.LLST0
+ 1182 0814 12       		.uleb128 0x12
+ 1183 0815 70747200 		.ascii	"ptr\000"
+ 1184 0819 01       		.byte	0x1
+ 1185 081a 4F       		.byte	0x4f
+ 1186 081b B4000000 		.4byte	0xb4
+ 1187 081f 3A000000 		.4byte	.LLST1
+ 1188 0823 12       		.uleb128 0x12
+ 1189 0824 6C656E00 		.ascii	"len\000"
+ 1190 0828 01       		.byte	0x1
+ 1191 0829 4F       		.byte	0x4f
+ 1192 082a 89000000 		.4byte	0x89
+ 1193 082e 6E000000 		.4byte	.LLST2
+ 1194 0832 13       		.uleb128 0x13
+ 1195 0833 9D010000 		.4byte	.LASF161
+ 1196 0837 01       		.byte	0x1
+ 1197 0838 51       		.byte	0x51
+ 1198 0839 89000000 		.4byte	0x89
+ 1199 083d B0000000 		.4byte	.LLST3
+ 1200 0841 14       		.uleb128 0x14
+ 1201 0842 14000000 		.4byte	.LVL3
+ 1202 0846 F0080000 		.4byte	0x8f0
+ 1203 084a 00       		.byte	0
+ 1204 084b 11       		.uleb128 0x11
+ 1205 084c 95030000 		.4byte	.LASF160
+ 1206 0850 01       		.byte	0x1
+ 1207 0851 85       		.byte	0x85
+ 1208 0852 89000000 		.4byte	0x89
+ 1209 0856 00000000 		.4byte	.LFB537
+ 1210 085a 2E000000 		.4byte	.LFE537-.LFB537
+ 1211 085e 01       		.uleb128 0x1
+ 1212 085f 9C       		.byte	0x9c
+ARM GAS  C:\Users\quint\AppData\Local\Temp\ccDVaTK5.s 			page 25
+
+
+ 1213 0860 A9080000 		.4byte	0x8a9
+ 1214 0864 12       		.uleb128 0x12
+ 1215 0865 666400   		.ascii	"fd\000"
+ 1216 0868 01       		.byte	0x1
+ 1217 0869 85       		.byte	0x85
+ 1218 086a 89000000 		.4byte	0x89
+ 1219 086e F1000000 		.4byte	.LLST4
+ 1220 0872 12       		.uleb128 0x12
+ 1221 0873 70747200 		.ascii	"ptr\000"
+ 1222 0877 01       		.byte	0x1
+ 1223 0878 85       		.byte	0x85
+ 1224 0879 A7000000 		.4byte	0xa7
+ 1225 087d 2B010000 		.4byte	.LLST5
+ 1226 0881 12       		.uleb128 0x12
+ 1227 0882 6C656E00 		.ascii	"len\000"
+ 1228 0886 01       		.byte	0x1
+ 1229 0887 85       		.byte	0x85
+ 1230 0888 89000000 		.4byte	0x89
+ 1231 088c 5F010000 		.4byte	.LLST6
+ 1232 0890 13       		.uleb128 0x13
+ 1233 0891 9D010000 		.4byte	.LASF161
+ 1234 0895 01       		.byte	0x1
+ 1235 0896 87       		.byte	0x87
+ 1236 0897 89000000 		.4byte	0x89
+ 1237 089b A1010000 		.4byte	.LLST7
+ 1238 089f 14       		.uleb128 0x14
+ 1239 08a0 12000000 		.4byte	.LVL15
+ 1240 08a4 FB080000 		.4byte	0x8fb
+ 1241 08a8 00       		.byte	0
+ 1242 08a9 15       		.uleb128 0x15
+ 1243 08aa 4B060000 		.4byte	.LASF162
+ 1244 08ae 04       		.byte	0x4
+ 1245 08af A7       		.byte	0xa7
+ 1246 08b0 B4080000 		.4byte	0x8b4
+ 1247 08b4 06       		.uleb128 0x6
+ 1248 08b5 04       		.byte	0x4
+ 1249 08b6 BA080000 		.4byte	0x8ba
+ 1250 08ba 07       		.uleb128 0x7
+ 1251 08bb 01050000 		.4byte	0x501
+ 1252 08bf 15       		.uleb128 0x15
+ 1253 08c0 D5020000 		.4byte	.LASF163
+ 1254 08c4 08       		.byte	0x8
+ 1255 08c5 1F       		.byte	0x1f
+ 1256 08c6 CA080000 		.4byte	0x8ca
+ 1257 08ca 07       		.uleb128 0x7
+ 1258 08cb E2070000 		.4byte	0x7e2
+ 1259 08cf 15       		.uleb128 0x15
+ 1260 08d0 6A090000 		.4byte	.LASF164
+ 1261 08d4 09       		.byte	0x9
+ 1262 08d5 1F       		.byte	0x1f
+ 1263 08d6 CA080000 		.4byte	0x8ca
+ 1264 08da 15       		.uleb128 0x15
+ 1265 08db B8020000 		.4byte	.LASF165
+ 1266 08df 0A       		.byte	0xa
+ 1267 08e0 87       		.byte	0x87
+ 1268 08e1 9D060000 		.4byte	0x69d
+ 1269 08e5 15       		.uleb128 0x15
+ARM GAS  C:\Users\quint\AppData\Local\Temp\ccDVaTK5.s 			page 26
+
+
+ 1270 08e6 0F010000 		.4byte	.LASF166
+ 1271 08ea 0B       		.byte	0xb
+ 1272 08eb 5E       		.byte	0x5e
+ 1273 08ec C1050000 		.4byte	0x5c1
+ 1274 08f0 16       		.uleb128 0x16
+ 1275 08f1 33030000 		.4byte	.LASF167
+ 1276 08f5 33030000 		.4byte	.LASF167
+ 1277 08f9 0C       		.byte	0xc
+ 1278 08fa BA       		.byte	0xba
+ 1279 08fb 16       		.uleb128 0x16
+ 1280 08fc 29020000 		.4byte	.LASF168
+ 1281 0900 29020000 		.4byte	.LASF168
+ 1282 0904 0C       		.byte	0xc
+ 1283 0905 BE       		.byte	0xbe
+ 1284 0906 00       		.byte	0
+ 1285              		.section	.debug_abbrev,"",%progbits
+ 1286              	.Ldebug_abbrev0:
+ 1287 0000 01       		.uleb128 0x1
+ 1288 0001 11       		.uleb128 0x11
+ 1289 0002 01       		.byte	0x1
+ 1290 0003 25       		.uleb128 0x25
+ 1291 0004 0E       		.uleb128 0xe
+ 1292 0005 13       		.uleb128 0x13
+ 1293 0006 0B       		.uleb128 0xb
+ 1294 0007 03       		.uleb128 0x3
+ 1295 0008 0E       		.uleb128 0xe
+ 1296 0009 1B       		.uleb128 0x1b
+ 1297 000a 0E       		.uleb128 0xe
+ 1298 000b 55       		.uleb128 0x55
+ 1299 000c 17       		.uleb128 0x17
+ 1300 000d 11       		.uleb128 0x11
+ 1301 000e 01       		.uleb128 0x1
+ 1302 000f 10       		.uleb128 0x10
+ 1303 0010 17       		.uleb128 0x17
+ 1304 0011 00       		.byte	0
+ 1305 0012 00       		.byte	0
+ 1306 0013 02       		.uleb128 0x2
+ 1307 0014 24       		.uleb128 0x24
+ 1308 0015 00       		.byte	0
+ 1309 0016 0B       		.uleb128 0xb
+ 1310 0017 0B       		.uleb128 0xb
+ 1311 0018 3E       		.uleb128 0x3e
+ 1312 0019 0B       		.uleb128 0xb
+ 1313 001a 03       		.uleb128 0x3
+ 1314 001b 0E       		.uleb128 0xe
+ 1315 001c 00       		.byte	0
+ 1316 001d 00       		.byte	0
+ 1317 001e 03       		.uleb128 0x3
+ 1318 001f 16       		.uleb128 0x16
+ 1319 0020 00       		.byte	0
+ 1320 0021 03       		.uleb128 0x3
+ 1321 0022 0E       		.uleb128 0xe
+ 1322 0023 3A       		.uleb128 0x3a
+ 1323 0024 0B       		.uleb128 0xb
+ 1324 0025 3B       		.uleb128 0x3b
+ 1325 0026 0B       		.uleb128 0xb
+ 1326 0027 49       		.uleb128 0x49
+ARM GAS  C:\Users\quint\AppData\Local\Temp\ccDVaTK5.s 			page 27
+
+
+ 1327 0028 13       		.uleb128 0x13
+ 1328 0029 00       		.byte	0
+ 1329 002a 00       		.byte	0
+ 1330 002b 04       		.uleb128 0x4
+ 1331 002c 24       		.uleb128 0x24
+ 1332 002d 00       		.byte	0
+ 1333 002e 0B       		.uleb128 0xb
+ 1334 002f 0B       		.uleb128 0xb
+ 1335 0030 3E       		.uleb128 0x3e
+ 1336 0031 0B       		.uleb128 0xb
+ 1337 0032 03       		.uleb128 0x3
+ 1338 0033 08       		.uleb128 0x8
+ 1339 0034 00       		.byte	0
+ 1340 0035 00       		.byte	0
+ 1341 0036 05       		.uleb128 0x5
+ 1342 0037 0F       		.uleb128 0xf
+ 1343 0038 00       		.byte	0
+ 1344 0039 0B       		.uleb128 0xb
+ 1345 003a 0B       		.uleb128 0xb
+ 1346 003b 00       		.byte	0
+ 1347 003c 00       		.byte	0
+ 1348 003d 06       		.uleb128 0x6
+ 1349 003e 0F       		.uleb128 0xf
+ 1350 003f 00       		.byte	0
+ 1351 0040 0B       		.uleb128 0xb
+ 1352 0041 0B       		.uleb128 0xb
+ 1353 0042 49       		.uleb128 0x49
+ 1354 0043 13       		.uleb128 0x13
+ 1355 0044 00       		.byte	0
+ 1356 0045 00       		.byte	0
+ 1357 0046 07       		.uleb128 0x7
+ 1358 0047 26       		.uleb128 0x26
+ 1359 0048 00       		.byte	0
+ 1360 0049 49       		.uleb128 0x49
+ 1361 004a 13       		.uleb128 0x13
+ 1362 004b 00       		.byte	0
+ 1363 004c 00       		.byte	0
+ 1364 004d 08       		.uleb128 0x8
+ 1365 004e 35       		.uleb128 0x35
+ 1366 004f 00       		.byte	0
+ 1367 0050 49       		.uleb128 0x49
+ 1368 0051 13       		.uleb128 0x13
+ 1369 0052 00       		.byte	0
+ 1370 0053 00       		.byte	0
+ 1371 0054 09       		.uleb128 0x9
+ 1372 0055 13       		.uleb128 0x13
+ 1373 0056 01       		.byte	0x1
+ 1374 0057 0B       		.uleb128 0xb
+ 1375 0058 0B       		.uleb128 0xb
+ 1376 0059 3A       		.uleb128 0x3a
+ 1377 005a 0B       		.uleb128 0xb
+ 1378 005b 3B       		.uleb128 0x3b
+ 1379 005c 0B       		.uleb128 0xb
+ 1380 005d 01       		.uleb128 0x1
+ 1381 005e 13       		.uleb128 0x13
+ 1382 005f 00       		.byte	0
+ 1383 0060 00       		.byte	0
+ARM GAS  C:\Users\quint\AppData\Local\Temp\ccDVaTK5.s 			page 28
+
+
+ 1384 0061 0A       		.uleb128 0xa
+ 1385 0062 0D       		.uleb128 0xd
+ 1386 0063 00       		.byte	0
+ 1387 0064 03       		.uleb128 0x3
+ 1388 0065 0E       		.uleb128 0xe
+ 1389 0066 3A       		.uleb128 0x3a
+ 1390 0067 0B       		.uleb128 0xb
+ 1391 0068 3B       		.uleb128 0x3b
+ 1392 0069 0B       		.uleb128 0xb
+ 1393 006a 49       		.uleb128 0x49
+ 1394 006b 13       		.uleb128 0x13
+ 1395 006c 38       		.uleb128 0x38
+ 1396 006d 0B       		.uleb128 0xb
+ 1397 006e 00       		.byte	0
+ 1398 006f 00       		.byte	0
+ 1399 0070 0B       		.uleb128 0xb
+ 1400 0071 15       		.uleb128 0x15
+ 1401 0072 01       		.byte	0x1
+ 1402 0073 27       		.uleb128 0x27
+ 1403 0074 19       		.uleb128 0x19
+ 1404 0075 01       		.uleb128 0x1
+ 1405 0076 13       		.uleb128 0x13
+ 1406 0077 00       		.byte	0
+ 1407 0078 00       		.byte	0
+ 1408 0079 0C       		.uleb128 0xc
+ 1409 007a 05       		.uleb128 0x5
+ 1410 007b 00       		.byte	0
+ 1411 007c 49       		.uleb128 0x49
+ 1412 007d 13       		.uleb128 0x13
+ 1413 007e 00       		.byte	0
+ 1414 007f 00       		.byte	0
+ 1415 0080 0D       		.uleb128 0xd
+ 1416 0081 16       		.uleb128 0x16
+ 1417 0082 00       		.byte	0
+ 1418 0083 03       		.uleb128 0x3
+ 1419 0084 0E       		.uleb128 0xe
+ 1420 0085 3A       		.uleb128 0x3a
+ 1421 0086 0B       		.uleb128 0xb
+ 1422 0087 3B       		.uleb128 0x3b
+ 1423 0088 05       		.uleb128 0x5
+ 1424 0089 49       		.uleb128 0x49
+ 1425 008a 13       		.uleb128 0x13
+ 1426 008b 00       		.byte	0
+ 1427 008c 00       		.byte	0
+ 1428 008d 0E       		.uleb128 0xe
+ 1429 008e 13       		.uleb128 0x13
+ 1430 008f 01       		.byte	0x1
+ 1431 0090 03       		.uleb128 0x3
+ 1432 0091 0E       		.uleb128 0xe
+ 1433 0092 0B       		.uleb128 0xb
+ 1434 0093 0B       		.uleb128 0xb
+ 1435 0094 3A       		.uleb128 0x3a
+ 1436 0095 0B       		.uleb128 0xb
+ 1437 0096 3B       		.uleb128 0x3b
+ 1438 0097 05       		.uleb128 0x5
+ 1439 0098 01       		.uleb128 0x1
+ 1440 0099 13       		.uleb128 0x13
+ARM GAS  C:\Users\quint\AppData\Local\Temp\ccDVaTK5.s 			page 29
+
+
+ 1441 009a 00       		.byte	0
+ 1442 009b 00       		.byte	0
+ 1443 009c 0F       		.uleb128 0xf
+ 1444 009d 0D       		.uleb128 0xd
+ 1445 009e 00       		.byte	0
+ 1446 009f 03       		.uleb128 0x3
+ 1447 00a0 0E       		.uleb128 0xe
+ 1448 00a1 3A       		.uleb128 0x3a
+ 1449 00a2 0B       		.uleb128 0xb
+ 1450 00a3 3B       		.uleb128 0x3b
+ 1451 00a4 05       		.uleb128 0x5
+ 1452 00a5 49       		.uleb128 0x49
+ 1453 00a6 13       		.uleb128 0x13
+ 1454 00a7 38       		.uleb128 0x38
+ 1455 00a8 0B       		.uleb128 0xb
+ 1456 00a9 00       		.byte	0
+ 1457 00aa 00       		.byte	0
+ 1458 00ab 10       		.uleb128 0x10
+ 1459 00ac 13       		.uleb128 0x13
+ 1460 00ad 01       		.byte	0x1
+ 1461 00ae 03       		.uleb128 0x3
+ 1462 00af 0E       		.uleb128 0xe
+ 1463 00b0 0B       		.uleb128 0xb
+ 1464 00b1 0B       		.uleb128 0xb
+ 1465 00b2 3A       		.uleb128 0x3a
+ 1466 00b3 0B       		.uleb128 0xb
+ 1467 00b4 3B       		.uleb128 0x3b
+ 1468 00b5 0B       		.uleb128 0xb
+ 1469 00b6 01       		.uleb128 0x1
+ 1470 00b7 13       		.uleb128 0x13
+ 1471 00b8 00       		.byte	0
+ 1472 00b9 00       		.byte	0
+ 1473 00ba 11       		.uleb128 0x11
+ 1474 00bb 2E       		.uleb128 0x2e
+ 1475 00bc 01       		.byte	0x1
+ 1476 00bd 3F       		.uleb128 0x3f
+ 1477 00be 19       		.uleb128 0x19
+ 1478 00bf 03       		.uleb128 0x3
+ 1479 00c0 0E       		.uleb128 0xe
+ 1480 00c1 3A       		.uleb128 0x3a
+ 1481 00c2 0B       		.uleb128 0xb
+ 1482 00c3 3B       		.uleb128 0x3b
+ 1483 00c4 0B       		.uleb128 0xb
+ 1484 00c5 27       		.uleb128 0x27
+ 1485 00c6 19       		.uleb128 0x19
+ 1486 00c7 49       		.uleb128 0x49
+ 1487 00c8 13       		.uleb128 0x13
+ 1488 00c9 11       		.uleb128 0x11
+ 1489 00ca 01       		.uleb128 0x1
+ 1490 00cb 12       		.uleb128 0x12
+ 1491 00cc 06       		.uleb128 0x6
+ 1492 00cd 40       		.uleb128 0x40
+ 1493 00ce 18       		.uleb128 0x18
+ 1494 00cf 9742     		.uleb128 0x2117
+ 1495 00d1 19       		.uleb128 0x19
+ 1496 00d2 01       		.uleb128 0x1
+ 1497 00d3 13       		.uleb128 0x13
+ARM GAS  C:\Users\quint\AppData\Local\Temp\ccDVaTK5.s 			page 30
+
+
+ 1498 00d4 00       		.byte	0
+ 1499 00d5 00       		.byte	0
+ 1500 00d6 12       		.uleb128 0x12
+ 1501 00d7 05       		.uleb128 0x5
+ 1502 00d8 00       		.byte	0
+ 1503 00d9 03       		.uleb128 0x3
+ 1504 00da 08       		.uleb128 0x8
+ 1505 00db 3A       		.uleb128 0x3a
+ 1506 00dc 0B       		.uleb128 0xb
+ 1507 00dd 3B       		.uleb128 0x3b
+ 1508 00de 0B       		.uleb128 0xb
+ 1509 00df 49       		.uleb128 0x49
+ 1510 00e0 13       		.uleb128 0x13
+ 1511 00e1 02       		.uleb128 0x2
+ 1512 00e2 17       		.uleb128 0x17
+ 1513 00e3 00       		.byte	0
+ 1514 00e4 00       		.byte	0
+ 1515 00e5 13       		.uleb128 0x13
+ 1516 00e6 34       		.uleb128 0x34
+ 1517 00e7 00       		.byte	0
+ 1518 00e8 03       		.uleb128 0x3
+ 1519 00e9 0E       		.uleb128 0xe
+ 1520 00ea 3A       		.uleb128 0x3a
+ 1521 00eb 0B       		.uleb128 0xb
+ 1522 00ec 3B       		.uleb128 0x3b
+ 1523 00ed 0B       		.uleb128 0xb
+ 1524 00ee 49       		.uleb128 0x49
+ 1525 00ef 13       		.uleb128 0x13
+ 1526 00f0 02       		.uleb128 0x2
+ 1527 00f1 17       		.uleb128 0x17
+ 1528 00f2 00       		.byte	0
+ 1529 00f3 00       		.byte	0
+ 1530 00f4 14       		.uleb128 0x14
+ 1531 00f5 898201   		.uleb128 0x4109
+ 1532 00f8 00       		.byte	0
+ 1533 00f9 11       		.uleb128 0x11
+ 1534 00fa 01       		.uleb128 0x1
+ 1535 00fb 31       		.uleb128 0x31
+ 1536 00fc 13       		.uleb128 0x13
+ 1537 00fd 00       		.byte	0
+ 1538 00fe 00       		.byte	0
+ 1539 00ff 15       		.uleb128 0x15
+ 1540 0100 34       		.uleb128 0x34
+ 1541 0101 00       		.byte	0
+ 1542 0102 03       		.uleb128 0x3
+ 1543 0103 0E       		.uleb128 0xe
+ 1544 0104 3A       		.uleb128 0x3a
+ 1545 0105 0B       		.uleb128 0xb
+ 1546 0106 3B       		.uleb128 0x3b
+ 1547 0107 0B       		.uleb128 0xb
+ 1548 0108 49       		.uleb128 0x49
+ 1549 0109 13       		.uleb128 0x13
+ 1550 010a 3F       		.uleb128 0x3f
+ 1551 010b 19       		.uleb128 0x19
+ 1552 010c 3C       		.uleb128 0x3c
+ 1553 010d 19       		.uleb128 0x19
+ 1554 010e 00       		.byte	0
+ARM GAS  C:\Users\quint\AppData\Local\Temp\ccDVaTK5.s 			page 31
+
+
+ 1555 010f 00       		.byte	0
+ 1556 0110 16       		.uleb128 0x16
+ 1557 0111 2E       		.uleb128 0x2e
+ 1558 0112 00       		.byte	0
+ 1559 0113 3F       		.uleb128 0x3f
+ 1560 0114 19       		.uleb128 0x19
+ 1561 0115 3C       		.uleb128 0x3c
+ 1562 0116 19       		.uleb128 0x19
+ 1563 0117 6E       		.uleb128 0x6e
+ 1564 0118 0E       		.uleb128 0xe
+ 1565 0119 03       		.uleb128 0x3
+ 1566 011a 0E       		.uleb128 0xe
+ 1567 011b 3A       		.uleb128 0x3a
+ 1568 011c 0B       		.uleb128 0xb
+ 1569 011d 3B       		.uleb128 0x3b
+ 1570 011e 0B       		.uleb128 0xb
+ 1571 011f 00       		.byte	0
+ 1572 0120 00       		.byte	0
+ 1573 0121 00       		.byte	0
+ 1574              		.section	.debug_loc,"",%progbits
+ 1575              	.Ldebug_loc0:
+ 1576              	.LLST0:
+ 1577 0000 00000000 		.4byte	.LVL0
+ 1578 0004 0E000000 		.4byte	.LVL2
+ 1579 0008 0100     		.2byte	0x1
+ 1580 000a 50       		.byte	0x50
+ 1581 000b 0E000000 		.4byte	.LVL2
+ 1582 000f 1A000000 		.4byte	.LVL6
+ 1583 0013 0400     		.2byte	0x4
+ 1584 0015 F3       		.byte	0xf3
+ 1585 0016 01       		.uleb128 0x1
+ 1586 0017 50       		.byte	0x50
+ 1587 0018 9F       		.byte	0x9f
+ 1588 0019 1A000000 		.4byte	.LVL6
+ 1589 001d 1C000000 		.4byte	.LVL7
+ 1590 0021 0100     		.2byte	0x1
+ 1591 0023 50       		.byte	0x50
+ 1592 0024 1C000000 		.4byte	.LVL7
+ 1593 0028 24000000 		.4byte	.LFE536
+ 1594 002c 0400     		.2byte	0x4
+ 1595 002e F3       		.byte	0xf3
+ 1596 002f 01       		.uleb128 0x1
+ 1597 0030 50       		.byte	0x50
+ 1598 0031 9F       		.byte	0x9f
+ 1599 0032 00000000 		.4byte	0
+ 1600 0036 00000000 		.4byte	0
+ 1601              	.LLST1:
+ 1602 003a 00000000 		.4byte	.LVL0
+ 1603 003e 0E000000 		.4byte	.LVL2
+ 1604 0042 0100     		.2byte	0x1
+ 1605 0044 51       		.byte	0x51
+ 1606 0045 0E000000 		.4byte	.LVL2
+ 1607 0049 1A000000 		.4byte	.LVL6
+ 1608 004d 0100     		.2byte	0x1
+ 1609 004f 55       		.byte	0x55
+ 1610 0050 1A000000 		.4byte	.LVL6
+ 1611 0054 1C000000 		.4byte	.LVL7
+ARM GAS  C:\Users\quint\AppData\Local\Temp\ccDVaTK5.s 			page 32
+
+
+ 1612 0058 0100     		.2byte	0x1
+ 1613 005a 51       		.byte	0x51
+ 1614 005b 1C000000 		.4byte	.LVL7
+ 1615 005f 22000000 		.4byte	.LVL10
+ 1616 0063 0100     		.2byte	0x1
+ 1617 0065 55       		.byte	0x55
+ 1618 0066 00000000 		.4byte	0
+ 1619 006a 00000000 		.4byte	0
+ 1620              	.LLST2:
+ 1621 006e 00000000 		.4byte	.LVL0
+ 1622 0072 0E000000 		.4byte	.LVL2
+ 1623 0076 0100     		.2byte	0x1
+ 1624 0078 52       		.byte	0x52
+ 1625 0079 0E000000 		.4byte	.LVL2
+ 1626 007d 1A000000 		.4byte	.LVL6
+ 1627 0081 0100     		.2byte	0x1
+ 1628 0083 56       		.byte	0x56
+ 1629 0084 1A000000 		.4byte	.LVL6
+ 1630 0088 1C000000 		.4byte	.LVL7
+ 1631 008c 0100     		.2byte	0x1
+ 1632 008e 52       		.byte	0x52
+ 1633 008f 1C000000 		.4byte	.LVL7
+ 1634 0093 22000000 		.4byte	.LVL11
+ 1635 0097 0100     		.2byte	0x1
+ 1636 0099 56       		.byte	0x56
+ 1637 009a 22000000 		.4byte	.LVL11
+ 1638 009e 24000000 		.4byte	.LFE536
+ 1639 00a2 0400     		.2byte	0x4
+ 1640 00a4 F3       		.byte	0xf3
+ 1641 00a5 01       		.uleb128 0x1
+ 1642 00a6 52       		.byte	0x52
+ 1643 00a7 9F       		.byte	0x9f
+ 1644 00a8 00000000 		.4byte	0
+ 1645 00ac 00000000 		.4byte	0
+ 1646              	.LLST3:
+ 1647 00b0 06000000 		.4byte	.LVL1
+ 1648 00b4 0E000000 		.4byte	.LVL2
+ 1649 00b8 0200     		.2byte	0x2
+ 1650 00ba 30       		.byte	0x30
+ 1651 00bb 9F       		.byte	0x9f
+ 1652 00bc 0E000000 		.4byte	.LVL2
+ 1653 00c0 1A000000 		.4byte	.LVL6
+ 1654 00c4 0100     		.2byte	0x1
+ 1655 00c6 54       		.byte	0x54
+ 1656 00c7 1A000000 		.4byte	.LVL6
+ 1657 00cb 1C000000 		.4byte	.LVL7
+ 1658 00cf 0200     		.2byte	0x2
+ 1659 00d1 30       		.byte	0x30
+ 1660 00d2 9F       		.byte	0x9f
+ 1661 00d3 1C000000 		.4byte	.LVL7
+ 1662 00d7 22000000 		.4byte	.LVL9
+ 1663 00db 0100     		.2byte	0x1
+ 1664 00dd 54       		.byte	0x54
+ 1665 00de 22000000 		.4byte	.LVL9
+ 1666 00e2 24000000 		.4byte	.LFE536
+ 1667 00e6 0100     		.2byte	0x1
+ 1668 00e8 50       		.byte	0x50
+ARM GAS  C:\Users\quint\AppData\Local\Temp\ccDVaTK5.s 			page 33
+
+
+ 1669 00e9 00000000 		.4byte	0
+ 1670 00ed 00000000 		.4byte	0
+ 1671              	.LLST4:
+ 1672 00f1 00000000 		.4byte	.LVL12
+ 1673 00f5 0E000000 		.4byte	.LVL14
+ 1674 00f9 0100     		.2byte	0x1
+ 1675 00fb 50       		.byte	0x50
+ 1676 00fc 0E000000 		.4byte	.LVL14
+ 1677 0100 24000000 		.4byte	.LVL18
+ 1678 0104 0400     		.2byte	0x4
+ 1679 0106 F3       		.byte	0xf3
+ 1680 0107 01       		.uleb128 0x1
+ 1681 0108 50       		.byte	0x50
+ 1682 0109 9F       		.byte	0x9f
+ 1683 010a 24000000 		.4byte	.LVL18
+ 1684 010e 26000000 		.4byte	.LVL19
+ 1685 0112 0100     		.2byte	0x1
+ 1686 0114 50       		.byte	0x50
+ 1687 0115 26000000 		.4byte	.LVL19
+ 1688 0119 2E000000 		.4byte	.LFE537
+ 1689 011d 0400     		.2byte	0x4
+ 1690 011f F3       		.byte	0xf3
+ 1691 0120 01       		.uleb128 0x1
+ 1692 0121 50       		.byte	0x50
+ 1693 0122 9F       		.byte	0x9f
+ 1694 0123 00000000 		.4byte	0
+ 1695 0127 00000000 		.4byte	0
+ 1696              	.LLST5:
+ 1697 012b 00000000 		.4byte	.LVL12
+ 1698 012f 0E000000 		.4byte	.LVL14
+ 1699 0133 0100     		.2byte	0x1
+ 1700 0135 51       		.byte	0x51
+ 1701 0136 0E000000 		.4byte	.LVL14
+ 1702 013a 24000000 		.4byte	.LVL18
+ 1703 013e 0100     		.2byte	0x1
+ 1704 0140 55       		.byte	0x55
+ 1705 0141 24000000 		.4byte	.LVL18
+ 1706 0145 26000000 		.4byte	.LVL19
+ 1707 0149 0100     		.2byte	0x1
+ 1708 014b 51       		.byte	0x51
+ 1709 014c 26000000 		.4byte	.LVL19
+ 1710 0150 2C000000 		.4byte	.LVL22
+ 1711 0154 0100     		.2byte	0x1
+ 1712 0156 55       		.byte	0x55
+ 1713 0157 00000000 		.4byte	0
+ 1714 015b 00000000 		.4byte	0
+ 1715              	.LLST6:
+ 1716 015f 00000000 		.4byte	.LVL12
+ 1717 0163 0E000000 		.4byte	.LVL14
+ 1718 0167 0100     		.2byte	0x1
+ 1719 0169 52       		.byte	0x52
+ 1720 016a 0E000000 		.4byte	.LVL14
+ 1721 016e 24000000 		.4byte	.LVL18
+ 1722 0172 0100     		.2byte	0x1
+ 1723 0174 56       		.byte	0x56
+ 1724 0175 24000000 		.4byte	.LVL18
+ 1725 0179 26000000 		.4byte	.LVL19
+ARM GAS  C:\Users\quint\AppData\Local\Temp\ccDVaTK5.s 			page 34
+
+
+ 1726 017d 0100     		.2byte	0x1
+ 1727 017f 52       		.byte	0x52
+ 1728 0180 26000000 		.4byte	.LVL19
+ 1729 0184 2C000000 		.4byte	.LVL23
+ 1730 0188 0100     		.2byte	0x1
+ 1731 018a 56       		.byte	0x56
+ 1732 018b 2C000000 		.4byte	.LVL23
+ 1733 018f 2E000000 		.4byte	.LFE537
+ 1734 0193 0400     		.2byte	0x4
+ 1735 0195 F3       		.byte	0xf3
+ 1736 0196 01       		.uleb128 0x1
+ 1737 0197 52       		.byte	0x52
+ 1738 0198 9F       		.byte	0x9f
+ 1739 0199 00000000 		.4byte	0
+ 1740 019d 00000000 		.4byte	0
+ 1741              	.LLST7:
+ 1742 01a1 06000000 		.4byte	.LVL13
+ 1743 01a5 0E000000 		.4byte	.LVL14
+ 1744 01a9 0200     		.2byte	0x2
+ 1745 01ab 30       		.byte	0x30
+ 1746 01ac 9F       		.byte	0x9f
+ 1747 01ad 0E000000 		.4byte	.LVL14
+ 1748 01b1 24000000 		.4byte	.LVL18
+ 1749 01b5 0100     		.2byte	0x1
+ 1750 01b7 54       		.byte	0x54
+ 1751 01b8 24000000 		.4byte	.LVL18
+ 1752 01bc 26000000 		.4byte	.LVL19
+ 1753 01c0 0200     		.2byte	0x2
+ 1754 01c2 30       		.byte	0x30
+ 1755 01c3 9F       		.byte	0x9f
+ 1756 01c4 26000000 		.4byte	.LVL19
+ 1757 01c8 2C000000 		.4byte	.LVL21
+ 1758 01cc 0100     		.2byte	0x1
+ 1759 01ce 54       		.byte	0x54
+ 1760 01cf 2C000000 		.4byte	.LVL21
+ 1761 01d3 2E000000 		.4byte	.LFE537
+ 1762 01d7 0100     		.2byte	0x1
+ 1763 01d9 50       		.byte	0x50
+ 1764 01da 00000000 		.4byte	0
+ 1765 01de 00000000 		.4byte	0
+ 1766              		.section	.debug_aranges,"",%progbits
+ 1767 0000 24000000 		.4byte	0x24
+ 1768 0004 0200     		.2byte	0x2
+ 1769 0006 00000000 		.4byte	.Ldebug_info0
+ 1770 000a 04       		.byte	0x4
+ 1771 000b 00       		.byte	0
+ 1772 000c 0000     		.2byte	0
+ 1773 000e 0000     		.2byte	0
+ 1774 0010 00000000 		.4byte	.LFB536
+ 1775 0014 24000000 		.4byte	.LFE536-.LFB536
+ 1776 0018 00000000 		.4byte	.LFB537
+ 1777 001c 2E000000 		.4byte	.LFE537-.LFB537
+ 1778 0020 00000000 		.4byte	0
+ 1779 0024 00000000 		.4byte	0
+ 1780              		.section	.debug_ranges,"",%progbits
+ 1781              	.Ldebug_ranges0:
+ 1782 0000 00000000 		.4byte	.LFB536
+ARM GAS  C:\Users\quint\AppData\Local\Temp\ccDVaTK5.s 			page 35
+
+
+ 1783 0004 24000000 		.4byte	.LFE536
+ 1784 0008 00000000 		.4byte	.LFB537
+ 1785 000c 2E000000 		.4byte	.LFE537
+ 1786 0010 00000000 		.4byte	0
+ 1787 0014 00000000 		.4byte	0
+ 1788              		.section	.debug_line,"",%progbits
+ 1789              	.Ldebug_line0:
+ 1790 0000 E8020000 		.section	.debug_str,"MS",%progbits,1
+ 1790      02008C02 
+ 1790      00000201 
+ 1790      FB0E0D00 
+ 1790      01010101 
+ 1791              	.LASF55:
+ 1792 0000 70726F74 		.ascii	"protBusMasterMask\000"
+ 1792      4275734D 
+ 1792      61737465 
+ 1792      724D6173 
+ 1792      6B00
+ 1793              	.LASF137:
+ 1794 0012 72756E4D 		.ascii	"runMode\000"
+ 1794      6F646500 
+ 1795              	.LASF113:
+ 1796 001a 72784275 		.ascii	"rxBufSize\000"
+ 1796      6653697A 
+ 1796      6500
+ 1797              	.LASF65:
+ 1798 0024 666C6173 		.ascii	"flashCtlMainWs3Freq\000"
+ 1798      6843746C 
+ 1798      4D61696E 
+ 1798      57733346 
+ 1798      72657100 
+ 1799              	.LASF87:
+ 1800 0038 6770696F 		.ascii	"gpioPrtCfgInOffset\000"
+ 1800      50727443 
+ 1800      6667496E 
+ 1800      4F666673 
+ 1800      657400
+ 1801              	.LASF155:
+ 1802 004b 6B696C6C 		.ascii	"killInput\000"
+ 1802      496E7075 
+ 1802      7400
+ 1803              	.LASF105:
+ 1804 0055 6970634C 		.ascii	"ipcLockStatusOffset\000"
+ 1804      6F636B53 
+ 1804      74617475 
+ 1804      734F6666 
+ 1804      73657400 
+ 1805              	.LASF31:
+ 1806 0069 63727970 		.ascii	"cryptoVersion\000"
+ 1806      746F5665 
+ 1806      7273696F 
+ 1806      6E00
+ 1807              	.LASF49:
+ 1808 0077 70657269 		.ascii	"periClockNr\000"
+ 1808      436C6F63 
+ 1808      6B4E7200 
+ 1809              	.LASF27:
+ARM GAS  C:\Users\quint\AppData\Local\Temp\ccDVaTK5.s 			page 36
+
+
+ 1810 0083 70617373 		.ascii	"passBase\000"
+ 1810      42617365 
+ 1810      00
+ 1811              	.LASF40:
+ 1812 008c 63707573 		.ascii	"cpussIpcIrqNr\000"
+ 1812      73497063 
+ 1812      4972714E 
+ 1812      7200
+ 1813              	.LASF2:
+ 1814 009a 5F5F7569 		.ascii	"__uint8_t\000"
+ 1814      6E74385F 
+ 1814      7400
+ 1815              	.LASF84:
+ 1816 00a4 70657269 		.ascii	"periDiv24_5CtlOffset\000"
+ 1816      44697632 
+ 1816      345F3543 
+ 1816      746C4F66 
+ 1816      66736574 
+ 1817              	.LASF91:
+ 1818 00b9 63707573 		.ascii	"cpussCm4ClockCtlOffset\000"
+ 1818      73436D34 
+ 1818      436C6F63 
+ 1818      6B43746C 
+ 1818      4F666673 
+ 1819              	.LASF20:
+ 1820 00d0 63707573 		.ascii	"cpussBase\000"
+ 1820      73426173 
+ 1820      6500
+ 1821              	.LASF69:
+ 1822 00da 64774368 		.ascii	"dwChCtlPrioPos\000"
+ 1822      43746C50 
+ 1822      72696F50 
+ 1822      6F7300
+ 1823              	.LASF11:
+ 1824 00e9 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1824      206C6F6E 
+ 1824      6720756E 
+ 1824      7369676E 
+ 1824      65642069 
+ 1825              	.LASF134:
+ 1826 0100 636C6F63 		.ascii	"clockPrescaler\000"
+ 1826      6B507265 
+ 1826      7363616C 
+ 1826      657200
+ 1827              	.LASF166:
+ 1828 010f 5350495F 		.ascii	"SPI_1_context\000"
+ 1828      315F636F 
+ 1828      6E746578 
+ 1828      7400
+ 1829              	.LASF73:
+ 1830 011d 70657269 		.ascii	"periTrCmdOffset\000"
+ 1830      5472436D 
+ 1830      644F6666 
+ 1830      73657400 
+ 1831              	.LASF126:
+ 1832 012d 72785269 		.ascii	"rxRingBuf\000"
+ 1832      6E674275 
+ARM GAS  C:\Users\quint\AppData\Local\Temp\ccDVaTK5.s 			page 37
+
+
+ 1832      6600
+ 1833              	.LASF171:
+ 1834 0137 443A5C47 		.ascii	"D:\\GIT\\Knight Guard\\PSoC6_PWM_MotorControll\\PSo"
+ 1834      49545C4B 
+ 1834      6E696768 
+ 1834      74204775 
+ 1834      6172645C 
+ 1835 0166 43365F50 		.ascii	"C6_PWM_MotorControll.cydsn\000"
+ 1835      574D5F4D 
+ 1835      6F746F72 
+ 1835      436F6E74 
+ 1835      726F6C6C 
+ 1836              	.LASF97:
+ 1837 0181 63707573 		.ascii	"cpussSysTickCtlOffset\000"
+ 1837      73537973 
+ 1837      5469636B 
+ 1837      43746C4F 
+ 1837      66667365 
+ 1838              	.LASF115:
+ 1839 0197 74784275 		.ascii	"txBuf\000"
+ 1839      6600
+ 1840              	.LASF161:
+ 1841 019d 6E436861 		.ascii	"nChars\000"
+ 1841      727300
+ 1842              	.LASF58:
+ 1843 01a4 666C6173 		.ascii	"flashPipeRequired\000"
+ 1843      68506970 
+ 1843      65526571 
+ 1843      75697265 
+ 1843      6400
+ 1844              	.LASF62:
+ 1845 01b6 666C6173 		.ascii	"flashCtlMainWs0Freq\000"
+ 1845      6843746C 
+ 1845      4D61696E 
+ 1845      57733046 
+ 1845      72657100 
+ 1846              	.LASF17:
+ 1847 01ca 696E7431 		.ascii	"int16_t\000"
+ 1847      365F7400 
+ 1848              	.LASF10:
+ 1849 01d2 6C6F6E67 		.ascii	"long long int\000"
+ 1849      206C6F6E 
+ 1849      6720696E 
+ 1849      7400
+ 1850              	.LASF0:
+ 1851 01e0 7369676E 		.ascii	"signed char\000"
+ 1851      65642063 
+ 1851      68617200 
+ 1852              	.LASF122:
+ 1853 01ec 63795F73 		.ascii	"cy_stc_scb_spi_context\000"
+ 1853      74635F73 
+ 1853      63625F73 
+ 1853      70695F63 
+ 1853      6F6E7465 
+ 1854              	.LASF78:
+ 1855 0203 70657269 		.ascii	"periDivCmdTypeSelPos\000"
+ 1855      44697643 
+ARM GAS  C:\Users\quint\AppData\Local\Temp\ccDVaTK5.s 			page 38
+
+
+ 1855      6D645479 
+ 1855      70655365 
+ 1855      6C506F73 
+ 1856              	.LASF130:
+ 1857 0218 74784C65 		.ascii	"txLeftToTransmit\000"
+ 1857      6674546F 
+ 1857      5472616E 
+ 1857      736D6974 
+ 1857      00
+ 1858              	.LASF168:
+ 1859 0229 53544449 		.ascii	"STDIO_GetChar\000"
+ 1859      4F5F4765 
+ 1859      74436861 
+ 1859      7200
+ 1860              	.LASF24:
+ 1861 0237 70726F74 		.ascii	"protBase\000"
+ 1861      42617365 
+ 1861      00
+ 1862              	.LASF36:
+ 1863 0240 69706356 		.ascii	"ipcVersion\000"
+ 1863      65727369 
+ 1863      6F6E00
+ 1864              	.LASF98:
+ 1865 024b 63707573 		.ascii	"cpussCm0NmiCtlOffset\000"
+ 1865      73436D30 
+ 1865      4E6D6943 
+ 1865      746C4F66 
+ 1865      66736574 
+ 1866              	.LASF110:
+ 1867 0260 63795F63 		.ascii	"cy_cb_scb_spi_handle_events_t\000"
+ 1867      625F7363 
+ 1867      625F7370 
+ 1867      695F6861 
+ 1867      6E646C65 
+ 1868              	.LASF46:
+ 1869 027e 73727373 		.ascii	"srssNumClkpath\000"
+ 1869      4E756D43 
+ 1869      6C6B7061 
+ 1869      746800
+ 1870              	.LASF25:
+ 1871 028d 6873696F 		.ascii	"hsiomBase\000"
+ 1871      6D426173 
+ 1871      6500
+ 1872              	.LASF132:
+ 1873 0297 63795F73 		.ascii	"cy_stc_tcpwm_pwm_config\000"
+ 1873      74635F74 
+ 1873      6370776D 
+ 1873      5F70776D 
+ 1873      5F636F6E 
+ 1874              	.LASF7:
+ 1875 02af 6C6F6E67 		.ascii	"long int\000"
+ 1875      20696E74 
+ 1875      00
+ 1876              	.LASF165:
+ 1877 02b8 55415254 		.ascii	"UART_1_context\000"
+ 1877      5F315F63 
+ 1877      6F6E7465 
+ARM GAS  C:\Users\quint\AppData\Local\Temp\ccDVaTK5.s 			page 39
+
+
+ 1877      787400
+ 1878              	.LASF56:
+ 1879 02c7 63727970 		.ascii	"cryptoMemSize\000"
+ 1879      746F4D65 
+ 1879      6D53697A 
+ 1879      6500
+ 1880              	.LASF163:
+ 1881 02d5 50574D5F 		.ascii	"PWM_Motor1_config\000"
+ 1881      4D6F746F 
+ 1881      72315F63 
+ 1881      6F6E6669 
+ 1881      6700
+ 1882              	.LASF22:
+ 1883 02e7 70657269 		.ascii	"periBase\000"
+ 1883      42617365 
+ 1883      00
+ 1884              	.LASF54:
+ 1885 02f0 73797350 		.ascii	"sysPmSimoPresent\000"
+ 1885      6D53696D 
+ 1885      6F507265 
+ 1885      73656E74 
+ 1885      00
+ 1886              	.LASF44:
+ 1887 0301 63707573 		.ascii	"cpussFmIrq\000"
+ 1887      73466D49 
+ 1887      727100
+ 1888              	.LASF108:
+ 1889 030c 646F7562 		.ascii	"double\000"
+ 1889      6C6500
+ 1890              	.LASF83:
+ 1891 0313 70657269 		.ascii	"periDiv16_5CtlOffset\000"
+ 1891      44697631 
+ 1891      365F3543 
+ 1891      746C4F66 
+ 1891      66736574 
+ 1892              	.LASF47:
+ 1893 0328 73727373 		.ascii	"srssNumPll\000"
+ 1893      4E756D50 
+ 1893      6C6C00
+ 1894              	.LASF167:
+ 1895 0333 53544449 		.ascii	"STDIO_PutChar\000"
+ 1895      4F5F5075 
+ 1895      74436861 
+ 1895      7200
+ 1896              	.LASF81:
+ 1897 0341 70657269 		.ascii	"periDiv8CtlOffset\000"
+ 1897      44697638 
+ 1897      43746C4F 
+ 1897      66667365 
+ 1897      7400
+ 1898              	.LASF88:
+ 1899 0353 6770696F 		.ascii	"gpioPrtCfgOutOffset\000"
+ 1899      50727443 
+ 1899      66674F75 
+ 1899      744F6666 
+ 1899      73657400 
+ 1900              	.LASF8:
+ARM GAS  C:\Users\quint\AppData\Local\Temp\ccDVaTK5.s 			page 40
+
+
+ 1901 0367 5F5F7569 		.ascii	"__uint32_t\000"
+ 1901      6E743332 
+ 1901      5F7400
+ 1902              	.LASF51:
+ 1903 0372 70617373 		.ascii	"passSarChannels\000"
+ 1903      53617243 
+ 1903      68616E6E 
+ 1903      656C7300 
+ 1904              	.LASF3:
+ 1905 0382 5F5F696E 		.ascii	"__int16_t\000"
+ 1905      7431365F 
+ 1905      7400
+ 1906              	.LASF114:
+ 1907 038c 72784275 		.ascii	"rxBufIdx\000"
+ 1907      66496478 
+ 1907      00
+ 1908              	.LASF160:
+ 1909 0395 5F726561 		.ascii	"_read\000"
+ 1909      6400
+ 1910              	.LASF94:
+ 1911 039b 63707573 		.ascii	"cpussCm4PwrCtlOffset\000"
+ 1911      73436D34 
+ 1911      50777243 
+ 1911      746C4F66 
+ 1911      66736574 
+ 1912              	.LASF116:
+ 1913 03b0 74784275 		.ascii	"txBufSize\000"
+ 1913      6653697A 
+ 1913      6500
+ 1914              	.LASF144:
+ 1915 03ba 696E7465 		.ascii	"interruptSources\000"
+ 1915      72727570 
+ 1915      74536F75 
+ 1915      72636573 
+ 1915      00
+ 1916              	.LASF89:
+ 1917 03cb 6770696F 		.ascii	"gpioPrtCfgSioOffset\000"
+ 1917      50727443 
+ 1917      66675369 
+ 1917      6F4F6666 
+ 1917      73657400 
+ 1918              	.LASF41:
+ 1919 03df 63707573 		.ascii	"cpussDwChNr\000"
+ 1919      73447743 
+ 1919      684E7200 
+ 1920              	.LASF12:
+ 1921 03eb 756E7369 		.ascii	"unsigned int\000"
+ 1921      676E6564 
+ 1921      20696E74 
+ 1921      00
+ 1922              	.LASF18:
+ 1923 03f8 75696E74 		.ascii	"uint16_t\000"
+ 1923      31365F74 
+ 1923      00
+ 1924              	.LASF74:
+ 1925 0401 70657269 		.ascii	"periTrCmdGrSelMsk\000"
+ 1925      5472436D 
+ARM GAS  C:\Users\quint\AppData\Local\Temp\ccDVaTK5.s 			page 41
+
+
+ 1925      64477253 
+ 1925      656C4D73 
+ 1925      6B00
+ 1926              	.LASF63:
+ 1927 0413 666C6173 		.ascii	"flashCtlMainWs1Freq\000"
+ 1927      6843746C 
+ 1927      4D61696E 
+ 1927      57733146 
+ 1927      72657100 
+ 1928              	.LASF9:
+ 1929 0427 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1929      20756E73 
+ 1929      69676E65 
+ 1929      6420696E 
+ 1929      7400
+ 1930              	.LASF143:
+ 1931 0439 656E6162 		.ascii	"enableCompareSwap\000"
+ 1931      6C65436F 
+ 1931      6D706172 
+ 1931      65537761 
+ 1931      7000
+ 1932              	.LASF121:
+ 1933 044b 63795F63 		.ascii	"cy_cb_scb_uart_handle_events_t\000"
+ 1933      625F7363 
+ 1933      625F7561 
+ 1933      72745F68 
+ 1933      616E646C 
+ 1934              	.LASF39:
+ 1935 046a 63707573 		.ascii	"cpussIpcNr\000"
+ 1935      73497063 
+ 1935      4E7200
+ 1936              	.LASF26:
+ 1937 0475 6770696F 		.ascii	"gpioBase\000"
+ 1937      42617365 
+ 1937      00
+ 1938              	.LASF52:
+ 1939 047e 65704D6F 		.ascii	"epMonitorNr\000"
+ 1939      6E69746F 
+ 1939      724E7200 
+ 1940              	.LASF124:
+ 1941 048a 74785374 		.ascii	"txStatus\000"
+ 1941      61747573 
+ 1941      00
+ 1942              	.LASF148:
+ 1943 0493 73776170 		.ascii	"swapInputMode\000"
+ 1943      496E7075 
+ 1943      744D6F64 
+ 1943      6500
+ 1944              	.LASF75:
+ 1945 04a1 70657269 		.ascii	"periTrGrOffset\000"
+ 1945      54724772 
+ 1945      4F666673 
+ 1945      657400
+ 1946              	.LASF102:
+ 1947 04b0 63707573 		.ascii	"cpussRam1Ctl0\000"
+ 1947      7352616D 
+ 1947      3143746C 
+ARM GAS  C:\Users\quint\AppData\Local\Temp\ccDVaTK5.s 			page 42
+
+
+ 1947      3000
+ 1948              	.LASF154:
+ 1949 04be 6B696C6C 		.ascii	"killInputMode\000"
+ 1949      496E7075 
+ 1949      744D6F64 
+ 1949      6500
+ 1950              	.LASF118:
+ 1951 04cc 63624576 		.ascii	"cbEvents\000"
+ 1951      656E7473 
+ 1951      00
+ 1952              	.LASF76:
+ 1953 04d5 70657269 		.ascii	"periTrGrSize\000"
+ 1953      54724772 
+ 1953      53697A65 
+ 1953      00
+ 1954              	.LASF34:
+ 1955 04e2 6770696F 		.ascii	"gpioVersion\000"
+ 1955      56657273 
+ 1955      696F6E00 
+ 1956              	.LASF106:
+ 1957 04ee 63795F73 		.ascii	"cy_stc_device_t\000"
+ 1957      74635F64 
+ 1957      65766963 
+ 1957      655F7400 
+ 1958              	.LASF120:
+ 1959 04fe 63795F73 		.ascii	"cy_stc_scb_spi_context_t\000"
+ 1959      74635F73 
+ 1959      63625F73 
+ 1959      70695F63 
+ 1959      6F6E7465 
+ 1960              	.LASF145:
+ 1961 0517 696E7665 		.ascii	"invertPWMOut\000"
+ 1961      72745057 
+ 1961      4D4F7574 
+ 1961      00
+ 1962              	.LASF136:
+ 1963 0524 64656164 		.ascii	"deadTimeClocks\000"
+ 1963      54696D65 
+ 1963      436C6F63 
+ 1963      6B7300
+ 1964              	.LASF128:
+ 1965 0533 72785269 		.ascii	"rxRingBufHead\000"
+ 1965      6E674275 
+ 1965      66486561 
+ 1965      6400
+ 1966              	.LASF95:
+ 1967 0541 63707573 		.ascii	"cpussTrimRamCtlOffset\000"
+ 1967      73547269 
+ 1967      6D52616D 
+ 1967      43746C4F 
+ 1967      66667365 
+ 1968              	.LASF153:
+ 1969 0557 73746172 		.ascii	"startInput\000"
+ 1969      74496E70 
+ 1969      757400
+ 1970              	.LASF159:
+ 1971 0562 5F777269 		.ascii	"_write\000"
+ARM GAS  C:\Users\quint\AppData\Local\Temp\ccDVaTK5.s 			page 43
+
+
+ 1971      746500
+ 1972              	.LASF30:
+ 1973 0569 63707573 		.ascii	"cpussVersion\000"
+ 1973      73566572 
+ 1973      73696F6E 
+ 1973      00
+ 1974              	.LASF37:
+ 1975 0576 70657269 		.ascii	"periVersion\000"
+ 1975      56657273 
+ 1975      696F6E00 
+ 1976              	.LASF93:
+ 1977 0582 63707573 		.ascii	"cpussCm0StatusOffset\000"
+ 1977      73436D30 
+ 1977      53746174 
+ 1977      75734F66 
+ 1977      66736574 
+ 1978              	.LASF14:
+ 1979 0597 73697A65 		.ascii	"sizetype\000"
+ 1979      74797065 
+ 1979      00
+ 1980              	.LASF67:
+ 1981 05a0 64774368 		.ascii	"dwChOffset\000"
+ 1981      4F666673 
+ 1981      657400
+ 1982              	.LASF42:
+ 1983 05ab 63707573 		.ascii	"cpussFlashPaSize\000"
+ 1983      73466C61 
+ 1983      73685061 
+ 1983      53697A65 
+ 1983      00
+ 1984              	.LASF80:
+ 1985 05bc 70657269 		.ascii	"periDivCmdPaTypeSelPos\000"
+ 1985      44697643 
+ 1985      6D645061 
+ 1985      54797065 
+ 1985      53656C50 
+ 1986              	.LASF103:
+ 1987 05d3 63707573 		.ascii	"cpussRam2Ctl0\000"
+ 1987      7352616D 
+ 1987      3243746C 
+ 1987      3000
+ 1988              	.LASF71:
+ 1989 05e1 64775374 		.ascii	"dwStatusChIdxPos\000"
+ 1989      61747573 
+ 1989      43684964 
+ 1989      78506F73 
+ 1989      00
+ 1990              	.LASF53:
+ 1991 05f2 75646250 		.ascii	"udbPresent\000"
+ 1991      72657365 
+ 1991      6E7400
+ 1992              	.LASF125:
+ 1993 05fd 72785374 		.ascii	"rxStatus\000"
+ 1993      61747573 
+ 1993      00
+ 1994              	.LASF33:
+ 1995 0606 666C6173 		.ascii	"flashcVersion\000"
+ARM GAS  C:\Users\quint\AppData\Local\Temp\ccDVaTK5.s 			page 44
+
+
+ 1995      68635665 
+ 1995      7273696F 
+ 1995      6E00
+ 1996              	.LASF29:
+ 1997 0614 63727970 		.ascii	"cryptoBase\000"
+ 1997      746F4261 
+ 1997      736500
+ 1998              	.LASF50:
+ 1999 061f 736D6966 		.ascii	"smifDeviceNr\000"
+ 1999      44657669 
+ 1999      63654E72 
+ 1999      00
+ 2000              	.LASF133:
+ 2001 062c 70776D4D 		.ascii	"pwmMode\000"
+ 2001      6F646500 
+ 2002              	.LASF107:
+ 2003 0634 666C6F61 		.ascii	"float\000"
+ 2003      7400
+ 2004              	.LASF72:
+ 2005 063a 64775374 		.ascii	"dwStatusChIdxMsk\000"
+ 2005      61747573 
+ 2005      43684964 
+ 2005      784D736B 
+ 2005      00
+ 2006              	.LASF162:
+ 2007 064b 63795F64 		.ascii	"cy_device\000"
+ 2007      65766963 
+ 2007      6500
+ 2008              	.LASF100:
+ 2009 0655 63707573 		.ascii	"cpussRomCtl\000"
+ 2009      73526F6D 
+ 2009      43746C00 
+ 2010              	.LASF70:
+ 2011 0661 64774368 		.ascii	"dwChCtlPreemptablePos\000"
+ 2011      43746C50 
+ 2011      7265656D 
+ 2011      70746162 
+ 2011      6C65506F 
+ 2012              	.LASF147:
+ 2013 0677 6B696C6C 		.ascii	"killMode\000"
+ 2013      4D6F6465 
+ 2013      00
+ 2014              	.LASF23:
+ 2015 0680 75646242 		.ascii	"udbBase\000"
+ 2015      61736500 
+ 2016              	.LASF109:
+ 2017 0688 5F426F6F 		.ascii	"_Bool\000"
+ 2017      6C00
+ 2018              	.LASF1:
+ 2019 068e 756E7369 		.ascii	"unsigned char\000"
+ 2019      676E6564 
+ 2019      20636861 
+ 2019      7200
+ 2020              	.LASF66:
+ 2021 069c 666C6173 		.ascii	"flashCtlMainWs4Freq\000"
+ 2021      6843746C 
+ 2021      4D61696E 
+ARM GAS  C:\Users\quint\AppData\Local\Temp\ccDVaTK5.s 			page 45
+
+
+ 2021      57733446 
+ 2021      72657100 
+ 2022              	.LASF4:
+ 2023 06b0 73686F72 		.ascii	"short int\000"
+ 2023      7420696E 
+ 2023      7400
+ 2024              	.LASF135:
+ 2025 06ba 70776D41 		.ascii	"pwmAlignment\000"
+ 2025      6C69676E 
+ 2025      6D656E74 
+ 2025      00
+ 2026              	.LASF77:
+ 2027 06c7 70657269 		.ascii	"periDivCmdDivSelMsk\000"
+ 2027      44697643 
+ 2027      6D644469 
+ 2027      7653656C 
+ 2027      4D736B00 
+ 2028              	.LASF64:
+ 2029 06db 666C6173 		.ascii	"flashCtlMainWs2Freq\000"
+ 2029      6843746C 
+ 2029      4D61696E 
+ 2029      57733246 
+ 2029      72657100 
+ 2030              	.LASF140:
+ 2031 06ef 656E6162 		.ascii	"enablePeriodSwap\000"
+ 2031      6C655065 
+ 2031      72696F64 
+ 2031      53776170 
+ 2031      00
+ 2032              	.LASF21:
+ 2033 0700 666C6173 		.ascii	"flashcBase\000"
+ 2033      68634261 
+ 2033      736500
+ 2034              	.LASF149:
+ 2035 070b 73776170 		.ascii	"swapInput\000"
+ 2035      496E7075 
+ 2035      7400
+ 2036              	.LASF48:
+ 2037 0715 73727373 		.ascii	"srssNumHfroot\000"
+ 2037      4E756D48 
+ 2037      66726F6F 
+ 2037      7400
+ 2038              	.LASF61:
+ 2039 0723 666C6173 		.ascii	"flashEraseDelay\000"
+ 2039      68457261 
+ 2039      73654465 
+ 2039      6C617900 
+ 2040              	.LASF19:
+ 2041 0733 75696E74 		.ascii	"uint32_t\000"
+ 2041      33325F74 
+ 2041      00
+ 2042              	.LASF99:
+ 2043 073c 63707573 		.ascii	"cpussCm4NmiCtlOffset\000"
+ 2043      73436D34 
+ 2043      4E6D6943 
+ 2043      746C4F66 
+ 2043      66736574 
+ARM GAS  C:\Users\quint\AppData\Local\Temp\ccDVaTK5.s 			page 46
+
+
+ 2044              	.LASF169:
+ 2045 0751 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 2045      43313120 
+ 2045      352E342E 
+ 2045      31203230 
+ 2045      31363036 
+ 2046 0784 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0plus -mthumb -"
+ 2046      20726576 
+ 2046      6973696F 
+ 2046      6E203233 
+ 2046      37373135 
+ 2047 07b7 67202D4F 		.ascii	"g -Og -ffunction-sections -ffat-lto-objects\000"
+ 2047      67202D66 
+ 2047      66756E63 
+ 2047      74696F6E 
+ 2047      2D736563 
+ 2048              	.LASF141:
+ 2049 07e3 636F6D70 		.ascii	"compare0\000"
+ 2049      61726530 
+ 2049      00
+ 2050              	.LASF13:
+ 2051 07ec 6C6F6E67 		.ascii	"long double\000"
+ 2051      20646F75 
+ 2051      626C6500 
+ 2052              	.LASF15:
+ 2053 07f8 63686172 		.ascii	"char\000"
+ 2053      00
+ 2054              	.LASF157:
+ 2055 07fd 636F756E 		.ascii	"countInput\000"
+ 2055      74496E70 
+ 2055      757400
+ 2056              	.LASF38:
+ 2057 0808 70726F74 		.ascii	"protVersion\000"
+ 2057      56657273 
+ 2057      696F6E00 
+ 2058              	.LASF101:
+ 2059 0814 63707573 		.ascii	"cpussRam0Ctl0\000"
+ 2059      7352616D 
+ 2059      3043746C 
+ 2059      3000
+ 2060              	.LASF5:
+ 2061 0822 5F5F7569 		.ascii	"__uint16_t\000"
+ 2061      6E743136 
+ 2061      5F7400
+ 2062              	.LASF82:
+ 2063 082d 70657269 		.ascii	"periDiv16CtlOffset\000"
+ 2063      44697631 
+ 2063      3643746C 
+ 2063      4F666673 
+ 2063      657400
+ 2064              	.LASF35:
+ 2065 0840 6873696F 		.ascii	"hsiomVersion\000"
+ 2065      6D566572 
+ 2065      73696F6E 
+ 2065      00
+ 2066              	.LASF60:
+ 2067 084d 666C6173 		.ascii	"flashProgramDelay\000"
+ARM GAS  C:\Users\quint\AppData\Local\Temp\ccDVaTK5.s 			page 47
+
+
+ 2067      6850726F 
+ 2067      6772616D 
+ 2067      44656C61 
+ 2067      7900
+ 2068              	.LASF127:
+ 2069 085f 72785269 		.ascii	"rxRingBufSize\000"
+ 2069      6E674275 
+ 2069      6653697A 
+ 2069      6500
+ 2070              	.LASF151:
+ 2071 086d 72656C6F 		.ascii	"reloadInput\000"
+ 2071      6164496E 
+ 2071      70757400 
+ 2072              	.LASF6:
+ 2073 0879 73686F72 		.ascii	"short unsigned int\000"
+ 2073      7420756E 
+ 2073      7369676E 
+ 2073      65642069 
+ 2073      6E7400
+ 2074              	.LASF68:
+ 2075 088c 64774368 		.ascii	"dwChSize\000"
+ 2075      53697A65 
+ 2075      00
+ 2076              	.LASF104:
+ 2077 0895 69706353 		.ascii	"ipcStructSize\000"
+ 2077      74727563 
+ 2077      7453697A 
+ 2077      6500
+ 2078              	.LASF152:
+ 2079 08a3 73746172 		.ascii	"startInputMode\000"
+ 2079      74496E70 
+ 2079      75744D6F 
+ 2079      646500
+ 2080              	.LASF43:
+ 2081 08b2 63707573 		.ascii	"cpussIpc0Irq\000"
+ 2081      73497063 
+ 2081      30497271 
+ 2081      00
+ 2082              	.LASF138:
+ 2083 08bf 70657269 		.ascii	"period0\000"
+ 2083      6F643000 
+ 2084              	.LASF139:
+ 2085 08c7 70657269 		.ascii	"period1\000"
+ 2085      6F643100 
+ 2086              	.LASF142:
+ 2087 08cf 636F6D70 		.ascii	"compare1\000"
+ 2087      61726531 
+ 2087      00
+ 2088              	.LASF90:
+ 2089 08d8 63707573 		.ascii	"cpussCm0ClockCtlOffset\000"
+ 2089      73436D30 
+ 2089      436C6F63 
+ 2089      6B43746C 
+ 2089      4F666673 
+ 2090              	.LASF86:
+ 2091 08ef 6770696F 		.ascii	"gpioPrtCfgOffset\000"
+ 2091      50727443 
+ARM GAS  C:\Users\quint\AppData\Local\Temp\ccDVaTK5.s 			page 48
+
+
+ 2091      66674F66 
+ 2091      66736574 
+ 2091      00
+ 2092              	.LASF119:
+ 2093 0900 696E6974 		.ascii	"initKey\000"
+ 2093      4B657900 
+ 2094              	.LASF112:
+ 2095 0908 72784275 		.ascii	"rxBuf\000"
+ 2095      6600
+ 2096              	.LASF131:
+ 2097 090e 63795F73 		.ascii	"cy_stc_scb_uart_context_t\000"
+ 2097      74635F73 
+ 2097      63625F75 
+ 2097      6172745F 
+ 2097      636F6E74 
+ 2098              	.LASF111:
+ 2099 0928 73746174 		.ascii	"status\000"
+ 2099      757300
+ 2100              	.LASF45:
+ 2101 092f 63707573 		.ascii	"cpussNotConnectedIrq\000"
+ 2101      734E6F74 
+ 2101      436F6E6E 
+ 2101      65637465 
+ 2101      64497271 
+ 2102              	.LASF146:
+ 2103 0944 696E7665 		.ascii	"invertPWMOutN\000"
+ 2103      72745057 
+ 2103      4D4F7574 
+ 2103      4E00
+ 2104              	.LASF59:
+ 2105 0952 666C6173 		.ascii	"flashWriteDelay\000"
+ 2105      68577269 
+ 2105      74654465 
+ 2105      6C617900 
+ 2106              	.LASF16:
+ 2107 0962 75696E74 		.ascii	"uint8_t\000"
+ 2107      385F7400 
+ 2108              	.LASF164:
+ 2109 096a 50574D5F 		.ascii	"PWM_Motor2_config\000"
+ 2109      4D6F746F 
+ 2109      72325F63 
+ 2109      6F6E6669 
+ 2109      6700
+ 2110              	.LASF92:
+ 2111 097c 63707573 		.ascii	"cpussCm4StatusOffset\000"
+ 2111      73436D34 
+ 2111      53746174 
+ 2111      75734F66 
+ 2111      66736574 
+ 2112              	.LASF85:
+ 2113 0991 6770696F 		.ascii	"gpioPrtIntrCfgOffset\000"
+ 2113      50727449 
+ 2113      6E747243 
+ 2113      66674F66 
+ 2113      66736574 
+ 2114              	.LASF158:
+ 2115 09a6 63795F73 		.ascii	"cy_stc_tcpwm_pwm_config_t\000"
+ARM GAS  C:\Users\quint\AppData\Local\Temp\ccDVaTK5.s 			page 49
+
+
+ 2115      74635F74 
+ 2115      6370776D 
+ 2115      5F70776D 
+ 2115      5F636F6E 
+ 2116              	.LASF150:
+ 2117 09c0 72656C6F 		.ascii	"reloadInputMode\000"
+ 2117      6164496E 
+ 2117      7075744D 
+ 2117      6F646500 
+ 2118              	.LASF129:
+ 2119 09d0 72785269 		.ascii	"rxRingBufTail\000"
+ 2119      6E674275 
+ 2119      66546169 
+ 2119      6C00
+ 2120              	.LASF96:
+ 2121 09de 63707573 		.ascii	"cpussTrimRomCtlOffset\000"
+ 2121      73547269 
+ 2121      6D526F6D 
+ 2121      43746C4F 
+ 2121      66667365 
+ 2122              	.LASF156:
+ 2123 09f4 636F756E 		.ascii	"countInputMode\000"
+ 2123      74496E70 
+ 2123      75744D6F 
+ 2123      646500
+ 2124              	.LASF170:
+ 2125 0a03 47656E65 		.ascii	"Generated_Source\\PSoC6\\pdl\\utilities\\retarget_i"
+ 2125      72617465 
+ 2125      645F536F 
+ 2125      75726365 
+ 2125      5C50536F 
+ 2126 0a32 6F5C7265 		.ascii	"o\\retarget.c\000"
+ 2126      74617267 
+ 2126      65742E63 
+ 2126      00
+ 2127              	.LASF32:
+ 2128 0a3f 64775665 		.ascii	"dwVersion\000"
+ 2128      7273696F 
+ 2128      6E00
+ 2129              	.LASF28:
+ 2130 0a49 69706342 		.ascii	"ipcBase\000"
+ 2130      61736500 
+ 2131              	.LASF79:
+ 2132 0a51 70657269 		.ascii	"periDivCmdPaDivSelPos\000"
+ 2132      44697643 
+ 2132      6D645061 
+ 2132      44697653 
+ 2132      656C506F 
+ 2133              	.LASF123:
+ 2134 0a67 63795F73 		.ascii	"cy_stc_scb_uart_context\000"
+ 2134      74635F73 
+ 2134      63625F75 
+ 2134      6172745F 
+ 2134      636F6E74 
+ 2135              	.LASF57:
+ 2136 0a7f 666C6173 		.ascii	"flashRwwRequired\000"
+ 2136      68527777 
+ARM GAS  C:\Users\quint\AppData\Local\Temp\ccDVaTK5.s 			page 50
+
+
+ 2136      52657175 
+ 2136      69726564 
+ 2136      00
+ 2137              	.LASF117:
+ 2138 0a90 74784275 		.ascii	"txBufIdx\000"
+ 2138      66496478 
+ 2138      00
+ 2139              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
