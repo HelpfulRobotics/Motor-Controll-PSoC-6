@@ -23,6 +23,9 @@
   <file name="D:\GIT\Knight Guard\PSoC6_PWM_MotorControll\PSoC6_PWM_MotorControll.cydsn\codegentemp\UART_1.h" value="HEADER;;;;;UART_1" />
   <file name="D:\GIT\Knight Guard\PSoC6_PWM_MotorControll\PSoC6_PWM_MotorControll.cydsn\codegentemp\SPI_1.c" value="SOURCE_C;CortexM0p,CortexM4;;;;SPI_1" />
   <file name="D:\GIT\Knight Guard\PSoC6_PWM_MotorControll\PSoC6_PWM_MotorControll.cydsn\codegentemp\SPI_1.h" value="HEADER;;;;;SPI_1" />
+  <file name="D:\GIT\Knight Guard\PSoC6_PWM_MotorControll\PSoC6_PWM_MotorControll.cydsn\codegentemp\Counter_1.c" value="SOURCE_C;CortexM0p,CortexM4;;;;Counter_1" />
+  <file name="D:\GIT\Knight Guard\PSoC6_PWM_MotorControll\PSoC6_PWM_MotorControll.cydsn\codegentemp\Counter_1.h" value="HEADER;;;;;Counter_1" />
+  <file name="D:\GIT\Knight Guard\PSoC6_PWM_MotorControll\PSoC6_PWM_MotorControll.cydsn\codegentemp\Clock_2.h" value="HEADER;;;;;Clock_2" />
   <file name="D:\GIT\Knight Guard\PSoC6_PWM_MotorControll\PSoC6_PWM_MotorControll.cydsn\codegentemp\UART_1_SCBCLK.h" value="HEADER;;;;;UART_1_SCBCLK" />
   <file name="D:\GIT\Knight Guard\PSoC6_PWM_MotorControll\PSoC6_PWM_MotorControll.cydsn\codegentemp\SPI_1_SCBCLK.h" value="HEADER;;;;;SPI_1_SCBCLK" />
   <file name="D:\GIT\Knight Guard\PSoC6_PWM_MotorControll\PSoC6_PWM_MotorControll.cydsn\codegentemp\project.h" value="OTHER;;;;;" />

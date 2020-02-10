@@ -27,6 +27,42 @@
     #define UART_1_SCB_IRQ__INTC_ASSIGNED 1u
     extern const cy_stc_sysint_t UART_1_SCB_IRQ_cfg;
 
+    #define SysInt_1__INTC_ASSIGNED 1u
+    extern const cy_stc_sysint_t SysInt_1_cfg;
+
+    #define SysInt_10__INTC_ASSIGNED 1u
+    extern const cy_stc_sysint_t SysInt_10_cfg;
+
+    #define SysInt_11__INTC_ASSIGNED 1u
+    extern const cy_stc_sysint_t SysInt_11_cfg;
+
+    #define SysInt_2__INTC_ASSIGNED 1u
+    extern const cy_stc_sysint_t SysInt_2_cfg;
+
+    #define SysInt_3__INTC_ASSIGNED 1u
+    extern const cy_stc_sysint_t SysInt_3_cfg;
+
+    #define SysInt_4__INTC_ASSIGNED 1u
+    extern const cy_stc_sysint_t SysInt_4_cfg;
+
+    #define SysInt_5__INTC_ASSIGNED 1u
+    extern const cy_stc_sysint_t SysInt_5_cfg;
+
+    #define SysInt_6__INTC_ASSIGNED 1u
+    extern const cy_stc_sysint_t SysInt_6_cfg;
+
+    #define SysInt_7__INTC_ASSIGNED 1u
+    extern const cy_stc_sysint_t SysInt_7_cfg;
+
+    #define SysInt_8__INTC_ASSIGNED 1u
+    extern const cy_stc_sysint_t SysInt_8_cfg;
+
+    #define SysInt_9__INTC_ASSIGNED 1u
+    extern const cy_stc_sysint_t SysInt_9_cfg;
+
+    #define int_EmergencyStop__INTC_ASSIGNED 1u
+    extern const cy_stc_sysint_t int_EmergencyStop_cfg;
+
 #endif /* ((__CORTEX_M == 4) && (CY_CORE_ID == 0)) */
 
 

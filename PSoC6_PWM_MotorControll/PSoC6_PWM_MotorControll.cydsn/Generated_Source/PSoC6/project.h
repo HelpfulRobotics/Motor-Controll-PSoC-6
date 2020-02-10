@@ -111,6 +111,8 @@
 #include "PWM_Motor2.h"
 #include "UART_1.h"
 #include "SPI_1.h"
+#include "Counter_1.h"
+#include "Clock_2.h"
 #include "UART_1_SCBCLK.h"
 #include "SPI_1_SCBCLK.h"
 

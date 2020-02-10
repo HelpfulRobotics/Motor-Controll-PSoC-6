@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\quint\AppData\Local\Temp\ccV677ca.s 			page 1
+ARM GAS  C:\Users\quint\AppData\Local\Temp\cchPFwNS.s 			page 1
 
 
    1              		.syntax unified
@@ -15,95 +15,89 @@ ARM GAS  C:\Users\quint\AppData\Local\Temp\ccV677ca.s 			page 1
   12              		.eabi_attribute 18, 4
   13              		.thumb
   14              		.syntax unified
-  15              		.file	"PWM_Motor2.c"
+  15              		.file	"Counter_1.c"
   16              		.text
   17              	.Ltext0:
   18              		.cfi_sections	.debug_frame
-  19              		.section	.text.PWM_Motor2_Start,"ax",%progbits
+  19              		.section	.text.Counter_1_Start,"ax",%progbits
   20              		.align	2
-  21              		.global	PWM_Motor2_Start
+  21              		.global	Counter_1_Start
   22              		.code	16
   23              		.thumb_func
-  24              		.type	PWM_Motor2_Start, %function
-  25              	PWM_Motor2_Start:
-  26              	.LFB99:
-  27              		.file 1 "Generated_Source\\PSoC6\\PWM_Motor2.c"
-   1:Generated_Source\PSoC6/PWM_Motor2.c **** /*******************************************************************************
-   2:Generated_Source\PSoC6/PWM_Motor2.c **** * File Name: PWM_Motor2.c
-   3:Generated_Source\PSoC6/PWM_Motor2.c **** * Version 1.0
-   4:Generated_Source\PSoC6/PWM_Motor2.c **** *
-   5:Generated_Source\PSoC6/PWM_Motor2.c **** * Description:
-   6:Generated_Source\PSoC6/PWM_Motor2.c **** *  This file provides the source code to the API for the PWM_Motor2
-   7:Generated_Source\PSoC6/PWM_Motor2.c **** *  component.
-   8:Generated_Source\PSoC6/PWM_Motor2.c **** *
-   9:Generated_Source\PSoC6/PWM_Motor2.c **** ********************************************************************************
-  10:Generated_Source\PSoC6/PWM_Motor2.c **** * Copyright 2016-2017, Cypress Semiconductor Corporation.  All rights reserved.
-  11:Generated_Source\PSoC6/PWM_Motor2.c **** * You may use this file only in accordance with the license, terms, conditions,
-  12:Generated_Source\PSoC6/PWM_Motor2.c **** * disclaimers, and limitations in the end user license agreement accompanying
-  13:Generated_Source\PSoC6/PWM_Motor2.c **** * the software package with which this file was provided.
-  14:Generated_Source\PSoC6/PWM_Motor2.c **** *******************************************************************************/
-  15:Generated_Source\PSoC6/PWM_Motor2.c **** 
-  16:Generated_Source\PSoC6/PWM_Motor2.c **** #include "PWM_Motor2.h"
-  17:Generated_Source\PSoC6/PWM_Motor2.c **** 
-  18:Generated_Source\PSoC6/PWM_Motor2.c **** /** Indicates whether or not the PWM_Motor2 has been initialized. 
-  19:Generated_Source\PSoC6/PWM_Motor2.c **** *  The variable is initialized to 0 and set to 1 the first time 
-  20:Generated_Source\PSoC6/PWM_Motor2.c **** *  PWM_Motor2_Start() is called. This allows the Component to 
-  21:Generated_Source\PSoC6/PWM_Motor2.c **** *  restart without reinitialization after the first call to 
-  22:Generated_Source\PSoC6/PWM_Motor2.c **** *  the PWM_Motor2_Start() routine.
-  23:Generated_Source\PSoC6/PWM_Motor2.c **** */
-  24:Generated_Source\PSoC6/PWM_Motor2.c **** uint8_t PWM_Motor2_initVar = 0U;
-  25:Generated_Source\PSoC6/PWM_Motor2.c **** 
-  26:Generated_Source\PSoC6/PWM_Motor2.c **** /** The instance-specific configuration structure. This should be used in the 
-  27:Generated_Source\PSoC6/PWM_Motor2.c **** *  associated PWM_Motor2_Init() function.
-  28:Generated_Source\PSoC6/PWM_Motor2.c **** */ 
-  29:Generated_Source\PSoC6/PWM_Motor2.c **** cy_stc_tcpwm_pwm_config_t const PWM_Motor2_config =
-  30:Generated_Source\PSoC6/PWM_Motor2.c **** {
-ARM GAS  C:\Users\quint\AppData\Local\Temp\ccV677ca.s 			page 2
+  24              		.type	Counter_1_Start, %function
+  25              	Counter_1_Start:
+  26              	.LFB92:
+  27              		.file 1 "Generated_Source\\PSoC6\\Counter_1.c"
+   1:Generated_Source\PSoC6/Counter_1.c **** /*******************************************************************************
+   2:Generated_Source\PSoC6/Counter_1.c **** * File Name: Counter_1.c
+   3:Generated_Source\PSoC6/Counter_1.c **** * Version 1.0
+   4:Generated_Source\PSoC6/Counter_1.c **** *
+   5:Generated_Source\PSoC6/Counter_1.c **** * Description:
+   6:Generated_Source\PSoC6/Counter_1.c **** *  This file provides the source code to the API for the Counter_1
+   7:Generated_Source\PSoC6/Counter_1.c **** *  component
+   8:Generated_Source\PSoC6/Counter_1.c **** *
+   9:Generated_Source\PSoC6/Counter_1.c **** ********************************************************************************
+  10:Generated_Source\PSoC6/Counter_1.c **** * Copyright 2016-2017, Cypress Semiconductor Corporation.  All rights reserved.
+  11:Generated_Source\PSoC6/Counter_1.c **** * You may use this file only in accordance with the license, terms, conditions,
+  12:Generated_Source\PSoC6/Counter_1.c **** * disclaimers, and limitations in the end user license agreement accompanying
+  13:Generated_Source\PSoC6/Counter_1.c **** * the software package with which this file was provided.
+  14:Generated_Source\PSoC6/Counter_1.c **** *******************************************************************************/
+  15:Generated_Source\PSoC6/Counter_1.c **** 
+  16:Generated_Source\PSoC6/Counter_1.c **** #include "Counter_1.h"
+  17:Generated_Source\PSoC6/Counter_1.c **** 
+  18:Generated_Source\PSoC6/Counter_1.c **** /** Indicates whether or not the Counter_1 has been initialized. 
+  19:Generated_Source\PSoC6/Counter_1.c **** *  The variable is initialized to 0 and set to 1 the first time 
+  20:Generated_Source\PSoC6/Counter_1.c **** *  Counter_1_Start() is called. This allows the Component to 
+  21:Generated_Source\PSoC6/Counter_1.c **** *  restart without reinitialization after the first call to 
+  22:Generated_Source\PSoC6/Counter_1.c **** *  the Counter_1_Start() routine.
+  23:Generated_Source\PSoC6/Counter_1.c **** */
+  24:Generated_Source\PSoC6/Counter_1.c **** uint8_t Counter_1_initVar = 0U;
+  25:Generated_Source\PSoC6/Counter_1.c **** 
+  26:Generated_Source\PSoC6/Counter_1.c **** /** The instance-specific configuration structure. This should be used in the 
+  27:Generated_Source\PSoC6/Counter_1.c **** *  associated Counter_1_Init() function.
+  28:Generated_Source\PSoC6/Counter_1.c **** */ 
+  29:Generated_Source\PSoC6/Counter_1.c **** cy_stc_tcpwm_counter_config_t const Counter_1_config =
+  30:Generated_Source\PSoC6/Counter_1.c **** {
+ARM GAS  C:\Users\quint\AppData\Local\Temp\cchPFwNS.s 			page 2
 
 
-  31:Generated_Source\PSoC6/PWM_Motor2.c ****     .pwmMode = 4UL,
-  32:Generated_Source\PSoC6/PWM_Motor2.c ****     .clockPrescaler = 0UL,
-  33:Generated_Source\PSoC6/PWM_Motor2.c ****     .pwmAlignment = 2UL,
-  34:Generated_Source\PSoC6/PWM_Motor2.c ****     .deadTimeClocks = 0UL,
-  35:Generated_Source\PSoC6/PWM_Motor2.c ****     .runMode = 0UL,
-  36:Generated_Source\PSoC6/PWM_Motor2.c ****     .period0 = 100UL,
-  37:Generated_Source\PSoC6/PWM_Motor2.c ****     .period1 = 32768UL,
-  38:Generated_Source\PSoC6/PWM_Motor2.c ****     .enablePeriodSwap = false,
-  39:Generated_Source\PSoC6/PWM_Motor2.c ****     .compare0 = 20UL,
-  40:Generated_Source\PSoC6/PWM_Motor2.c ****     .compare1 = 16384UL,
-  41:Generated_Source\PSoC6/PWM_Motor2.c ****     .enableCompareSwap = false,
-  42:Generated_Source\PSoC6/PWM_Motor2.c ****     .interruptSources = 0UL,
-  43:Generated_Source\PSoC6/PWM_Motor2.c ****     .invertPWMOut = 1UL,
-  44:Generated_Source\PSoC6/PWM_Motor2.c ****     .invertPWMOutN = 0UL,
-  45:Generated_Source\PSoC6/PWM_Motor2.c ****     .killMode = 2UL,
-  46:Generated_Source\PSoC6/PWM_Motor2.c ****     .swapInputMode = 3UL,
-  47:Generated_Source\PSoC6/PWM_Motor2.c ****     .swapInput = CY_TCPWM_INPUT_CREATOR,
-  48:Generated_Source\PSoC6/PWM_Motor2.c ****     .reloadInputMode = 3UL,
-  49:Generated_Source\PSoC6/PWM_Motor2.c ****     .reloadInput = CY_TCPWM_INPUT_CREATOR,
-  50:Generated_Source\PSoC6/PWM_Motor2.c ****     .startInputMode = 3UL,
-  51:Generated_Source\PSoC6/PWM_Motor2.c ****     .startInput = CY_TCPWM_INPUT_CREATOR,
-  52:Generated_Source\PSoC6/PWM_Motor2.c ****     .killInputMode = 3UL,
-  53:Generated_Source\PSoC6/PWM_Motor2.c ****     .killInput = CY_TCPWM_INPUT_CREATOR,
-  54:Generated_Source\PSoC6/PWM_Motor2.c ****     .countInputMode = 3UL,
-  55:Generated_Source\PSoC6/PWM_Motor2.c ****     .countInput = CY_TCPWM_INPUT_CREATOR,
-  56:Generated_Source\PSoC6/PWM_Motor2.c **** };
-  57:Generated_Source\PSoC6/PWM_Motor2.c **** 
-  58:Generated_Source\PSoC6/PWM_Motor2.c **** 
-  59:Generated_Source\PSoC6/PWM_Motor2.c **** /*******************************************************************************
-  60:Generated_Source\PSoC6/PWM_Motor2.c **** * Function Name: PWM_Motor2_Start
-  61:Generated_Source\PSoC6/PWM_Motor2.c **** ****************************************************************************//**
-  62:Generated_Source\PSoC6/PWM_Motor2.c **** *
-  63:Generated_Source\PSoC6/PWM_Motor2.c **** *  Calls the PWM_Motor2_Init() when called the first time and enables 
-  64:Generated_Source\PSoC6/PWM_Motor2.c **** *  the PWM_Motor2. For subsequent calls the configuration is left 
-  65:Generated_Source\PSoC6/PWM_Motor2.c **** *  unchanged and the component is just enabled.
-  66:Generated_Source\PSoC6/PWM_Motor2.c **** *
-  67:Generated_Source\PSoC6/PWM_Motor2.c **** * \globalvars
-  68:Generated_Source\PSoC6/PWM_Motor2.c **** *  \ref PWM_Motor2_initVar
-  69:Generated_Source\PSoC6/PWM_Motor2.c **** *
-  70:Generated_Source\PSoC6/PWM_Motor2.c **** *******************************************************************************/
-  71:Generated_Source\PSoC6/PWM_Motor2.c **** void PWM_Motor2_Start(void)
-  72:Generated_Source\PSoC6/PWM_Motor2.c **** {
-  28              		.loc 1 72 0
+  31:Generated_Source\PSoC6/Counter_1.c ****         .period = 32768UL,
+  32:Generated_Source\PSoC6/Counter_1.c ****         .clockPrescaler = 0UL,
+  33:Generated_Source\PSoC6/Counter_1.c ****         .runMode = 0UL,
+  34:Generated_Source\PSoC6/Counter_1.c ****         .countDirection = 0UL,
+  35:Generated_Source\PSoC6/Counter_1.c ****         .compareOrCapture = 2UL,
+  36:Generated_Source\PSoC6/Counter_1.c ****         .compare0 = 16384UL,
+  37:Generated_Source\PSoC6/Counter_1.c ****         .compare1 = 16384UL,
+  38:Generated_Source\PSoC6/Counter_1.c ****         .enableCompareSwap = false,
+  39:Generated_Source\PSoC6/Counter_1.c ****         .interruptSources = 0UL,
+  40:Generated_Source\PSoC6/Counter_1.c ****         .captureInputMode = 3UL,
+  41:Generated_Source\PSoC6/Counter_1.c ****         .captureInput = CY_TCPWM_INPUT_CREATOR,
+  42:Generated_Source\PSoC6/Counter_1.c ****         .reloadInputMode = 3UL,
+  43:Generated_Source\PSoC6/Counter_1.c ****         .reloadInput = CY_TCPWM_INPUT_CREATOR,
+  44:Generated_Source\PSoC6/Counter_1.c ****         .startInputMode = 3UL,
+  45:Generated_Source\PSoC6/Counter_1.c ****         .startInput = CY_TCPWM_INPUT_CREATOR,
+  46:Generated_Source\PSoC6/Counter_1.c ****         .stopInputMode = 3UL,
+  47:Generated_Source\PSoC6/Counter_1.c ****         .stopInput = CY_TCPWM_INPUT_CREATOR,
+  48:Generated_Source\PSoC6/Counter_1.c ****         .countInputMode = 3UL,
+  49:Generated_Source\PSoC6/Counter_1.c ****         .countInput = CY_TCPWM_INPUT_CREATOR,
+  50:Generated_Source\PSoC6/Counter_1.c **** };
+  51:Generated_Source\PSoC6/Counter_1.c **** 
+  52:Generated_Source\PSoC6/Counter_1.c **** 
+  53:Generated_Source\PSoC6/Counter_1.c **** /*******************************************************************************
+  54:Generated_Source\PSoC6/Counter_1.c **** * Function Name: Counter_1_Start
+  55:Generated_Source\PSoC6/Counter_1.c **** ****************************************************************************//**
+  56:Generated_Source\PSoC6/Counter_1.c **** *
+  57:Generated_Source\PSoC6/Counter_1.c **** *  Calls the Counter_1_Init() when called the first time and enables 
+  58:Generated_Source\PSoC6/Counter_1.c **** *  the Counter_1. For subsequent calls the configuration is left 
+  59:Generated_Source\PSoC6/Counter_1.c **** *  unchanged and the component is just enabled.
+  60:Generated_Source\PSoC6/Counter_1.c **** *
+  61:Generated_Source\PSoC6/Counter_1.c **** * \globalvars
+  62:Generated_Source\PSoC6/Counter_1.c **** *  \ref Counter_1_initVar
+  63:Generated_Source\PSoC6/Counter_1.c **** *
+  64:Generated_Source\PSoC6/Counter_1.c **** *******************************************************************************/
+  65:Generated_Source\PSoC6/Counter_1.c **** void Counter_1_Start(void)
+  66:Generated_Source\PSoC6/Counter_1.c **** {
+  28              		.loc 1 66 0
   29              		.cfi_startproc
   30              		@ args = 0, pretend = 0, frame = 0
   31              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -111,26 +105,26 @@ ARM GAS  C:\Users\quint\AppData\Local\Temp\ccV677ca.s 			page 1
   33              		.cfi_def_cfa_offset 8
   34              		.cfi_offset 4, -8
   35              		.cfi_offset 14, -4
-  73:Generated_Source\PSoC6/PWM_Motor2.c ****     if (0U == PWM_Motor2_initVar)
-  36              		.loc 1 73 0
+  67:Generated_Source\PSoC6/Counter_1.c ****     if (0U == Counter_1_initVar)
+  36              		.loc 1 67 0
   37 0002 084B     		ldr	r3, .L3
   38 0004 1B78     		ldrb	r3, [r3]
   39 0006 002B     		cmp	r3, #0
   40 0008 07D1     		bne	.L2
-  74:Generated_Source\PSoC6/PWM_Motor2.c ****     {
-ARM GAS  C:\Users\quint\AppData\Local\Temp\ccV677ca.s 			page 3
-
-
-  75:Generated_Source\PSoC6/PWM_Motor2.c ****         (void) Cy_TCPWM_PWM_Init(PWM_Motor2_HW, PWM_Motor2_CNT_NUM, &PWM_Motor2_config);
-  41              		.loc 1 75 0
+  68:Generated_Source\PSoC6/Counter_1.c ****     {
+  69:Generated_Source\PSoC6/Counter_1.c ****         (void)Cy_TCPWM_Counter_Init(Counter_1_HW, Counter_1_CNT_NUM, &Counter_1_config); 
+  41              		.loc 1 69 0
   42 000a 074A     		ldr	r2, .L3+4
-  43 000c 0721     		movs	r1, #7
+  43 000c 0121     		movs	r1, #1
   44 000e 0748     		ldr	r0, .L3+8
-  45 0010 FFF7FEFF 		bl	Cy_TCPWM_PWM_Init
+  45 0010 FFF7FEFF 		bl	Cy_TCPWM_Counter_Init
+ARM GAS  C:\Users\quint\AppData\Local\Temp\cchPFwNS.s 			page 3
+
+
   46              	.LVL0:
-  76:Generated_Source\PSoC6/PWM_Motor2.c **** 
-  77:Generated_Source\PSoC6/PWM_Motor2.c ****         PWM_Motor2_initVar = 1U;
-  47              		.loc 1 77 0
+  70:Generated_Source\PSoC6/Counter_1.c **** 
+  71:Generated_Source\PSoC6/Counter_1.c ****         Counter_1_initVar = 1U;
+  47              		.loc 1 71 0
   48 0014 0122     		movs	r2, #1
   49 0016 034B     		ldr	r3, .L3
   50 0018 1A70     		strb	r2, [r3]
@@ -178,15 +172,15 @@ ARM GAS  C:\Users\quint\AppData\Local\Temp\ccV677ca.s 			page 1
   37:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * the TCPWM being used must be passed first, followed by the index of 
   38:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * the counter you want to touch next. 
   39:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * For some functions, you can manage multiple counters simultaneously. You 
-ARM GAS  C:\Users\quint\AppData\Local\Temp\ccV677ca.s 			page 4
-
-
   40:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * provide a bit field representing each counter, rather than the single counter 
   41:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * index). 
   42:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** *
   43:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * The TCPWM supports three operating modes:
   44:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * * Timer/Counter
   45:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * * PWM
+ARM GAS  C:\Users\quint\AppData\Local\Temp\cchPFwNS.s 			page 4
+
+
   46:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * * Quadrature Decoder
   47:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** *
   48:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * \n
@@ -238,15 +232,15 @@ ARM GAS  C:\Users\quint\AppData\Local\Temp\ccV677ca.s 			page 1
   94:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** *
   95:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * \n
   96:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * \b Quadrature \b Decoder
-ARM GAS  C:\Users\quint\AppData\Local\Temp\ccV677ca.s 			page 5
-
-
   97:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** *
   98:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * A quadrature decoder is used to decode the output of a quadrature encoder. 
   99:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * A quadrature encoder senses the position, velocity, and direction of 
  100:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * an object (for example a rotating axle, or a spinning mouse ball). 
  101:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * A quadrature decoder can also be used for precision measurement of speed, 
  102:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * acceleration, and position of a motor's rotor, or with a rotary switch to 
+ARM GAS  C:\Users\quint\AppData\Local\Temp\cchPFwNS.s 			page 5
+
+
  103:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * determine user input. \n
  104:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * 
  105:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * The Quadrature Decoder has the following features:
@@ -298,15 +292,15 @@ ARM GAS  C:\Users\quint\AppData\Local\Temp\ccV677ca.s 			page 1
  151:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * \subsection group_tcpwm_pins Assign and Configure Pins
  152:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * The dedicated TCPWM pins can be used. The HSIOM register must be configured to
  153:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * connect the block to the pins. Use the \ref group_gpio driver API to do that.
-ARM GAS  C:\Users\quint\AppData\Local\Temp\ccV677ca.s 			page 6
-
-
  154:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** *
  155:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * \snippet tcpwm\1.10\counter\snippet\main.c snippet_Cy_TCPWM_Pins
  156:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** *
  157:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * \subsection group_tcpwm_clock Assign Clock Divider
  158:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * The clock source must be connected to proper working.
  159:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * Any of the peripheral clock dividers could be used. Use the  
+ARM GAS  C:\Users\quint\AppData\Local\Temp\cchPFwNS.s 			page 6
+
+
  160:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * \ref group_sysclk driver API to do that.
  161:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** *
  162:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * \snippet tcpwm\1.10\counter\snippet\main.c snippet_Cy_TCPWM_Clock
@@ -358,15 +352,15 @@ ARM GAS  C:\Users\quint\AppData\Local\Temp\ccV677ca.s 			page 1
  208:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** *   </tr>
  209:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** *   <tr>
  210:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** *     <td>1.0</td>
-ARM GAS  C:\Users\quint\AppData\Local\Temp\ccV677ca.s 			page 7
-
-
  211:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** *     <td>Initial version</td>
  212:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** *     <td></td>
  213:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** *   </tr>
  214:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * </table>
  215:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** */
  216:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** 
+ARM GAS  C:\Users\quint\AppData\Local\Temp\cchPFwNS.s 			page 7
+
+
  217:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** /** \} group_tcpwm */
  218:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** 
  219:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** /**
@@ -418,15 +412,15 @@ ARM GAS  C:\Users\quint\AppData\Local\Temp\ccV677ca.s 			page 1
  265:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** /** Driver minor version */
  266:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** #define CY_TCPWM_DRV_VERSION_MINOR       10
  267:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** 
-ARM GAS  C:\Users\quint\AppData\Local\Temp\ccV677ca.s 			page 8
-
-
  268:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** 
  269:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** /******************************************************************************
  270:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * API Constants
  271:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** ******************************************************************************/
  272:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** 
  273:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** /** TCPWM driver identifier */
+ARM GAS  C:\Users\quint\AppData\Local\Temp\cchPFwNS.s 			page 8
+
+
  274:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** #define CY_TCPWM_ID                     (CY_PDL_DRV_ID(0x2DU))
  275:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** 
  276:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** /** \defgroup group_tcpwm_input_selection  TCPWM Input Selection
@@ -478,15 +472,15 @@ ARM GAS  C:\Users\quint\AppData\Local\Temp\ccV677ca.s 			page 1
  322:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** #define CY_TCPWM_INT_ON_CC              (2U) /**< Interrupt on Compare/Capture(CC) */
  323:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** #define CY_TCPWM_INT_NONE               (0U) /**< No Interrupt */
  324:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** #define CY_TCPWM_INT_ON_CC_OR_TC        (3U) /**< Interrupt on TC or CC */
-ARM GAS  C:\Users\quint\AppData\Local\Temp\ccV677ca.s 			page 9
-
-
  325:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** /** \} group_tcpwm_interrupt_sources */
  326:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** 
  327:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** 
  328:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** /***************************************
  329:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** *        Registers Constants
  330:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** ***************************************/
+ARM GAS  C:\Users\quint\AppData\Local\Temp\cchPFwNS.s 			page 9
+
+
  331:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** 
  332:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** /**
  333:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * \defgroup group_tcpwm_reg_const Default registers constants
@@ -538,15 +532,15 @@ ARM GAS  C:\Users\quint\AppData\Local\Temp\ccV677ca.s 			page 1
  379:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** *******************************************************************************/
  380:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** 
  381:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** /**
-ARM GAS  C:\Users\quint\AppData\Local\Temp\ccV677ca.s 			page 10
-
-
  382:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * \addtogroup group_tcpwm_functions_common
  383:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * \{
  384:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** */
  385:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** 
  386:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** __STATIC_INLINE void Cy_TCPWM_Enable_Multiple(TCPWM_Type *base, uint32_t counters);
  387:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** __STATIC_INLINE void Cy_TCPWM_Disable_Multiple(TCPWM_Type *base, uint32_t counters);
+ARM GAS  C:\Users\quint\AppData\Local\Temp\cchPFwNS.s 			page 10
+
+
  388:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** __STATIC_INLINE void Cy_TCPWM_TriggerStart(TCPWM_Type *base, uint32_t counters);
  389:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** __STATIC_INLINE void Cy_TCPWM_TriggerReloadOrIndex(TCPWM_Type *base, uint32_t counters);
  390:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** __STATIC_INLINE void Cy_TCPWM_TriggerStopOrKill(TCPWM_Type *base, uint32_t counters);
@@ -581,7 +575,7 @@ ARM GAS  C:\Users\quint\AppData\Local\Temp\ccV677ca.s 			page 1
  419:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h ****     TCPWM_CTRL_SET(base) = counters;
   56              		.loc 2 419 0
   57 001a 044B     		ldr	r3, .L3+8
-  58 001c 8022     		movs	r2, #128
+  58 001c 0222     		movs	r2, #2
   59 001e 9A60     		str	r2, [r3, #8]
   60              	.LVL2:
   61              	.LBE7:
@@ -598,15 +592,15 @@ ARM GAS  C:\Users\quint\AppData\Local\Temp\ccV677ca.s 			page 1
  427:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * Disables the counter(s) in the TCPWM block. Multiple TCPWM can be disabled 
  428:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * simultaneously.
  429:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** *
-ARM GAS  C:\Users\quint\AppData\Local\Temp\ccV677ca.s 			page 11
-
-
  430:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * \param base
  431:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * The pointer to a TCPWM instance.
  432:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** *
  433:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * \param counters
  434:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * A bit field representing each counter in the TCPWM block.
  435:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** *
+ARM GAS  C:\Users\quint\AppData\Local\Temp\cchPFwNS.s 			page 11
+
+
  436:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * \funcusage
  437:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * \snippet tcpwm\1.10\counter\snippet\main.c snippet_Cy_TCPWM_Disable_Multiple
  438:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** *
@@ -641,15 +635,15 @@ ARM GAS  C:\Users\quint\AppData\Local\Temp\ccV677ca.s 			page 1
   67              	.LVL3:
   68              	.LBE9:
   69              	.LBE8:
-  78:Generated_Source\PSoC6/PWM_Motor2.c ****     }
-  79:Generated_Source\PSoC6/PWM_Motor2.c **** 
-  80:Generated_Source\PSoC6/PWM_Motor2.c ****     Cy_TCPWM_Enable_Multiple(PWM_Motor2_HW, PWM_Motor2_CNT_MASK);
-  81:Generated_Source\PSoC6/PWM_Motor2.c ****     
-  82:Generated_Source\PSoC6/PWM_Motor2.c ****     #if (PWM_Motor2_INPUT_DISABLED == 7UL)
-  83:Generated_Source\PSoC6/PWM_Motor2.c ****         Cy_TCPWM_TriggerStart(PWM_Motor2_HW, PWM_Motor2_CNT_MASK);
-  84:Generated_Source\PSoC6/PWM_Motor2.c ****     #endif /* (PWM_Motor2_INPUT_DISABLED == 7UL) */    
-  85:Generated_Source\PSoC6/PWM_Motor2.c **** }
-  70              		.loc 1 85 0
+  72:Generated_Source\PSoC6/Counter_1.c ****     }
+  73:Generated_Source\PSoC6/Counter_1.c **** 
+  74:Generated_Source\PSoC6/Counter_1.c ****     Cy_TCPWM_Enable_Multiple(Counter_1_HW, Counter_1_CNT_MASK);
+  75:Generated_Source\PSoC6/Counter_1.c ****     
+  76:Generated_Source\PSoC6/Counter_1.c ****     #if (Counter_1_INPUT_DISABLED == 7UL)
+  77:Generated_Source\PSoC6/Counter_1.c ****         Cy_TCPWM_TriggerStart(Counter_1_HW, Counter_1_CNT_MASK);
+  78:Generated_Source\PSoC6/Counter_1.c ****     #endif /* (Counter_1_INPUT_DISABLED == 7UL) */    
+  79:Generated_Source\PSoC6/Counter_1.c **** }
+  70              		.loc 1 79 0
   71              		@ sp needed
   72 0022 10BD     		pop	{r4, pc}
   73              	.L4:
@@ -658,1485 +652,1413 @@ ARM GAS  C:\Users\quint\AppData\Local\Temp\ccV677ca.s 			page 1
   76 0024 00000000 		.word	.LANCHOR0
   77 0028 00000000 		.word	.LANCHOR1
   78 002c 00003840 		.word	1077411840
-ARM GAS  C:\Users\quint\AppData\Local\Temp\ccV677ca.s 			page 12
-
-
   79              		.cfi_endproc
-  80              	.LFE99:
-  81              		.size	PWM_Motor2_Start, .-PWM_Motor2_Start
-  82              		.global	PWM_Motor2_config
-  83              		.global	PWM_Motor2_initVar
+  80              	.LFE92:
+  81              		.size	Counter_1_Start, .-Counter_1_Start
+  82              		.global	Counter_1_config
+  83              		.global	Counter_1_initVar
   84              		.section	.rodata
+ARM GAS  C:\Users\quint\AppData\Local\Temp\cchPFwNS.s 			page 12
+
+
   85              		.align	2
   86              		.set	.LANCHOR1,. + 0
-  87              		.type	PWM_Motor2_config, %object
-  88              		.size	PWM_Motor2_config, 100
-  89              	PWM_Motor2_config:
-  90 0000 04000000 		.word	4
+  87              		.type	Counter_1_config, %object
+  88              		.size	Counter_1_config, 76
+  89              	Counter_1_config:
+  90 0000 00800000 		.word	32768
   91 0004 00000000 		.word	0
-  92 0008 02000000 		.word	2
+  92 0008 00000000 		.word	0
   93 000c 00000000 		.word	0
-  94 0010 00000000 		.word	0
-  95 0014 64000000 		.word	100
-  96 0018 00800000 		.word	32768
+  94 0010 02000000 		.word	2
+  95 0014 00400000 		.word	16384
+  96 0018 00400000 		.word	16384
   97 001c 00       		.byte	0
   98 001d 000000   		.space	3
-  99 0020 14000000 		.word	20
- 100 0024 00400000 		.word	16384
- 101 0028 00       		.byte	0
- 102 0029 000000   		.space	3
- 103 002c 00000000 		.word	0
- 104 0030 01000000 		.word	1
- 105 0034 00000000 		.word	0
- 106 0038 02000000 		.word	2
- 107 003c 03000000 		.word	3
- 108 0040 FFFFFFFF 		.word	-1
- 109 0044 03000000 		.word	3
- 110 0048 FFFFFFFF 		.word	-1
- 111 004c 03000000 		.word	3
- 112 0050 FFFFFFFF 		.word	-1
- 113 0054 03000000 		.word	3
- 114 0058 FFFFFFFF 		.word	-1
- 115 005c 03000000 		.word	3
- 116 0060 FFFFFFFF 		.word	-1
- 117              		.bss
- 118              		.set	.LANCHOR0,. + 0
- 119              		.type	PWM_Motor2_initVar, %object
- 120              		.size	PWM_Motor2_initVar, 1
- 121              	PWM_Motor2_initVar:
- 122 0000 00       		.space	1
- 123              		.text
- 124              	.Letext0:
- 125              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
- 126              		.file 4 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
- 127              		.file 5 "Generated_Source\\PSoC6\\pdl\\devices/psoc6/include/ip/cyip_tcpwm.h"
- 128              		.file 6 "Generated_Source\\PSoC6\\pdl\\devices/psoc6/include/psoc6_01_config.h"
- 129              		.file 7 "Generated_Source\\PSoC6\\pdl\\drivers/peripheral/tcpwm/cy_tcpwm_pwm.h"
- 130              		.section	.debug_info,"",%progbits
- 131              	.Ldebug_info0:
- 132 0000 AA040000 		.4byte	0x4aa
- 133 0004 0400     		.2byte	0x4
- 134 0006 00000000 		.4byte	.Ldebug_abbrev0
- 135 000a 04       		.byte	0x4
-ARM GAS  C:\Users\quint\AppData\Local\Temp\ccV677ca.s 			page 13
+  99 0020 00000000 		.word	0
+ 100 0024 03000000 		.word	3
+ 101 0028 FFFFFFFF 		.word	-1
+ 102 002c 03000000 		.word	3
+ 103 0030 FFFFFFFF 		.word	-1
+ 104 0034 03000000 		.word	3
+ 105 0038 FFFFFFFF 		.word	-1
+ 106 003c 03000000 		.word	3
+ 107 0040 FFFFFFFF 		.word	-1
+ 108 0044 03000000 		.word	3
+ 109 0048 FFFFFFFF 		.word	-1
+ 110              		.bss
+ 111              		.set	.LANCHOR0,. + 0
+ 112              		.type	Counter_1_initVar, %object
+ 113              		.size	Counter_1_initVar, 1
+ 114              	Counter_1_initVar:
+ 115 0000 00       		.space	1
+ 116              		.text
+ 117              	.Letext0:
+ 118              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+ 119              		.file 4 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+ 120              		.file 5 "Generated_Source\\PSoC6\\pdl\\devices/psoc6/include/ip/cyip_tcpwm.h"
+ 121              		.file 6 "Generated_Source\\PSoC6\\pdl\\devices/psoc6/include/psoc6_01_config.h"
+ 122              		.file 7 "Generated_Source\\PSoC6\\pdl\\drivers/peripheral/tcpwm/cy_tcpwm_counter.h"
+ 123              		.section	.debug_info,"",%progbits
+ 124              	.Ldebug_info0:
+ 125 0000 62040000 		.4byte	0x462
+ 126 0004 0400     		.2byte	0x4
+ 127 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 128 000a 04       		.byte	0x4
+ 129 000b 01       		.uleb128 0x1
+ 130 000c 54030000 		.4byte	.LASF70
+ 131 0010 0C       		.byte	0xc
+ 132 0011 B7000000 		.4byte	.LASF71
+ 133 0015 D6020000 		.4byte	.LASF72
+ 134 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 135 001d 00000000 		.4byte	0
+ 136 0021 00000000 		.4byte	.Ldebug_line0
+ 137 0025 02       		.uleb128 0x2
+ 138 0026 02       		.byte	0x2
+ 139 0027 05       		.byte	0x5
+ 140 0028 41000000 		.4byte	.LASF0
+ 141 002c 02       		.uleb128 0x2
+ARM GAS  C:\Users\quint\AppData\Local\Temp\cchPFwNS.s 			page 13
 
 
- 136 000b 01       		.uleb128 0x1
- 137 000c 7B030000 		.4byte	.LASF76
- 138 0010 0C       		.byte	0xc
- 139 0011 D2020000 		.4byte	.LASF77
- 140 0015 FC020000 		.4byte	.LASF78
- 141 0019 00000000 		.4byte	.Ldebug_ranges0+0
- 142 001d 00000000 		.4byte	0
- 143 0021 00000000 		.4byte	.Ldebug_line0
- 144 0025 02       		.uleb128 0x2
- 145 0026 02       		.byte	0x2
- 146 0027 05       		.byte	0x5
- 147 0028 6C000000 		.4byte	.LASF0
- 148 002c 02       		.uleb128 0x2
- 149 002d 01       		.byte	0x1
- 150 002e 08       		.byte	0x8
- 151 002f 0C020000 		.4byte	.LASF1
- 152 0033 02       		.uleb128 0x2
- 153 0034 01       		.byte	0x1
- 154 0035 06       		.byte	0x6
- 155 0036 2A020000 		.4byte	.LASF2
- 156 003a 03       		.uleb128 0x3
- 157 003b BD010000 		.4byte	.LASF5
- 158 003f 03       		.byte	0x3
- 159 0040 1D       		.byte	0x1d
- 160 0041 2C000000 		.4byte	0x2c
- 161 0045 02       		.uleb128 0x2
- 162 0046 02       		.byte	0x2
- 163 0047 07       		.byte	0x7
- 164 0048 94020000 		.4byte	.LASF3
- 165 004c 02       		.uleb128 0x2
- 166 004d 04       		.byte	0x4
- 167 004e 05       		.byte	0x5
- 168 004f BA020000 		.4byte	.LASF4
- 169 0053 03       		.uleb128 0x3
- 170 0054 E2000000 		.4byte	.LASF6
- 171 0058 03       		.byte	0x3
- 172 0059 41       		.byte	0x41
- 173 005a 5E000000 		.4byte	0x5e
- 174 005e 02       		.uleb128 0x2
- 175 005f 04       		.byte	0x4
- 176 0060 07       		.byte	0x7
- 177 0061 62030000 		.4byte	.LASF7
- 178 0065 02       		.uleb128 0x2
- 179 0066 08       		.byte	0x8
- 180 0067 05       		.byte	0x5
- 181 0068 7E010000 		.4byte	.LASF8
- 182 006c 02       		.uleb128 0x2
- 183 006d 08       		.byte	0x8
- 184 006e 07       		.byte	0x7
- 185 006f 3F020000 		.4byte	.LASF9
- 186 0073 04       		.uleb128 0x4
- 187 0074 04       		.byte	0x4
- 188 0075 05       		.byte	0x5
- 189 0076 696E7400 		.ascii	"int\000"
- 190 007a 02       		.uleb128 0x2
- 191 007b 04       		.byte	0x4
- 192 007c 07       		.byte	0x7
-ARM GAS  C:\Users\quint\AppData\Local\Temp\ccV677ca.s 			page 14
+ 142 002d 01       		.byte	0x1
+ 143 002e 08       		.byte	0x8
+ 144 002f DA010000 		.4byte	.LASF1
+ 145 0033 02       		.uleb128 0x2
+ 146 0034 01       		.byte	0x1
+ 147 0035 06       		.byte	0x6
+ 148 0036 07020000 		.4byte	.LASF2
+ 149 003a 03       		.uleb128 0x3
+ 150 003b 81010000 		.4byte	.LASF5
+ 151 003f 03       		.byte	0x3
+ 152 0040 1D       		.byte	0x1d
+ 153 0041 2C000000 		.4byte	0x2c
+ 154 0045 02       		.uleb128 0x2
+ 155 0046 02       		.byte	0x2
+ 156 0047 07       		.byte	0x7
+ 157 0048 96020000 		.4byte	.LASF3
+ 158 004c 02       		.uleb128 0x2
+ 159 004d 04       		.byte	0x4
+ 160 004e 05       		.byte	0x5
+ 161 004f AE020000 		.4byte	.LASF4
+ 162 0053 03       		.uleb128 0x3
+ 163 0054 9F000000 		.4byte	.LASF6
+ 164 0058 03       		.byte	0x3
+ 165 0059 41       		.byte	0x41
+ 166 005a 5E000000 		.4byte	0x5e
+ 167 005e 02       		.uleb128 0x2
+ 168 005f 04       		.byte	0x4
+ 169 0060 07       		.byte	0x7
+ 170 0061 3B030000 		.4byte	.LASF7
+ 171 0065 02       		.uleb128 0x2
+ 172 0066 08       		.byte	0x8
+ 173 0067 05       		.byte	0x5
+ 174 0068 43010000 		.4byte	.LASF8
+ 175 006c 02       		.uleb128 0x2
+ 176 006d 08       		.byte	0x8
+ 177 006e 07       		.byte	0x7
+ 178 006f 1C020000 		.4byte	.LASF9
+ 179 0073 04       		.uleb128 0x4
+ 180 0074 04       		.byte	0x4
+ 181 0075 05       		.byte	0x5
+ 182 0076 696E7400 		.ascii	"int\000"
+ 183 007a 02       		.uleb128 0x2
+ 184 007b 04       		.byte	0x4
+ 185 007c 07       		.byte	0x7
+ 186 007d 26010000 		.4byte	.LASF10
+ 187 0081 03       		.uleb128 0x3
+ 188 0082 F1000000 		.4byte	.LASF11
+ 189 0086 04       		.byte	0x4
+ 190 0087 18       		.byte	0x18
+ 191 0088 3A000000 		.4byte	0x3a
+ 192 008c 03       		.uleb128 0x3
+ 193 008d 33020000 		.4byte	.LASF12
+ 194 0091 04       		.byte	0x4
+ 195 0092 30       		.byte	0x30
+ 196 0093 53000000 		.4byte	0x53
+ 197 0097 02       		.uleb128 0x2
+ 198 0098 04       		.byte	0x4
+ARM GAS  C:\Users\quint\AppData\Local\Temp\cchPFwNS.s 			page 14
 
 
- 193 007d 70020000 		.4byte	.LASF10
- 194 0081 03       		.uleb128 0x3
- 195 0082 16010000 		.4byte	.LASF11
- 196 0086 04       		.byte	0x4
- 197 0087 18       		.byte	0x18
- 198 0088 3A000000 		.4byte	0x3a
- 199 008c 03       		.uleb128 0x3
- 200 008d 67020000 		.4byte	.LASF12
- 201 0091 04       		.byte	0x4
- 202 0092 30       		.byte	0x30
- 203 0093 53000000 		.4byte	0x53
- 204 0097 02       		.uleb128 0x2
- 205 0098 04       		.byte	0x4
- 206 0099 07       		.byte	0x7
- 207 009a 76000000 		.4byte	.LASF13
- 208 009e 05       		.uleb128 0x5
- 209 009f 8C000000 		.4byte	0x8c
- 210 00a3 06       		.uleb128 0x6
- 211 00a4 9E000000 		.4byte	0x9e
- 212 00a8 07       		.uleb128 0x7
- 213 00a9 40       		.byte	0x40
- 214 00aa 05       		.byte	0x5
- 215 00ab 22       		.byte	0x22
- 216 00ac 70010000 		.4byte	0x170
- 217 00b0 08       		.uleb128 0x8
- 218 00b1 1A020000 		.4byte	.LASF14
- 219 00b5 05       		.byte	0x5
- 220 00b6 23       		.byte	0x23
- 221 00b7 9E000000 		.4byte	0x9e
- 222 00bb 00       		.byte	0
- 223 00bc 08       		.uleb128 0x8
- 224 00bd 99010000 		.4byte	.LASF15
- 225 00c1 05       		.byte	0x5
- 226 00c2 24       		.byte	0x24
- 227 00c3 A3000000 		.4byte	0xa3
- 228 00c7 04       		.byte	0x4
- 229 00c8 08       		.uleb128 0x8
- 230 00c9 61040000 		.4byte	.LASF16
- 231 00cd 05       		.byte	0x5
- 232 00ce 25       		.byte	0x25
- 233 00cf 9E000000 		.4byte	0x9e
- 234 00d3 08       		.byte	0x8
- 235 00d4 09       		.uleb128 0x9
- 236 00d5 434300   		.ascii	"CC\000"
- 237 00d8 05       		.byte	0x5
- 238 00d9 26       		.byte	0x26
- 239 00da 9E000000 		.4byte	0x9e
- 240 00de 0C       		.byte	0xc
- 241 00df 08       		.uleb128 0x8
- 242 00e0 E9010000 		.4byte	.LASF17
- 243 00e4 05       		.byte	0x5
- 244 00e5 27       		.byte	0x27
- 245 00e6 9E000000 		.4byte	0x9e
- 246 00ea 10       		.byte	0x10
- 247 00eb 08       		.uleb128 0x8
- 248 00ec A6000000 		.4byte	.LASF18
- 249 00f0 05       		.byte	0x5
-ARM GAS  C:\Users\quint\AppData\Local\Temp\ccV677ca.s 			page 15
+ 199 0099 07       		.byte	0x7
+ 200 009a 4B000000 		.4byte	.LASF13
+ 201 009e 05       		.uleb128 0x5
+ 202 009f 8C000000 		.4byte	0x8c
+ 203 00a3 06       		.uleb128 0x6
+ 204 00a4 9E000000 		.4byte	0x9e
+ 205 00a8 07       		.uleb128 0x7
+ 206 00a9 40       		.byte	0x40
+ 207 00aa 05       		.byte	0x5
+ 208 00ab 22       		.byte	0x22
+ 209 00ac 70010000 		.4byte	0x170
+ 210 00b0 08       		.uleb128 0x8
+ 211 00b1 F7010000 		.4byte	.LASF14
+ 212 00b5 05       		.byte	0x5
+ 213 00b6 23       		.byte	0x23
+ 214 00b7 9E000000 		.4byte	0x9e
+ 215 00bb 00       		.byte	0
+ 216 00bc 08       		.uleb128 0x8
+ 217 00bd B7020000 		.4byte	.LASF15
+ 218 00c1 05       		.byte	0x5
+ 219 00c2 24       		.byte	0x24
+ 220 00c3 A3000000 		.4byte	0xa3
+ 221 00c7 04       		.byte	0x4
+ 222 00c8 08       		.uleb128 0x8
+ 223 00c9 24040000 		.4byte	.LASF16
+ 224 00cd 05       		.byte	0x5
+ 225 00ce 25       		.byte	0x25
+ 226 00cf 9E000000 		.4byte	0x9e
+ 227 00d3 08       		.byte	0x8
+ 228 00d4 09       		.uleb128 0x9
+ 229 00d5 434300   		.ascii	"CC\000"
+ 230 00d8 05       		.byte	0x5
+ 231 00d9 26       		.byte	0x26
+ 232 00da 9E000000 		.4byte	0x9e
+ 233 00de 0C       		.byte	0xc
+ 234 00df 08       		.uleb128 0x8
+ 235 00e0 B7010000 		.4byte	.LASF17
+ 236 00e4 05       		.byte	0x5
+ 237 00e5 27       		.byte	0x27
+ 238 00e6 9E000000 		.4byte	0x9e
+ 239 00ea 10       		.byte	0x10
+ 240 00eb 08       		.uleb128 0x8
+ 241 00ec 7B000000 		.4byte	.LASF18
+ 242 00f0 05       		.byte	0x5
+ 243 00f1 28       		.byte	0x28
+ 244 00f2 9E000000 		.4byte	0x9e
+ 245 00f6 14       		.byte	0x14
+ 246 00f7 08       		.uleb128 0x8
+ 247 00f8 54000000 		.4byte	.LASF19
+ 248 00fc 05       		.byte	0x5
+ 249 00fd 29       		.byte	0x29
+ 250 00fe 9E000000 		.4byte	0x9e
+ 251 0102 18       		.byte	0x18
+ 252 0103 08       		.uleb128 0x8
+ 253 0104 2C040000 		.4byte	.LASF20
+ 254 0108 05       		.byte	0x5
+ 255 0109 2A       		.byte	0x2a
+ARM GAS  C:\Users\quint\AppData\Local\Temp\cchPFwNS.s 			page 15
 
 
- 250 00f1 28       		.byte	0x28
- 251 00f2 9E000000 		.4byte	0x9e
- 252 00f6 14       		.byte	0x14
- 253 00f7 08       		.uleb128 0x8
- 254 00f8 7F000000 		.4byte	.LASF19
- 255 00fc 05       		.byte	0x5
- 256 00fd 29       		.byte	0x29
- 257 00fe 9E000000 		.4byte	0x9e
- 258 0102 18       		.byte	0x18
- 259 0103 08       		.uleb128 0x8
- 260 0104 71040000 		.4byte	.LASF20
- 261 0108 05       		.byte	0x5
- 262 0109 2A       		.byte	0x2a
- 263 010a A3000000 		.4byte	0xa3
- 264 010e 1C       		.byte	0x1c
- 265 010f 08       		.uleb128 0x8
- 266 0110 ED000000 		.4byte	.LASF21
- 267 0114 05       		.byte	0x5
- 268 0115 2B       		.byte	0x2b
- 269 0116 9E000000 		.4byte	0x9e
- 270 011a 20       		.byte	0x20
- 271 011b 08       		.uleb128 0x8
- 272 011c B8000000 		.4byte	.LASF22
- 273 0120 05       		.byte	0x5
- 274 0121 2C       		.byte	0x2c
- 275 0122 9E000000 		.4byte	0x9e
- 276 0126 24       		.byte	0x24
- 277 0127 08       		.uleb128 0x8
- 278 0128 C1000000 		.4byte	.LASF23
- 279 012c 05       		.byte	0x5
- 280 012d 2D       		.byte	0x2d
- 281 012e 9E000000 		.4byte	0x9e
- 282 0132 28       		.byte	0x28
- 283 0133 08       		.uleb128 0x8
- 284 0134 58030000 		.4byte	.LASF24
- 285 0138 05       		.byte	0x5
- 286 0139 2E       		.byte	0x2e
- 287 013a A3000000 		.4byte	0xa3
- 288 013e 2C       		.byte	0x2c
- 289 013f 08       		.uleb128 0x8
- 290 0140 67000000 		.4byte	.LASF25
- 291 0144 05       		.byte	0x5
- 292 0145 2F       		.byte	0x2f
- 293 0146 9E000000 		.4byte	0x9e
- 294 014a 30       		.byte	0x30
- 295 014b 08       		.uleb128 0x8
- 296 014c 36020000 		.4byte	.LASF26
- 297 0150 05       		.byte	0x5
- 298 0151 30       		.byte	0x30
- 299 0152 9E000000 		.4byte	0x9e
- 300 0156 34       		.byte	0x34
- 301 0157 08       		.uleb128 0x8
- 302 0158 93040000 		.4byte	.LASF27
- 303 015c 05       		.byte	0x5
- 304 015d 31       		.byte	0x31
- 305 015e 9E000000 		.4byte	0x9e
- 306 0162 38       		.byte	0x38
-ARM GAS  C:\Users\quint\AppData\Local\Temp\ccV677ca.s 			page 16
+ 256 010a A3000000 		.4byte	0xa3
+ 257 010e 1C       		.byte	0x1c
+ 258 010f 08       		.uleb128 0x8
+ 259 0110 DA000000 		.4byte	.LASF21
+ 260 0114 05       		.byte	0x5
+ 261 0115 2B       		.byte	0x2b
+ 262 0116 9E000000 		.4byte	0x9e
+ 263 011a 20       		.byte	0x20
+ 264 011b 08       		.uleb128 0x8
+ 265 011c 8D000000 		.4byte	.LASF22
+ 266 0120 05       		.byte	0x5
+ 267 0121 2C       		.byte	0x2c
+ 268 0122 9E000000 		.4byte	0x9e
+ 269 0126 24       		.byte	0x24
+ 270 0127 08       		.uleb128 0x8
+ 271 0128 96000000 		.4byte	.LASF23
+ 272 012c 05       		.byte	0x5
+ 273 012d 2D       		.byte	0x2d
+ 274 012e 9E000000 		.4byte	0x9e
+ 275 0132 28       		.byte	0x28
+ 276 0133 08       		.uleb128 0x8
+ 277 0134 31030000 		.4byte	.LASF24
+ 278 0138 05       		.byte	0x5
+ 279 0139 2E       		.byte	0x2e
+ 280 013a A3000000 		.4byte	0xa3
+ 281 013e 2C       		.byte	0x2c
+ 282 013f 08       		.uleb128 0x8
+ 283 0140 3C000000 		.4byte	.LASF25
+ 284 0144 05       		.byte	0x5
+ 285 0145 2F       		.byte	0x2f
+ 286 0146 9E000000 		.4byte	0x9e
+ 287 014a 30       		.byte	0x30
+ 288 014b 08       		.uleb128 0x8
+ 289 014c 13020000 		.4byte	.LASF26
+ 290 0150 05       		.byte	0x5
+ 291 0151 30       		.byte	0x30
+ 292 0152 9E000000 		.4byte	0x9e
+ 293 0156 34       		.byte	0x34
+ 294 0157 08       		.uleb128 0x8
+ 295 0158 5F040000 		.4byte	.LASF27
+ 296 015c 05       		.byte	0x5
+ 297 015d 31       		.byte	0x31
+ 298 015e 9E000000 		.4byte	0x9e
+ 299 0162 38       		.byte	0x38
+ 300 0163 08       		.uleb128 0x8
+ 301 0164 AB010000 		.4byte	.LASF28
+ 302 0168 05       		.byte	0x5
+ 303 0169 32       		.byte	0x32
+ 304 016a A3000000 		.4byte	0xa3
+ 305 016e 3C       		.byte	0x3c
+ 306 016f 00       		.byte	0
+ 307 0170 03       		.uleb128 0x3
+ 308 0171 60000000 		.4byte	.LASF29
+ 309 0175 05       		.byte	0x5
+ 310 0176 33       		.byte	0x33
+ 311 0177 A8000000 		.4byte	0xa8
+ 312 017b 0A       		.uleb128 0xa
+ARM GAS  C:\Users\quint\AppData\Local\Temp\cchPFwNS.s 			page 16
 
 
- 307 0163 08       		.uleb128 0x8
- 308 0164 DD010000 		.4byte	.LASF28
- 309 0168 05       		.byte	0x5
- 310 0169 32       		.byte	0x32
- 311 016a A3000000 		.4byte	0xa3
- 312 016e 3C       		.byte	0x3c
- 313 016f 00       		.byte	0
- 314 0170 03       		.uleb128 0x3
- 315 0171 8B000000 		.4byte	.LASF29
- 316 0175 05       		.byte	0x5
- 317 0176 33       		.byte	0x33
- 318 0177 A8000000 		.4byte	0xa8
- 319 017b 0A       		.uleb128 0xa
- 320 017c 0009     		.2byte	0x900
- 321 017e 05       		.byte	0x5
- 322 017f 38       		.byte	0x38
- 323 0180 FE010000 		.4byte	0x1fe
- 324 0184 08       		.uleb128 0x8
- 325 0185 1A020000 		.4byte	.LASF14
- 326 0189 05       		.byte	0x5
- 327 018a 39       		.byte	0x39
- 328 018b 9E000000 		.4byte	0x9e
- 329 018f 00       		.byte	0
- 330 0190 08       		.uleb128 0x8
- 331 0191 26040000 		.4byte	.LASF30
- 332 0195 05       		.byte	0x5
- 333 0196 3A       		.byte	0x3a
- 334 0197 9E000000 		.4byte	0x9e
- 335 019b 04       		.byte	0x4
- 336 019c 08       		.uleb128 0x8
- 337 019d 9D000000 		.4byte	.LASF31
- 338 01a1 05       		.byte	0x5
- 339 01a2 3B       		.byte	0x3b
- 340 01a3 9E000000 		.4byte	0x9e
- 341 01a7 08       		.byte	0x8
- 342 01a8 08       		.uleb128 0x8
- 343 01a9 28010000 		.4byte	.LASF32
- 344 01ad 05       		.byte	0x5
- 345 01ae 3C       		.byte	0x3c
- 346 01af 9E000000 		.4byte	0x9e
- 347 01b3 0C       		.byte	0xc
- 348 01b4 08       		.uleb128 0x8
- 349 01b5 AD000000 		.4byte	.LASF33
- 350 01b9 05       		.byte	0x5
- 351 01ba 3D       		.byte	0x3d
- 352 01bb 9E000000 		.4byte	0x9e
- 353 01bf 10       		.byte	0x10
- 354 01c0 08       		.uleb128 0x8
- 355 01c1 8B020000 		.4byte	.LASF34
- 356 01c5 05       		.byte	0x5
- 357 01c6 3E       		.byte	0x3e
- 358 01c7 9E000000 		.4byte	0x9e
- 359 01cb 14       		.byte	0x14
- 360 01cc 08       		.uleb128 0x8
- 361 01cd 45010000 		.4byte	.LASF35
- 362 01d1 05       		.byte	0x5
- 363 01d2 3F       		.byte	0x3f
-ARM GAS  C:\Users\quint\AppData\Local\Temp\ccV677ca.s 			page 17
+ 313 017c 0009     		.2byte	0x900
+ 314 017e 05       		.byte	0x5
+ 315 017f 38       		.byte	0x38
+ 316 0180 FE010000 		.4byte	0x1fe
+ 317 0184 08       		.uleb128 0x8
+ 318 0185 F7010000 		.4byte	.LASF14
+ 319 0189 05       		.byte	0x5
+ 320 018a 39       		.byte	0x39
+ 321 018b 9E000000 		.4byte	0x9e
+ 322 018f 00       		.byte	0
+ 323 0190 08       		.uleb128 0x8
+ 324 0191 1B040000 		.4byte	.LASF30
+ 325 0195 05       		.byte	0x5
+ 326 0196 3A       		.byte	0x3a
+ 327 0197 9E000000 		.4byte	0x9e
+ 328 019b 04       		.byte	0x4
+ 329 019c 08       		.uleb128 0x8
+ 330 019d 72000000 		.4byte	.LASF31
+ 331 01a1 05       		.byte	0x5
+ 332 01a2 3B       		.byte	0x3b
+ 333 01a3 9E000000 		.4byte	0x9e
+ 334 01a7 08       		.byte	0x8
+ 335 01a8 08       		.uleb128 0x8
+ 336 01a9 F9000000 		.4byte	.LASF32
+ 337 01ad 05       		.byte	0x5
+ 338 01ae 3C       		.byte	0x3c
+ 339 01af 9E000000 		.4byte	0x9e
+ 340 01b3 0C       		.byte	0xc
+ 341 01b4 08       		.uleb128 0x8
+ 342 01b5 82000000 		.4byte	.LASF33
+ 343 01b9 05       		.byte	0x5
+ 344 01ba 3D       		.byte	0x3d
+ 345 01bb 9E000000 		.4byte	0x9e
+ 346 01bf 10       		.byte	0x10
+ 347 01c0 08       		.uleb128 0x8
+ 348 01c1 6F020000 		.4byte	.LASF34
+ 349 01c5 05       		.byte	0x5
+ 350 01c6 3E       		.byte	0x3e
+ 351 01c7 9E000000 		.4byte	0x9e
+ 352 01cb 14       		.byte	0x14
+ 353 01cc 08       		.uleb128 0x8
+ 354 01cd 16010000 		.4byte	.LASF35
+ 355 01d1 05       		.byte	0x5
+ 356 01d2 3F       		.byte	0x3f
+ 357 01d3 9E000000 		.4byte	0x9e
+ 358 01d7 18       		.byte	0x18
+ 359 01d8 08       		.uleb128 0x8
+ 360 01d9 FC010000 		.4byte	.LASF36
+ 361 01dd 05       		.byte	0x5
+ 362 01de 40       		.byte	0x40
+ 363 01df A3000000 		.4byte	0xa3
+ 364 01e3 1C       		.byte	0x1c
+ 365 01e4 08       		.uleb128 0x8
+ 366 01e5 2C040000 		.4byte	.LASF20
+ 367 01e9 05       		.byte	0x5
+ 368 01ea 41       		.byte	0x41
+ 369 01eb 13020000 		.4byte	0x213
+ARM GAS  C:\Users\quint\AppData\Local\Temp\cchPFwNS.s 			page 17
 
 
- 364 01d3 9E000000 		.4byte	0x9e
- 365 01d7 18       		.byte	0x18
- 366 01d8 08       		.uleb128 0x8
- 367 01d9 1F020000 		.4byte	.LASF36
- 368 01dd 05       		.byte	0x5
- 369 01de 40       		.byte	0x40
- 370 01df A3000000 		.4byte	0xa3
- 371 01e3 1C       		.byte	0x1c
- 372 01e4 08       		.uleb128 0x8
- 373 01e5 71040000 		.4byte	.LASF20
- 374 01e9 05       		.byte	0x5
- 375 01ea 41       		.byte	0x41
- 376 01eb 13020000 		.4byte	0x213
- 377 01ef 20       		.byte	0x20
- 378 01f0 0B       		.uleb128 0xb
- 379 01f1 434E5400 		.ascii	"CNT\000"
- 380 01f5 05       		.byte	0x5
- 381 01f6 42       		.byte	0x42
- 382 01f7 18020000 		.4byte	0x218
- 383 01fb 0001     		.2byte	0x100
- 384 01fd 00       		.byte	0
- 385 01fe 0C       		.uleb128 0xc
- 386 01ff A3000000 		.4byte	0xa3
- 387 0203 0E020000 		.4byte	0x20e
- 388 0207 0D       		.uleb128 0xd
- 389 0208 97000000 		.4byte	0x97
- 390 020c 37       		.byte	0x37
- 391 020d 00       		.byte	0
- 392 020e 05       		.uleb128 0x5
- 393 020f FE010000 		.4byte	0x1fe
- 394 0213 06       		.uleb128 0x6
- 395 0214 0E020000 		.4byte	0x20e
- 396 0218 0C       		.uleb128 0xc
- 397 0219 70010000 		.4byte	0x170
- 398 021d 28020000 		.4byte	0x228
- 399 0221 0D       		.uleb128 0xd
- 400 0222 97000000 		.4byte	0x97
- 401 0226 1F       		.byte	0x1f
- 402 0227 00       		.byte	0
- 403 0228 03       		.uleb128 0x3
- 404 0229 F6000000 		.4byte	.LASF37
- 405 022d 05       		.byte	0x5
- 406 022e 43       		.byte	0x43
- 407 022f 7B010000 		.4byte	0x17b
- 408 0233 0E       		.uleb128 0xe
- 409 0234 9D040000 		.4byte	.LASF38
- 410 0238 06       		.byte	0x6
- 411 0239 4206     		.2byte	0x642
- 412 023b 28020000 		.4byte	0x228
- 413 023f 02       		.uleb128 0x2
- 414 0240 08       		.byte	0x8
- 415 0241 04       		.byte	0x4
- 416 0242 F1010000 		.4byte	.LASF39
- 417 0246 02       		.uleb128 0x2
- 418 0247 01       		.byte	0x1
- 419 0248 08       		.byte	0x8
- 420 0249 94010000 		.4byte	.LASF40
-ARM GAS  C:\Users\quint\AppData\Local\Temp\ccV677ca.s 			page 18
+ 370 01ef 20       		.byte	0x20
+ 371 01f0 0B       		.uleb128 0xb
+ 372 01f1 434E5400 		.ascii	"CNT\000"
+ 373 01f5 05       		.byte	0x5
+ 374 01f6 42       		.byte	0x42
+ 375 01f7 18020000 		.4byte	0x218
+ 376 01fb 0001     		.2byte	0x100
+ 377 01fd 00       		.byte	0
+ 378 01fe 0C       		.uleb128 0xc
+ 379 01ff A3000000 		.4byte	0xa3
+ 380 0203 0E020000 		.4byte	0x20e
+ 381 0207 0D       		.uleb128 0xd
+ 382 0208 97000000 		.4byte	0x97
+ 383 020c 37       		.byte	0x37
+ 384 020d 00       		.byte	0
+ 385 020e 05       		.uleb128 0x5
+ 386 020f FE010000 		.4byte	0x1fe
+ 387 0213 06       		.uleb128 0x6
+ 388 0214 0E020000 		.4byte	0x20e
+ 389 0218 0C       		.uleb128 0xc
+ 390 0219 70010000 		.4byte	0x170
+ 391 021d 28020000 		.4byte	0x228
+ 392 0221 0D       		.uleb128 0xd
+ 393 0222 97000000 		.4byte	0x97
+ 394 0226 1F       		.byte	0x1f
+ 395 0227 00       		.byte	0
+ 396 0228 03       		.uleb128 0x3
+ 397 0229 E3000000 		.4byte	.LASF37
+ 398 022d 05       		.byte	0x5
+ 399 022e 43       		.byte	0x43
+ 400 022f 7B010000 		.4byte	0x17b
+ 401 0233 0E       		.uleb128 0xe
+ 402 0234 69040000 		.4byte	.LASF38
+ 403 0238 06       		.byte	0x6
+ 404 0239 4206     		.2byte	0x642
+ 405 023b 28020000 		.4byte	0x228
+ 406 023f 02       		.uleb128 0x2
+ 407 0240 08       		.byte	0x8
+ 408 0241 04       		.byte	0x4
+ 409 0242 BF010000 		.4byte	.LASF39
+ 410 0246 02       		.uleb128 0x2
+ 411 0247 01       		.byte	0x1
+ 412 0248 08       		.byte	0x8
+ 413 0249 A9020000 		.4byte	.LASF40
+ 414 024d 02       		.uleb128 0x2
+ 415 024e 04       		.byte	0x4
+ 416 024f 04       		.byte	0x4
+ 417 0250 20010000 		.4byte	.LASF41
+ 418 0254 02       		.uleb128 0x2
+ 419 0255 08       		.byte	0x8
+ 420 0256 04       		.byte	0x4
+ 421 0257 4D030000 		.4byte	.LASF42
+ 422 025b 0F       		.uleb128 0xf
+ 423 025c E6030000 		.4byte	.LASF73
+ 424 0260 4C       		.byte	0x4c
+ 425 0261 07       		.byte	0x7
+ 426 0262 2F       		.byte	0x2f
+ARM GAS  C:\Users\quint\AppData\Local\Temp\cchPFwNS.s 			page 18
 
 
- 421 024d 02       		.uleb128 0x2
- 422 024e 04       		.byte	0x4
- 423 024f 04       		.byte	0x4
- 424 0250 58010000 		.4byte	.LASF41
- 425 0254 02       		.uleb128 0x2
- 426 0255 08       		.byte	0x8
- 427 0256 04       		.byte	0x4
- 428 0257 74030000 		.4byte	.LASF42
- 429 025b 0F       		.uleb128 0xf
- 430 025c CA000000 		.4byte	.LASF79
- 431 0260 64       		.byte	0x64
- 432 0261 07       		.byte	0x7
- 433 0262 2F       		.byte	0x2f
- 434 0263 94030000 		.4byte	0x394
- 435 0267 08       		.uleb128 0x8
- 436 0268 69040000 		.4byte	.LASF43
- 437 026c 07       		.byte	0x7
- 438 026d 31       		.byte	0x31
- 439 026e 8C000000 		.4byte	0x8c
- 440 0272 00       		.byte	0
- 441 0273 08       		.uleb128 0x8
- 442 0274 1D000000 		.4byte	.LASF44
- 443 0278 07       		.byte	0x7
- 444 0279 33       		.byte	0x33
- 445 027a 8C000000 		.4byte	0x8c
- 446 027e 04       		.byte	0x4
- 447 027f 08       		.uleb128 0x8
- 448 0280 2F040000 		.4byte	.LASF45
- 449 0284 07       		.byte	0x7
- 450 0285 34       		.byte	0x34
- 451 0286 8C000000 		.4byte	0x8c
- 452 028a 08       		.byte	0x8
- 453 028b 08       		.uleb128 0x8
- 454 028c C3020000 		.4byte	.LASF46
- 455 0290 07       		.byte	0x7
- 456 0291 35       		.byte	0x35
- 457 0292 8C000000 		.4byte	0x8c
- 458 0296 0C       		.byte	0xc
- 459 0297 08       		.uleb128 0x8
- 460 0298 8C010000 		.4byte	.LASF47
- 461 029c 07       		.byte	0x7
- 462 029d 36       		.byte	0x36
- 463 029e 8C000000 		.4byte	0x8c
- 464 02a2 10       		.byte	0x10
- 465 02a3 08       		.uleb128 0x8
- 466 02a4 5E010000 		.4byte	.LASF48
- 467 02a8 07       		.byte	0x7
- 468 02a9 37       		.byte	0x37
- 469 02aa 8C000000 		.4byte	0x8c
- 470 02ae 14       		.byte	0x14
- 471 02af 08       		.uleb128 0x8
- 472 02b0 66010000 		.4byte	.LASF49
- 473 02b4 07       		.byte	0x7
- 474 02b5 38       		.byte	0x38
- 475 02b6 8C000000 		.4byte	0x8c
- 476 02ba 18       		.byte	0x18
- 477 02bb 08       		.uleb128 0x8
-ARM GAS  C:\Users\quint\AppData\Local\Temp\ccV677ca.s 			page 19
+ 427 0263 4C030000 		.4byte	0x34c
+ 428 0267 08       		.uleb128 0x8
+ 429 0268 7A010000 		.4byte	.LASF43
+ 430 026c 07       		.byte	0x7
+ 431 026d 31       		.byte	0x31
+ 432 026e 8C000000 		.4byte	0x8c
+ 433 0272 00       		.byte	0
+ 434 0273 08       		.uleb128 0x8
+ 435 0274 0C000000 		.4byte	.LASF44
+ 436 0278 07       		.byte	0x7
+ 437 0279 33       		.byte	0x33
+ 438 027a 8C000000 		.4byte	0x8c
+ 439 027e 04       		.byte	0x4
+ 440 027f 08       		.uleb128 0x8
+ 441 0280 51010000 		.4byte	.LASF45
+ 442 0284 07       		.byte	0x7
+ 443 0285 34       		.byte	0x34
+ 444 0286 8C000000 		.4byte	0x8c
+ 445 028a 08       		.byte	0x8
+ 446 028b 08       		.uleb128 0x8
+ 447 028c E8010000 		.4byte	.LASF46
+ 448 0290 07       		.byte	0x7
+ 449 0291 35       		.byte	0x35
+ 450 0292 8C000000 		.4byte	0x8c
+ 451 0296 0C       		.byte	0xc
+ 452 0297 08       		.uleb128 0x8
+ 453 0298 4C020000 		.4byte	.LASF47
+ 454 029c 07       		.byte	0x7
+ 455 029d 37       		.byte	0x37
+ 456 029e 8C000000 		.4byte	0x8c
+ 457 02a2 10       		.byte	0x10
+ 458 02a3 08       		.uleb128 0x8
+ 459 02a4 2A000000 		.4byte	.LASF48
+ 460 02a8 07       		.byte	0x7
+ 461 02a9 38       		.byte	0x38
+ 462 02aa 8C000000 		.4byte	0x8c
+ 463 02ae 14       		.byte	0x14
+ 464 02af 08       		.uleb128 0x8
+ 465 02b0 33000000 		.4byte	.LASF49
+ 466 02b4 07       		.byte	0x7
+ 467 02b5 39       		.byte	0x39
+ 468 02b6 8C000000 		.4byte	0x8c
+ 469 02ba 18       		.byte	0x18
+ 470 02bb 08       		.uleb128 0x8
+ 471 02bc 5D020000 		.4byte	.LASF50
+ 472 02c0 07       		.byte	0x7
+ 473 02c1 3A       		.byte	0x3a
+ 474 02c2 4C030000 		.4byte	0x34c
+ 475 02c6 1C       		.byte	0x1c
+ 476 02c7 08       		.uleb128 0x8
+ 477 02c8 05010000 		.4byte	.LASF51
+ 478 02cc 07       		.byte	0x7
+ 479 02cd 3C       		.byte	0x3c
+ 480 02ce 8C000000 		.4byte	0x8c
+ 481 02d2 20       		.byte	0x20
+ 482 02d3 08       		.uleb128 0x8
+ 483 02d4 20030000 		.4byte	.LASF52
+ARM GAS  C:\Users\quint\AppData\Local\Temp\cchPFwNS.s 			page 19
 
 
- 478 02bc 00000000 		.4byte	.LASF50
- 479 02c0 07       		.byte	0x7
- 480 02c1 39       		.byte	0x39
- 481 02c2 94030000 		.4byte	0x394
- 482 02c6 1C       		.byte	0x1c
- 483 02c7 08       		.uleb128 0x8
- 484 02c8 3B000000 		.4byte	.LASF51
- 485 02cc 07       		.byte	0x7
- 486 02cd 3A       		.byte	0x3a
- 487 02ce 8C000000 		.4byte	0x8c
- 488 02d2 20       		.byte	0x20
- 489 02d3 08       		.uleb128 0x8
- 490 02d4 44000000 		.4byte	.LASF52
- 491 02d8 07       		.byte	0x7
- 492 02d9 3B       		.byte	0x3b
- 493 02da 8C000000 		.4byte	0x8c
- 494 02de 24       		.byte	0x24
- 495 02df 08       		.uleb128 0x8
- 496 02e0 04010000 		.4byte	.LASF53
- 497 02e4 07       		.byte	0x7
- 498 02e5 3C       		.byte	0x3c
- 499 02e6 94030000 		.4byte	0x394
- 500 02ea 28       		.byte	0x28
- 501 02eb 08       		.uleb128 0x8
- 502 02ec 34010000 		.4byte	.LASF54
- 503 02f0 07       		.byte	0x7
- 504 02f1 3E       		.byte	0x3e
- 505 02f2 8C000000 		.4byte	0x8c
- 506 02f6 2C       		.byte	0x2c
- 507 02f7 08       		.uleb128 0x8
- 508 02f8 46040000 		.4byte	.LASF55
- 509 02fc 07       		.byte	0x7
- 510 02fd 3F       		.byte	0x3f
- 511 02fe 8C000000 		.4byte	0x8c
- 512 0302 30       		.byte	0x30
- 513 0303 08       		.uleb128 0x8
- 514 0304 7D020000 		.4byte	.LASF56
- 515 0308 07       		.byte	0x7
- 516 0309 40       		.byte	0x40
- 517 030a 8C000000 		.4byte	0x8c
- 518 030e 34       		.byte	0x34
- 519 030f 08       		.uleb128 0x8
- 520 0310 4F010000 		.4byte	.LASF57
- 521 0314 07       		.byte	0x7
- 522 0315 41       		.byte	0x41
- 523 0316 8C000000 		.4byte	0x8c
- 524 031a 38       		.byte	0x38
- 525 031b 08       		.uleb128 0x8
- 526 031c 0D040000 		.4byte	.LASF58
- 527 0320 07       		.byte	0x7
- 528 0321 42       		.byte	0x42
- 529 0322 8C000000 		.4byte	0x8c
- 530 0326 3C       		.byte	0x3c
- 531 0327 08       		.uleb128 0x8
- 532 0328 3C040000 		.4byte	.LASF59
- 533 032c 07       		.byte	0x7
- 534 032d 44       		.byte	0x44
-ARM GAS  C:\Users\quint\AppData\Local\Temp\ccV677ca.s 			page 20
+ 484 02d8 07       		.byte	0x7
+ 485 02d9 3D       		.byte	0x3d
+ 486 02da 8C000000 		.4byte	0x8c
+ 487 02de 24       		.byte	0x24
+ 488 02df 08       		.uleb128 0x8
+ 489 02e0 AA000000 		.4byte	.LASF53
+ 490 02e4 07       		.byte	0x7
+ 491 02e5 3F       		.byte	0x3f
+ 492 02e6 8C000000 		.4byte	0x8c
+ 493 02ea 28       		.byte	0x28
+ 494 02eb 08       		.uleb128 0x8
+ 495 02ec 33010000 		.4byte	.LASF54
+ 496 02f0 07       		.byte	0x7
+ 497 02f1 40       		.byte	0x40
+ 498 02f2 8C000000 		.4byte	0x8c
+ 499 02f6 2C       		.byte	0x2c
+ 500 02f7 08       		.uleb128 0x8
+ 501 02f8 00000000 		.4byte	.LASF55
+ 502 02fc 07       		.byte	0x7
+ 503 02fd 42       		.byte	0x42
+ 504 02fe 8C000000 		.4byte	0x8c
+ 505 0302 30       		.byte	0x30
+ 506 0303 08       		.uleb128 0x8
+ 507 0304 CB010000 		.4byte	.LASF56
+ 508 0308 07       		.byte	0x7
+ 509 0309 43       		.byte	0x43
+ 510 030a 8C000000 		.4byte	0x8c
+ 511 030e 34       		.byte	0x34
+ 512 030f 08       		.uleb128 0x8
+ 513 0310 02040000 		.4byte	.LASF57
+ 514 0314 07       		.byte	0x7
+ 515 0315 45       		.byte	0x45
+ 516 0316 8C000000 		.4byte	0x8c
+ 517 031a 38       		.byte	0x38
+ 518 031b 08       		.uleb128 0x8
+ 519 031c 0D040000 		.4byte	.LASF58
+ 520 0320 07       		.byte	0x7
+ 521 0321 46       		.byte	0x46
+ 522 0322 8C000000 		.4byte	0x8c
+ 523 0326 3C       		.byte	0x3c
+ 524 0327 08       		.uleb128 0x8
+ 525 0328 8B010000 		.4byte	.LASF59
+ 526 032c 07       		.byte	0x7
+ 527 032d 48       		.byte	0x48
+ 528 032e 8C000000 		.4byte	0x8c
+ 529 0332 40       		.byte	0x40
+ 530 0333 08       		.uleb128 0x8
+ 531 0334 1B000000 		.4byte	.LASF60
+ 532 0338 07       		.byte	0x7
+ 533 0339 49       		.byte	0x49
+ 534 033a 8C000000 		.4byte	0x8c
+ 535 033e 44       		.byte	0x44
+ 536 033f 08       		.uleb128 0x8
+ 537 0340 6F010000 		.4byte	.LASF61
+ 538 0344 07       		.byte	0x7
+ 539 0345 4B       		.byte	0x4b
+ 540 0346 8C000000 		.4byte	0x8c
+ARM GAS  C:\Users\quint\AppData\Local\Temp\cchPFwNS.s 			page 20
 
 
- 535 032e 8C000000 		.4byte	0x8c
- 536 0332 40       		.byte	0x40
- 537 0333 08       		.uleb128 0x8
- 538 0334 6E010000 		.4byte	.LASF60
- 539 0338 07       		.byte	0x7
- 540 0339 45       		.byte	0x45
- 541 033a 8C000000 		.4byte	0x8c
- 542 033e 44       		.byte	0x44
- 543 033f 08       		.uleb128 0x8
- 544 0340 11000000 		.4byte	.LASF61
- 545 0344 07       		.byte	0x7
- 546 0345 47       		.byte	0x47
- 547 0346 8C000000 		.4byte	0x8c
- 548 034a 48       		.byte	0x48
- 549 034b 08       		.uleb128 0x8
- 550 034c FD010000 		.4byte	.LASF62
- 551 0350 07       		.byte	0x7
- 552 0351 48       		.byte	0x48
- 553 0352 8C000000 		.4byte	0x8c
- 554 0356 4C       		.byte	0x4c
- 555 0357 08       		.uleb128 0x8
- 556 0358 1B040000 		.4byte	.LASF63
- 557 035c 07       		.byte	0x7
- 558 035d 4A       		.byte	0x4a
- 559 035e 8C000000 		.4byte	0x8c
- 560 0362 50       		.byte	0x50
- 561 0363 08       		.uleb128 0x8
- 562 0364 53040000 		.4byte	.LASF64
- 563 0368 07       		.byte	0x7
- 564 0369 4B       		.byte	0x4b
- 565 036a 8C000000 		.4byte	0x8c
- 566 036e 54       		.byte	0x54
- 567 036f 08       		.uleb128 0x8
- 568 0370 1E010000 		.4byte	.LASF65
- 569 0374 07       		.byte	0x7
- 570 0375 4D       		.byte	0x4d
- 571 0376 8C000000 		.4byte	0x8c
- 572 037a 58       		.byte	0x58
- 573 037b 08       		.uleb128 0x8
- 574 037c 2C000000 		.4byte	.LASF66
- 575 0380 07       		.byte	0x7
- 576 0381 4E       		.byte	0x4e
- 577 0382 8C000000 		.4byte	0x8c
- 578 0386 5C       		.byte	0x5c
- 579 0387 08       		.uleb128 0x8
- 580 0388 A0010000 		.4byte	.LASF67
- 581 038c 07       		.byte	0x7
- 582 038d 50       		.byte	0x50
- 583 038e 8C000000 		.4byte	0x8c
- 584 0392 60       		.byte	0x60
- 585 0393 00       		.byte	0
- 586 0394 02       		.uleb128 0x2
- 587 0395 01       		.byte	0x1
- 588 0396 02       		.byte	0x2
- 589 0397 F6020000 		.4byte	.LASF68
- 590 039b 03       		.uleb128 0x3
- 591 039c 4D000000 		.4byte	.LASF69
-ARM GAS  C:\Users\quint\AppData\Local\Temp\ccV677ca.s 			page 21
+ 541 034a 48       		.byte	0x48
+ 542 034b 00       		.byte	0
+ 543 034c 02       		.uleb128 0x2
+ 544 034d 01       		.byte	0x1
+ 545 034e 02       		.byte	0x2
+ 546 034f D0020000 		.4byte	.LASF62
+ 547 0353 03       		.uleb128 0x3
+ 548 0354 78020000 		.4byte	.LASF63
+ 549 0358 07       		.byte	0x7
+ 550 0359 4C       		.byte	0x4c
+ 551 035a 5B020000 		.4byte	0x25b
+ 552 035e 10       		.uleb128 0x10
+ 553 035f 95010000 		.4byte	.LASF66
+ 554 0363 02       		.byte	0x2
+ 555 0364 CE01     		.2byte	0x1ce
+ 556 0366 03       		.byte	0x3
+ 557 0367 84030000 		.4byte	0x384
+ 558 036b 11       		.uleb128 0x11
+ 559 036c 74040000 		.4byte	.LASF64
+ 560 0370 02       		.byte	0x2
+ 561 0371 CE01     		.2byte	0x1ce
+ 562 0373 84030000 		.4byte	0x384
+ 563 0377 11       		.uleb128 0x11
+ 564 0378 79040000 		.4byte	.LASF65
+ 565 037c 02       		.byte	0x2
+ 566 037d CE01     		.2byte	0x1ce
+ 567 037f 8C000000 		.4byte	0x8c
+ 568 0383 00       		.byte	0
+ 569 0384 12       		.uleb128 0x12
+ 570 0385 04       		.byte	0x4
+ 571 0386 33020000 		.4byte	0x233
+ 572 038a 10       		.uleb128 0x10
+ 573 038b 46040000 		.4byte	.LASF67
+ 574 038f 02       		.byte	0x2
+ 575 0390 A101     		.2byte	0x1a1
+ 576 0392 03       		.byte	0x3
+ 577 0393 B0030000 		.4byte	0x3b0
+ 578 0397 11       		.uleb128 0x11
+ 579 0398 74040000 		.4byte	.LASF64
+ 580 039c 02       		.byte	0x2
+ 581 039d A101     		.2byte	0x1a1
+ 582 039f 84030000 		.4byte	0x384
+ 583 03a3 11       		.uleb128 0x11
+ 584 03a4 79040000 		.4byte	.LASF65
+ 585 03a8 02       		.byte	0x2
+ 586 03a9 A101     		.2byte	0x1a1
+ 587 03ab 8C000000 		.4byte	0x8c
+ 588 03af 00       		.byte	0
+ 589 03b0 13       		.uleb128 0x13
+ 590 03b1 3C020000 		.4byte	.LASF74
+ 591 03b5 01       		.byte	0x1
+ 592 03b6 41       		.byte	0x41
+ 593 03b7 00000000 		.4byte	.LFB92
+ 594 03bb 30000000 		.4byte	.LFE92-.LFB92
+ 595 03bf 01       		.uleb128 0x1
+ 596 03c0 9C       		.byte	0x9c
+ 597 03c1 33040000 		.4byte	0x433
+ARM GAS  C:\Users\quint\AppData\Local\Temp\cchPFwNS.s 			page 21
 
 
- 592 03a0 07       		.byte	0x7
- 593 03a1 51       		.byte	0x51
- 594 03a2 5B020000 		.4byte	0x25b
- 595 03a6 10       		.uleb128 0x10
- 596 03a7 C7010000 		.4byte	.LASF72
- 597 03ab 02       		.byte	0x2
- 598 03ac CE01     		.2byte	0x1ce
- 599 03ae 03       		.byte	0x3
- 600 03af CC030000 		.4byte	0x3cc
- 601 03b3 11       		.uleb128 0x11
- 602 03b4 A8040000 		.4byte	.LASF70
- 603 03b8 02       		.byte	0x2
- 604 03b9 CE01     		.2byte	0x1ce
- 605 03bb CC030000 		.4byte	0x3cc
- 606 03bf 11       		.uleb128 0x11
- 607 03c0 AD040000 		.4byte	.LASF71
- 608 03c4 02       		.byte	0x2
- 609 03c5 CE01     		.2byte	0x1ce
- 610 03c7 8C000000 		.4byte	0x8c
- 611 03cb 00       		.byte	0
- 612 03cc 12       		.uleb128 0x12
- 613 03cd 04       		.byte	0x4
- 614 03ce 33020000 		.4byte	0x233
- 615 03d2 10       		.uleb128 0x10
- 616 03d3 7A040000 		.4byte	.LASF73
- 617 03d7 02       		.byte	0x2
- 618 03d8 A101     		.2byte	0x1a1
- 619 03da 03       		.byte	0x3
- 620 03db F8030000 		.4byte	0x3f8
- 621 03df 11       		.uleb128 0x11
- 622 03e0 A8040000 		.4byte	.LASF70
- 623 03e4 02       		.byte	0x2
- 624 03e5 A101     		.2byte	0x1a1
- 625 03e7 CC030000 		.4byte	0x3cc
- 626 03eb 11       		.uleb128 0x11
- 627 03ec AD040000 		.4byte	.LASF71
- 628 03f0 02       		.byte	0x2
- 629 03f1 A101     		.2byte	0x1a1
- 630 03f3 8C000000 		.4byte	0x8c
- 631 03f7 00       		.byte	0
- 632 03f8 13       		.uleb128 0x13
- 633 03f9 56020000 		.4byte	.LASF80
- 634 03fd 01       		.byte	0x1
- 635 03fe 47       		.byte	0x47
- 636 03ff 00000000 		.4byte	.LFB99
- 637 0403 30000000 		.4byte	.LFE99-.LFB99
- 638 0407 01       		.uleb128 0x1
- 639 0408 9C       		.byte	0x9c
- 640 0409 7B040000 		.4byte	0x47b
- 641 040d 14       		.uleb128 0x14
- 642 040e D2030000 		.4byte	0x3d2
- 643 0412 1A000000 		.4byte	.LBB6
- 644 0416 06000000 		.4byte	.LBE6-.LBB6
- 645 041a 01       		.byte	0x1
- 646 041b 50       		.byte	0x50
- 647 041c 33040000 		.4byte	0x433
- 648 0420 15       		.uleb128 0x15
-ARM GAS  C:\Users\quint\AppData\Local\Temp\ccV677ca.s 			page 22
+ 598 03c5 14       		.uleb128 0x14
+ 599 03c6 8A030000 		.4byte	0x38a
+ 600 03ca 1A000000 		.4byte	.LBB6
+ 601 03ce 06000000 		.4byte	.LBE6-.LBB6
+ 602 03d2 01       		.byte	0x1
+ 603 03d3 4A       		.byte	0x4a
+ 604 03d4 EB030000 		.4byte	0x3eb
+ 605 03d8 15       		.uleb128 0x15
+ 606 03d9 A3030000 		.4byte	0x3a3
+ 607 03dd 00000000 		.4byte	.LLST0
+ 608 03e1 15       		.uleb128 0x15
+ 609 03e2 97030000 		.4byte	0x397
+ 610 03e6 14000000 		.4byte	.LLST1
+ 611 03ea 00       		.byte	0
+ 612 03eb 14       		.uleb128 0x14
+ 613 03ec 5E030000 		.4byte	0x35e
+ 614 03f0 20000000 		.4byte	.LBB8
+ 615 03f4 02000000 		.4byte	.LBE8-.LBB8
+ 616 03f8 01       		.byte	0x1
+ 617 03f9 4D       		.byte	0x4d
+ 618 03fa 11040000 		.4byte	0x411
+ 619 03fe 15       		.uleb128 0x15
+ 620 03ff 77030000 		.4byte	0x377
+ 621 0403 2C000000 		.4byte	.LLST2
+ 622 0407 15       		.uleb128 0x15
+ 623 0408 6B030000 		.4byte	0x36b
+ 624 040c 40000000 		.4byte	.LLST3
+ 625 0410 00       		.byte	0
+ 626 0411 16       		.uleb128 0x16
+ 627 0412 14000000 		.4byte	.LVL0
+ 628 0416 5A040000 		.4byte	0x45a
+ 629 041a 17       		.uleb128 0x17
+ 630 041b 01       		.uleb128 0x1
+ 631 041c 50       		.byte	0x50
+ 632 041d 05       		.uleb128 0x5
+ 633 041e 0C       		.byte	0xc
+ 634 041f 00003840 		.4byte	0x40380000
+ 635 0423 17       		.uleb128 0x17
+ 636 0424 01       		.uleb128 0x1
+ 637 0425 51       		.byte	0x51
+ 638 0426 01       		.uleb128 0x1
+ 639 0427 31       		.byte	0x31
+ 640 0428 17       		.uleb128 0x17
+ 641 0429 01       		.uleb128 0x1
+ 642 042a 52       		.byte	0x52
+ 643 042b 05       		.uleb128 0x5
+ 644 042c 03       		.byte	0x3
+ 645 042d 00000000 		.4byte	.LANCHOR1
+ 646 0431 00       		.byte	0
+ 647 0432 00       		.byte	0
+ 648 0433 18       		.uleb128 0x18
+ 649 0434 BE020000 		.4byte	.LASF68
+ 650 0438 01       		.byte	0x1
+ 651 0439 18       		.byte	0x18
+ 652 043a 81000000 		.4byte	0x81
+ 653 043e 05       		.uleb128 0x5
+ 654 043f 03       		.byte	0x3
+ARM GAS  C:\Users\quint\AppData\Local\Temp\cchPFwNS.s 			page 22
 
 
- 649 0421 EB030000 		.4byte	0x3eb
- 650 0425 00000000 		.4byte	.LLST0
- 651 0429 15       		.uleb128 0x15
- 652 042a DF030000 		.4byte	0x3df
- 653 042e 15000000 		.4byte	.LLST1
- 654 0432 00       		.byte	0
- 655 0433 14       		.uleb128 0x14
- 656 0434 A6030000 		.4byte	0x3a6
- 657 0438 20000000 		.4byte	.LBB8
- 658 043c 02000000 		.4byte	.LBE8-.LBB8
- 659 0440 01       		.byte	0x1
- 660 0441 53       		.byte	0x53
- 661 0442 59040000 		.4byte	0x459
- 662 0446 15       		.uleb128 0x15
- 663 0447 BF030000 		.4byte	0x3bf
- 664 044b 2D000000 		.4byte	.LLST2
- 665 044f 15       		.uleb128 0x15
- 666 0450 B3030000 		.4byte	0x3b3
- 667 0454 42000000 		.4byte	.LLST3
- 668 0458 00       		.byte	0
- 669 0459 16       		.uleb128 0x16
- 670 045a 14000000 		.4byte	.LVL0
- 671 045e A2040000 		.4byte	0x4a2
- 672 0462 17       		.uleb128 0x17
- 673 0463 01       		.uleb128 0x1
- 674 0464 50       		.byte	0x50
- 675 0465 05       		.uleb128 0x5
- 676 0466 0C       		.byte	0xc
- 677 0467 00003840 		.4byte	0x40380000
- 678 046b 17       		.uleb128 0x17
- 679 046c 01       		.uleb128 0x1
- 680 046d 51       		.byte	0x51
- 681 046e 01       		.uleb128 0x1
- 682 046f 37       		.byte	0x37
- 683 0470 17       		.uleb128 0x17
- 684 0471 01       		.uleb128 0x1
- 685 0472 52       		.byte	0x52
- 686 0473 05       		.uleb128 0x5
- 687 0474 03       		.byte	0x3
- 688 0475 00000000 		.4byte	.LANCHOR1
- 689 0479 00       		.byte	0
- 690 047a 00       		.byte	0
- 691 047b 18       		.uleb128 0x18
- 692 047c A7020000 		.4byte	.LASF74
- 693 0480 01       		.byte	0x1
- 694 0481 18       		.byte	0x18
- 695 0482 81000000 		.4byte	0x81
- 696 0486 05       		.uleb128 0x5
- 697 0487 03       		.byte	0x3
- 698 0488 00000000 		.4byte	PWM_Motor2_initVar
- 699 048c 18       		.uleb128 0x18
- 700 048d AB010000 		.4byte	.LASF75
- 701 0491 01       		.byte	0x1
- 702 0492 1D       		.byte	0x1d
- 703 0493 9D040000 		.4byte	0x49d
- 704 0497 05       		.uleb128 0x5
- 705 0498 03       		.byte	0x3
-ARM GAS  C:\Users\quint\AppData\Local\Temp\ccV677ca.s 			page 23
+ 655 0440 00000000 		.4byte	Counter_1_initVar
+ 656 0444 18       		.uleb128 0x18
+ 657 0445 35040000 		.4byte	.LASF69
+ 658 0449 01       		.byte	0x1
+ 659 044a 1D       		.byte	0x1d
+ 660 044b 55040000 		.4byte	0x455
+ 661 044f 05       		.uleb128 0x5
+ 662 0450 03       		.byte	0x3
+ 663 0451 00000000 		.4byte	Counter_1_config
+ 664 0455 06       		.uleb128 0x6
+ 665 0456 53030000 		.4byte	0x353
+ 666 045a 19       		.uleb128 0x19
+ 667 045b 59010000 		.4byte	.LASF75
+ 668 045f 59010000 		.4byte	.LASF75
+ 669 0463 07       		.byte	0x7
+ 670 0464 91       		.byte	0x91
+ 671 0465 00       		.byte	0
+ 672              		.section	.debug_abbrev,"",%progbits
+ 673              	.Ldebug_abbrev0:
+ 674 0000 01       		.uleb128 0x1
+ 675 0001 11       		.uleb128 0x11
+ 676 0002 01       		.byte	0x1
+ 677 0003 25       		.uleb128 0x25
+ 678 0004 0E       		.uleb128 0xe
+ 679 0005 13       		.uleb128 0x13
+ 680 0006 0B       		.uleb128 0xb
+ 681 0007 03       		.uleb128 0x3
+ 682 0008 0E       		.uleb128 0xe
+ 683 0009 1B       		.uleb128 0x1b
+ 684 000a 0E       		.uleb128 0xe
+ 685 000b 55       		.uleb128 0x55
+ 686 000c 17       		.uleb128 0x17
+ 687 000d 11       		.uleb128 0x11
+ 688 000e 01       		.uleb128 0x1
+ 689 000f 10       		.uleb128 0x10
+ 690 0010 17       		.uleb128 0x17
+ 691 0011 00       		.byte	0
+ 692 0012 00       		.byte	0
+ 693 0013 02       		.uleb128 0x2
+ 694 0014 24       		.uleb128 0x24
+ 695 0015 00       		.byte	0
+ 696 0016 0B       		.uleb128 0xb
+ 697 0017 0B       		.uleb128 0xb
+ 698 0018 3E       		.uleb128 0x3e
+ 699 0019 0B       		.uleb128 0xb
+ 700 001a 03       		.uleb128 0x3
+ 701 001b 0E       		.uleb128 0xe
+ 702 001c 00       		.byte	0
+ 703 001d 00       		.byte	0
+ 704 001e 03       		.uleb128 0x3
+ 705 001f 16       		.uleb128 0x16
+ 706 0020 00       		.byte	0
+ 707 0021 03       		.uleb128 0x3
+ 708 0022 0E       		.uleb128 0xe
+ 709 0023 3A       		.uleb128 0x3a
+ 710 0024 0B       		.uleb128 0xb
+ 711 0025 3B       		.uleb128 0x3b
+ARM GAS  C:\Users\quint\AppData\Local\Temp\cchPFwNS.s 			page 23
 
 
- 706 0499 00000000 		.4byte	PWM_Motor2_config
- 707 049d 06       		.uleb128 0x6
- 708 049e 9B030000 		.4byte	0x39b
- 709 04a2 19       		.uleb128 0x19
- 710 04a3 46030000 		.4byte	.LASF81
- 711 04a7 46030000 		.4byte	.LASF81
- 712 04ab 07       		.byte	0x7
- 713 04ac CA       		.byte	0xca
- 714 04ad 00       		.byte	0
- 715              		.section	.debug_abbrev,"",%progbits
- 716              	.Ldebug_abbrev0:
- 717 0000 01       		.uleb128 0x1
- 718 0001 11       		.uleb128 0x11
- 719 0002 01       		.byte	0x1
- 720 0003 25       		.uleb128 0x25
- 721 0004 0E       		.uleb128 0xe
- 722 0005 13       		.uleb128 0x13
- 723 0006 0B       		.uleb128 0xb
- 724 0007 03       		.uleb128 0x3
- 725 0008 0E       		.uleb128 0xe
- 726 0009 1B       		.uleb128 0x1b
- 727 000a 0E       		.uleb128 0xe
- 728 000b 55       		.uleb128 0x55
- 729 000c 17       		.uleb128 0x17
- 730 000d 11       		.uleb128 0x11
- 731 000e 01       		.uleb128 0x1
- 732 000f 10       		.uleb128 0x10
- 733 0010 17       		.uleb128 0x17
- 734 0011 00       		.byte	0
- 735 0012 00       		.byte	0
- 736 0013 02       		.uleb128 0x2
- 737 0014 24       		.uleb128 0x24
- 738 0015 00       		.byte	0
- 739 0016 0B       		.uleb128 0xb
- 740 0017 0B       		.uleb128 0xb
- 741 0018 3E       		.uleb128 0x3e
- 742 0019 0B       		.uleb128 0xb
- 743 001a 03       		.uleb128 0x3
- 744 001b 0E       		.uleb128 0xe
- 745 001c 00       		.byte	0
- 746 001d 00       		.byte	0
- 747 001e 03       		.uleb128 0x3
- 748 001f 16       		.uleb128 0x16
- 749 0020 00       		.byte	0
- 750 0021 03       		.uleb128 0x3
- 751 0022 0E       		.uleb128 0xe
- 752 0023 3A       		.uleb128 0x3a
- 753 0024 0B       		.uleb128 0xb
- 754 0025 3B       		.uleb128 0x3b
- 755 0026 0B       		.uleb128 0xb
- 756 0027 49       		.uleb128 0x49
- 757 0028 13       		.uleb128 0x13
- 758 0029 00       		.byte	0
- 759 002a 00       		.byte	0
- 760 002b 04       		.uleb128 0x4
- 761 002c 24       		.uleb128 0x24
- 762 002d 00       		.byte	0
-ARM GAS  C:\Users\quint\AppData\Local\Temp\ccV677ca.s 			page 24
+ 712 0026 0B       		.uleb128 0xb
+ 713 0027 49       		.uleb128 0x49
+ 714 0028 13       		.uleb128 0x13
+ 715 0029 00       		.byte	0
+ 716 002a 00       		.byte	0
+ 717 002b 04       		.uleb128 0x4
+ 718 002c 24       		.uleb128 0x24
+ 719 002d 00       		.byte	0
+ 720 002e 0B       		.uleb128 0xb
+ 721 002f 0B       		.uleb128 0xb
+ 722 0030 3E       		.uleb128 0x3e
+ 723 0031 0B       		.uleb128 0xb
+ 724 0032 03       		.uleb128 0x3
+ 725 0033 08       		.uleb128 0x8
+ 726 0034 00       		.byte	0
+ 727 0035 00       		.byte	0
+ 728 0036 05       		.uleb128 0x5
+ 729 0037 35       		.uleb128 0x35
+ 730 0038 00       		.byte	0
+ 731 0039 49       		.uleb128 0x49
+ 732 003a 13       		.uleb128 0x13
+ 733 003b 00       		.byte	0
+ 734 003c 00       		.byte	0
+ 735 003d 06       		.uleb128 0x6
+ 736 003e 26       		.uleb128 0x26
+ 737 003f 00       		.byte	0
+ 738 0040 49       		.uleb128 0x49
+ 739 0041 13       		.uleb128 0x13
+ 740 0042 00       		.byte	0
+ 741 0043 00       		.byte	0
+ 742 0044 07       		.uleb128 0x7
+ 743 0045 13       		.uleb128 0x13
+ 744 0046 01       		.byte	0x1
+ 745 0047 0B       		.uleb128 0xb
+ 746 0048 0B       		.uleb128 0xb
+ 747 0049 3A       		.uleb128 0x3a
+ 748 004a 0B       		.uleb128 0xb
+ 749 004b 3B       		.uleb128 0x3b
+ 750 004c 0B       		.uleb128 0xb
+ 751 004d 01       		.uleb128 0x1
+ 752 004e 13       		.uleb128 0x13
+ 753 004f 00       		.byte	0
+ 754 0050 00       		.byte	0
+ 755 0051 08       		.uleb128 0x8
+ 756 0052 0D       		.uleb128 0xd
+ 757 0053 00       		.byte	0
+ 758 0054 03       		.uleb128 0x3
+ 759 0055 0E       		.uleb128 0xe
+ 760 0056 3A       		.uleb128 0x3a
+ 761 0057 0B       		.uleb128 0xb
+ 762 0058 3B       		.uleb128 0x3b
+ 763 0059 0B       		.uleb128 0xb
+ 764 005a 49       		.uleb128 0x49
+ 765 005b 13       		.uleb128 0x13
+ 766 005c 38       		.uleb128 0x38
+ 767 005d 0B       		.uleb128 0xb
+ 768 005e 00       		.byte	0
+ARM GAS  C:\Users\quint\AppData\Local\Temp\cchPFwNS.s 			page 24
 
 
- 763 002e 0B       		.uleb128 0xb
- 764 002f 0B       		.uleb128 0xb
- 765 0030 3E       		.uleb128 0x3e
- 766 0031 0B       		.uleb128 0xb
- 767 0032 03       		.uleb128 0x3
- 768 0033 08       		.uleb128 0x8
- 769 0034 00       		.byte	0
- 770 0035 00       		.byte	0
- 771 0036 05       		.uleb128 0x5
- 772 0037 35       		.uleb128 0x35
- 773 0038 00       		.byte	0
- 774 0039 49       		.uleb128 0x49
- 775 003a 13       		.uleb128 0x13
- 776 003b 00       		.byte	0
- 777 003c 00       		.byte	0
- 778 003d 06       		.uleb128 0x6
- 779 003e 26       		.uleb128 0x26
- 780 003f 00       		.byte	0
- 781 0040 49       		.uleb128 0x49
- 782 0041 13       		.uleb128 0x13
- 783 0042 00       		.byte	0
- 784 0043 00       		.byte	0
- 785 0044 07       		.uleb128 0x7
- 786 0045 13       		.uleb128 0x13
- 787 0046 01       		.byte	0x1
- 788 0047 0B       		.uleb128 0xb
- 789 0048 0B       		.uleb128 0xb
- 790 0049 3A       		.uleb128 0x3a
- 791 004a 0B       		.uleb128 0xb
- 792 004b 3B       		.uleb128 0x3b
- 793 004c 0B       		.uleb128 0xb
- 794 004d 01       		.uleb128 0x1
- 795 004e 13       		.uleb128 0x13
- 796 004f 00       		.byte	0
- 797 0050 00       		.byte	0
- 798 0051 08       		.uleb128 0x8
- 799 0052 0D       		.uleb128 0xd
- 800 0053 00       		.byte	0
- 801 0054 03       		.uleb128 0x3
- 802 0055 0E       		.uleb128 0xe
- 803 0056 3A       		.uleb128 0x3a
- 804 0057 0B       		.uleb128 0xb
- 805 0058 3B       		.uleb128 0x3b
- 806 0059 0B       		.uleb128 0xb
- 807 005a 49       		.uleb128 0x49
- 808 005b 13       		.uleb128 0x13
- 809 005c 38       		.uleb128 0x38
- 810 005d 0B       		.uleb128 0xb
- 811 005e 00       		.byte	0
- 812 005f 00       		.byte	0
- 813 0060 09       		.uleb128 0x9
- 814 0061 0D       		.uleb128 0xd
- 815 0062 00       		.byte	0
- 816 0063 03       		.uleb128 0x3
- 817 0064 08       		.uleb128 0x8
- 818 0065 3A       		.uleb128 0x3a
- 819 0066 0B       		.uleb128 0xb
-ARM GAS  C:\Users\quint\AppData\Local\Temp\ccV677ca.s 			page 25
+ 769 005f 00       		.byte	0
+ 770 0060 09       		.uleb128 0x9
+ 771 0061 0D       		.uleb128 0xd
+ 772 0062 00       		.byte	0
+ 773 0063 03       		.uleb128 0x3
+ 774 0064 08       		.uleb128 0x8
+ 775 0065 3A       		.uleb128 0x3a
+ 776 0066 0B       		.uleb128 0xb
+ 777 0067 3B       		.uleb128 0x3b
+ 778 0068 0B       		.uleb128 0xb
+ 779 0069 49       		.uleb128 0x49
+ 780 006a 13       		.uleb128 0x13
+ 781 006b 38       		.uleb128 0x38
+ 782 006c 0B       		.uleb128 0xb
+ 783 006d 00       		.byte	0
+ 784 006e 00       		.byte	0
+ 785 006f 0A       		.uleb128 0xa
+ 786 0070 13       		.uleb128 0x13
+ 787 0071 01       		.byte	0x1
+ 788 0072 0B       		.uleb128 0xb
+ 789 0073 05       		.uleb128 0x5
+ 790 0074 3A       		.uleb128 0x3a
+ 791 0075 0B       		.uleb128 0xb
+ 792 0076 3B       		.uleb128 0x3b
+ 793 0077 0B       		.uleb128 0xb
+ 794 0078 01       		.uleb128 0x1
+ 795 0079 13       		.uleb128 0x13
+ 796 007a 00       		.byte	0
+ 797 007b 00       		.byte	0
+ 798 007c 0B       		.uleb128 0xb
+ 799 007d 0D       		.uleb128 0xd
+ 800 007e 00       		.byte	0
+ 801 007f 03       		.uleb128 0x3
+ 802 0080 08       		.uleb128 0x8
+ 803 0081 3A       		.uleb128 0x3a
+ 804 0082 0B       		.uleb128 0xb
+ 805 0083 3B       		.uleb128 0x3b
+ 806 0084 0B       		.uleb128 0xb
+ 807 0085 49       		.uleb128 0x49
+ 808 0086 13       		.uleb128 0x13
+ 809 0087 38       		.uleb128 0x38
+ 810 0088 05       		.uleb128 0x5
+ 811 0089 00       		.byte	0
+ 812 008a 00       		.byte	0
+ 813 008b 0C       		.uleb128 0xc
+ 814 008c 01       		.uleb128 0x1
+ 815 008d 01       		.byte	0x1
+ 816 008e 49       		.uleb128 0x49
+ 817 008f 13       		.uleb128 0x13
+ 818 0090 01       		.uleb128 0x1
+ 819 0091 13       		.uleb128 0x13
+ 820 0092 00       		.byte	0
+ 821 0093 00       		.byte	0
+ 822 0094 0D       		.uleb128 0xd
+ 823 0095 21       		.uleb128 0x21
+ 824 0096 00       		.byte	0
+ 825 0097 49       		.uleb128 0x49
+ARM GAS  C:\Users\quint\AppData\Local\Temp\cchPFwNS.s 			page 25
 
 
- 820 0067 3B       		.uleb128 0x3b
- 821 0068 0B       		.uleb128 0xb
- 822 0069 49       		.uleb128 0x49
- 823 006a 13       		.uleb128 0x13
- 824 006b 38       		.uleb128 0x38
- 825 006c 0B       		.uleb128 0xb
- 826 006d 00       		.byte	0
- 827 006e 00       		.byte	0
- 828 006f 0A       		.uleb128 0xa
- 829 0070 13       		.uleb128 0x13
- 830 0071 01       		.byte	0x1
- 831 0072 0B       		.uleb128 0xb
- 832 0073 05       		.uleb128 0x5
- 833 0074 3A       		.uleb128 0x3a
- 834 0075 0B       		.uleb128 0xb
- 835 0076 3B       		.uleb128 0x3b
- 836 0077 0B       		.uleb128 0xb
- 837 0078 01       		.uleb128 0x1
- 838 0079 13       		.uleb128 0x13
- 839 007a 00       		.byte	0
- 840 007b 00       		.byte	0
- 841 007c 0B       		.uleb128 0xb
- 842 007d 0D       		.uleb128 0xd
- 843 007e 00       		.byte	0
- 844 007f 03       		.uleb128 0x3
- 845 0080 08       		.uleb128 0x8
- 846 0081 3A       		.uleb128 0x3a
- 847 0082 0B       		.uleb128 0xb
- 848 0083 3B       		.uleb128 0x3b
- 849 0084 0B       		.uleb128 0xb
- 850 0085 49       		.uleb128 0x49
- 851 0086 13       		.uleb128 0x13
- 852 0087 38       		.uleb128 0x38
- 853 0088 05       		.uleb128 0x5
- 854 0089 00       		.byte	0
- 855 008a 00       		.byte	0
- 856 008b 0C       		.uleb128 0xc
- 857 008c 01       		.uleb128 0x1
- 858 008d 01       		.byte	0x1
- 859 008e 49       		.uleb128 0x49
- 860 008f 13       		.uleb128 0x13
- 861 0090 01       		.uleb128 0x1
- 862 0091 13       		.uleb128 0x13
- 863 0092 00       		.byte	0
- 864 0093 00       		.byte	0
- 865 0094 0D       		.uleb128 0xd
- 866 0095 21       		.uleb128 0x21
- 867 0096 00       		.byte	0
- 868 0097 49       		.uleb128 0x49
- 869 0098 13       		.uleb128 0x13
- 870 0099 2F       		.uleb128 0x2f
- 871 009a 0B       		.uleb128 0xb
- 872 009b 00       		.byte	0
- 873 009c 00       		.byte	0
- 874 009d 0E       		.uleb128 0xe
- 875 009e 16       		.uleb128 0x16
- 876 009f 00       		.byte	0
-ARM GAS  C:\Users\quint\AppData\Local\Temp\ccV677ca.s 			page 26
+ 826 0098 13       		.uleb128 0x13
+ 827 0099 2F       		.uleb128 0x2f
+ 828 009a 0B       		.uleb128 0xb
+ 829 009b 00       		.byte	0
+ 830 009c 00       		.byte	0
+ 831 009d 0E       		.uleb128 0xe
+ 832 009e 16       		.uleb128 0x16
+ 833 009f 00       		.byte	0
+ 834 00a0 03       		.uleb128 0x3
+ 835 00a1 0E       		.uleb128 0xe
+ 836 00a2 3A       		.uleb128 0x3a
+ 837 00a3 0B       		.uleb128 0xb
+ 838 00a4 3B       		.uleb128 0x3b
+ 839 00a5 05       		.uleb128 0x5
+ 840 00a6 49       		.uleb128 0x49
+ 841 00a7 13       		.uleb128 0x13
+ 842 00a8 00       		.byte	0
+ 843 00a9 00       		.byte	0
+ 844 00aa 0F       		.uleb128 0xf
+ 845 00ab 13       		.uleb128 0x13
+ 846 00ac 01       		.byte	0x1
+ 847 00ad 03       		.uleb128 0x3
+ 848 00ae 0E       		.uleb128 0xe
+ 849 00af 0B       		.uleb128 0xb
+ 850 00b0 0B       		.uleb128 0xb
+ 851 00b1 3A       		.uleb128 0x3a
+ 852 00b2 0B       		.uleb128 0xb
+ 853 00b3 3B       		.uleb128 0x3b
+ 854 00b4 0B       		.uleb128 0xb
+ 855 00b5 01       		.uleb128 0x1
+ 856 00b6 13       		.uleb128 0x13
+ 857 00b7 00       		.byte	0
+ 858 00b8 00       		.byte	0
+ 859 00b9 10       		.uleb128 0x10
+ 860 00ba 2E       		.uleb128 0x2e
+ 861 00bb 01       		.byte	0x1
+ 862 00bc 03       		.uleb128 0x3
+ 863 00bd 0E       		.uleb128 0xe
+ 864 00be 3A       		.uleb128 0x3a
+ 865 00bf 0B       		.uleb128 0xb
+ 866 00c0 3B       		.uleb128 0x3b
+ 867 00c1 05       		.uleb128 0x5
+ 868 00c2 27       		.uleb128 0x27
+ 869 00c3 19       		.uleb128 0x19
+ 870 00c4 20       		.uleb128 0x20
+ 871 00c5 0B       		.uleb128 0xb
+ 872 00c6 01       		.uleb128 0x1
+ 873 00c7 13       		.uleb128 0x13
+ 874 00c8 00       		.byte	0
+ 875 00c9 00       		.byte	0
+ 876 00ca 11       		.uleb128 0x11
+ 877 00cb 05       		.uleb128 0x5
+ 878 00cc 00       		.byte	0
+ 879 00cd 03       		.uleb128 0x3
+ 880 00ce 0E       		.uleb128 0xe
+ 881 00cf 3A       		.uleb128 0x3a
+ 882 00d0 0B       		.uleb128 0xb
+ARM GAS  C:\Users\quint\AppData\Local\Temp\cchPFwNS.s 			page 26
 
 
- 877 00a0 03       		.uleb128 0x3
- 878 00a1 0E       		.uleb128 0xe
- 879 00a2 3A       		.uleb128 0x3a
- 880 00a3 0B       		.uleb128 0xb
- 881 00a4 3B       		.uleb128 0x3b
- 882 00a5 05       		.uleb128 0x5
- 883 00a6 49       		.uleb128 0x49
- 884 00a7 13       		.uleb128 0x13
- 885 00a8 00       		.byte	0
- 886 00a9 00       		.byte	0
- 887 00aa 0F       		.uleb128 0xf
- 888 00ab 13       		.uleb128 0x13
- 889 00ac 01       		.byte	0x1
- 890 00ad 03       		.uleb128 0x3
- 891 00ae 0E       		.uleb128 0xe
- 892 00af 0B       		.uleb128 0xb
- 893 00b0 0B       		.uleb128 0xb
- 894 00b1 3A       		.uleb128 0x3a
- 895 00b2 0B       		.uleb128 0xb
- 896 00b3 3B       		.uleb128 0x3b
- 897 00b4 0B       		.uleb128 0xb
- 898 00b5 01       		.uleb128 0x1
- 899 00b6 13       		.uleb128 0x13
- 900 00b7 00       		.byte	0
- 901 00b8 00       		.byte	0
- 902 00b9 10       		.uleb128 0x10
- 903 00ba 2E       		.uleb128 0x2e
- 904 00bb 01       		.byte	0x1
- 905 00bc 03       		.uleb128 0x3
- 906 00bd 0E       		.uleb128 0xe
- 907 00be 3A       		.uleb128 0x3a
- 908 00bf 0B       		.uleb128 0xb
- 909 00c0 3B       		.uleb128 0x3b
- 910 00c1 05       		.uleb128 0x5
- 911 00c2 27       		.uleb128 0x27
- 912 00c3 19       		.uleb128 0x19
- 913 00c4 20       		.uleb128 0x20
- 914 00c5 0B       		.uleb128 0xb
- 915 00c6 01       		.uleb128 0x1
- 916 00c7 13       		.uleb128 0x13
- 917 00c8 00       		.byte	0
- 918 00c9 00       		.byte	0
- 919 00ca 11       		.uleb128 0x11
- 920 00cb 05       		.uleb128 0x5
- 921 00cc 00       		.byte	0
- 922 00cd 03       		.uleb128 0x3
- 923 00ce 0E       		.uleb128 0xe
- 924 00cf 3A       		.uleb128 0x3a
- 925 00d0 0B       		.uleb128 0xb
- 926 00d1 3B       		.uleb128 0x3b
- 927 00d2 05       		.uleb128 0x5
- 928 00d3 49       		.uleb128 0x49
- 929 00d4 13       		.uleb128 0x13
- 930 00d5 00       		.byte	0
- 931 00d6 00       		.byte	0
- 932 00d7 12       		.uleb128 0x12
- 933 00d8 0F       		.uleb128 0xf
-ARM GAS  C:\Users\quint\AppData\Local\Temp\ccV677ca.s 			page 27
+ 883 00d1 3B       		.uleb128 0x3b
+ 884 00d2 05       		.uleb128 0x5
+ 885 00d3 49       		.uleb128 0x49
+ 886 00d4 13       		.uleb128 0x13
+ 887 00d5 00       		.byte	0
+ 888 00d6 00       		.byte	0
+ 889 00d7 12       		.uleb128 0x12
+ 890 00d8 0F       		.uleb128 0xf
+ 891 00d9 00       		.byte	0
+ 892 00da 0B       		.uleb128 0xb
+ 893 00db 0B       		.uleb128 0xb
+ 894 00dc 49       		.uleb128 0x49
+ 895 00dd 13       		.uleb128 0x13
+ 896 00de 00       		.byte	0
+ 897 00df 00       		.byte	0
+ 898 00e0 13       		.uleb128 0x13
+ 899 00e1 2E       		.uleb128 0x2e
+ 900 00e2 01       		.byte	0x1
+ 901 00e3 3F       		.uleb128 0x3f
+ 902 00e4 19       		.uleb128 0x19
+ 903 00e5 03       		.uleb128 0x3
+ 904 00e6 0E       		.uleb128 0xe
+ 905 00e7 3A       		.uleb128 0x3a
+ 906 00e8 0B       		.uleb128 0xb
+ 907 00e9 3B       		.uleb128 0x3b
+ 908 00ea 0B       		.uleb128 0xb
+ 909 00eb 27       		.uleb128 0x27
+ 910 00ec 19       		.uleb128 0x19
+ 911 00ed 11       		.uleb128 0x11
+ 912 00ee 01       		.uleb128 0x1
+ 913 00ef 12       		.uleb128 0x12
+ 914 00f0 06       		.uleb128 0x6
+ 915 00f1 40       		.uleb128 0x40
+ 916 00f2 18       		.uleb128 0x18
+ 917 00f3 9742     		.uleb128 0x2117
+ 918 00f5 19       		.uleb128 0x19
+ 919 00f6 01       		.uleb128 0x1
+ 920 00f7 13       		.uleb128 0x13
+ 921 00f8 00       		.byte	0
+ 922 00f9 00       		.byte	0
+ 923 00fa 14       		.uleb128 0x14
+ 924 00fb 1D       		.uleb128 0x1d
+ 925 00fc 01       		.byte	0x1
+ 926 00fd 31       		.uleb128 0x31
+ 927 00fe 13       		.uleb128 0x13
+ 928 00ff 11       		.uleb128 0x11
+ 929 0100 01       		.uleb128 0x1
+ 930 0101 12       		.uleb128 0x12
+ 931 0102 06       		.uleb128 0x6
+ 932 0103 58       		.uleb128 0x58
+ 933 0104 0B       		.uleb128 0xb
+ 934 0105 59       		.uleb128 0x59
+ 935 0106 0B       		.uleb128 0xb
+ 936 0107 01       		.uleb128 0x1
+ 937 0108 13       		.uleb128 0x13
+ 938 0109 00       		.byte	0
+ 939 010a 00       		.byte	0
+ARM GAS  C:\Users\quint\AppData\Local\Temp\cchPFwNS.s 			page 27
 
 
- 934 00d9 00       		.byte	0
- 935 00da 0B       		.uleb128 0xb
- 936 00db 0B       		.uleb128 0xb
- 937 00dc 49       		.uleb128 0x49
- 938 00dd 13       		.uleb128 0x13
- 939 00de 00       		.byte	0
- 940 00df 00       		.byte	0
- 941 00e0 13       		.uleb128 0x13
- 942 00e1 2E       		.uleb128 0x2e
- 943 00e2 01       		.byte	0x1
- 944 00e3 3F       		.uleb128 0x3f
- 945 00e4 19       		.uleb128 0x19
- 946 00e5 03       		.uleb128 0x3
- 947 00e6 0E       		.uleb128 0xe
- 948 00e7 3A       		.uleb128 0x3a
- 949 00e8 0B       		.uleb128 0xb
- 950 00e9 3B       		.uleb128 0x3b
- 951 00ea 0B       		.uleb128 0xb
- 952 00eb 27       		.uleb128 0x27
- 953 00ec 19       		.uleb128 0x19
- 954 00ed 11       		.uleb128 0x11
- 955 00ee 01       		.uleb128 0x1
- 956 00ef 12       		.uleb128 0x12
- 957 00f0 06       		.uleb128 0x6
- 958 00f1 40       		.uleb128 0x40
- 959 00f2 18       		.uleb128 0x18
- 960 00f3 9742     		.uleb128 0x2117
- 961 00f5 19       		.uleb128 0x19
- 962 00f6 01       		.uleb128 0x1
- 963 00f7 13       		.uleb128 0x13
- 964 00f8 00       		.byte	0
- 965 00f9 00       		.byte	0
- 966 00fa 14       		.uleb128 0x14
- 967 00fb 1D       		.uleb128 0x1d
- 968 00fc 01       		.byte	0x1
- 969 00fd 31       		.uleb128 0x31
- 970 00fe 13       		.uleb128 0x13
- 971 00ff 11       		.uleb128 0x11
- 972 0100 01       		.uleb128 0x1
- 973 0101 12       		.uleb128 0x12
- 974 0102 06       		.uleb128 0x6
- 975 0103 58       		.uleb128 0x58
- 976 0104 0B       		.uleb128 0xb
- 977 0105 59       		.uleb128 0x59
- 978 0106 0B       		.uleb128 0xb
- 979 0107 01       		.uleb128 0x1
- 980 0108 13       		.uleb128 0x13
- 981 0109 00       		.byte	0
- 982 010a 00       		.byte	0
- 983 010b 15       		.uleb128 0x15
- 984 010c 05       		.uleb128 0x5
- 985 010d 00       		.byte	0
- 986 010e 31       		.uleb128 0x31
- 987 010f 13       		.uleb128 0x13
- 988 0110 02       		.uleb128 0x2
- 989 0111 17       		.uleb128 0x17
- 990 0112 00       		.byte	0
-ARM GAS  C:\Users\quint\AppData\Local\Temp\ccV677ca.s 			page 28
+ 940 010b 15       		.uleb128 0x15
+ 941 010c 05       		.uleb128 0x5
+ 942 010d 00       		.byte	0
+ 943 010e 31       		.uleb128 0x31
+ 944 010f 13       		.uleb128 0x13
+ 945 0110 02       		.uleb128 0x2
+ 946 0111 17       		.uleb128 0x17
+ 947 0112 00       		.byte	0
+ 948 0113 00       		.byte	0
+ 949 0114 16       		.uleb128 0x16
+ 950 0115 898201   		.uleb128 0x4109
+ 951 0118 01       		.byte	0x1
+ 952 0119 11       		.uleb128 0x11
+ 953 011a 01       		.uleb128 0x1
+ 954 011b 31       		.uleb128 0x31
+ 955 011c 13       		.uleb128 0x13
+ 956 011d 00       		.byte	0
+ 957 011e 00       		.byte	0
+ 958 011f 17       		.uleb128 0x17
+ 959 0120 8A8201   		.uleb128 0x410a
+ 960 0123 00       		.byte	0
+ 961 0124 02       		.uleb128 0x2
+ 962 0125 18       		.uleb128 0x18
+ 963 0126 9142     		.uleb128 0x2111
+ 964 0128 18       		.uleb128 0x18
+ 965 0129 00       		.byte	0
+ 966 012a 00       		.byte	0
+ 967 012b 18       		.uleb128 0x18
+ 968 012c 34       		.uleb128 0x34
+ 969 012d 00       		.byte	0
+ 970 012e 03       		.uleb128 0x3
+ 971 012f 0E       		.uleb128 0xe
+ 972 0130 3A       		.uleb128 0x3a
+ 973 0131 0B       		.uleb128 0xb
+ 974 0132 3B       		.uleb128 0x3b
+ 975 0133 0B       		.uleb128 0xb
+ 976 0134 49       		.uleb128 0x49
+ 977 0135 13       		.uleb128 0x13
+ 978 0136 3F       		.uleb128 0x3f
+ 979 0137 19       		.uleb128 0x19
+ 980 0138 02       		.uleb128 0x2
+ 981 0139 18       		.uleb128 0x18
+ 982 013a 00       		.byte	0
+ 983 013b 00       		.byte	0
+ 984 013c 19       		.uleb128 0x19
+ 985 013d 2E       		.uleb128 0x2e
+ 986 013e 00       		.byte	0
+ 987 013f 3F       		.uleb128 0x3f
+ 988 0140 19       		.uleb128 0x19
+ 989 0141 3C       		.uleb128 0x3c
+ 990 0142 19       		.uleb128 0x19
+ 991 0143 6E       		.uleb128 0x6e
+ 992 0144 0E       		.uleb128 0xe
+ 993 0145 03       		.uleb128 0x3
+ 994 0146 0E       		.uleb128 0xe
+ 995 0147 3A       		.uleb128 0x3a
+ 996 0148 0B       		.uleb128 0xb
+ARM GAS  C:\Users\quint\AppData\Local\Temp\cchPFwNS.s 			page 28
 
 
- 991 0113 00       		.byte	0
- 992 0114 16       		.uleb128 0x16
- 993 0115 898201   		.uleb128 0x4109
- 994 0118 01       		.byte	0x1
- 995 0119 11       		.uleb128 0x11
- 996 011a 01       		.uleb128 0x1
- 997 011b 31       		.uleb128 0x31
- 998 011c 13       		.uleb128 0x13
- 999 011d 00       		.byte	0
- 1000 011e 00       		.byte	0
- 1001 011f 17       		.uleb128 0x17
- 1002 0120 8A8201   		.uleb128 0x410a
- 1003 0123 00       		.byte	0
- 1004 0124 02       		.uleb128 0x2
- 1005 0125 18       		.uleb128 0x18
- 1006 0126 9142     		.uleb128 0x2111
- 1007 0128 18       		.uleb128 0x18
- 1008 0129 00       		.byte	0
- 1009 012a 00       		.byte	0
- 1010 012b 18       		.uleb128 0x18
- 1011 012c 34       		.uleb128 0x34
- 1012 012d 00       		.byte	0
- 1013 012e 03       		.uleb128 0x3
- 1014 012f 0E       		.uleb128 0xe
- 1015 0130 3A       		.uleb128 0x3a
- 1016 0131 0B       		.uleb128 0xb
- 1017 0132 3B       		.uleb128 0x3b
- 1018 0133 0B       		.uleb128 0xb
- 1019 0134 49       		.uleb128 0x49
- 1020 0135 13       		.uleb128 0x13
- 1021 0136 3F       		.uleb128 0x3f
- 1022 0137 19       		.uleb128 0x19
- 1023 0138 02       		.uleb128 0x2
- 1024 0139 18       		.uleb128 0x18
- 1025 013a 00       		.byte	0
- 1026 013b 00       		.byte	0
- 1027 013c 19       		.uleb128 0x19
- 1028 013d 2E       		.uleb128 0x2e
- 1029 013e 00       		.byte	0
- 1030 013f 3F       		.uleb128 0x3f
- 1031 0140 19       		.uleb128 0x19
- 1032 0141 3C       		.uleb128 0x3c
- 1033 0142 19       		.uleb128 0x19
- 1034 0143 6E       		.uleb128 0x6e
- 1035 0144 0E       		.uleb128 0xe
- 1036 0145 03       		.uleb128 0x3
- 1037 0146 0E       		.uleb128 0xe
- 1038 0147 3A       		.uleb128 0x3a
- 1039 0148 0B       		.uleb128 0xb
- 1040 0149 3B       		.uleb128 0x3b
- 1041 014a 0B       		.uleb128 0xb
- 1042 014b 00       		.byte	0
- 1043 014c 00       		.byte	0
- 1044 014d 00       		.byte	0
- 1045              		.section	.debug_loc,"",%progbits
- 1046              	.Ldebug_loc0:
- 1047              	.LLST0:
-ARM GAS  C:\Users\quint\AppData\Local\Temp\ccV677ca.s 			page 29
+ 997 0149 3B       		.uleb128 0x3b
+ 998 014a 0B       		.uleb128 0xb
+ 999 014b 00       		.byte	0
+ 1000 014c 00       		.byte	0
+ 1001 014d 00       		.byte	0
+ 1002              		.section	.debug_loc,"",%progbits
+ 1003              	.Ldebug_loc0:
+ 1004              	.LLST0:
+ 1005 0000 1A000000 		.4byte	.LVL1
+ 1006 0004 20000000 		.4byte	.LVL2
+ 1007 0008 0200     		.2byte	0x2
+ 1008 000a 32       		.byte	0x32
+ 1009 000b 9F       		.byte	0x9f
+ 1010 000c 00000000 		.4byte	0
+ 1011 0010 00000000 		.4byte	0
+ 1012              	.LLST1:
+ 1013 0014 1A000000 		.4byte	.LVL1
+ 1014 0018 20000000 		.4byte	.LVL2
+ 1015 001c 0600     		.2byte	0x6
+ 1016 001e 0C       		.byte	0xc
+ 1017 001f 00003840 		.4byte	0x40380000
+ 1018 0023 9F       		.byte	0x9f
+ 1019 0024 00000000 		.4byte	0
+ 1020 0028 00000000 		.4byte	0
+ 1021              	.LLST2:
+ 1022 002c 20000000 		.4byte	.LVL2
+ 1023 0030 22000000 		.4byte	.LVL3
+ 1024 0034 0200     		.2byte	0x2
+ 1025 0036 32       		.byte	0x32
+ 1026 0037 9F       		.byte	0x9f
+ 1027 0038 00000000 		.4byte	0
+ 1028 003c 00000000 		.4byte	0
+ 1029              	.LLST3:
+ 1030 0040 20000000 		.4byte	.LVL2
+ 1031 0044 22000000 		.4byte	.LVL3
+ 1032 0048 0600     		.2byte	0x6
+ 1033 004a 0C       		.byte	0xc
+ 1034 004b 00003840 		.4byte	0x40380000
+ 1035 004f 9F       		.byte	0x9f
+ 1036 0050 00000000 		.4byte	0
+ 1037 0054 00000000 		.4byte	0
+ 1038              		.section	.debug_aranges,"",%progbits
+ 1039 0000 1C000000 		.4byte	0x1c
+ 1040 0004 0200     		.2byte	0x2
+ 1041 0006 00000000 		.4byte	.Ldebug_info0
+ 1042 000a 04       		.byte	0x4
+ 1043 000b 00       		.byte	0
+ 1044 000c 0000     		.2byte	0
+ 1045 000e 0000     		.2byte	0
+ 1046 0010 00000000 		.4byte	.LFB92
+ 1047 0014 30000000 		.4byte	.LFE92-.LFB92
+ 1048 0018 00000000 		.4byte	0
+ 1049 001c 00000000 		.4byte	0
+ 1050              		.section	.debug_ranges,"",%progbits
+ 1051              	.Ldebug_ranges0:
+ 1052 0000 00000000 		.4byte	.LFB92
+ 1053 0004 30000000 		.4byte	.LFE92
+ARM GAS  C:\Users\quint\AppData\Local\Temp\cchPFwNS.s 			page 29
 
 
- 1048 0000 1A000000 		.4byte	.LVL1
- 1049 0004 20000000 		.4byte	.LVL2
- 1050 0008 0300     		.2byte	0x3
- 1051 000a 08       		.byte	0x8
- 1052 000b 80       		.byte	0x80
- 1053 000c 9F       		.byte	0x9f
- 1054 000d 00000000 		.4byte	0
- 1055 0011 00000000 		.4byte	0
- 1056              	.LLST1:
- 1057 0015 1A000000 		.4byte	.LVL1
- 1058 0019 20000000 		.4byte	.LVL2
- 1059 001d 0600     		.2byte	0x6
- 1060 001f 0C       		.byte	0xc
- 1061 0020 00003840 		.4byte	0x40380000
- 1062 0024 9F       		.byte	0x9f
- 1063 0025 00000000 		.4byte	0
- 1064 0029 00000000 		.4byte	0
- 1065              	.LLST2:
- 1066 002d 20000000 		.4byte	.LVL2
- 1067 0031 22000000 		.4byte	.LVL3
- 1068 0035 0300     		.2byte	0x3
- 1069 0037 08       		.byte	0x8
- 1070 0038 80       		.byte	0x80
- 1071 0039 9F       		.byte	0x9f
- 1072 003a 00000000 		.4byte	0
- 1073 003e 00000000 		.4byte	0
- 1074              	.LLST3:
- 1075 0042 20000000 		.4byte	.LVL2
- 1076 0046 22000000 		.4byte	.LVL3
- 1077 004a 0600     		.2byte	0x6
- 1078 004c 0C       		.byte	0xc
- 1079 004d 00003840 		.4byte	0x40380000
- 1080 0051 9F       		.byte	0x9f
- 1081 0052 00000000 		.4byte	0
- 1082 0056 00000000 		.4byte	0
- 1083              		.section	.debug_aranges,"",%progbits
- 1084 0000 1C000000 		.4byte	0x1c
- 1085 0004 0200     		.2byte	0x2
- 1086 0006 00000000 		.4byte	.Ldebug_info0
- 1087 000a 04       		.byte	0x4
- 1088 000b 00       		.byte	0
- 1089 000c 0000     		.2byte	0
- 1090 000e 0000     		.2byte	0
- 1091 0010 00000000 		.4byte	.LFB99
- 1092 0014 30000000 		.4byte	.LFE99-.LFB99
- 1093 0018 00000000 		.4byte	0
- 1094 001c 00000000 		.4byte	0
- 1095              		.section	.debug_ranges,"",%progbits
- 1096              	.Ldebug_ranges0:
- 1097 0000 00000000 		.4byte	.LFB99
- 1098 0004 30000000 		.4byte	.LFE99
- 1099 0008 00000000 		.4byte	0
- 1100 000c 00000000 		.4byte	0
- 1101              		.section	.debug_line,"",%progbits
- 1102              	.Ldebug_line0:
- 1103 0000 3D020000 		.section	.debug_str,"MS",%progbits,1
- 1103      02001502 
-ARM GAS  C:\Users\quint\AppData\Local\Temp\ccV677ca.s 			page 30
+ 1054 0008 00000000 		.4byte	0
+ 1055 000c 00000000 		.4byte	0
+ 1056              		.section	.debug_line,"",%progbits
+ 1057              	.Ldebug_line0:
+ 1058 0000 40020000 		.section	.debug_str,"MS",%progbits,1
+ 1058      02001802 
+ 1058      00000201 
+ 1058      FB0E0D00 
+ 1058      01010101 
+ 1059              	.LASF55:
+ 1060 0000 72656C6F 		.ascii	"reloadInput\000"
+ 1060      6164496E 
+ 1060      70757400 
+ 1061              	.LASF44:
+ 1062 000c 636C6F63 		.ascii	"clockPrescaler\000"
+ 1062      6B507265 
+ 1062      7363616C 
+ 1062      657200
+ 1063              	.LASF60:
+ 1064 001b 636F756E 		.ascii	"countInputMode\000"
+ 1064      74496E70 
+ 1064      75744D6F 
+ 1064      646500
+ 1065              	.LASF48:
+ 1066 002a 636F6D70 		.ascii	"compare0\000"
+ 1066      61726530 
+ 1066      00
+ 1067              	.LASF49:
+ 1068 0033 636F6D70 		.ascii	"compare1\000"
+ 1068      61726531 
+ 1068      00
+ 1069              	.LASF25:
+ 1070 003c 494E5452 		.ascii	"INTR\000"
+ 1070      00
+ 1071              	.LASF0:
+ 1072 0041 73686F72 		.ascii	"short int\000"
+ 1072      7420696E 
+ 1072      7400
+ 1073              	.LASF13:
+ 1074 004b 73697A65 		.ascii	"sizetype\000"
+ 1074      74797065 
+ 1074      00
+ 1075              	.LASF19:
+ 1076 0054 50455249 		.ascii	"PERIOD_BUFF\000"
+ 1076      4F445F42 
+ 1076      55464600 
+ 1077              	.LASF29:
+ 1078 0060 54435057 		.ascii	"TCPWM_CNT_V1_Type\000"
+ 1078      4D5F434E 
+ 1078      545F5631 
+ 1078      5F547970 
+ 1078      6500
+ 1079              	.LASF31:
+ 1080 0072 4354524C 		.ascii	"CTRL_SET\000"
+ 1080      5F534554 
+ 1080      00
+ 1081              	.LASF18:
+ARM GAS  C:\Users\quint\AppData\Local\Temp\cchPFwNS.s 			page 30
 
 
- 1103      00000201 
- 1103      FB0E0D00 
- 1103      01010101 
- 1104              	.LASF50:
- 1105 0000 656E6162 		.ascii	"enablePeriodSwap\000"
- 1105      6C655065 
- 1105      72696F64 
- 1105      53776170 
- 1105      00
- 1106              	.LASF61:
- 1107 0011 72656C6F 		.ascii	"reloadInput\000"
- 1107      6164496E 
- 1107      70757400 
- 1108              	.LASF44:
- 1109 001d 636C6F63 		.ascii	"clockPrescaler\000"
- 1109      6B507265 
- 1109      7363616C 
- 1109      657200
- 1110              	.LASF66:
- 1111 002c 636F756E 		.ascii	"countInputMode\000"
- 1111      74496E70 
- 1111      75744D6F 
- 1111      646500
- 1112              	.LASF51:
- 1113 003b 636F6D70 		.ascii	"compare0\000"
- 1113      61726530 
- 1113      00
- 1114              	.LASF52:
- 1115 0044 636F6D70 		.ascii	"compare1\000"
- 1115      61726531 
- 1115      00
- 1116              	.LASF69:
- 1117 004d 63795F73 		.ascii	"cy_stc_tcpwm_pwm_config_t\000"
- 1117      74635F74 
- 1117      6370776D 
- 1117      5F70776D 
- 1117      5F636F6E 
- 1118              	.LASF25:
- 1119 0067 494E5452 		.ascii	"INTR\000"
- 1119      00
- 1120              	.LASF0:
- 1121 006c 73686F72 		.ascii	"short int\000"
- 1121      7420696E 
- 1121      7400
- 1122              	.LASF13:
- 1123 0076 73697A65 		.ascii	"sizetype\000"
- 1123      74797065 
- 1123      00
- 1124              	.LASF19:
- 1125 007f 50455249 		.ascii	"PERIOD_BUFF\000"
- 1125      4F445F42 
- 1125      55464600 
- 1126              	.LASF29:
- 1127 008b 54435057 		.ascii	"TCPWM_CNT_V1_Type\000"
- 1127      4D5F434E 
- 1127      545F5631 
- 1127      5F547970 
-ARM GAS  C:\Users\quint\AppData\Local\Temp\ccV677ca.s 			page 31
+ 1082 007b 50455249 		.ascii	"PERIOD\000"
+ 1082      4F4400
+ 1083              	.LASF33:
+ 1084 0082 434D445F 		.ascii	"CMD_RELOAD\000"
+ 1084      52454C4F 
+ 1084      414400
+ 1085              	.LASF22:
+ 1086 008d 54525F43 		.ascii	"TR_CTRL1\000"
+ 1086      54524C31 
+ 1086      00
+ 1087              	.LASF23:
+ 1088 0096 54525F43 		.ascii	"TR_CTRL2\000"
+ 1088      54524C32 
+ 1088      00
+ 1089              	.LASF6:
+ 1090 009f 5F5F7569 		.ascii	"__uint32_t\000"
+ 1090      6E743332 
+ 1090      5F7400
+ 1091              	.LASF53:
+ 1092 00aa 63617074 		.ascii	"captureInput\000"
+ 1092      75726549 
+ 1092      6E707574 
+ 1092      00
+ 1093              	.LASF71:
+ 1094 00b7 47656E65 		.ascii	"Generated_Source\\PSoC6\\Counter_1.c\000"
+ 1094      72617465 
+ 1094      645F536F 
+ 1094      75726365 
+ 1094      5C50536F 
+ 1095              	.LASF21:
+ 1096 00da 54525F43 		.ascii	"TR_CTRL0\000"
+ 1096      54524C30 
+ 1096      00
+ 1097              	.LASF37:
+ 1098 00e3 54435057 		.ascii	"TCPWM_V1_Type\000"
+ 1098      4D5F5631 
+ 1098      5F547970 
+ 1098      6500
+ 1099              	.LASF11:
+ 1100 00f1 75696E74 		.ascii	"uint8_t\000"
+ 1100      385F7400 
+ 1101              	.LASF32:
+ 1102 00f9 434D445F 		.ascii	"CMD_CAPTURE\000"
+ 1102      43415054 
+ 1102      55524500 
+ 1103              	.LASF51:
+ 1104 0105 696E7465 		.ascii	"interruptSources\000"
+ 1104      72727570 
+ 1104      74536F75 
+ 1104      72636573 
+ 1104      00
+ 1105              	.LASF35:
+ 1106 0116 434D445F 		.ascii	"CMD_START\000"
+ 1106      53544152 
+ 1106      5400
+ 1107              	.LASF41:
+ 1108 0120 666C6F61 		.ascii	"float\000"
+ARM GAS  C:\Users\quint\AppData\Local\Temp\cchPFwNS.s 			page 31
 
 
- 1127      6500
- 1128              	.LASF31:
- 1129 009d 4354524C 		.ascii	"CTRL_SET\000"
- 1129      5F534554 
- 1129      00
- 1130              	.LASF18:
- 1131 00a6 50455249 		.ascii	"PERIOD\000"
- 1131      4F4400
- 1132              	.LASF33:
- 1133 00ad 434D445F 		.ascii	"CMD_RELOAD\000"
- 1133      52454C4F 
- 1133      414400
- 1134              	.LASF22:
- 1135 00b8 54525F43 		.ascii	"TR_CTRL1\000"
- 1135      54524C31 
- 1135      00
- 1136              	.LASF23:
- 1137 00c1 54525F43 		.ascii	"TR_CTRL2\000"
- 1137      54524C32 
- 1137      00
- 1138              	.LASF79:
- 1139 00ca 63795F73 		.ascii	"cy_stc_tcpwm_pwm_config\000"
- 1139      74635F74 
- 1139      6370776D 
- 1139      5F70776D 
- 1139      5F636F6E 
- 1140              	.LASF6:
- 1141 00e2 5F5F7569 		.ascii	"__uint32_t\000"
- 1141      6E743332 
- 1141      5F7400
- 1142              	.LASF21:
- 1143 00ed 54525F43 		.ascii	"TR_CTRL0\000"
- 1143      54524C30 
- 1143      00
- 1144              	.LASF37:
- 1145 00f6 54435057 		.ascii	"TCPWM_V1_Type\000"
- 1145      4D5F5631 
- 1145      5F547970 
- 1145      6500
- 1146              	.LASF53:
- 1147 0104 656E6162 		.ascii	"enableCompareSwap\000"
- 1147      6C65436F 
- 1147      6D706172 
- 1147      65537761 
- 1147      7000
- 1148              	.LASF11:
- 1149 0116 75696E74 		.ascii	"uint8_t\000"
- 1149      385F7400 
- 1150              	.LASF65:
- 1151 011e 6B696C6C 		.ascii	"killInput\000"
- 1151      496E7075 
- 1151      7400
- 1152              	.LASF32:
- 1153 0128 434D445F 		.ascii	"CMD_CAPTURE\000"
- 1153      43415054 
- 1153      55524500 
- 1154              	.LASF54:
-ARM GAS  C:\Users\quint\AppData\Local\Temp\ccV677ca.s 			page 32
+ 1108      7400
+ 1109              	.LASF10:
+ 1110 0126 756E7369 		.ascii	"unsigned int\000"
+ 1110      676E6564 
+ 1110      20696E74 
+ 1110      00
+ 1111              	.LASF54:
+ 1112 0133 72656C6F 		.ascii	"reloadInputMode\000"
+ 1112      6164496E 
+ 1112      7075744D 
+ 1112      6F646500 
+ 1113              	.LASF8:
+ 1114 0143 6C6F6E67 		.ascii	"long long int\000"
+ 1114      206C6F6E 
+ 1114      6720696E 
+ 1114      7400
+ 1115              	.LASF45:
+ 1116 0151 72756E4D 		.ascii	"runMode\000"
+ 1116      6F646500 
+ 1117              	.LASF75:
+ 1118 0159 43795F54 		.ascii	"Cy_TCPWM_Counter_Init\000"
+ 1118      4350574D 
+ 1118      5F436F75 
+ 1118      6E746572 
+ 1118      5F496E69 
+ 1119              	.LASF61:
+ 1120 016f 636F756E 		.ascii	"countInput\000"
+ 1120      74496E70 
+ 1120      757400
+ 1121              	.LASF43:
+ 1122 017a 70657269 		.ascii	"period\000"
+ 1122      6F6400
+ 1123              	.LASF5:
+ 1124 0181 5F5F7569 		.ascii	"__uint8_t\000"
+ 1124      6E74385F 
+ 1124      7400
+ 1125              	.LASF59:
+ 1126 018b 73746F70 		.ascii	"stopInput\000"
+ 1126      496E7075 
+ 1126      7400
+ 1127              	.LASF66:
+ 1128 0195 43795F54 		.ascii	"Cy_TCPWM_TriggerStart\000"
+ 1128      4350574D 
+ 1128      5F547269 
+ 1128      67676572 
+ 1128      53746172 
+ 1129              	.LASF28:
+ 1130 01ab 494E5452 		.ascii	"INTR_MASKED\000"
+ 1130      5F4D4153 
+ 1130      4B454400 
+ 1131              	.LASF17:
+ 1132 01b7 43435F42 		.ascii	"CC_BUFF\000"
+ 1132      55464600 
+ 1133              	.LASF39:
+ 1134 01bf 6C6F6E67 		.ascii	"long double\000"
+ 1134      20646F75 
+ 1134      626C6500 
+ARM GAS  C:\Users\quint\AppData\Local\Temp\cchPFwNS.s 			page 32
 
 
- 1155 0134 696E7465 		.ascii	"interruptSources\000"
- 1155      72727570 
- 1155      74536F75 
- 1155      72636573 
- 1155      00
- 1156              	.LASF35:
- 1157 0145 434D445F 		.ascii	"CMD_START\000"
- 1157      53544152 
- 1157      5400
- 1158              	.LASF57:
- 1159 014f 6B696C6C 		.ascii	"killMode\000"
- 1159      4D6F6465 
- 1159      00
- 1160              	.LASF41:
- 1161 0158 666C6F61 		.ascii	"float\000"
- 1161      7400
- 1162              	.LASF48:
- 1163 015e 70657269 		.ascii	"period0\000"
- 1163      6F643000 
- 1164              	.LASF49:
- 1165 0166 70657269 		.ascii	"period1\000"
- 1165      6F643100 
- 1166              	.LASF60:
- 1167 016e 72656C6F 		.ascii	"reloadInputMode\000"
- 1167      6164496E 
- 1167      7075744D 
- 1167      6F646500 
- 1168              	.LASF8:
- 1169 017e 6C6F6E67 		.ascii	"long long int\000"
- 1169      206C6F6E 
- 1169      6720696E 
- 1169      7400
- 1170              	.LASF47:
- 1171 018c 72756E4D 		.ascii	"runMode\000"
- 1171      6F646500 
- 1172              	.LASF40:
- 1173 0194 63686172 		.ascii	"char\000"
- 1173      00
- 1174              	.LASF15:
- 1175 0199 53544154 		.ascii	"STATUS\000"
- 1175      555300
- 1176              	.LASF67:
- 1177 01a0 636F756E 		.ascii	"countInput\000"
- 1177      74496E70 
- 1177      757400
- 1178              	.LASF75:
- 1179 01ab 50574D5F 		.ascii	"PWM_Motor2_config\000"
- 1179      4D6F746F 
- 1179      72325F63 
- 1179      6F6E6669 
- 1179      6700
- 1180              	.LASF5:
- 1181 01bd 5F5F7569 		.ascii	"__uint8_t\000"
- 1181      6E74385F 
- 1181      7400
- 1182              	.LASF72:
- 1183 01c7 43795F54 		.ascii	"Cy_TCPWM_TriggerStart\000"
-ARM GAS  C:\Users\quint\AppData\Local\Temp\ccV677ca.s 			page 33
+ 1135              	.LASF56:
+ 1136 01cb 73746172 		.ascii	"startInputMode\000"
+ 1136      74496E70 
+ 1136      75744D6F 
+ 1136      646500
+ 1137              	.LASF1:
+ 1138 01da 756E7369 		.ascii	"unsigned char\000"
+ 1138      676E6564 
+ 1138      20636861 
+ 1138      7200
+ 1139              	.LASF46:
+ 1140 01e8 636F756E 		.ascii	"countDirection\000"
+ 1140      74446972 
+ 1140      65637469 
+ 1140      6F6E00
+ 1141              	.LASF14:
+ 1142 01f7 4354524C 		.ascii	"CTRL\000"
+ 1142      00
+ 1143              	.LASF36:
+ 1144 01fc 494E5452 		.ascii	"INTR_CAUSE\000"
+ 1144      5F434155 
+ 1144      534500
+ 1145              	.LASF2:
+ 1146 0207 7369676E 		.ascii	"signed char\000"
+ 1146      65642063 
+ 1146      68617200 
+ 1147              	.LASF26:
+ 1148 0213 494E5452 		.ascii	"INTR_SET\000"
+ 1148      5F534554 
+ 1148      00
+ 1149              	.LASF9:
+ 1150 021c 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1150      206C6F6E 
+ 1150      6720756E 
+ 1150      7369676E 
+ 1150      65642069 
+ 1151              	.LASF12:
+ 1152 0233 75696E74 		.ascii	"uint32_t\000"
+ 1152      33325F74 
+ 1152      00
+ 1153              	.LASF74:
+ 1154 023c 436F756E 		.ascii	"Counter_1_Start\000"
+ 1154      7465725F 
+ 1154      315F5374 
+ 1154      61727400 
+ 1155              	.LASF47:
+ 1156 024c 636F6D70 		.ascii	"compareOrCapture\000"
+ 1156      6172654F 
+ 1156      72436170 
+ 1156      74757265 
+ 1156      00
+ 1157              	.LASF50:
+ 1158 025d 656E6162 		.ascii	"enableCompareSwap\000"
+ 1158      6C65436F 
+ 1158      6D706172 
+ 1158      65537761 
+ 1158      7000
+ARM GAS  C:\Users\quint\AppData\Local\Temp\cchPFwNS.s 			page 33
 
 
- 1183      4350574D 
- 1183      5F547269 
- 1183      67676572 
- 1183      53746172 
- 1184              	.LASF28:
- 1185 01dd 494E5452 		.ascii	"INTR_MASKED\000"
- 1185      5F4D4153 
- 1185      4B454400 
- 1186              	.LASF17:
- 1187 01e9 43435F42 		.ascii	"CC_BUFF\000"
- 1187      55464600 
- 1188              	.LASF39:
- 1189 01f1 6C6F6E67 		.ascii	"long double\000"
- 1189      20646F75 
- 1189      626C6500 
- 1190              	.LASF62:
- 1191 01fd 73746172 		.ascii	"startInputMode\000"
- 1191      74496E70 
- 1191      75744D6F 
- 1191      646500
- 1192              	.LASF1:
- 1193 020c 756E7369 		.ascii	"unsigned char\000"
- 1193      676E6564 
- 1193      20636861 
- 1193      7200
- 1194              	.LASF14:
- 1195 021a 4354524C 		.ascii	"CTRL\000"
- 1195      00
- 1196              	.LASF36:
- 1197 021f 494E5452 		.ascii	"INTR_CAUSE\000"
- 1197      5F434155 
- 1197      534500
- 1198              	.LASF2:
- 1199 022a 7369676E 		.ascii	"signed char\000"
- 1199      65642063 
- 1199      68617200 
- 1200              	.LASF26:
- 1201 0236 494E5452 		.ascii	"INTR_SET\000"
- 1201      5F534554 
+ 1159              	.LASF34:
+ 1160 026f 434D445F 		.ascii	"CMD_STOP\000"
+ 1160      53544F50 
+ 1160      00
+ 1161              	.LASF63:
+ 1162 0278 63795F73 		.ascii	"cy_stc_tcpwm_counter_config_t\000"
+ 1162      74635F74 
+ 1162      6370776D 
+ 1162      5F636F75 
+ 1162      6E746572 
+ 1163              	.LASF3:
+ 1164 0296 73686F72 		.ascii	"short unsigned int\000"
+ 1164      7420756E 
+ 1164      7369676E 
+ 1164      65642069 
+ 1164      6E7400
+ 1165              	.LASF40:
+ 1166 02a9 63686172 		.ascii	"char\000"
+ 1166      00
+ 1167              	.LASF4:
+ 1168 02ae 6C6F6E67 		.ascii	"long int\000"
+ 1168      20696E74 
+ 1168      00
+ 1169              	.LASF15:
+ 1170 02b7 53544154 		.ascii	"STATUS\000"
+ 1170      555300
+ 1171              	.LASF68:
+ 1172 02be 436F756E 		.ascii	"Counter_1_initVar\000"
+ 1172      7465725F 
+ 1172      315F696E 
+ 1172      69745661 
+ 1172      7200
+ 1173              	.LASF62:
+ 1174 02d0 5F426F6F 		.ascii	"_Bool\000"
+ 1174      6C00
+ 1175              	.LASF72:
+ 1176 02d6 443A5C47 		.ascii	"D:\\GIT\\Knight Guard\\PSoC6_PWM_MotorControll\\PSo"
+ 1176      49545C4B 
+ 1176      6E696768 
+ 1176      74204775 
+ 1176      6172645C 
+ 1177 0305 43365F50 		.ascii	"C6_PWM_MotorControll.cydsn\000"
+ 1177      574D5F4D 
+ 1177      6F746F72 
+ 1177      436F6E74 
+ 1177      726F6C6C 
+ 1178              	.LASF52:
+ 1179 0320 63617074 		.ascii	"captureInputMode\000"
+ 1179      75726549 
+ 1179      6E707574 
+ 1179      4D6F6465 
+ 1179      00
+ 1180              	.LASF24:
+ 1181 0331 52455345 		.ascii	"RESERVED1\000"
+ 1181      52564544 
+ 1181      3100
+ 1182              	.LASF7:
+ARM GAS  C:\Users\quint\AppData\Local\Temp\cchPFwNS.s 			page 34
+
+
+ 1183 033b 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1183      20756E73 
+ 1183      69676E65 
+ 1183      6420696E 
+ 1183      7400
+ 1184              	.LASF42:
+ 1185 034d 646F7562 		.ascii	"double\000"
+ 1185      6C6500
+ 1186              	.LASF70:
+ 1187 0354 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 1187      43313120 
+ 1187      352E342E 
+ 1187      31203230 
+ 1187      31363036 
+ 1188 0387 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0plus -mthumb -"
+ 1188      20726576 
+ 1188      6973696F 
+ 1188      6E203233 
+ 1188      37373135 
+ 1189 03ba 67202D4F 		.ascii	"g -Og -ffunction-sections -ffat-lto-objects\000"
+ 1189      67202D66 
+ 1189      66756E63 
+ 1189      74696F6E 
+ 1189      2D736563 
+ 1190              	.LASF73:
+ 1191 03e6 63795F73 		.ascii	"cy_stc_tcpwm_counter_config\000"
+ 1191      74635F74 
+ 1191      6370776D 
+ 1191      5F636F75 
+ 1191      6E746572 
+ 1192              	.LASF57:
+ 1193 0402 73746172 		.ascii	"startInput\000"
+ 1193      74496E70 
+ 1193      757400
+ 1194              	.LASF58:
+ 1195 040d 73746F70 		.ascii	"stopInputMode\000"
+ 1195      496E7075 
+ 1195      744D6F64 
+ 1195      6500
+ 1196              	.LASF30:
+ 1197 041b 4354524C 		.ascii	"CTRL_CLR\000"
+ 1197      5F434C52 
+ 1197      00
+ 1198              	.LASF16:
+ 1199 0424 434F554E 		.ascii	"COUNTER\000"
+ 1199      54455200 
+ 1200              	.LASF20:
+ 1201 042c 52455345 		.ascii	"RESERVED\000"
+ 1201      52564544 
  1201      00
- 1202              	.LASF9:
- 1203 023f 6C6F6E67 		.ascii	"long long unsigned int\000"
- 1203      206C6F6E 
- 1203      6720756E 
- 1203      7369676E 
- 1203      65642069 
- 1204              	.LASF80:
- 1205 0256 50574D5F 		.ascii	"PWM_Motor2_Start\000"
- 1205      4D6F746F 
- 1205      72325F53 
- 1205      74617274 
- 1205      00
- 1206              	.LASF12:
- 1207 0267 75696E74 		.ascii	"uint32_t\000"
- 1207      33325F74 
- 1207      00
- 1208              	.LASF10:
-ARM GAS  C:\Users\quint\AppData\Local\Temp\ccV677ca.s 			page 34
+ 1202              	.LASF69:
+ 1203 0435 436F756E 		.ascii	"Counter_1_config\000"
+ 1203      7465725F 
+ 1203      315F636F 
+ 1203      6E666967 
+ 1203      00
+ 1204              	.LASF67:
+ARM GAS  C:\Users\quint\AppData\Local\Temp\cchPFwNS.s 			page 35
 
 
- 1209 0270 756E7369 		.ascii	"unsigned int\000"
- 1209      676E6564 
- 1209      20696E74 
- 1209      00
- 1210              	.LASF56:
- 1211 027d 696E7665 		.ascii	"invertPWMOutN\000"
- 1211      72745057 
- 1211      4D4F7574 
- 1211      4E00
- 1212              	.LASF34:
- 1213 028b 434D445F 		.ascii	"CMD_STOP\000"
- 1213      53544F50 
+ 1205 0446 43795F54 		.ascii	"Cy_TCPWM_Enable_Multiple\000"
+ 1205      4350574D 
+ 1205      5F456E61 
+ 1205      626C655F 
+ 1205      4D756C74 
+ 1206              	.LASF27:
+ 1207 045f 494E5452 		.ascii	"INTR_MASK\000"
+ 1207      5F4D4153 
+ 1207      4B00
+ 1208              	.LASF38:
+ 1209 0469 54435057 		.ascii	"TCPWM_Type\000"
+ 1209      4D5F5479 
+ 1209      706500
+ 1210              	.LASF64:
+ 1211 0474 62617365 		.ascii	"base\000"
+ 1211      00
+ 1212              	.LASF65:
+ 1213 0479 636F756E 		.ascii	"counters\000"
+ 1213      74657273 
  1213      00
- 1214              	.LASF3:
- 1215 0294 73686F72 		.ascii	"short unsigned int\000"
- 1215      7420756E 
- 1215      7369676E 
- 1215      65642069 
- 1215      6E7400
- 1216              	.LASF74:
- 1217 02a7 50574D5F 		.ascii	"PWM_Motor2_initVar\000"
- 1217      4D6F746F 
- 1217      72325F69 
- 1217      6E697456 
- 1217      617200
- 1218              	.LASF4:
- 1219 02ba 6C6F6E67 		.ascii	"long int\000"
- 1219      20696E74 
- 1219      00
- 1220              	.LASF46:
- 1221 02c3 64656164 		.ascii	"deadTimeClocks\000"
- 1221      54696D65 
- 1221      436C6F63 
- 1221      6B7300
- 1222              	.LASF77:
- 1223 02d2 47656E65 		.ascii	"Generated_Source\\PSoC6\\PWM_Motor2.c\000"
- 1223      72617465 
- 1223      645F536F 
- 1223      75726365 
- 1223      5C50536F 
- 1224              	.LASF68:
- 1225 02f6 5F426F6F 		.ascii	"_Bool\000"
- 1225      6C00
- 1226              	.LASF78:
- 1227 02fc 443A5C47 		.ascii	"D:\\GIT\\Knight Guard\\PSoC6_PWM_MotorControll\\PSo"
- 1227      49545C4B 
- 1227      6E696768 
- 1227      74204775 
- 1227      6172645C 
- 1228 032b 43365F50 		.ascii	"C6_PWM_MotorControll.cydsn\000"
- 1228      574D5F4D 
- 1228      6F746F72 
- 1228      436F6E74 
- 1228      726F6C6C 
- 1229              	.LASF81:
- 1230 0346 43795F54 		.ascii	"Cy_TCPWM_PWM_Init\000"
- 1230      4350574D 
-ARM GAS  C:\Users\quint\AppData\Local\Temp\ccV677ca.s 			page 35
-
-
- 1230      5F50574D 
- 1230      5F496E69 
- 1230      7400
- 1231              	.LASF24:
- 1232 0358 52455345 		.ascii	"RESERVED1\000"
- 1232      52564544 
- 1232      3100
- 1233              	.LASF7:
- 1234 0362 6C6F6E67 		.ascii	"long unsigned int\000"
- 1234      20756E73 
- 1234      69676E65 
- 1234      6420696E 
- 1234      7400
- 1235              	.LASF42:
- 1236 0374 646F7562 		.ascii	"double\000"
- 1236      6C6500
- 1237              	.LASF76:
- 1238 037b 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 1238      43313120 
- 1238      352E342E 
- 1238      31203230 
- 1238      31363036 
- 1239 03ae 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0plus -mthumb -"
- 1239      20726576 
- 1239      6973696F 
- 1239      6E203233 
- 1239      37373135 
- 1240 03e1 67202D4F 		.ascii	"g -Og -ffunction-sections -ffat-lto-objects\000"
- 1240      67202D66 
- 1240      66756E63 
- 1240      74696F6E 
- 1240      2D736563 
- 1241              	.LASF58:
- 1242 040d 73776170 		.ascii	"swapInputMode\000"
- 1242      496E7075 
- 1242      744D6F64 
- 1242      6500
- 1243              	.LASF63:
- 1244 041b 73746172 		.ascii	"startInput\000"
- 1244      74496E70 
- 1244      757400
- 1245              	.LASF30:
- 1246 0426 4354524C 		.ascii	"CTRL_CLR\000"
- 1246      5F434C52 
- 1246      00
- 1247              	.LASF45:
- 1248 042f 70776D41 		.ascii	"pwmAlignment\000"
- 1248      6C69676E 
- 1248      6D656E74 
- 1248      00
- 1249              	.LASF59:
- 1250 043c 73776170 		.ascii	"swapInput\000"
- 1250      496E7075 
- 1250      7400
- 1251              	.LASF55:
- 1252 0446 696E7665 		.ascii	"invertPWMOut\000"
- 1252      72745057 
-ARM GAS  C:\Users\quint\AppData\Local\Temp\ccV677ca.s 			page 36
-
-
- 1252      4D4F7574 
- 1252      00
- 1253              	.LASF64:
- 1254 0453 6B696C6C 		.ascii	"killInputMode\000"
- 1254      496E7075 
- 1254      744D6F64 
- 1254      6500
- 1255              	.LASF16:
- 1256 0461 434F554E 		.ascii	"COUNTER\000"
- 1256      54455200 
- 1257              	.LASF43:
- 1258 0469 70776D4D 		.ascii	"pwmMode\000"
- 1258      6F646500 
- 1259              	.LASF20:
- 1260 0471 52455345 		.ascii	"RESERVED\000"
- 1260      52564544 
- 1260      00
- 1261              	.LASF73:
- 1262 047a 43795F54 		.ascii	"Cy_TCPWM_Enable_Multiple\000"
- 1262      4350574D 
- 1262      5F456E61 
- 1262      626C655F 
- 1262      4D756C74 
- 1263              	.LASF27:
- 1264 0493 494E5452 		.ascii	"INTR_MASK\000"
- 1264      5F4D4153 
- 1264      4B00
- 1265              	.LASF38:
- 1266 049d 54435057 		.ascii	"TCPWM_Type\000"
- 1266      4D5F5479 
- 1266      706500
- 1267              	.LASF70:
- 1268 04a8 62617365 		.ascii	"base\000"
- 1268      00
- 1269              	.LASF71:
- 1270 04ad 636F756E 		.ascii	"counters\000"
- 1270      74657273 
- 1270      00
- 1271              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ 1214              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

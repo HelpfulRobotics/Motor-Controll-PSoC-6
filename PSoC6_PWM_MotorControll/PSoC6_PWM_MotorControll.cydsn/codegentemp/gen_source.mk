@@ -42,7 +42,8 @@ GEN_SEP_C_SOURCE_CortexM0p=\
 	$(GEN_SOURCE_DIR)/pdl/middleware/ble/cy_ble_clk.c\
 	$(GEN_SOURCE_DIR)/pdl/utilities/retarget_io/retarget.c\
 	$(GEN_SOURCE_DIR)/UART_1.c\
-	$(GEN_SOURCE_DIR)/SPI_1.c
+	$(GEN_SOURCE_DIR)/SPI_1.c\
+	$(GEN_SOURCE_DIR)/Counter_1.c
 
 GEN_LIBS_CortexM0p=\
 
@@ -86,7 +87,8 @@ GEN_SEP_C_SOURCE_CortexM4=\
 	$(GEN_SOURCE_DIR)/pdl/middleware/ble/cy_ble_clk.c\
 	$(GEN_SOURCE_DIR)/pdl/utilities/retarget_io/retarget.c\
 	$(GEN_SOURCE_DIR)/UART_1.c\
-	$(GEN_SOURCE_DIR)/SPI_1.c
+	$(GEN_SOURCE_DIR)/SPI_1.c\
+	$(GEN_SOURCE_DIR)/Counter_1.c
 
 GEN_LIBS_CortexM4=\
 

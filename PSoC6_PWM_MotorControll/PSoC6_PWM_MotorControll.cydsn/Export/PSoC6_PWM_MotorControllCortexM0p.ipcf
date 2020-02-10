@@ -87,6 +87,7 @@
       <path>$PROJ_DIR$\Generated_Source\PSoC6\PWM_Motor2.c</path>
       <path>$PROJ_DIR$\Generated_Source\PSoC6\UART_1.c</path>
       <path>$PROJ_DIR$\Generated_Source\PSoC6\SPI_1.c</path>
+      <path>$PROJ_DIR$\Generated_Source\PSoC6\Counter_1.c</path>
       <path>$PROJ_DIR$\Generated_Source\PSoC6\pdl\drivers\peripheral\sysint\cy_sysint.c</path>
       <path>$PROJ_DIR$\Generated_Source\PSoC6\pdl\drivers\peripheral\ipc\cy_ipc_drv.c</path>
       <path>$PROJ_DIR$\Generated_Source\PSoC6\pdl\drivers\peripheral\ipc\cy_ipc_sema.c</path>
@@ -136,6 +137,8 @@
       <path>$PROJ_DIR$\Generated_Source\PSoC6\UART_1_SCBCLK.h</path>
       <path>$PROJ_DIR$\Generated_Source\PSoC6\SPI_1.h</path>
       <path>$PROJ_DIR$\Generated_Source\PSoC6\SPI_1_SCBCLK.h</path>
+      <path>$PROJ_DIR$\Generated_Source\PSoC6\Counter_1.h</path>
+      <path>$PROJ_DIR$\Generated_Source\PSoC6\Clock_2.h</path>
       <path>$PROJ_DIR$\Generated_Source\PSoC6\pdl\cmsis\include\arm_common_tables.h</path>
       <path>$PROJ_DIR$\Generated_Source\PSoC6\pdl\cmsis\include\arm_const_structs.h</path>
       <path>$PROJ_DIR$\Generated_Source\PSoC6\pdl\cmsis\include\arm_math.h</path>

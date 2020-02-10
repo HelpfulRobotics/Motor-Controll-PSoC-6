@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <blockRegMap version="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://cypress.com/xsd/cyblockregmap cyblockregmap.xsd" xmlns="http://cypress.com/xsd/cyblockregmap">
-  <block name="Motor2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="SysInt_3" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="SysInt_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="SysInt_5" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="SysInt_4" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="PS_10" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="PS_9" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="SysInt_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="PS_11" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="SysInt_6" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="Trigger" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="SysInt_11" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="Clock_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="Counter_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
+    <block name="TCPWM" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  </block>
+  <block name="SysInt_8" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="SysInt_7" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="SysInt_10" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="SysInt_9" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="UART_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
     <block name="rx_VM" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
     <block name="rx" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
@@ -13,6 +31,8 @@
     <block name="tx" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
     <block name="or_sclk" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   </block>
+  <block name="Motor2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="EmergencyStop" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="SPI_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
     <block name="select_s_VM" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
     <block name="SCB" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
@@ -29,12 +49,21 @@
     <block name="clock_VM" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
     <block name="sclk_s" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   </block>
-  <block name="PWM_Motor2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
-    <block name="TCPWM" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  </block>
+  <block name="Clock_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="PWM_Motor1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
     <block name="TCPWM" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   </block>
-  <block name="Clock_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="PWM_Motor2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
+    <block name="TCPWM" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  </block>
   <block name="Motor1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="int_EmergencyStop" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="PS_6" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="PS_5" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="PS_8" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="PS_7" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="PS_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="PS_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="PS_4" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="PS_3" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
 </blockRegMap>

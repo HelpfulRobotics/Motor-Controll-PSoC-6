@@ -21,19 +21,19 @@
 #include "cyfitter_sysint.h"
 
 /* SPI_1 */
-#define SPI_1_SCB__HW SCB5
-#define SPI_1_SCB__IDX 5
-#define SPI_1_SCB__SS0_POSITION 0u
-#define SPI_1_SCB__SS1_POSITION 1u
-#define SPI_1_SCB__SS2_POSITION 2u
+#define SPI_1_SCB__HW SCB1
+#define SPI_1_SCB__IDX 1
+#define SPI_1_SCB__SS0_POSITION 2u
+#define SPI_1_SCB__SS1_POSITION 0u
+#define SPI_1_SCB__SS2_POSITION 1u
 #define SPI_1_SCB__SS3_POSITION 3u
 #define SPI_1_SCBCLK__DIV_IDX 0
 #define SPI_1_SCBCLK__DIV_NUM 0
 #define SPI_1_SCBCLK__DIV_TYPE CY_SYSCLK_DIV_8_BIT
 
 /* UART_1 */
-#define UART_1_SCB__HW SCB6
-#define UART_1_SCB__IDX 6
+#define UART_1_SCB__HW SCB5
+#define UART_1_SCB__IDX 5
 #define UART_1_SCB__SS0_POSITION 0u
 #define UART_1_SCB__SS1_POSITION 1u
 #define UART_1_SCB__SS2_POSITION 2u
@@ -47,15 +47,26 @@
 #define Clock_1__DIV_NUM 0
 #define Clock_1__DIV_TYPE CY_SYSCLK_DIV_16_BIT
 
+/* Clock_2 */
+#define Clock_2__DIV_IDX 2
+#define Clock_2__DIV_NUM 2
+#define Clock_2__DIV_TYPE CY_SYSCLK_DIV_8_BIT
+
+/* Counter_1 */
+#define Counter_1_TCPWM__CNT_HW TCPWM0_CNT1
+#define Counter_1_TCPWM__CNT_IDX 1u
+#define Counter_1_TCPWM__HW TCPWM0
+#define Counter_1_TCPWM__IDX 0u
+
 /* PWM_Motor1 */
-#define PWM_Motor1_TCPWM__CNT_HW TCPWM0_CNT7
-#define PWM_Motor1_TCPWM__CNT_IDX 7u
+#define PWM_Motor1_TCPWM__CNT_HW TCPWM0_CNT0
+#define PWM_Motor1_TCPWM__CNT_IDX 0u
 #define PWM_Motor1_TCPWM__HW TCPWM0
 #define PWM_Motor1_TCPWM__IDX 0u
 
 /* PWM_Motor2 */
-#define PWM_Motor2_TCPWM__CNT_HW TCPWM0_CNT1
-#define PWM_Motor2_TCPWM__CNT_IDX 1u
+#define PWM_Motor2_TCPWM__CNT_HW TCPWM0_CNT7
+#define PWM_Motor2_TCPWM__CNT_IDX 7u
 #define PWM_Motor2_TCPWM__HW TCPWM0
 #define PWM_Motor2_TCPWM__IDX 0u
 

@@ -32,5 +32,77 @@
         .intrPriority = UART_1_SCB_IRQ__INTC_CORTEXM4_PRIORITY
     };
 
+    /* SysInt_1 */
+    const cy_stc_sysint_t SysInt_1_cfg = {
+        .intrSrc = (IRQn_Type)SysInt_1__INTC_NUMBER,
+        .intrPriority = SysInt_1__INTC_CORTEXM4_PRIORITY
+    };
+
+    /* SysInt_10 */
+    const cy_stc_sysint_t SysInt_10_cfg = {
+        .intrSrc = (IRQn_Type)SysInt_10__INTC_NUMBER,
+        .intrPriority = SysInt_10__INTC_CORTEXM4_PRIORITY
+    };
+
+    /* SysInt_11 */
+    const cy_stc_sysint_t SysInt_11_cfg = {
+        .intrSrc = (IRQn_Type)SysInt_11__INTC_NUMBER,
+        .intrPriority = SysInt_11__INTC_CORTEXM4_PRIORITY
+    };
+
+    /* SysInt_2 */
+    const cy_stc_sysint_t SysInt_2_cfg = {
+        .intrSrc = (IRQn_Type)SysInt_2__INTC_NUMBER,
+        .intrPriority = SysInt_2__INTC_CORTEXM4_PRIORITY
+    };
+
+    /* SysInt_3 */
+    const cy_stc_sysint_t SysInt_3_cfg = {
+        .intrSrc = (IRQn_Type)SysInt_3__INTC_NUMBER,
+        .intrPriority = SysInt_3__INTC_CORTEXM4_PRIORITY
+    };
+
+    /* SysInt_4 */
+    const cy_stc_sysint_t SysInt_4_cfg = {
+        .intrSrc = (IRQn_Type)SysInt_4__INTC_NUMBER,
+        .intrPriority = SysInt_4__INTC_CORTEXM4_PRIORITY
+    };
+
+    /* SysInt_5 */
+    const cy_stc_sysint_t SysInt_5_cfg = {
+        .intrSrc = (IRQn_Type)SysInt_5__INTC_NUMBER,
+        .intrPriority = SysInt_5__INTC_CORTEXM4_PRIORITY
+    };
+
+    /* SysInt_6 */
+    const cy_stc_sysint_t SysInt_6_cfg = {
+        .intrSrc = (IRQn_Type)SysInt_6__INTC_NUMBER,
+        .intrPriority = SysInt_6__INTC_CORTEXM4_PRIORITY
+    };
+
+    /* SysInt_7 */
+    const cy_stc_sysint_t SysInt_7_cfg = {
+        .intrSrc = (IRQn_Type)SysInt_7__INTC_NUMBER,
+        .intrPriority = SysInt_7__INTC_CORTEXM4_PRIORITY
+    };
+
+    /* SysInt_8 */
+    const cy_stc_sysint_t SysInt_8_cfg = {
+        .intrSrc = (IRQn_Type)SysInt_8__INTC_NUMBER,
+        .intrPriority = SysInt_8__INTC_CORTEXM4_PRIORITY
+    };
+
+    /* SysInt_9 */
+    const cy_stc_sysint_t SysInt_9_cfg = {
+        .intrSrc = (IRQn_Type)SysInt_9__INTC_NUMBER,
+        .intrPriority = SysInt_9__INTC_CORTEXM4_PRIORITY
+    };
+
+    /* int_EmergencyStop */
+    const cy_stc_sysint_t int_EmergencyStop_cfg = {
+        .intrSrc = (IRQn_Type)int_EmergencyStop__INTC_NUMBER,
+        .intrPriority = int_EmergencyStop__INTC_CORTEXM4_PRIORITY
+    };
+
 #endif /* ((__CORTEX_M == 4) && (CY_CORE_ID == 0)) */
 
