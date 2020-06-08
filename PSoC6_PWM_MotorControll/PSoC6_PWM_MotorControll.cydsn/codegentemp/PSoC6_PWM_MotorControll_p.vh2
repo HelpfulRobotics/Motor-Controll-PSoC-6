@@ -1,5 +1,9 @@
 -- Project:   PSoC6_PWM_MotorControll
+<<<<<<< Updated upstream
 -- Generated: 02/09/2020 15:24:47
+=======
+-- Generated: 01/25/2020 23:21:10
+>>>>>>> Stashed changes
 -- PSoC Creator  4.2
 
 ENTITY PSoC6_PWM_MotorControll IS

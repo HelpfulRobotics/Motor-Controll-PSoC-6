@@ -1,6 +1,10 @@
 -- ======================================================================
 -- PSoC6_PWM_MotorControll.ctl generated from PSoC6_PWM_MotorControll
+<<<<<<< Updated upstream
 -- 02/09/2020 at 15:24
+=======
+-- 01/25/2020 at 23:21
+>>>>>>> Stashed changes
 -- This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 -- ======================================================================
 

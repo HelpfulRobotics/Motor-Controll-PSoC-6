@@ -6,7 +6,11 @@
 
 #Build Date:         Dec  5 2017 15:35:27
 
+<<<<<<< Updated upstream
 #File Generated:     Feb 9 2020 15:24:47
+=======
+#File Generated:     Jan 25 2020 23:21:10
+>>>>>>> Stashed changes
 
 #Purpose:            
 
@@ -14,7 +18,7 @@
 
 #***************************************************************************
 
-Executing : C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\bin/sjplacer.exe --proj-name PSoC6_PWM_MotorControll --netlist-vh2 PSoC6_PWM_MotorControll_p.vh2 --arch p6_udb2x6 --arch-file C:\Users\quint\Documents\PSoC Creator\4.2\Devices\arch/udbdsi2_2x6_12.cydata --ip-file C:\Users\quint\Documents\PSoC Creator\4.2\Devices\psoc6/0/ip_blocks.cydata --rrg-file C:\Users\quint\Documents\PSoC Creator\4.2\Devices\psoc6/0/route_arch-rrg.cydata --irq-file C:\Users\quint\Documents\PSoC Creator\4.2\Devices\psoc6/0/irqconn.cydata --drq-file C:\Users\quint\Documents\PSoC Creator\4.2\Devices\psoc6/0/triggerconn.cydata --dsi-conn-file C:\Users\quint\Documents\PSoC Creator\4.2\Devices\psoc6/0/dsiconn.cydata --pins-file pins_43-SMT.xml --lib-file PSoC6_PWM_MotorControll_p.lib --sdc-file PSoC6_PWM_MotorControll.sdc --io-pcf PSoC6_PWM_MotorControll.pci --outdir .
+Executing : C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\bin/sjplacer.exe --proj-name PSoC6_PWM_MotorControll --netlist-vh2 PSoC6_PWM_MotorControll_p.vh2 --arch p6_udb2x6 --arch-file C:\Users\Razer\Documents\PSoC Creator\4.2\Devices\arch/udbdsi2_2x6_12.cydata --ip-file C:\Users\Razer\Documents\PSoC Creator\4.2\Devices\psoc6/0/ip_blocks.cydata --rrg-file C:\Users\Razer\Documents\PSoC Creator\4.2\Devices\psoc6/0/route_arch-rrg.cydata --irq-file C:\Users\Razer\Documents\PSoC Creator\4.2\Devices\psoc6/0/irqconn.cydata --drq-file C:\Users\Razer\Documents\PSoC Creator\4.2\Devices\psoc6/0/triggerconn.cydata --dsi-conn-file C:\Users\Razer\Documents\PSoC Creator\4.2\Devices\psoc6/0/dsiconn.cydata --pins-file pins_43-SMT.xml --lib-file PSoC6_PWM_MotorControll_p.lib --sdc-file PSoC6_PWM_MotorControll.sdc --io-pcf PSoC6_PWM_MotorControll.pci --outdir .
 
 		Softjin Techologies Placer, Version 1.1
 
@@ -23,7 +27,7 @@ Build Date : Dec  5 2017	15:33:41
 D2004: Option and Settings Summary
 =============================================================
 Netlist vh2 file          - PSoC6_PWM_MotorControll_p.vh2
-Architecture file         - C:\Users\quint\Documents\PSoC Creator\4.2\Devices\arch/udbdsi2_2x6_12.cydata
+Architecture file         - C:\Users\Razer\Documents\PSoC Creator\4.2\Devices\arch/udbdsi2_2x6_12.cydata
 Package                   - 
 Defparam file             - 
 SDC file                  - PSoC6_PWM_MotorControll.sdc
@@ -34,7 +38,7 @@ IO Placement file         - PSoC6_PWM_MotorControll.pci
 D2050: Starting reading inputs for placer
 =============================================================
 D2065: Reading netlist file : "PSoC6_PWM_MotorControll_p.vh2"
-D2065: Reading arch file : "C:\Users\quint\Documents\PSoC Creator\4.2\Devices\arch/udbdsi2_2x6_12.cydata"
+D2065: Reading arch file : "C:\Users\Razer\Documents\PSoC Creator\4.2\Devices\arch/udbdsi2_2x6_12.cydata"
 D2051: Reading of inputs for placer completed successfully
 
 D2053: Starting placement of the design

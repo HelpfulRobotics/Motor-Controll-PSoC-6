@@ -1,5 +1,9 @@
 # PSoC6_PWM_MotorControll
+<<<<<<< Updated upstream
 # 2020-02-09 23:24:47Z
+=======
+# 2020-01-26 07:21:10Z
+>>>>>>> Stashed changes
 
 dont_use_location p4usbcell -1 -1 0
 dont_use_location USB -1 -1 0

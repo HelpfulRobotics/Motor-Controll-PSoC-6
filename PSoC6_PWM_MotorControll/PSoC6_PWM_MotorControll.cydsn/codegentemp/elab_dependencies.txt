@@ -1,4 +1,4 @@
-D:\GIT\Knight Guard\PSoC6_PWM_MotorControll\PSoC6_PWM_MotorControll.cydsn\TopDesign\TopDesign.cysch
+M:\GIT Folder\Motor-Controll-PSoC-6\PSoC6_PWM_MotorControll\PSoC6_PWM_MotorControll.cydsn\TopDesign\TopDesign.cysch
 C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\TCPWM_PWM_PDL_v1_0\TCPWM_PWM_PDL_v1_0.cystate
 C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\TCPWM_PWM_PDL_v1_0\TCPWM_PWM_PDL_v1_0.cysym
 C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\TCPWM_PWM_PDL_v1_0\TCPWM_PWM_PDL_v1_0.pdf
@@ -117,6 +117,7 @@ C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComp
 C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\SCB_SPI_PDL_v2_0\Custom\Controls\cydynamicdatacontrol.Designer.cs
 C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\SCB_SPI_PDL_v2_0\Custom\Resources.resx
 C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\SCB_SPI_PDL_v2_0\Custom\Controls\cydynamicdatacontrol.resx
+<<<<<<< Updated upstream
 C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\TCPWM_Counter_PDL_v1_0\TCPWM_Counter_PDL_v1_0.cystate
 C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\TCPWM_Counter_PDL_v1_0\TCPWM_Counter_PDL_v1_0.cysym
 C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\TCPWM_Counter_PDL_v1_0\TCPWM_Counter_PDL_v1_0.pdf
@@ -137,3 +138,6 @@ C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComp
 C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\TCPWM_Counter_PDL_v1_0\Custom\Resources.resx
 C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\TCPWM_Counter_PDL_v1_0\Custom\Controls\cydynamicdatacontrol.resx
 D:\GIT\Knight Guard\PSoC6_PWM_MotorControll\PSoC6_PWM_MotorControll.cydsn\PSoC6_PWM_MotorControll.cydwr
+=======
+M:\GIT Folder\Motor-Controll-PSoC-6\PSoC6_PWM_MotorControll\PSoC6_PWM_MotorControll.cydsn\PSoC6_PWM_MotorControll.cydwr
+>>>>>>> Stashed changes

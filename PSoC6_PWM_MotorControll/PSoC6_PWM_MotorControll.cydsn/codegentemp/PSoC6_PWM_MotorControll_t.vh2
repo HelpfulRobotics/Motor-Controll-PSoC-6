@@ -1,5 +1,10 @@
+<<<<<<< Updated upstream
 -- Project:   D:\GIT\Knight Guard\PSoC6_PWM_MotorControll\PSoC6_PWM_MotorControll.cydsn\PSoC6_PWM_MotorControll.cyprj
 -- Generated: 02/09/2020 15:24:59
+=======
+-- Project:   M:\GIT Folder\Motor-Controll-PSoC-6\PSoC6_PWM_MotorControll\PSoC6_PWM_MotorControll.cydsn\PSoC6_PWM_MotorControll.cyprj
+-- Generated: 01/25/2020 23:21:19
+>>>>>>> Stashed changes
 -- PSoC Creator  4.2
 
 ENTITY PSoC6_PWM_MotorControll IS

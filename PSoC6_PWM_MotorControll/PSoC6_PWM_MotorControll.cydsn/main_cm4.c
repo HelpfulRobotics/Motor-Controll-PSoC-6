@@ -19,11 +19,11 @@ int main(void)
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
 //    int compareValue=5000;
    Clock_1_Enable(); 
-//    UART_1_Start();
+  UART_Start();
 //  
-//    setvbuf(stdin, NULL, _IONBF, 0); 
-//    char data;
-//    printf("PSoC Started\r\n"); 
+    setvbuf(stdin, NULL, _IONBF, 0); 
+    char data;
+    printf("PSoC Started\r\n"); 
 //    
     //Motor 1 start
     Cy_TCPWM_PWM_Init(PWM_Motor1_HW, PWM_Motor1_CNT_NUM, &PWM_Motor1_config);

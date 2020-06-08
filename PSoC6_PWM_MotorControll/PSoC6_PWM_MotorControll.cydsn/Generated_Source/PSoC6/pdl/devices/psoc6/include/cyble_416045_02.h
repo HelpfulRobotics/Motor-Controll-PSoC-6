@@ -5,12 +5,12 @@
 * CYBLE-416045-02 device header
 *
 * \note
-* Generator version: 1.3.0.23
-* Database revision: 8f38ca6
+* Generator version: 1.3.0.27
+* Database revision: cc4063c
 *
 ********************************************************************************
 * \copyright
-* Copyright 2016-2018, Cypress Semiconductor Corporation. All rights reserved.
+* Copyright 2016-2019, Cypress Semiconductor Corporation. All rights reserved.
 * You may use this file only in accordance with the license, terms, conditions,
 * disclaimers, and limitations in the end user license agreement accompanying
 * the software package with which this file was provided.
@@ -516,9 +516,6 @@ typedef enum {
 #define CY_IP_MXS40PASS_CTB             1u
 #define CY_IP_MXS40PASS_CTB_INSTANCES   1u
 #define CY_IP_MXS40PASS_CTB_VERSION     1u
-#define CY_IP_MXSMIF                    1u
-#define CY_IP_MXSMIF_INSTANCES          1u
-#define CY_IP_MXSMIF_VERSION            1u
 #define CY_IP_MXS40IOSS                 1u
 #define CY_IP_MXS40IOSS_INSTANCES       1u
 #define CY_IP_MXS40IOSS_VERSION         1u
@@ -1151,17 +1148,6 @@ typedef enum {
 #define BLE_RCB                                 ((BLE_RCB_Type*) &BLE->RCB)                                       /* 0x403C0000 */
 #define BLE_BLELL                               ((BLE_BLELL_Type*) &BLE->BLELL)                                   /* 0x403C1000 */
 #define BLE_BLESS                               ((BLE_BLESS_Type*) &BLE->BLESS)                                   /* 0x403DF000 */
-
-/*******************************************************************************
-*                                     SMIF
-*******************************************************************************/
-
-#define SMIF0_BASE                              0x40420000UL
-#define SMIF0                                   ((SMIF_Type*) SMIF0_BASE)                                         /* 0x40420000 */
-#define SMIF0_DEVICE0                           ((SMIF_DEVICE_Type*) &SMIF0->DEVICE[0])                           /* 0x40420800 */
-#define SMIF0_DEVICE1                           ((SMIF_DEVICE_Type*) &SMIF0->DEVICE[1])                           /* 0x40420880 */
-#define SMIF0_DEVICE2                           ((SMIF_DEVICE_Type*) &SMIF0->DEVICE[2])                           /* 0x40420900 */
-#define SMIF0_DEVICE3                           ((SMIF_DEVICE_Type*) &SMIF0->DEVICE[3])                           /* 0x40420980 */
 
 /*******************************************************************************
 *                                     SCB

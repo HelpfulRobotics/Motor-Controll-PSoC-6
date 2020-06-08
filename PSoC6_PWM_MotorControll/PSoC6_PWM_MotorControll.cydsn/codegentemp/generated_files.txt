@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="us-ascii"?>
 
+<<<<<<< Updated upstream
 <fileSet version="1" anchorPath="D:\GIT\Knight Guard\PSoC6_PWM_MotorControll\PSoC6_PWM_MotorControll.cydsn\codegentemp" xsi:schemaLocation="http://cypress.com/xsd/cypathdictionary cypathdictionary.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://cypress.com/xsd/cypathdictionary">
   <file name="D:\GIT\Knight Guard\PSoC6_PWM_MotorControll\PSoC6_PWM_MotorControll.cydsn\codegentemp\cyfitter_cfg.h" value="HEADER;;;;;" />
   <file name="D:\GIT\Knight Guard\PSoC6_PWM_MotorControll\PSoC6_PWM_MotorControll.cydsn\codegentemp\cyfitter_sysint_cfg.h" value="HEADER;;;;;Pins and Interrupts" />
@@ -32,4 +33,35 @@
   <file name="D:\GIT\Knight Guard\PSoC6_PWM_MotorControll\PSoC6_PWM_MotorControll.cydsn\codegentemp\cycodeshareimport.ld" value="OTHER;;;;;" />
   <file name="D:\GIT\Knight Guard\PSoC6_PWM_MotorControll\PSoC6_PWM_MotorControll.cydsn\codegentemp\cycodeshareexport.ld" value="OTHER;;;;;" />
   <file name="D:\GIT\Knight Guard\PSoC6_PWM_MotorControll\PSoC6_PWM_MotorControll.cydsn\codegentemp\cycodeshareimport.scat" value="OTHER;;;;;" />
+=======
+<fileSet version="1" anchorPath="M:\GIT Folder\Motor-Controll-PSoC-6\PSoC6_PWM_MotorControll\PSoC6_PWM_MotorControll.cydsn\codegentemp" xsi:schemaLocation="http://cypress.com/xsd/cypathdictionary cypathdictionary.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://cypress.com/xsd/cypathdictionary">
+  <file name="M:\GIT Folder\Motor-Controll-PSoC-6\PSoC6_PWM_MotorControll\PSoC6_PWM_MotorControll.cydsn\codegentemp\cyfitter_cfg.h" value="HEADER;;;;;" />
+  <file name="M:\GIT Folder\Motor-Controll-PSoC-6\PSoC6_PWM_MotorControll\PSoC6_PWM_MotorControll.cydsn\codegentemp\cyfitter_sysint_cfg.h" value="HEADER;;;;;Pins and Interrupts" />
+  <file name="M:\GIT Folder\Motor-Controll-PSoC-6\PSoC6_PWM_MotorControll\PSoC6_PWM_MotorControll.cydsn\codegentemp\cyfitter_sysint_cfg.c" value="SOURCE_C;CortexM0p,CortexM4;;;;Pins and Interrupts" />
+  <file name="M:\GIT Folder\Motor-Controll-PSoC-6\PSoC6_PWM_MotorControll\PSoC6_PWM_MotorControll.cydsn\codegentemp\cyfitter_cfg.c" value="SOURCE_C;CortexM0p;;;;" />
+  <file name="M:\GIT Folder\Motor-Controll-PSoC-6\PSoC6_PWM_MotorControll\PSoC6_PWM_MotorControll.cydsn\codegentemp\cymetadata.c" value="SOURCE_C;CortexM0p,CortexM4;;;;" />
+  <file name="M:\GIT Folder\Motor-Controll-PSoC-6\PSoC6_PWM_MotorControll\PSoC6_PWM_MotorControll.cydsn\codegentemp\cydevice_trm.h" value="HEADER;;;;;" />
+  <file name="M:\GIT Folder\Motor-Controll-PSoC-6\PSoC6_PWM_MotorControll\PSoC6_PWM_MotorControll.cydsn\codegentemp\cydevicegnu_trm.inc" value="HEADER;;;;;" />
+  <file name="M:\GIT Folder\Motor-Controll-PSoC-6\PSoC6_PWM_MotorControll\PSoC6_PWM_MotorControll.cydsn\codegentemp\cydevicerv_trm.inc" value="HEADER;;;;;" />
+  <file name="M:\GIT Folder\Motor-Controll-PSoC-6\PSoC6_PWM_MotorControll\PSoC6_PWM_MotorControll.cydsn\codegentemp\cydeviceiar_trm.inc" value="HEADER;;;;;" />
+  <file name="M:\GIT Folder\Motor-Controll-PSoC-6\PSoC6_PWM_MotorControll\PSoC6_PWM_MotorControll.cydsn\codegentemp\cyfitter.h" value="HEADER;;;;;" />
+  <file name="M:\GIT Folder\Motor-Controll-PSoC-6\PSoC6_PWM_MotorControll\PSoC6_PWM_MotorControll.cydsn\codegentemp\cyfitter_gpio.h" value="HEADER;;;;;Pins and Interrupts" />
+  <file name="M:\GIT Folder\Motor-Controll-PSoC-6\PSoC6_PWM_MotorControll\PSoC6_PWM_MotorControll.cydsn\codegentemp\cyfitter_sysint.h" value="HEADER;;;;;Pins and Interrupts" />
+  <file name="M:\GIT Folder\Motor-Controll-PSoC-6\PSoC6_PWM_MotorControll\PSoC6_PWM_MotorControll.cydsn\codegentemp\cydisabledsheets.h" value="HEADER;;;;;" />
+  <file name="M:\GIT Folder\Motor-Controll-PSoC-6\PSoC6_PWM_MotorControll\PSoC6_PWM_MotorControll.cydsn\codegentemp\PWM_Motor1.c" value="SOURCE_C;CortexM0p,CortexM4;;;;PWM_Motor1" />
+  <file name="M:\GIT Folder\Motor-Controll-PSoC-6\PSoC6_PWM_MotorControll\PSoC6_PWM_MotorControll.cydsn\codegentemp\PWM_Motor1.h" value="HEADER;;;;;PWM_Motor1" />
+  <file name="M:\GIT Folder\Motor-Controll-PSoC-6\PSoC6_PWM_MotorControll\PSoC6_PWM_MotorControll.cydsn\codegentemp\Clock_1.h" value="HEADER;;;;;Clock_1" />
+  <file name="M:\GIT Folder\Motor-Controll-PSoC-6\PSoC6_PWM_MotorControll\PSoC6_PWM_MotorControll.cydsn\codegentemp\PWM_Motor2.c" value="SOURCE_C;CortexM0p,CortexM4;;;;PWM_Motor2" />
+  <file name="M:\GIT Folder\Motor-Controll-PSoC-6\PSoC6_PWM_MotorControll\PSoC6_PWM_MotorControll.cydsn\codegentemp\PWM_Motor2.h" value="HEADER;;;;;PWM_Motor2" />
+  <file name="M:\GIT Folder\Motor-Controll-PSoC-6\PSoC6_PWM_MotorControll\PSoC6_PWM_MotorControll.cydsn\codegentemp\UART_1.c" value="SOURCE_C;CortexM0p,CortexM4;;;;UART_1" />
+  <file name="M:\GIT Folder\Motor-Controll-PSoC-6\PSoC6_PWM_MotorControll\PSoC6_PWM_MotorControll.cydsn\codegentemp\UART_1.h" value="HEADER;;;;;UART_1" />
+  <file name="M:\GIT Folder\Motor-Controll-PSoC-6\PSoC6_PWM_MotorControll\PSoC6_PWM_MotorControll.cydsn\codegentemp\SPI_1.c" value="SOURCE_C;CortexM0p,CortexM4;;;;SPI_1" />
+  <file name="M:\GIT Folder\Motor-Controll-PSoC-6\PSoC6_PWM_MotorControll\PSoC6_PWM_MotorControll.cydsn\codegentemp\SPI_1.h" value="HEADER;;;;;SPI_1" />
+  <file name="M:\GIT Folder\Motor-Controll-PSoC-6\PSoC6_PWM_MotorControll\PSoC6_PWM_MotorControll.cydsn\codegentemp\UART_1_SCBCLK.h" value="HEADER;;;;;UART_1_SCBCLK" />
+  <file name="M:\GIT Folder\Motor-Controll-PSoC-6\PSoC6_PWM_MotorControll\PSoC6_PWM_MotorControll.cydsn\codegentemp\SPI_1_SCBCLK.h" value="HEADER;;;;;SPI_1_SCBCLK" />
+  <file name="M:\GIT Folder\Motor-Controll-PSoC-6\PSoC6_PWM_MotorControll\PSoC6_PWM_MotorControll.cydsn\codegentemp\project.h" value="OTHER;;;;;" />
+  <file name="M:\GIT Folder\Motor-Controll-PSoC-6\PSoC6_PWM_MotorControll\PSoC6_PWM_MotorControll.cydsn\codegentemp\cycodeshareimport.ld" value="OTHER;;;;;" />
+  <file name="M:\GIT Folder\Motor-Controll-PSoC-6\PSoC6_PWM_MotorControll\PSoC6_PWM_MotorControll.cydsn\codegentemp\cycodeshareexport.ld" value="OTHER;;;;;" />
+  <file name="M:\GIT Folder\Motor-Controll-PSoC-6\PSoC6_PWM_MotorControll\PSoC6_PWM_MotorControll.cydsn\codegentemp\cycodeshareimport.scat" value="OTHER;;;;;" />
+>>>>>>> Stashed changes
 </fileSet>

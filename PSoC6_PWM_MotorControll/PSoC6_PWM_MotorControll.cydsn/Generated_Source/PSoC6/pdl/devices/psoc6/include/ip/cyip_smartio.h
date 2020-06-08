@@ -5,12 +5,12 @@
 * SMARTIO IP definitions
 *
 * \note
-* Generator version: 1.3.0.23
-* Database revision: 8f38ca6
+* Generator version: 1.3.0.27
+* Database revision: cc4063c
 *
 ********************************************************************************
 * \copyright
-* Copyright 2016-2018, Cypress Semiconductor Corporation. All rights reserved.
+* Copyright 2016-2019, Cypress Semiconductor Corporation. All rights reserved.
 * You may use this file only in accordance with the license, terms, conditions,
 * disclaimers, and limitations in the end user license agreement accompanying
 * the software package with which this file was provided.

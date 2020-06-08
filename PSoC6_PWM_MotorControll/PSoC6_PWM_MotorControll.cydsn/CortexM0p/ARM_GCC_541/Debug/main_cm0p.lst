@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 ARM GAS  C:\Users\quint\AppData\Local\Temp\ccHe3yPb.s 			page 1
+=======
+ARM GAS  C:\Users\Razer\AppData\Local\Temp\ccezM0sq.s 			page 1
+>>>>>>> Stashed changes
 
 
    1              		.syntax unified
@@ -58,7 +62,11 @@ ARM GAS  C:\Users\quint\AppData\Local\Temp\ccHe3yPb.s 			page 1
    1:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** /**************************************************************************//**
    2:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****  * @file     cmsis_gcc.h
    3:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****  * @brief    CMSIS compiler GCC header file
+<<<<<<< Updated upstream
 ARM GAS  C:\Users\quint\AppData\Local\Temp\ccHe3yPb.s 			page 2
+=======
+ARM GAS  C:\Users\Razer\AppData\Local\Temp\ccezM0sq.s 			page 2
+>>>>>>> Stashed changes
 
 
    4:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****  * @version  V5.0.3
@@ -118,7 +126,11 @@ ARM GAS  C:\Users\quint\AppData\Local\Temp\ccHe3yPb.s 			page 1
   58:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #ifndef   __WEAK
   59:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   #define __WEAK                                 __attribute__((weak))
   60:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #endif
+<<<<<<< Updated upstream
 ARM GAS  C:\Users\quint\AppData\Local\Temp\ccHe3yPb.s 			page 3
+=======
+ARM GAS  C:\Users\Razer\AppData\Local\Temp\ccezM0sq.s 			page 3
+>>>>>>> Stashed changes
 
 
   61:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #ifndef   __PACKED
@@ -178,7 +190,11 @@ ARM GAS  C:\Users\quint\AppData\Local\Temp\ccHe3yPb.s 			page 1
  115:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #endif
  116:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** 
  117:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** 
+<<<<<<< Updated upstream
 ARM GAS  C:\Users\quint\AppData\Local\Temp\ccHe3yPb.s 			page 4
+=======
+ARM GAS  C:\Users\Razer\AppData\Local\Temp\ccezM0sq.s 			page 4
+>>>>>>> Stashed changes
 
 
  118:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** /* ###########################  Core Function Access  ########################### */
@@ -227,6 +243,7 @@ ARM GAS  C:\Users\quint\AppData\Local\Temp\ccHe3yPb.s 			page 1
   66              		.file 5 "Generated_Source\\PSoC6\\pdl\\drivers/peripheral/device/cy_device.h"
   67              		.file 6 "Generated_Source\\PSoC6\\pdl\\drivers/peripheral/scb/cy_scb_spi.h"
   68              		.file 7 "Generated_Source\\PSoC6\\pdl\\drivers/peripheral/scb/cy_scb_uart.h"
+<<<<<<< Updated upstream
   69              		.file 8 "Generated_Source\\PSoC6\\pdl\\drivers/peripheral/tcpwm/cy_tcpwm_counter.h"
   70              		.file 9 "Generated_Source\\PSoC6\\pdl\\drivers/peripheral/tcpwm/cy_tcpwm_pwm.h"
   71              		.file 10 "Generated_Source\\PSoC6/PWM_Motor1.h"
@@ -2774,3 +2791,2353 @@ ARM GAS  C:\Users\quint\AppData\Local\Temp\ccHe3yPb.s 			page 1
  1954      66496478 
  1954      00
  1955              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+=======
+  69              		.file 8 "Generated_Source\\PSoC6\\pdl\\drivers/peripheral/tcpwm/cy_tcpwm_pwm.h"
+  70              		.file 9 "Generated_Source\\PSoC6/PWM_Motor1.h"
+  71              		.file 10 "Generated_Source\\PSoC6/PWM_Motor2.h"
+  72              		.file 11 "Generated_Source\\PSoC6/UART_1.h"
+  73              		.file 12 "Generated_Source\\PSoC6/SPI_1.h"
+  74              		.file 13 "./system_psoc6.h"
+  75              		.section	.debug_info,"",%progbits
+  76              	.Ldebug_info0:
+  77 0000 70080000 		.4byte	0x870
+  78 0004 0400     		.2byte	0x4
+  79 0006 00000000 		.4byte	.Ldebug_abbrev0
+ARM GAS  C:\Users\Razer\AppData\Local\Temp\ccezM0sq.s 			page 5
+
+
+  80 000a 04       		.byte	0x4
+  81 000b 01       		.uleb128 0x1
+  82 000c 5F070000 		.4byte	.LASF164
+  83 0010 0C       		.byte	0xc
+  84 0011 8C000000 		.4byte	.LASF165
+  85 0015 38020000 		.4byte	.LASF166
+  86 0019 00000000 		.4byte	.Ldebug_ranges0+0
+  87 001d 00000000 		.4byte	0
+  88 0021 00000000 		.4byte	.Ldebug_line0
+  89 0025 02       		.uleb128 0x2
+  90 0026 02       		.byte	0x2
+  91 0027 05       		.byte	0x5
+  92 0028 D6060000 		.4byte	.LASF0
+  93 002c 02       		.uleb128 0x2
+  94 002d 01       		.byte	0x1
+  95 002e 08       		.byte	0x8
+  96 002f B4060000 		.4byte	.LASF1
+  97 0033 02       		.uleb128 0x2
+  98 0034 01       		.byte	0x1
+  99 0035 06       		.byte	0x6
+ 100 0036 A8010000 		.4byte	.LASF2
+ 101 003a 03       		.uleb128 0x3
+ 102 003b B3000000 		.4byte	.LASF3
+ 103 003f 03       		.byte	0x3
+ 104 0040 1D       		.byte	0x1d
+ 105 0041 2C000000 		.4byte	0x2c
+ 106 0045 03       		.uleb128 0x3
+ 107 0046 89030000 		.4byte	.LASF4
+ 108 004a 03       		.byte	0x3
+ 109 004b 29       		.byte	0x29
+ 110 004c 25000000 		.4byte	0x25
+ 111 0050 03       		.uleb128 0x3
+ 112 0051 30080000 		.4byte	.LASF5
+ 113 0055 03       		.byte	0x3
+ 114 0056 2B       		.byte	0x2b
+ 115 0057 5B000000 		.4byte	0x5b
+ 116 005b 02       		.uleb128 0x2
+ 117 005c 02       		.byte	0x2
+ 118 005d 07       		.byte	0x7
+ 119 005e 87080000 		.4byte	.LASF6
+ 120 0062 02       		.uleb128 0x2
+ 121 0063 04       		.byte	0x4
+ 122 0064 05       		.byte	0x5
+ 123 0065 B4020000 		.4byte	.LASF7
+ 124 0069 03       		.uleb128 0x3
+ 125 006a 6E030000 		.4byte	.LASF8
+ 126 006e 03       		.byte	0x3
+ 127 006f 41       		.byte	0x41
+ 128 0070 74000000 		.4byte	0x74
+ 129 0074 02       		.uleb128 0x2
+ 130 0075 04       		.byte	0x4
+ 131 0076 07       		.byte	0x7
+ 132 0077 28040000 		.4byte	.LASF9
+ 133 007b 02       		.uleb128 0x2
+ 134 007c 08       		.byte	0x8
+ 135 007d 05       		.byte	0x5
+ 136 007e 9A010000 		.4byte	.LASF10
+ARM GAS  C:\Users\Razer\AppData\Local\Temp\ccezM0sq.s 			page 6
+
+
+ 137 0082 02       		.uleb128 0x2
+ 138 0083 08       		.byte	0x8
+ 139 0084 07       		.byte	0x7
+ 140 0085 02010000 		.4byte	.LASF11
+ 141 0089 04       		.uleb128 0x4
+ 142 008a 04       		.byte	0x4
+ 143 008b 05       		.byte	0x5
+ 144 008c 696E7400 		.ascii	"int\000"
+ 145 0090 02       		.uleb128 0x2
+ 146 0091 04       		.byte	0x4
+ 147 0092 07       		.byte	0x7
+ 148 0093 EC030000 		.4byte	.LASF12
+ 149 0097 03       		.uleb128 0x3
+ 150 0098 70090000 		.4byte	.LASF13
+ 151 009c 04       		.byte	0x4
+ 152 009d 18       		.byte	0x18
+ 153 009e 3A000000 		.4byte	0x3a
+ 154 00a2 03       		.uleb128 0x3
+ 155 00a3 92010000 		.4byte	.LASF14
+ 156 00a7 04       		.byte	0x4
+ 157 00a8 20       		.byte	0x20
+ 158 00a9 45000000 		.4byte	0x45
+ 159 00ad 03       		.uleb128 0x3
+ 160 00ae F9030000 		.4byte	.LASF15
+ 161 00b2 04       		.byte	0x4
+ 162 00b3 24       		.byte	0x24
+ 163 00b4 50000000 		.4byte	0x50
+ 164 00b8 03       		.uleb128 0x3
+ 165 00b9 41070000 		.4byte	.LASF16
+ 166 00bd 04       		.byte	0x4
+ 167 00be 30       		.byte	0x30
+ 168 00bf 69000000 		.4byte	0x69
+ 169 00c3 02       		.uleb128 0x2
+ 170 00c4 04       		.byte	0x4
+ 171 00c5 07       		.byte	0x7
+ 172 00c6 B0050000 		.4byte	.LASF17
+ 173 00ca 05       		.uleb128 0x5
+ 174 00cb B8000000 		.4byte	0xb8
+ 175 00cf 02       		.uleb128 0x2
+ 176 00d0 08       		.byte	0x8
+ 177 00d1 04       		.byte	0x4
+ 178 00d2 FA070000 		.4byte	.LASF18
+ 179 00d6 06       		.uleb128 0x6
+ 180 00d7 B8       		.byte	0xb8
+ 181 00d8 05       		.byte	0x5
+ 182 00d9 34       		.byte	0x34
+ 183 00da E7040000 		.4byte	0x4e7
+ 184 00de 07       		.uleb128 0x7
+ 185 00df E9000000 		.4byte	.LASF19
+ 186 00e3 05       		.byte	0x5
+ 187 00e4 37       		.byte	0x37
+ 188 00e5 B8000000 		.4byte	0xb8
+ 189 00e9 00       		.byte	0
+ 190 00ea 07       		.uleb128 0x7
+ 191 00eb 63030000 		.4byte	.LASF20
+ 192 00ef 05       		.byte	0x5
+ 193 00f0 38       		.byte	0x38
+ARM GAS  C:\Users\Razer\AppData\Local\Temp\ccezM0sq.s 			page 7
+
+
+ 194 00f1 B8000000 		.4byte	0xb8
+ 195 00f5 04       		.byte	0x4
+ 196 00f6 07       		.uleb128 0x7
+ 197 00f7 EC020000 		.4byte	.LASF21
+ 198 00fb 05       		.byte	0x5
+ 199 00fc 39       		.byte	0x39
+ 200 00fd B8000000 		.4byte	0xb8
+ 201 0101 08       		.byte	0x8
+ 202 0102 07       		.uleb128 0x7
+ 203 0103 A6060000 		.4byte	.LASF22
+ 204 0107 05       		.byte	0x5
+ 205 0108 3A       		.byte	0x3a
+ 206 0109 B8000000 		.4byte	0xb8
+ 207 010d 0C       		.byte	0xc
+ 208 010e 07       		.uleb128 0x7
+ 209 010f F1010000 		.4byte	.LASF23
+ 210 0113 05       		.byte	0x5
+ 211 0114 3B       		.byte	0x3b
+ 212 0115 B8000000 		.4byte	0xb8
+ 213 0119 10       		.byte	0x10
+ 214 011a 07       		.uleb128 0x7
+ 215 011b 92020000 		.4byte	.LASF24
+ 216 011f 05       		.byte	0x5
+ 217 0120 3C       		.byte	0x3c
+ 218 0121 B8000000 		.4byte	0xb8
+ 219 0125 14       		.byte	0x14
+ 220 0126 07       		.uleb128 0x7
+ 221 0127 76040000 		.4byte	.LASF25
+ 222 012b 05       		.byte	0x5
+ 223 012c 3D       		.byte	0x3d
+ 224 012d B8000000 		.4byte	0xb8
+ 225 0131 18       		.byte	0x18
+ 226 0132 07       		.uleb128 0x7
+ 227 0133 83000000 		.4byte	.LASF26
+ 228 0137 05       		.byte	0x5
+ 229 0138 3E       		.byte	0x3e
+ 230 0139 B8000000 		.4byte	0xb8
+ 231 013d 1C       		.byte	0x1c
+ 232 013e 07       		.uleb128 0x7
+ 233 013f 1B0A0000 		.4byte	.LASF27
+ 234 0143 05       		.byte	0x5
+ 235 0144 3F       		.byte	0x3f
+ 236 0145 B8000000 		.4byte	0xb8
+ 237 0149 20       		.byte	0x20
+ 238 014a 07       		.uleb128 0x7
+ 239 014b 2D060000 		.4byte	.LASF28
+ 240 014f 05       		.byte	0x5
+ 241 0150 40       		.byte	0x40
+ 242 0151 B8000000 		.4byte	0xb8
+ 243 0155 24       		.byte	0x24
+ 244 0156 07       		.uleb128 0x7
+ 245 0157 82050000 		.4byte	.LASF29
+ 246 015b 05       		.byte	0x5
+ 247 015c 43       		.byte	0x43
+ 248 015d 97000000 		.4byte	0x97
+ 249 0161 28       		.byte	0x28
+ 250 0162 07       		.uleb128 0x7
+ARM GAS  C:\Users\Razer\AppData\Local\Temp\ccezM0sq.s 			page 8
+
+
+ 251 0163 69000000 		.4byte	.LASF30
+ 252 0167 05       		.byte	0x5
+ 253 0168 44       		.byte	0x44
+ 254 0169 97000000 		.4byte	0x97
+ 255 016d 29       		.byte	0x29
+ 256 016e 07       		.uleb128 0x7
+ 257 016f 110A0000 		.4byte	.LASF31
+ 258 0173 05       		.byte	0x5
+ 259 0174 45       		.byte	0x45
+ 260 0175 97000000 		.4byte	0x97
+ 261 0179 2A       		.byte	0x2a
+ 262 017a 07       		.uleb128 0x7
+ 263 017b 1F060000 		.4byte	.LASF32
+ 264 017f 05       		.byte	0x5
+ 265 0180 46       		.byte	0x46
+ 266 0181 97000000 		.4byte	0x97
+ 267 0185 2B       		.byte	0x2b
+ 268 0186 07       		.uleb128 0x7
+ 269 0187 02050000 		.4byte	.LASF33
+ 270 018b 05       		.byte	0x5
+ 271 018c 47       		.byte	0x47
+ 272 018d 97000000 		.4byte	0x97
+ 273 0191 2C       		.byte	0x2c
+ 274 0192 07       		.uleb128 0x7
+ 275 0193 4E080000 		.4byte	.LASF34
+ 276 0197 05       		.byte	0x5
+ 277 0198 48       		.byte	0x48
+ 278 0199 97000000 		.4byte	0x97
+ 279 019d 2D       		.byte	0x2d
+ 280 019e 07       		.uleb128 0x7
+ 281 019f FA010000 		.4byte	.LASF35
+ 282 01a3 05       		.byte	0x5
+ 283 01a4 49       		.byte	0x49
+ 284 01a5 97000000 		.4byte	0x97
+ 285 01a9 2E       		.byte	0x2e
+ 286 01aa 07       		.uleb128 0x7
+ 287 01ab 8F050000 		.4byte	.LASF36
+ 288 01af 05       		.byte	0x5
+ 289 01b0 4A       		.byte	0x4a
+ 290 01b1 97000000 		.4byte	0x97
+ 291 01b5 2F       		.byte	0x2f
+ 292 01b6 07       		.uleb128 0x7
+ 293 01b7 16080000 		.4byte	.LASF37
+ 294 01bb 05       		.byte	0x5
+ 295 01bc 4B       		.byte	0x4b
+ 296 01bd 97000000 		.4byte	0x97
+ 297 01c1 30       		.byte	0x30
+ 298 01c2 07       		.uleb128 0x7
+ 299 01c3 6B040000 		.4byte	.LASF38
+ 300 01c7 05       		.byte	0x5
+ 301 01c8 4E       		.byte	0x4e
+ 302 01c9 97000000 		.4byte	0x97
+ 303 01cd 31       		.byte	0x31
+ 304 01ce 07       		.uleb128 0x7
+ 305 01cf A5000000 		.4byte	.LASF39
+ 306 01d3 05       		.byte	0x5
+ 307 01d4 4F       		.byte	0x4f
+ARM GAS  C:\Users\Razer\AppData\Local\Temp\ccezM0sq.s 			page 9
+
+
+ 308 01d5 97000000 		.4byte	0x97
+ 309 01d9 32       		.byte	0x32
+ 310 01da 07       		.uleb128 0x7
+ 311 01db E0030000 		.4byte	.LASF40
+ 312 01df 05       		.byte	0x5
+ 313 01e0 50       		.byte	0x50
+ 314 01e1 97000000 		.4byte	0x97
+ 315 01e5 33       		.byte	0x33
+ 316 01e6 07       		.uleb128 0x7
+ 317 01e7 C4050000 		.4byte	.LASF41
+ 318 01eb 05       		.byte	0x5
+ 319 01ec 51       		.byte	0x51
+ 320 01ed 97000000 		.4byte	0x97
+ 321 01f1 34       		.byte	0x34
+ 322 01f2 07       		.uleb128 0x7
+ 323 01f3 C0080000 		.4byte	.LASF42
+ 324 01f7 05       		.byte	0x5
+ 325 01f8 52       		.byte	0x52
+ 326 01f9 A2000000 		.4byte	0xa2
+ 327 01fd 36       		.byte	0x36
+ 328 01fe 07       		.uleb128 0x7
+ 329 01ff 06030000 		.4byte	.LASF43
+ 330 0203 05       		.byte	0x5
+ 331 0204 53       		.byte	0x53
+ 332 0205 A2000000 		.4byte	0xa2
+ 333 0209 38       		.byte	0x38
+ 334 020a 07       		.uleb128 0x7
+ 335 020b 3D090000 		.4byte	.LASF44
+ 336 020f 05       		.byte	0x5
+ 337 0210 54       		.byte	0x54
+ 338 0211 A2000000 		.4byte	0xa2
+ 339 0215 3A       		.byte	0x3a
+ 340 0216 07       		.uleb128 0x7
+ 341 0217 B1040000 		.4byte	.LASF45
+ 342 021b 05       		.byte	0x5
+ 343 021c 55       		.byte	0x55
+ 344 021d 97000000 		.4byte	0x97
+ 345 0221 3C       		.byte	0x3c
+ 346 0222 07       		.uleb128 0x7
+ 347 0223 2D030000 		.4byte	.LASF46
+ 348 0227 05       		.byte	0x5
+ 349 0228 56       		.byte	0x56
+ 350 0229 97000000 		.4byte	0x97
+ 351 022d 3D       		.byte	0x3d
+ 352 022e 07       		.uleb128 0x7
+ 353 022f 23070000 		.4byte	.LASF47
+ 354 0233 05       		.byte	0x5
+ 355 0234 57       		.byte	0x57
+ 356 0235 97000000 		.4byte	0x97
+ 357 0239 3E       		.byte	0x3e
+ 358 023a 07       		.uleb128 0x7
+ 359 023b 77000000 		.4byte	.LASF48
+ 360 023f 05       		.byte	0x5
+ 361 0240 58       		.byte	0x58
+ 362 0241 97000000 		.4byte	0x97
+ 363 0245 3F       		.byte	0x3f
+ 364 0246 07       		.uleb128 0x7
+ARM GAS  C:\Users\Razer\AppData\Local\Temp\ccezM0sq.s 			page 10
+
+
+ 365 0247 38060000 		.4byte	.LASF49
+ 366 024b 05       		.byte	0x5
+ 367 024c 59       		.byte	0x59
+ 368 024d 97000000 		.4byte	0x97
+ 369 0251 40       		.byte	0x40
+ 370 0252 07       		.uleb128 0x7
+ 371 0253 79030000 		.4byte	.LASF50
+ 372 0257 05       		.byte	0x5
+ 373 0258 5A       		.byte	0x5a
+ 374 0259 97000000 		.4byte	0x97
+ 375 025d 41       		.byte	0x41
+ 376 025e 07       		.uleb128 0x7
+ 377 025f 7F040000 		.4byte	.LASF51
+ 378 0263 05       		.byte	0x5
+ 379 0264 5B       		.byte	0x5b
+ 380 0265 97000000 		.4byte	0x97
+ 381 0269 42       		.byte	0x42
+ 382 026a 07       		.uleb128 0x7
+ 383 026b 0B060000 		.4byte	.LASF52
+ 384 026f 05       		.byte	0x5
+ 385 0270 5C       		.byte	0x5c
+ 386 0271 97000000 		.4byte	0x97
+ 387 0275 43       		.byte	0x43
+ 388 0276 07       		.uleb128 0x7
+ 389 0277 F5020000 		.4byte	.LASF53
+ 390 027b 05       		.byte	0x5
+ 391 027c 5D       		.byte	0x5d
+ 392 027d 97000000 		.4byte	0x97
+ 393 0281 44       		.byte	0x44
+ 394 0282 07       		.uleb128 0x7
+ 395 0283 00000000 		.4byte	.LASF54
+ 396 0287 05       		.byte	0x5
+ 397 0288 5E       		.byte	0x5e
+ 398 0289 B8000000 		.4byte	0xb8
+ 399 028d 48       		.byte	0x48
+ 400 028e 07       		.uleb128 0x7
+ 401 028f CC020000 		.4byte	.LASF55
+ 402 0293 05       		.byte	0x5
+ 403 0294 5F       		.byte	0x5f
+ 404 0295 B8000000 		.4byte	0xb8
+ 405 0299 4C       		.byte	0x4c
+ 406 029a 07       		.uleb128 0x7
+ 407 029b 510A0000 		.4byte	.LASF56
+ 408 029f 05       		.byte	0x5
+ 409 02a0 60       		.byte	0x60
+ 410 02a1 97000000 		.4byte	0x97
+ 411 02a5 50       		.byte	0x50
+ 412 02a6 07       		.uleb128 0x7
+ 413 02a7 6C010000 		.4byte	.LASF57
+ 414 02ab 05       		.byte	0x5
+ 415 02ac 61       		.byte	0x61
+ 416 02ad 97000000 		.4byte	0x97
+ 417 02b1 51       		.byte	0x51
+ 418 02b2 07       		.uleb128 0x7
+ 419 02b3 60090000 		.4byte	.LASF58
+ 420 02b7 05       		.byte	0x5
+ 421 02b8 62       		.byte	0x62
+ARM GAS  C:\Users\Razer\AppData\Local\Temp\ccezM0sq.s 			page 11
+
+
+ 422 02b9 97000000 		.4byte	0x97
+ 423 02bd 52       		.byte	0x52
+ 424 02be 07       		.uleb128 0x7
+ 425 02bf 5B080000 		.4byte	.LASF59
+ 426 02c3 05       		.byte	0x5
+ 427 02c4 63       		.byte	0x63
+ 428 02c5 97000000 		.4byte	0x97
+ 429 02c9 53       		.byte	0x53
+ 430 02ca 07       		.uleb128 0x7
+ 431 02cb 31070000 		.4byte	.LASF60
+ 432 02cf 05       		.byte	0x5
+ 433 02d0 64       		.byte	0x64
+ 434 02d1 97000000 		.4byte	0x97
+ 435 02d5 54       		.byte	0x54
+ 436 02d6 07       		.uleb128 0x7
+ 437 02d7 7E010000 		.4byte	.LASF61
+ 438 02db 05       		.byte	0x5
+ 439 02dc 65       		.byte	0x65
+ 440 02dd 97000000 		.4byte	0x97
+ 441 02e1 55       		.byte	0x55
+ 442 02e2 07       		.uleb128 0x7
+ 443 02e3 14040000 		.4byte	.LASF62
+ 444 02e7 05       		.byte	0x5
+ 445 02e8 66       		.byte	0x66
+ 446 02e9 97000000 		.4byte	0x97
+ 447 02ed 56       		.byte	0x56
+ 448 02ee 07       		.uleb128 0x7
+ 449 02ef F4060000 		.4byte	.LASF63
+ 450 02f3 05       		.byte	0x5
+ 451 02f4 67       		.byte	0x67
+ 452 02f5 97000000 		.4byte	0x97
+ 453 02f9 57       		.byte	0x57
+ 454 02fa 07       		.uleb128 0x7
+ 455 02fb 24000000 		.4byte	.LASF64
+ 456 02ff 05       		.byte	0x5
+ 457 0300 68       		.byte	0x68
+ 458 0301 97000000 		.4byte	0x97
+ 459 0305 58       		.byte	0x58
+ 460 0306 07       		.uleb128 0x7
+ 461 0307 C2060000 		.4byte	.LASF65
+ 462 030b 05       		.byte	0x5
+ 463 030c 69       		.byte	0x69
+ 464 030d 97000000 		.4byte	0x97
+ 465 0311 59       		.byte	0x59
+ 466 0312 07       		.uleb128 0x7
+ 467 0313 B9050000 		.4byte	.LASF66
+ 468 0317 05       		.byte	0x5
+ 469 0318 6E       		.byte	0x6e
+ 470 0319 AD000000 		.4byte	0xad
+ 471 031d 5A       		.byte	0x5a
+ 472 031e 07       		.uleb128 0x7
+ 473 031f 9A080000 		.4byte	.LASF67
+ 474 0323 05       		.byte	0x5
+ 475 0324 6F       		.byte	0x6f
+ 476 0325 AD000000 		.4byte	0xad
+ 477 0329 5C       		.byte	0x5c
+ 478 032a 07       		.uleb128 0x7
+ARM GAS  C:\Users\Razer\AppData\Local\Temp\ccezM0sq.s 			page 12
+
+
+ 479 032b F3000000 		.4byte	.LASF68
+ 480 032f 05       		.byte	0x5
+ 481 0330 70       		.byte	0x70
+ 482 0331 97000000 		.4byte	0x97
+ 483 0335 5E       		.byte	0x5e
+ 484 0336 07       		.uleb128 0x7
+ 485 0337 87060000 		.4byte	.LASF69
+ 486 033b 05       		.byte	0x5
+ 487 033c 71       		.byte	0x71
+ 488 033d 97000000 		.4byte	0x97
+ 489 0341 5F       		.byte	0x5f
+ 490 0342 07       		.uleb128 0x7
+ 491 0343 FA050000 		.4byte	.LASF70
+ 492 0347 05       		.byte	0x5
+ 493 0348 72       		.byte	0x72
+ 494 0349 97000000 		.4byte	0x97
+ 495 034d 60       		.byte	0x60
+ 496 034e 07       		.uleb128 0x7
+ 497 034f 60060000 		.4byte	.LASF71
+ 498 0353 05       		.byte	0x5
+ 499 0354 73       		.byte	0x73
+ 500 0355 B8000000 		.4byte	0xb8
+ 501 0359 64       		.byte	0x64
+ 502 035a 07       		.uleb128 0x7
+ 503 035b 36010000 		.4byte	.LASF72
+ 504 035f 05       		.byte	0x5
+ 505 0360 76       		.byte	0x76
+ 506 0361 AD000000 		.4byte	0xad
+ 507 0365 68       		.byte	0x68
+ 508 0366 07       		.uleb128 0x7
+ 509 0367 02040000 		.4byte	.LASF73
+ 510 036b 05       		.byte	0x5
+ 511 036c 77       		.byte	0x77
+ 512 036d AD000000 		.4byte	0xad
+ 513 0371 6A       		.byte	0x6a
+ 514 0372 07       		.uleb128 0x7
+ 515 0373 A2040000 		.4byte	.LASF74
+ 516 0377 05       		.byte	0x5
+ 517 0378 78       		.byte	0x78
+ 518 0379 AD000000 		.4byte	0xad
+ 519 037d 6C       		.byte	0x6c
+ 520 037e 07       		.uleb128 0x7
+ 521 037f E5040000 		.4byte	.LASF75
+ 522 0383 05       		.byte	0x5
+ 523 0384 79       		.byte	0x79
+ 524 0385 AD000000 		.4byte	0xad
+ 525 0389 6E       		.byte	0x6e
+ 526 038a 07       		.uleb128 0x7
+ 527 038b E0060000 		.4byte	.LASF76
+ 528 038f 05       		.byte	0x5
+ 529 0390 7B       		.byte	0x7b
+ 530 0391 97000000 		.4byte	0x97
+ 531 0395 70       		.byte	0x70
+ 532 0396 07       		.uleb128 0x7
+ 533 0397 CB010000 		.4byte	.LASF77
+ 534 039b 05       		.byte	0x5
+ 535 039c 7C       		.byte	0x7c
+ARM GAS  C:\Users\Razer\AppData\Local\Temp\ccezM0sq.s 			page 13
+
+
+ 536 039d 97000000 		.4byte	0x97
+ 537 03a1 71       		.byte	0x71
+ 538 03a2 07       		.uleb128 0x7
+ 539 03a3 230A0000 		.4byte	.LASF78
+ 540 03a7 05       		.byte	0x5
+ 541 03a8 7D       		.byte	0x7d
+ 542 03a9 97000000 		.4byte	0x97
+ 543 03ad 72       		.byte	0x72
+ 544 03ae 07       		.uleb128 0x7
+ 545 03af D5050000 		.4byte	.LASF79
+ 546 03b3 05       		.byte	0x5
+ 547 03b4 7E       		.byte	0x7e
+ 548 03b5 97000000 		.4byte	0x97
+ 549 03b9 73       		.byte	0x73
+ 550 03ba 07       		.uleb128 0x7
+ 551 03bb 3D030000 		.4byte	.LASF80
+ 552 03bf 05       		.byte	0x5
+ 553 03c0 80       		.byte	0x80
+ 554 03c1 AD000000 		.4byte	0xad
+ 555 03c5 74       		.byte	0x74
+ 556 03c6 07       		.uleb128 0x7
+ 557 03c7 3B080000 		.4byte	.LASF81
+ 558 03cb 05       		.byte	0x5
+ 559 03cc 81       		.byte	0x81
+ 560 03cd AD000000 		.4byte	0xad
+ 561 03d1 76       		.byte	0x76
+ 562 03d2 07       		.uleb128 0x7
+ 563 03d3 18030000 		.4byte	.LASF82
+ 564 03d7 05       		.byte	0x5
+ 565 03d8 82       		.byte	0x82
+ 566 03d9 AD000000 		.4byte	0xad
+ 567 03dd 78       		.byte	0x78
+ 568 03de 07       		.uleb128 0x7
+ 569 03df BD000000 		.4byte	.LASF83
+ 570 03e3 05       		.byte	0x5
+ 571 03e4 83       		.byte	0x83
+ 572 03e5 AD000000 		.4byte	0xad
+ 573 03e9 7A       		.byte	0x7a
+ 574 03ea 07       		.uleb128 0x7
+ 575 03eb 9F090000 		.4byte	.LASF84
+ 576 03ef 05       		.byte	0x5
+ 577 03f0 86       		.byte	0x86
+ 578 03f1 97000000 		.4byte	0x97
+ 579 03f5 7C       		.byte	0x7c
+ 580 03f6 07       		.uleb128 0x7
+ 581 03f7 FD080000 		.4byte	.LASF85
+ 582 03fb 05       		.byte	0x5
+ 583 03fc 87       		.byte	0x87
+ 584 03fd 97000000 		.4byte	0x97
+ 585 0401 7D       		.byte	0x7d
+ 586 0402 07       		.uleb128 0x7
+ 587 0403 38000000 		.4byte	.LASF86
+ 588 0407 05       		.byte	0x5
+ 589 0408 88       		.byte	0x88
+ 590 0409 97000000 		.4byte	0x97
+ 591 040d 7E       		.byte	0x7e
+ 592 040e 07       		.uleb128 0x7
+ARM GAS  C:\Users\Razer\AppData\Local\Temp\ccezM0sq.s 			page 14
+
+
+ 593 040f 4F030000 		.4byte	.LASF87
+ 594 0413 05       		.byte	0x5
+ 595 0414 89       		.byte	0x89
+ 596 0415 97000000 		.4byte	0x97
+ 597 0419 7F       		.byte	0x7f
+ 598 041a 07       		.uleb128 0x7
+ 599 041b CC030000 		.4byte	.LASF88
+ 600 041f 05       		.byte	0x5
+ 601 0420 8A       		.byte	0x8a
+ 602 0421 97000000 		.4byte	0x97
+ 603 0425 80       		.byte	0x80
+ 604 0426 07       		.uleb128 0x7
+ 605 0427 E6080000 		.4byte	.LASF89
+ 606 042b 05       		.byte	0x5
+ 607 042c 8D       		.byte	0x8d
+ 608 042d B8000000 		.4byte	0xb8
+ 609 0431 84       		.byte	0x84
+ 610 0432 07       		.uleb128 0x7
+ 611 0433 D2000000 		.4byte	.LASF90
+ 612 0437 05       		.byte	0x5
+ 613 0438 8E       		.byte	0x8e
+ 614 0439 B8000000 		.4byte	0xb8
+ 615 043d 88       		.byte	0x88
+ 616 043e 07       		.uleb128 0x7
+ 617 043f 8A090000 		.4byte	.LASF91
+ 618 0443 05       		.byte	0x5
+ 619 0444 8F       		.byte	0x8f
+ 620 0445 B8000000 		.4byte	0xb8
+ 621 0449 8C       		.byte	0x8c
+ 622 044a 07       		.uleb128 0x7
+ 623 044b 9B050000 		.4byte	.LASF92
+ 624 044f 05       		.byte	0x5
+ 625 0450 90       		.byte	0x90
+ 626 0451 B8000000 		.4byte	0xb8
+ 627 0455 90       		.byte	0x90
+ 628 0456 07       		.uleb128 0x7
+ 629 0457 9C030000 		.4byte	.LASF93
+ 630 045b 05       		.byte	0x5
+ 631 045c 91       		.byte	0x91
+ 632 045d B8000000 		.4byte	0xb8
+ 633 0461 94       		.byte	0x94
+ 634 0462 07       		.uleb128 0x7
+ 635 0463 61050000 		.4byte	.LASF94
+ 636 0467 05       		.byte	0x5
+ 637 0468 92       		.byte	0x92
+ 638 0469 B8000000 		.4byte	0xb8
+ 639 046d 98       		.byte	0x98
+ 640 046e 07       		.uleb128 0x7
+ 641 046f EC090000 		.4byte	.LASF95
+ 642 0473 05       		.byte	0x5
+ 643 0474 93       		.byte	0x93
+ 644 0475 B8000000 		.4byte	0xb8
+ 645 0479 9C       		.byte	0x9c
+ 646 047a 07       		.uleb128 0x7
+ 647 047b 50010000 		.4byte	.LASF96
+ 648 047f 05       		.byte	0x5
+ 649 0480 94       		.byte	0x94
+ARM GAS  C:\Users\Razer\AppData\Local\Temp\ccezM0sq.s 			page 15
+
+
+ 650 0481 B8000000 		.4byte	0xb8
+ 651 0485 A0       		.byte	0xa0
+ 652 0486 07       		.uleb128 0x7
+ 653 0487 05020000 		.4byte	.LASF97
+ 654 048b 05       		.byte	0x5
+ 655 048c 95       		.byte	0x95
+ 656 048d AD000000 		.4byte	0xad
+ 657 0491 A4       		.byte	0xa4
+ 658 0492 07       		.uleb128 0x7
+ 659 0493 4A070000 		.4byte	.LASF98
+ 660 0497 05       		.byte	0x5
+ 661 0498 96       		.byte	0x96
+ 662 0499 AD000000 		.4byte	0xad
+ 663 049d A6       		.byte	0xa6
+ 664 049e 07       		.uleb128 0x7
+ 665 049f 7B060000 		.4byte	.LASF99
+ 666 04a3 05       		.byte	0x5
+ 667 04a4 97       		.byte	0x97
+ 668 04a5 AD000000 		.4byte	0xad
+ 669 04a9 A8       		.byte	0xa8
+ 670 04aa 07       		.uleb128 0x7
+ 671 04ab 22080000 		.4byte	.LASF100
+ 672 04af 05       		.byte	0x5
+ 673 04b0 98       		.byte	0x98
+ 674 04b1 AD000000 		.4byte	0xad
+ 675 04b5 AA       		.byte	0xaa
+ 676 04b6 07       		.uleb128 0x7
+ 677 04b7 C0040000 		.4byte	.LASF101
+ 678 04bb 05       		.byte	0x5
+ 679 04bc 99       		.byte	0x99
+ 680 04bd AD000000 		.4byte	0xad
+ 681 04c1 AC       		.byte	0xac
+ 682 04c2 07       		.uleb128 0x7
+ 683 04c3 EC050000 		.4byte	.LASF102
+ 684 04c7 05       		.byte	0x5
+ 685 04c8 9A       		.byte	0x9a
+ 686 04c9 AD000000 		.4byte	0xad
+ 687 04cd AE       		.byte	0xae
+ 688 04ce 07       		.uleb128 0x7
+ 689 04cf A3080000 		.4byte	.LASF103
+ 690 04d3 05       		.byte	0x5
+ 691 04d4 9D       		.byte	0x9d
+ 692 04d5 AD000000 		.4byte	0xad
+ 693 04d9 B0       		.byte	0xb0
+ 694 04da 07       		.uleb128 0x7
+ 695 04db 55000000 		.4byte	.LASF104
+ 696 04df 05       		.byte	0x5
+ 697 04e0 9E       		.byte	0x9e
+ 698 04e1 B8000000 		.4byte	0xb8
+ 699 04e5 B4       		.byte	0xb4
+ 700 04e6 00       		.byte	0
+ 701 04e7 03       		.uleb128 0x3
+ 702 04e8 0E050000 		.4byte	.LASF105
+ 703 04ec 05       		.byte	0x5
+ 704 04ed 9F       		.byte	0x9f
+ 705 04ee D6000000 		.4byte	0xd6
+ 706 04f2 02       		.uleb128 0x2
+ARM GAS  C:\Users\Razer\AppData\Local\Temp\ccezM0sq.s 			page 16
+
+
+ 707 04f3 01       		.byte	0x1
+ 708 04f4 08       		.byte	0x8
+ 709 04f5 06080000 		.4byte	.LASF106
+ 710 04f9 02       		.uleb128 0x2
+ 711 04fa 04       		.byte	0x4
+ 712 04fb 04       		.byte	0x4
+ 713 04fc 5A060000 		.4byte	.LASF107
+ 714 0500 02       		.uleb128 0x2
+ 715 0501 08       		.byte	0x8
+ 716 0502 04       		.byte	0x4
+ 717 0503 11030000 		.4byte	.LASF108
+ 718 0507 08       		.uleb128 0x8
+ 719 0508 04       		.byte	0x4
+ 720 0509 02       		.uleb128 0x2
+ 721 050a 01       		.byte	0x1
+ 722 050b 02       		.byte	0x2
+ 723 050c AE060000 		.4byte	.LASF109
+ 724 0510 09       		.uleb128 0x9
+ 725 0511 04       		.byte	0x4
+ 726 0512 16050000 		.4byte	0x516
+ 727 0516 0A       		.uleb128 0xa
+ 728 0517 21050000 		.4byte	0x521
+ 729 051b 0B       		.uleb128 0xb
+ 730 051c B8000000 		.4byte	0xb8
+ 731 0520 00       		.byte	0
+ 732 0521 0C       		.uleb128 0xc
+ 733 0522 1A020000 		.4byte	.LASF110
+ 734 0526 06       		.byte	0x6
+ 735 0527 F201     		.2byte	0x1f2
+ 736 0529 10050000 		.4byte	0x510
+ 737 052d 0D       		.uleb128 0xd
+ 738 052e B4010000 		.4byte	.LASF122
+ 739 0532 24       		.byte	0x24
+ 740 0533 06       		.byte	0x6
+ 741 0534 7402     		.2byte	0x274
+ 742 0536 B0050000 		.4byte	0x5b0
+ 743 053a 0E       		.uleb128 0xe
+ 744 053b 36090000 		.4byte	.LASF111
+ 745 053f 06       		.byte	0x6
+ 746 0540 7702     		.2byte	0x277
+ 747 0542 CA000000 		.4byte	0xca
+ 748 0546 00       		.byte	0
+ 749 0547 0E       		.uleb128 0xe
+ 750 0548 16090000 		.4byte	.LASF112
+ 751 054c 06       		.byte	0x6
+ 752 054d 7902     		.2byte	0x279
+ 753 054f 07050000 		.4byte	0x507
+ 754 0553 04       		.byte	0x4
+ 755 0554 0E       		.uleb128 0xe
+ 756 0555 1A000000 		.4byte	.LASF113
+ 757 0559 06       		.byte	0x6
+ 758 055a 7A02     		.2byte	0x27a
+ 759 055c B8000000 		.4byte	0xb8
+ 760 0560 08       		.byte	0x8
+ 761 0561 0E       		.uleb128 0xe
+ 762 0562 93030000 		.4byte	.LASF114
+ 763 0566 06       		.byte	0x6
+ARM GAS  C:\Users\Razer\AppData\Local\Temp\ccezM0sq.s 			page 17
+
+
+ 764 0567 7B02     		.2byte	0x27b
+ 765 0569 CA000000 		.4byte	0xca
+ 766 056d 0C       		.byte	0xc
+ 767 056e 0E       		.uleb128 0xe
+ 768 056f 66010000 		.4byte	.LASF115
+ 769 0573 06       		.byte	0x6
+ 770 0574 7D02     		.2byte	0x27d
+ 771 0576 07050000 		.4byte	0x507
+ 772 057a 10       		.byte	0x10
+ 773 057b 0E       		.uleb128 0xe
+ 774 057c B1030000 		.4byte	.LASF116
+ 775 0580 06       		.byte	0x6
+ 776 0581 7E02     		.2byte	0x27e
+ 777 0583 B8000000 		.4byte	0xb8
+ 778 0587 14       		.byte	0x14
+ 779 0588 0E       		.uleb128 0xe
+ 780 0589 620A0000 		.4byte	.LASF117
+ 781 058d 06       		.byte	0x6
+ 782 058e 7F02     		.2byte	0x27f
+ 783 0590 CA000000 		.4byte	0xca
+ 784 0594 18       		.byte	0x18
+ 785 0595 0E       		.uleb128 0xe
+ 786 0596 DC040000 		.4byte	.LASF118
+ 787 059a 06       		.byte	0x6
+ 788 059b 8502     		.2byte	0x285
+ 789 059d 21050000 		.4byte	0x521
+ 790 05a1 1C       		.byte	0x1c
+ 791 05a2 0E       		.uleb128 0xe
+ 792 05a3 0E090000 		.4byte	.LASF119
+ 793 05a7 06       		.byte	0x6
+ 794 05a8 8802     		.2byte	0x288
+ 795 05aa B8000000 		.4byte	0xb8
+ 796 05ae 20       		.byte	0x20
+ 797 05af 00       		.byte	0
+ 798 05b0 0C       		.uleb128 0xc
+ 799 05b1 1E050000 		.4byte	.LASF120
+ 800 05b5 06       		.byte	0x6
+ 801 05b6 8B02     		.2byte	0x28b
+ 802 05b8 2D050000 		.4byte	0x52d
+ 803 05bc 0C       		.uleb128 0xc
+ 804 05bd 4C040000 		.4byte	.LASF121
+ 805 05c1 07       		.byte	0x7
+ 806 05c2 D901     		.2byte	0x1d9
+ 807 05c4 10050000 		.4byte	0x510
+ 808 05c8 0D       		.uleb128 0xd
+ 809 05c9 390A0000 		.4byte	.LASF123
+ 810 05cd 38       		.byte	0x38
+ 811 05ce 07       		.byte	0x7
+ 812 05cf 7502     		.2byte	0x275
+ 813 05d1 8C060000 		.4byte	0x68c
+ 814 05d5 0E       		.uleb128 0xe
+ 815 05d6 8B040000 		.4byte	.LASF124
+ 816 05da 07       		.byte	0x7
+ 817 05db 7802     		.2byte	0x278
+ 818 05dd CA000000 		.4byte	0xca
+ 819 05e1 00       		.byte	0
+ 820 05e2 0E       		.uleb128 0xe
+ARM GAS  C:\Users\Razer\AppData\Local\Temp\ccezM0sq.s 			page 18
+
+
+ 821 05e3 16060000 		.4byte	.LASF125
+ 822 05e7 07       		.byte	0x7
+ 823 05e8 7902     		.2byte	0x279
+ 824 05ea CA000000 		.4byte	0xca
+ 825 05ee 04       		.byte	0x4
+ 826 05ef 0E       		.uleb128 0xe
+ 827 05f0 46010000 		.4byte	.LASF126
+ 828 05f4 07       		.byte	0x7
+ 829 05f5 7B02     		.2byte	0x27b
+ 830 05f7 07050000 		.4byte	0x507
+ 831 05fb 08       		.byte	0x8
+ 832 05fc 0E       		.uleb128 0xe
+ 833 05fd 6D080000 		.4byte	.LASF127
+ 834 0601 07       		.byte	0x7
+ 835 0602 7C02     		.2byte	0x27c
+ 836 0604 B8000000 		.4byte	0xb8
+ 837 0608 0C       		.byte	0xc
+ 838 0609 0E       		.uleb128 0xe
+ 839 060a 53050000 		.4byte	.LASF128
+ 840 060e 07       		.byte	0x7
+ 841 060f 7D02     		.2byte	0x27d
+ 842 0611 CA000000 		.4byte	0xca
+ 843 0615 10       		.byte	0x10
+ 844 0616 0E       		.uleb128 0xe
+ 845 0617 DE090000 		.4byte	.LASF129
+ 846 061b 07       		.byte	0x7
+ 847 061c 7E02     		.2byte	0x27e
+ 848 061e CA000000 		.4byte	0xca
+ 849 0622 14       		.byte	0x14
+ 850 0623 0E       		.uleb128 0xe
+ 851 0624 16090000 		.4byte	.LASF112
+ 852 0628 07       		.byte	0x7
+ 853 0629 8002     		.2byte	0x280
+ 854 062b 07050000 		.4byte	0x507
+ 855 062f 18       		.byte	0x18
+ 856 0630 0E       		.uleb128 0xe
+ 857 0631 1A000000 		.4byte	.LASF113
+ 858 0635 07       		.byte	0x7
+ 859 0636 8102     		.2byte	0x281
+ 860 0638 B8000000 		.4byte	0xb8
+ 861 063c 1C       		.byte	0x1c
+ 862 063d 0E       		.uleb128 0xe
+ 863 063e 93030000 		.4byte	.LASF114
+ 864 0642 07       		.byte	0x7
+ 865 0643 8202     		.2byte	0x282
+ 866 0645 CA000000 		.4byte	0xca
+ 867 0649 20       		.byte	0x20
+ 868 064a 0E       		.uleb128 0xe
+ 869 064b 66010000 		.4byte	.LASF115
+ 870 064f 07       		.byte	0x7
+ 871 0650 8402     		.2byte	0x284
+ 872 0652 07050000 		.4byte	0x507
+ 873 0656 24       		.byte	0x24
+ 874 0657 0E       		.uleb128 0xe
+ 875 0658 B1030000 		.4byte	.LASF116
+ 876 065c 07       		.byte	0x7
+ 877 065d 8502     		.2byte	0x285
+ARM GAS  C:\Users\Razer\AppData\Local\Temp\ccezM0sq.s 			page 19
+
+
+ 878 065f B8000000 		.4byte	0xb8
+ 879 0663 28       		.byte	0x28
+ 880 0664 0E       		.uleb128 0xe
+ 881 0665 E0010000 		.4byte	.LASF130
+ 882 0669 07       		.byte	0x7
+ 883 066a 8602     		.2byte	0x286
+ 884 066c CA000000 		.4byte	0xca
+ 885 0670 2C       		.byte	0x2c
+ 886 0671 0E       		.uleb128 0xe
+ 887 0672 DC040000 		.4byte	.LASF118
+ 888 0676 07       		.byte	0x7
+ 889 0677 8B02     		.2byte	0x28b
+ 890 0679 BC050000 		.4byte	0x5bc
+ 891 067d 30       		.byte	0x30
+ 892 067e 0E       		.uleb128 0xe
+ 893 067f 0E090000 		.4byte	.LASF119
+ 894 0683 07       		.byte	0x7
+ 895 0684 8E02     		.2byte	0x28e
+ 896 0686 B8000000 		.4byte	0xb8
+ 897 068a 34       		.byte	0x34
+ 898 068b 00       		.byte	0
+ 899 068c 0C       		.uleb128 0xc
+ 900 068d 1C090000 		.4byte	.LASF131
+ 901 0691 07       		.byte	0x7
+ 902 0692 9102     		.2byte	0x291
+ 903 0694 C8050000 		.4byte	0x5c8
+ 904 0698 0F       		.uleb128 0xf
+ 905 0699 9C020000 		.4byte	.LASF132
+ 906 069d 64       		.byte	0x64
+ 907 069e 08       		.byte	0x8
+ 908 069f 2F       		.byte	0x2f
+ 909 06a0 D1070000 		.4byte	0x7d1
+ 910 06a4 07       		.uleb128 0x7
+ 911 06a5 52060000 		.4byte	.LASF133
+ 912 06a9 08       		.byte	0x8
+ 913 06aa 31       		.byte	0x31
+ 914 06ab B8000000 		.4byte	0xb8
+ 915 06af 00       		.byte	0
+ 916 06b0 07       		.uleb128 0x7
+ 917 06b1 19010000 		.4byte	.LASF134
+ 918 06b5 08       		.byte	0x8
+ 919 06b6 33       		.byte	0x33
+ 920 06b7 B8000000 		.4byte	0xb8
+ 921 06bb 04       		.byte	0x4
+ 922 06bc 07       		.uleb128 0x7
+ 923 06bd 98000000 		.4byte	.LASF135
+ 924 06c1 08       		.byte	0x8
+ 925 06c2 34       		.byte	0x34
+ 926 06c3 B8000000 		.4byte	0xb8
+ 927 06c7 08       		.byte	0x8
+ 928 06c8 07       		.uleb128 0x7
+ 929 06c9 44050000 		.4byte	.LASF136
+ 930 06cd 08       		.byte	0x8
+ 931 06ce 35       		.byte	0x35
+ 932 06cf B8000000 		.4byte	0xb8
+ 933 06d3 0C       		.byte	0xc
+ 934 06d4 07       		.uleb128 0x7
+ARM GAS  C:\Users\Razer\AppData\Local\Temp\ccezM0sq.s 			page 20
+
+
+ 935 06d5 12000000 		.4byte	.LASF137
+ 936 06d9 08       		.byte	0x8
+ 937 06da 36       		.byte	0x36
+ 938 06db B8000000 		.4byte	0xb8
+ 939 06df 10       		.byte	0x10
+ 940 06e0 07       		.uleb128 0x7
+ 941 06e1 CD080000 		.4byte	.LASF138
+ 942 06e5 08       		.byte	0x8
+ 943 06e6 37       		.byte	0x37
+ 944 06e7 B8000000 		.4byte	0xb8
+ 945 06eb 14       		.byte	0x14
+ 946 06ec 07       		.uleb128 0x7
+ 947 06ed D5080000 		.4byte	.LASF139
+ 948 06f1 08       		.byte	0x8
+ 949 06f2 38       		.byte	0x38
+ 950 06f3 B8000000 		.4byte	0xb8
+ 951 06f7 18       		.byte	0x18
+ 952 06f8 07       		.uleb128 0x7
+ 953 06f9 08070000 		.4byte	.LASF140
+ 954 06fd 08       		.byte	0x8
+ 955 06fe 39       		.byte	0x39
+ 956 06ff 09050000 		.4byte	0x509
+ 957 0703 1C       		.byte	0x1c
+ 958 0704 07       		.uleb128 0x7
+ 959 0705 F1070000 		.4byte	.LASF141
+ 960 0709 08       		.byte	0x8
+ 961 070a 3A       		.byte	0x3a
+ 962 070b B8000000 		.4byte	0xb8
+ 963 070f 20       		.byte	0x20
+ 964 0710 07       		.uleb128 0x7
+ 965 0711 DD080000 		.4byte	.LASF142
+ 966 0715 08       		.byte	0x8
+ 967 0716 3B       		.byte	0x3b
+ 968 0717 B8000000 		.4byte	0xb8
+ 969 071b 24       		.byte	0x24
+ 970 071c 07       		.uleb128 0x7
+ 971 071d 3A040000 		.4byte	.LASF143
+ 972 0721 08       		.byte	0x8
+ 973 0722 3C       		.byte	0x3c
+ 974 0723 09050000 		.4byte	0x509
+ 975 0727 28       		.byte	0x28
+ 976 0728 07       		.uleb128 0x7
+ 977 0729 BB030000 		.4byte	.LASF144
+ 978 072d 08       		.byte	0x8
+ 979 072e 3E       		.byte	0x3e
+ 980 072f B8000000 		.4byte	0xb8
+ 981 0733 2C       		.byte	0x2c
+ 982 0734 07       		.uleb128 0x7
+ 983 0735 37050000 		.4byte	.LASF145
+ 984 0739 08       		.byte	0x8
+ 985 073a 3F       		.byte	0x3f
+ 986 073b B8000000 		.4byte	0xb8
+ 987 073f 30       		.byte	0x30
+ 988 0740 07       		.uleb128 0x7
+ 989 0741 52090000 		.4byte	.LASF146
+ 990 0745 08       		.byte	0x8
+ 991 0746 40       		.byte	0x40
+ARM GAS  C:\Users\Razer\AppData\Local\Temp\ccezM0sq.s 			page 21
+
+
+ 992 0747 B8000000 		.4byte	0xb8
+ 993 074b 34       		.byte	0x34
+ 994 074c 07       		.uleb128 0x7
+ 995 074d 9D060000 		.4byte	.LASF147
+ 996 0751 08       		.byte	0x8
+ 997 0752 41       		.byte	0x41
+ 998 0753 B8000000 		.4byte	0xb8
+ 999 0757 38       		.byte	0x38
+ 1000 0758 07       		.uleb128 0x7
+ 1001 0759 94040000 		.4byte	.LASF148
+ 1002 075d 08       		.byte	0x8
+ 1003 075e 42       		.byte	0x42
+ 1004 075f B8000000 		.4byte	0xb8
+ 1005 0763 3C       		.byte	0x3c
+ 1006 0764 07       		.uleb128 0x7
+ 1007 0765 19070000 		.4byte	.LASF149
+ 1008 0769 08       		.byte	0x8
+ 1009 076a 44       		.byte	0x44
+ 1010 076b B8000000 		.4byte	0xb8
+ 1011 076f 40       		.byte	0x40
+ 1012 0770 07       		.uleb128 0x7
+ 1013 0771 CE090000 		.4byte	.LASF150
+ 1014 0775 08       		.byte	0x8
+ 1015 0776 45       		.byte	0x45
+ 1016 0777 B8000000 		.4byte	0xb8
+ 1017 077b 44       		.byte	0x44
+ 1018 077c 07       		.uleb128 0x7
+ 1019 077d 7B080000 		.4byte	.LASF151
+ 1020 0781 08       		.byte	0x8
+ 1021 0782 47       		.byte	0x47
+ 1022 0783 B8000000 		.4byte	0xb8
+ 1023 0787 48       		.byte	0x48
+ 1024 0788 07       		.uleb128 0x7
+ 1025 0789 B1080000 		.4byte	.LASF152
+ 1026 078d 08       		.byte	0x8
+ 1027 078e 48       		.byte	0x48
+ 1028 078f B8000000 		.4byte	0xb8
+ 1029 0793 4C       		.byte	0x4c
+ 1030 0794 07       		.uleb128 0x7
+ 1031 0795 77050000 		.4byte	.LASF153
+ 1032 0799 08       		.byte	0x8
+ 1033 079a 4A       		.byte	0x4a
+ 1034 079b B8000000 		.4byte	0xb8
+ 1035 079f 50       		.byte	0x50
+ 1036 07a0 07       		.uleb128 0x7
+ 1037 07a1 CE040000 		.4byte	.LASF154
+ 1038 07a5 08       		.byte	0x8
+ 1039 07a6 4B       		.byte	0x4b
+ 1040 07a7 B8000000 		.4byte	0xb8
+ 1041 07ab 54       		.byte	0x54
+ 1042 07ac 07       		.uleb128 0x7
+ 1043 07ad 4B000000 		.4byte	.LASF155
+ 1044 07b1 08       		.byte	0x8
+ 1045 07b2 4D       		.byte	0x4d
+ 1046 07b3 B8000000 		.4byte	0xb8
+ 1047 07b7 58       		.byte	0x58
+ 1048 07b8 07       		.uleb128 0x7
+ARM GAS  C:\Users\Razer\AppData\Local\Temp\ccezM0sq.s 			page 22
+
+
+ 1049 07b9 020A0000 		.4byte	.LASF156
+ 1050 07bd 08       		.byte	0x8
+ 1051 07be 4E       		.byte	0x4e
+ 1052 07bf B8000000 		.4byte	0xb8
+ 1053 07c3 5C       		.byte	0x5c
+ 1054 07c4 07       		.uleb128 0x7
+ 1055 07c5 0B080000 		.4byte	.LASF157
+ 1056 07c9 08       		.byte	0x8
+ 1057 07ca 50       		.byte	0x50
+ 1058 07cb B8000000 		.4byte	0xb8
+ 1059 07cf 60       		.byte	0x60
+ 1060 07d0 00       		.byte	0
+ 1061 07d1 03       		.uleb128 0x3
+ 1062 07d2 B4090000 		.4byte	.LASF158
+ 1063 07d6 08       		.byte	0x8
+ 1064 07d7 51       		.byte	0x51
+ 1065 07d8 98060000 		.4byte	0x698
+ 1066 07dc 10       		.uleb128 0x10
+ 1067 07dd 45060000 		.4byte	.LASF167
+ 1068 07e1 02       		.byte	0x2
+ 1069 07e2 81       		.byte	0x81
+ 1070 07e3 03       		.byte	0x3
+ 1071 07e4 11       		.uleb128 0x11
+ 1072 07e5 38030000 		.4byte	.LASF168
+ 1073 07e9 01       		.byte	0x1
+ 1074 07ea 0E       		.byte	0xe
+ 1075 07eb 89000000 		.4byte	0x89
+ 1076 07ef 00000000 		.4byte	.LFB535
+ 1077 07f3 10000000 		.4byte	.LFE535-.LFB535
+ 1078 07f7 01       		.uleb128 0x1
+ 1079 07f8 9C       		.byte	0x9c
+ 1080 07f9 20080000 		.4byte	0x820
+ 1081 07fd 12       		.uleb128 0x12
+ 1082 07fe DC070000 		.4byte	0x7dc
+ 1083 0802 02000000 		.4byte	.LBB4
+ 1084 0806 02000000 		.4byte	.LBE4-.LBB4
+ 1085 080a 01       		.byte	0x1
+ 1086 080b 10       		.byte	0x10
+ 1087 080c 13       		.uleb128 0x13
+ 1088 080d 0A000000 		.4byte	.LVL0
+ 1089 0811 67080000 		.4byte	0x867
+ 1090 0815 14       		.uleb128 0x14
+ 1091 0816 01       		.uleb128 0x1
+ 1092 0817 50       		.byte	0x50
+ 1093 0818 05       		.uleb128 0x5
+ 1094 0819 0C       		.byte	0xc
+ 1095 081a 00000810 		.4byte	0x10080000
+ 1096 081e 00       		.byte	0
+ 1097 081f 00       		.byte	0
+ 1098 0820 15       		.uleb128 0x15
+ 1099 0821 71060000 		.4byte	.LASF159
+ 1100 0825 05       		.byte	0x5
+ 1101 0826 A7       		.byte	0xa7
+ 1102 0827 2B080000 		.4byte	0x82b
+ 1103 082b 09       		.uleb128 0x9
+ 1104 082c 04       		.byte	0x4
+ 1105 082d 31080000 		.4byte	0x831
+ARM GAS  C:\Users\Razer\AppData\Local\Temp\ccezM0sq.s 			page 23
+
+
+ 1106 0831 16       		.uleb128 0x16
+ 1107 0832 E7040000 		.4byte	0x4e7
+ 1108 0836 15       		.uleb128 0x15
+ 1109 0837 DA020000 		.4byte	.LASF160
+ 1110 083b 09       		.byte	0x9
+ 1111 083c 1F       		.byte	0x1f
+ 1112 083d 41080000 		.4byte	0x841
+ 1113 0841 16       		.uleb128 0x16
+ 1114 0842 D1070000 		.4byte	0x7d1
+ 1115 0846 15       		.uleb128 0x15
+ 1116 0847 78090000 		.4byte	.LASF161
+ 1117 084b 0A       		.byte	0xa
+ 1118 084c 1F       		.byte	0x1f
+ 1119 084d 41080000 		.4byte	0x841
+ 1120 0851 15       		.uleb128 0x15
+ 1121 0852 BD020000 		.4byte	.LASF162
+ 1122 0856 0B       		.byte	0xb
+ 1123 0857 87       		.byte	0x87
+ 1124 0858 8C060000 		.4byte	0x68c
+ 1125 085c 15       		.uleb128 0x15
+ 1126 085d 28010000 		.4byte	.LASF163
+ 1127 0861 0C       		.byte	0xc
+ 1128 0862 5E       		.byte	0x5e
+ 1129 0863 B0050000 		.4byte	0x5b0
+ 1130 0867 17       		.uleb128 0x17
+ 1131 0868 F2040000 		.4byte	.LASF169
+ 1132 086c F2040000 		.4byte	.LASF169
+ 1133 0870 0D       		.byte	0xd
+ 1134 0871 1802     		.2byte	0x218
+ 1135 0873 00       		.byte	0
+ 1136              		.section	.debug_abbrev,"",%progbits
+ 1137              	.Ldebug_abbrev0:
+ 1138 0000 01       		.uleb128 0x1
+ 1139 0001 11       		.uleb128 0x11
+ 1140 0002 01       		.byte	0x1
+ 1141 0003 25       		.uleb128 0x25
+ 1142 0004 0E       		.uleb128 0xe
+ 1143 0005 13       		.uleb128 0x13
+ 1144 0006 0B       		.uleb128 0xb
+ 1145 0007 03       		.uleb128 0x3
+ 1146 0008 0E       		.uleb128 0xe
+ 1147 0009 1B       		.uleb128 0x1b
+ 1148 000a 0E       		.uleb128 0xe
+ 1149 000b 55       		.uleb128 0x55
+ 1150 000c 17       		.uleb128 0x17
+ 1151 000d 11       		.uleb128 0x11
+ 1152 000e 01       		.uleb128 0x1
+ 1153 000f 10       		.uleb128 0x10
+ 1154 0010 17       		.uleb128 0x17
+ 1155 0011 00       		.byte	0
+ 1156 0012 00       		.byte	0
+ 1157 0013 02       		.uleb128 0x2
+ 1158 0014 24       		.uleb128 0x24
+ 1159 0015 00       		.byte	0
+ 1160 0016 0B       		.uleb128 0xb
+ 1161 0017 0B       		.uleb128 0xb
+ 1162 0018 3E       		.uleb128 0x3e
+ARM GAS  C:\Users\Razer\AppData\Local\Temp\ccezM0sq.s 			page 24
+
+
+ 1163 0019 0B       		.uleb128 0xb
+ 1164 001a 03       		.uleb128 0x3
+ 1165 001b 0E       		.uleb128 0xe
+ 1166 001c 00       		.byte	0
+ 1167 001d 00       		.byte	0
+ 1168 001e 03       		.uleb128 0x3
+ 1169 001f 16       		.uleb128 0x16
+ 1170 0020 00       		.byte	0
+ 1171 0021 03       		.uleb128 0x3
+ 1172 0022 0E       		.uleb128 0xe
+ 1173 0023 3A       		.uleb128 0x3a
+ 1174 0024 0B       		.uleb128 0xb
+ 1175 0025 3B       		.uleb128 0x3b
+ 1176 0026 0B       		.uleb128 0xb
+ 1177 0027 49       		.uleb128 0x49
+ 1178 0028 13       		.uleb128 0x13
+ 1179 0029 00       		.byte	0
+ 1180 002a 00       		.byte	0
+ 1181 002b 04       		.uleb128 0x4
+ 1182 002c 24       		.uleb128 0x24
+ 1183 002d 00       		.byte	0
+ 1184 002e 0B       		.uleb128 0xb
+ 1185 002f 0B       		.uleb128 0xb
+ 1186 0030 3E       		.uleb128 0x3e
+ 1187 0031 0B       		.uleb128 0xb
+ 1188 0032 03       		.uleb128 0x3
+ 1189 0033 08       		.uleb128 0x8
+ 1190 0034 00       		.byte	0
+ 1191 0035 00       		.byte	0
+ 1192 0036 05       		.uleb128 0x5
+ 1193 0037 35       		.uleb128 0x35
+ 1194 0038 00       		.byte	0
+ 1195 0039 49       		.uleb128 0x49
+ 1196 003a 13       		.uleb128 0x13
+ 1197 003b 00       		.byte	0
+ 1198 003c 00       		.byte	0
+ 1199 003d 06       		.uleb128 0x6
+ 1200 003e 13       		.uleb128 0x13
+ 1201 003f 01       		.byte	0x1
+ 1202 0040 0B       		.uleb128 0xb
+ 1203 0041 0B       		.uleb128 0xb
+ 1204 0042 3A       		.uleb128 0x3a
+ 1205 0043 0B       		.uleb128 0xb
+ 1206 0044 3B       		.uleb128 0x3b
+ 1207 0045 0B       		.uleb128 0xb
+ 1208 0046 01       		.uleb128 0x1
+ 1209 0047 13       		.uleb128 0x13
+ 1210 0048 00       		.byte	0
+ 1211 0049 00       		.byte	0
+ 1212 004a 07       		.uleb128 0x7
+ 1213 004b 0D       		.uleb128 0xd
+ 1214 004c 00       		.byte	0
+ 1215 004d 03       		.uleb128 0x3
+ 1216 004e 0E       		.uleb128 0xe
+ 1217 004f 3A       		.uleb128 0x3a
+ 1218 0050 0B       		.uleb128 0xb
+ 1219 0051 3B       		.uleb128 0x3b
+ARM GAS  C:\Users\Razer\AppData\Local\Temp\ccezM0sq.s 			page 25
+
+
+ 1220 0052 0B       		.uleb128 0xb
+ 1221 0053 49       		.uleb128 0x49
+ 1222 0054 13       		.uleb128 0x13
+ 1223 0055 38       		.uleb128 0x38
+ 1224 0056 0B       		.uleb128 0xb
+ 1225 0057 00       		.byte	0
+ 1226 0058 00       		.byte	0
+ 1227 0059 08       		.uleb128 0x8
+ 1228 005a 0F       		.uleb128 0xf
+ 1229 005b 00       		.byte	0
+ 1230 005c 0B       		.uleb128 0xb
+ 1231 005d 0B       		.uleb128 0xb
+ 1232 005e 00       		.byte	0
+ 1233 005f 00       		.byte	0
+ 1234 0060 09       		.uleb128 0x9
+ 1235 0061 0F       		.uleb128 0xf
+ 1236 0062 00       		.byte	0
+ 1237 0063 0B       		.uleb128 0xb
+ 1238 0064 0B       		.uleb128 0xb
+ 1239 0065 49       		.uleb128 0x49
+ 1240 0066 13       		.uleb128 0x13
+ 1241 0067 00       		.byte	0
+ 1242 0068 00       		.byte	0
+ 1243 0069 0A       		.uleb128 0xa
+ 1244 006a 15       		.uleb128 0x15
+ 1245 006b 01       		.byte	0x1
+ 1246 006c 27       		.uleb128 0x27
+ 1247 006d 19       		.uleb128 0x19
+ 1248 006e 01       		.uleb128 0x1
+ 1249 006f 13       		.uleb128 0x13
+ 1250 0070 00       		.byte	0
+ 1251 0071 00       		.byte	0
+ 1252 0072 0B       		.uleb128 0xb
+ 1253 0073 05       		.uleb128 0x5
+ 1254 0074 00       		.byte	0
+ 1255 0075 49       		.uleb128 0x49
+ 1256 0076 13       		.uleb128 0x13
+ 1257 0077 00       		.byte	0
+ 1258 0078 00       		.byte	0
+ 1259 0079 0C       		.uleb128 0xc
+ 1260 007a 16       		.uleb128 0x16
+ 1261 007b 00       		.byte	0
+ 1262 007c 03       		.uleb128 0x3
+ 1263 007d 0E       		.uleb128 0xe
+ 1264 007e 3A       		.uleb128 0x3a
+ 1265 007f 0B       		.uleb128 0xb
+ 1266 0080 3B       		.uleb128 0x3b
+ 1267 0081 05       		.uleb128 0x5
+ 1268 0082 49       		.uleb128 0x49
+ 1269 0083 13       		.uleb128 0x13
+ 1270 0084 00       		.byte	0
+ 1271 0085 00       		.byte	0
+ 1272 0086 0D       		.uleb128 0xd
+ 1273 0087 13       		.uleb128 0x13
+ 1274 0088 01       		.byte	0x1
+ 1275 0089 03       		.uleb128 0x3
+ 1276 008a 0E       		.uleb128 0xe
+ARM GAS  C:\Users\Razer\AppData\Local\Temp\ccezM0sq.s 			page 26
+
+
+ 1277 008b 0B       		.uleb128 0xb
+ 1278 008c 0B       		.uleb128 0xb
+ 1279 008d 3A       		.uleb128 0x3a
+ 1280 008e 0B       		.uleb128 0xb
+ 1281 008f 3B       		.uleb128 0x3b
+ 1282 0090 05       		.uleb128 0x5
+ 1283 0091 01       		.uleb128 0x1
+ 1284 0092 13       		.uleb128 0x13
+ 1285 0093 00       		.byte	0
+ 1286 0094 00       		.byte	0
+ 1287 0095 0E       		.uleb128 0xe
+ 1288 0096 0D       		.uleb128 0xd
+ 1289 0097 00       		.byte	0
+ 1290 0098 03       		.uleb128 0x3
+ 1291 0099 0E       		.uleb128 0xe
+ 1292 009a 3A       		.uleb128 0x3a
+ 1293 009b 0B       		.uleb128 0xb
+ 1294 009c 3B       		.uleb128 0x3b
+ 1295 009d 05       		.uleb128 0x5
+ 1296 009e 49       		.uleb128 0x49
+ 1297 009f 13       		.uleb128 0x13
+ 1298 00a0 38       		.uleb128 0x38
+ 1299 00a1 0B       		.uleb128 0xb
+ 1300 00a2 00       		.byte	0
+ 1301 00a3 00       		.byte	0
+ 1302 00a4 0F       		.uleb128 0xf
+ 1303 00a5 13       		.uleb128 0x13
+ 1304 00a6 01       		.byte	0x1
+ 1305 00a7 03       		.uleb128 0x3
+ 1306 00a8 0E       		.uleb128 0xe
+ 1307 00a9 0B       		.uleb128 0xb
+ 1308 00aa 0B       		.uleb128 0xb
+ 1309 00ab 3A       		.uleb128 0x3a
+ 1310 00ac 0B       		.uleb128 0xb
+ 1311 00ad 3B       		.uleb128 0x3b
+ 1312 00ae 0B       		.uleb128 0xb
+ 1313 00af 01       		.uleb128 0x1
+ 1314 00b0 13       		.uleb128 0x13
+ 1315 00b1 00       		.byte	0
+ 1316 00b2 00       		.byte	0
+ 1317 00b3 10       		.uleb128 0x10
+ 1318 00b4 2E       		.uleb128 0x2e
+ 1319 00b5 00       		.byte	0
+ 1320 00b6 03       		.uleb128 0x3
+ 1321 00b7 0E       		.uleb128 0xe
+ 1322 00b8 3A       		.uleb128 0x3a
+ 1323 00b9 0B       		.uleb128 0xb
+ 1324 00ba 3B       		.uleb128 0x3b
+ 1325 00bb 0B       		.uleb128 0xb
+ 1326 00bc 27       		.uleb128 0x27
+ 1327 00bd 19       		.uleb128 0x19
+ 1328 00be 20       		.uleb128 0x20
+ 1329 00bf 0B       		.uleb128 0xb
+ 1330 00c0 00       		.byte	0
+ 1331 00c1 00       		.byte	0
+ 1332 00c2 11       		.uleb128 0x11
+ 1333 00c3 2E       		.uleb128 0x2e
+ARM GAS  C:\Users\Razer\AppData\Local\Temp\ccezM0sq.s 			page 27
+
+
+ 1334 00c4 01       		.byte	0x1
+ 1335 00c5 3F       		.uleb128 0x3f
+ 1336 00c6 19       		.uleb128 0x19
+ 1337 00c7 03       		.uleb128 0x3
+ 1338 00c8 0E       		.uleb128 0xe
+ 1339 00c9 3A       		.uleb128 0x3a
+ 1340 00ca 0B       		.uleb128 0xb
+ 1341 00cb 3B       		.uleb128 0x3b
+ 1342 00cc 0B       		.uleb128 0xb
+ 1343 00cd 27       		.uleb128 0x27
+ 1344 00ce 19       		.uleb128 0x19
+ 1345 00cf 49       		.uleb128 0x49
+ 1346 00d0 13       		.uleb128 0x13
+ 1347 00d1 8701     		.uleb128 0x87
+ 1348 00d3 19       		.uleb128 0x19
+ 1349 00d4 11       		.uleb128 0x11
+ 1350 00d5 01       		.uleb128 0x1
+ 1351 00d6 12       		.uleb128 0x12
+ 1352 00d7 06       		.uleb128 0x6
+ 1353 00d8 40       		.uleb128 0x40
+ 1354 00d9 18       		.uleb128 0x18
+ 1355 00da 9742     		.uleb128 0x2117
+ 1356 00dc 19       		.uleb128 0x19
+ 1357 00dd 01       		.uleb128 0x1
+ 1358 00de 13       		.uleb128 0x13
+ 1359 00df 00       		.byte	0
+ 1360 00e0 00       		.byte	0
+ 1361 00e1 12       		.uleb128 0x12
+ 1362 00e2 1D       		.uleb128 0x1d
+ 1363 00e3 00       		.byte	0
+ 1364 00e4 31       		.uleb128 0x31
+ 1365 00e5 13       		.uleb128 0x13
+ 1366 00e6 11       		.uleb128 0x11
+ 1367 00e7 01       		.uleb128 0x1
+ 1368 00e8 12       		.uleb128 0x12
+ 1369 00e9 06       		.uleb128 0x6
+ 1370 00ea 58       		.uleb128 0x58
+ 1371 00eb 0B       		.uleb128 0xb
+ 1372 00ec 59       		.uleb128 0x59
+ 1373 00ed 0B       		.uleb128 0xb
+ 1374 00ee 00       		.byte	0
+ 1375 00ef 00       		.byte	0
+ 1376 00f0 13       		.uleb128 0x13
+ 1377 00f1 898201   		.uleb128 0x4109
+ 1378 00f4 01       		.byte	0x1
+ 1379 00f5 11       		.uleb128 0x11
+ 1380 00f6 01       		.uleb128 0x1
+ 1381 00f7 31       		.uleb128 0x31
+ 1382 00f8 13       		.uleb128 0x13
+ 1383 00f9 00       		.byte	0
+ 1384 00fa 00       		.byte	0
+ 1385 00fb 14       		.uleb128 0x14
+ 1386 00fc 8A8201   		.uleb128 0x410a
+ 1387 00ff 00       		.byte	0
+ 1388 0100 02       		.uleb128 0x2
+ 1389 0101 18       		.uleb128 0x18
+ 1390 0102 9142     		.uleb128 0x2111
+ARM GAS  C:\Users\Razer\AppData\Local\Temp\ccezM0sq.s 			page 28
+
+
+ 1391 0104 18       		.uleb128 0x18
+ 1392 0105 00       		.byte	0
+ 1393 0106 00       		.byte	0
+ 1394 0107 15       		.uleb128 0x15
+ 1395 0108 34       		.uleb128 0x34
+ 1396 0109 00       		.byte	0
+ 1397 010a 03       		.uleb128 0x3
+ 1398 010b 0E       		.uleb128 0xe
+ 1399 010c 3A       		.uleb128 0x3a
+ 1400 010d 0B       		.uleb128 0xb
+ 1401 010e 3B       		.uleb128 0x3b
+ 1402 010f 0B       		.uleb128 0xb
+ 1403 0110 49       		.uleb128 0x49
+ 1404 0111 13       		.uleb128 0x13
+ 1405 0112 3F       		.uleb128 0x3f
+ 1406 0113 19       		.uleb128 0x19
+ 1407 0114 3C       		.uleb128 0x3c
+ 1408 0115 19       		.uleb128 0x19
+ 1409 0116 00       		.byte	0
+ 1410 0117 00       		.byte	0
+ 1411 0118 16       		.uleb128 0x16
+ 1412 0119 26       		.uleb128 0x26
+ 1413 011a 00       		.byte	0
+ 1414 011b 49       		.uleb128 0x49
+ 1415 011c 13       		.uleb128 0x13
+ 1416 011d 00       		.byte	0
+ 1417 011e 00       		.byte	0
+ 1418 011f 17       		.uleb128 0x17
+ 1419 0120 2E       		.uleb128 0x2e
+ 1420 0121 00       		.byte	0
+ 1421 0122 3F       		.uleb128 0x3f
+ 1422 0123 19       		.uleb128 0x19
+ 1423 0124 3C       		.uleb128 0x3c
+ 1424 0125 19       		.uleb128 0x19
+ 1425 0126 6E       		.uleb128 0x6e
+ 1426 0127 0E       		.uleb128 0xe
+ 1427 0128 03       		.uleb128 0x3
+ 1428 0129 0E       		.uleb128 0xe
+ 1429 012a 3A       		.uleb128 0x3a
+ 1430 012b 0B       		.uleb128 0xb
+ 1431 012c 3B       		.uleb128 0x3b
+ 1432 012d 05       		.uleb128 0x5
+ 1433 012e 00       		.byte	0
+ 1434 012f 00       		.byte	0
+ 1435 0130 00       		.byte	0
+ 1436              		.section	.debug_aranges,"",%progbits
+ 1437 0000 1C000000 		.4byte	0x1c
+ 1438 0004 0200     		.2byte	0x2
+ 1439 0006 00000000 		.4byte	.Ldebug_info0
+ 1440 000a 04       		.byte	0x4
+ 1441 000b 00       		.byte	0
+ 1442 000c 0000     		.2byte	0
+ 1443 000e 0000     		.2byte	0
+ 1444 0010 00000000 		.4byte	.LFB535
+ 1445 0014 10000000 		.4byte	.LFE535-.LFB535
+ 1446 0018 00000000 		.4byte	0
+ 1447 001c 00000000 		.4byte	0
+ARM GAS  C:\Users\Razer\AppData\Local\Temp\ccezM0sq.s 			page 29
+
+
+ 1448              		.section	.debug_ranges,"",%progbits
+ 1449              	.Ldebug_ranges0:
+ 1450 0000 00000000 		.4byte	.LFB535
+ 1451 0004 10000000 		.4byte	.LFE535
+ 1452 0008 00000000 		.4byte	0
+ 1453 000c 00000000 		.4byte	0
+ 1454              		.section	.debug_line,"",%progbits
+ 1455              	.Ldebug_line0:
+ 1456 0000 B7020000 		.section	.debug_str,"MS",%progbits,1
+ 1456      02009602 
+ 1456      00000201 
+ 1456      FB0E0D00 
+ 1456      01010101 
+ 1457              	.LASF54:
+ 1458 0000 70726F74 		.ascii	"protBusMasterMask\000"
+ 1458      4275734D 
+ 1458      61737465 
+ 1458      724D6173 
+ 1458      6B00
+ 1459              	.LASF137:
+ 1460 0012 72756E4D 		.ascii	"runMode\000"
+ 1460      6F646500 
+ 1461              	.LASF113:
+ 1462 001a 72784275 		.ascii	"rxBufSize\000"
+ 1462      6653697A 
+ 1462      6500
+ 1463              	.LASF64:
+ 1464 0024 666C6173 		.ascii	"flashCtlMainWs3Freq\000"
+ 1464      6843746C 
+ 1464      4D61696E 
+ 1464      57733346 
+ 1464      72657100 
+ 1465              	.LASF86:
+ 1466 0038 6770696F 		.ascii	"gpioPrtCfgInOffset\000"
+ 1466      50727443 
+ 1466      6667496E 
+ 1466      4F666673 
+ 1466      657400
+ 1467              	.LASF155:
+ 1468 004b 6B696C6C 		.ascii	"killInput\000"
+ 1468      496E7075 
+ 1468      7400
+ 1469              	.LASF104:
+ 1470 0055 6970634C 		.ascii	"ipcLockStatusOffset\000"
+ 1470      6F636B53 
+ 1470      74617475 
+ 1470      734F6666 
+ 1470      73657400 
+ 1471              	.LASF30:
+ 1472 0069 63727970 		.ascii	"cryptoVersion\000"
+ 1472      746F5665 
+ 1472      7273696F 
+ 1472      6E00
+ 1473              	.LASF48:
+ 1474 0077 70657269 		.ascii	"periClockNr\000"
+ 1474      436C6F63 
+ 1474      6B4E7200 
+ARM GAS  C:\Users\Razer\AppData\Local\Temp\ccezM0sq.s 			page 30
+
+
+ 1475              	.LASF26:
+ 1476 0083 70617373 		.ascii	"passBase\000"
+ 1476      42617365 
+ 1476      00
+ 1477              	.LASF165:
+ 1478 008c 6D61696E 		.ascii	"main_cm0p.c\000"
+ 1478      5F636D30 
+ 1478      702E6300 
+ 1479              	.LASF135:
+ 1480 0098 70776D41 		.ascii	"pwmAlignment\000"
+ 1480      6C69676E 
+ 1480      6D656E74 
+ 1480      00
+ 1481              	.LASF39:
+ 1482 00a5 63707573 		.ascii	"cpussIpcIrqNr\000"
+ 1482      73497063 
+ 1482      4972714E 
+ 1482      7200
+ 1483              	.LASF3:
+ 1484 00b3 5F5F7569 		.ascii	"__uint8_t\000"
+ 1484      6E74385F 
+ 1484      7400
+ 1485              	.LASF83:
+ 1486 00bd 70657269 		.ascii	"periDiv24_5CtlOffset\000"
+ 1486      44697632 
+ 1486      345F3543 
+ 1486      746C4F66 
+ 1486      66736574 
+ 1487              	.LASF90:
+ 1488 00d2 63707573 		.ascii	"cpussCm4ClockCtlOffset\000"
+ 1488      73436D34 
+ 1488      436C6F63 
+ 1488      6B43746C 
+ 1488      4F666673 
+ 1489              	.LASF19:
+ 1490 00e9 63707573 		.ascii	"cpussBase\000"
+ 1490      73426173 
+ 1490      6500
+ 1491              	.LASF68:
+ 1492 00f3 64774368 		.ascii	"dwChCtlPrioPos\000"
+ 1492      43746C50 
+ 1492      72696F50 
+ 1492      6F7300
+ 1493              	.LASF11:
+ 1494 0102 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1494      206C6F6E 
+ 1494      6720756E 
+ 1494      7369676E 
+ 1494      65642069 
+ 1495              	.LASF134:
+ 1496 0119 636C6F63 		.ascii	"clockPrescaler\000"
+ 1496      6B507265 
+ 1496      7363616C 
+ 1496      657200
+ 1497              	.LASF163:
+ 1498 0128 5350495F 		.ascii	"SPI_1_context\000"
+ 1498      315F636F 
+ARM GAS  C:\Users\Razer\AppData\Local\Temp\ccezM0sq.s 			page 31
+
+
+ 1498      6E746578 
+ 1498      7400
+ 1499              	.LASF72:
+ 1500 0136 70657269 		.ascii	"periTrCmdOffset\000"
+ 1500      5472436D 
+ 1500      644F6666 
+ 1500      73657400 
+ 1501              	.LASF126:
+ 1502 0146 72785269 		.ascii	"rxRingBuf\000"
+ 1502      6E674275 
+ 1502      6600
+ 1503              	.LASF96:
+ 1504 0150 63707573 		.ascii	"cpussSysTickCtlOffset\000"
+ 1504      73537973 
+ 1504      5469636B 
+ 1504      43746C4F 
+ 1504      66667365 
+ 1505              	.LASF115:
+ 1506 0166 74784275 		.ascii	"txBuf\000"
+ 1506      6600
+ 1507              	.LASF57:
+ 1508 016c 666C6173 		.ascii	"flashPipeRequired\000"
+ 1508      68506970 
+ 1508      65526571 
+ 1508      75697265 
+ 1508      6400
+ 1509              	.LASF61:
+ 1510 017e 666C6173 		.ascii	"flashCtlMainWs0Freq\000"
+ 1510      6843746C 
+ 1510      4D61696E 
+ 1510      57733046 
+ 1510      72657100 
+ 1511              	.LASF14:
+ 1512 0192 696E7431 		.ascii	"int16_t\000"
+ 1512      365F7400 
+ 1513              	.LASF10:
+ 1514 019a 6C6F6E67 		.ascii	"long long int\000"
+ 1514      206C6F6E 
+ 1514      6720696E 
+ 1514      7400
+ 1515              	.LASF2:
+ 1516 01a8 7369676E 		.ascii	"signed char\000"
+ 1516      65642063 
+ 1516      68617200 
+ 1517              	.LASF122:
+ 1518 01b4 63795F73 		.ascii	"cy_stc_scb_spi_context\000"
+ 1518      74635F73 
+ 1518      63625F73 
+ 1518      70695F63 
+ 1518      6F6E7465 
+ 1519              	.LASF77:
+ 1520 01cb 70657269 		.ascii	"periDivCmdTypeSelPos\000"
+ 1520      44697643 
+ 1520      6D645479 
+ 1520      70655365 
+ 1520      6C506F73 
+ 1521              	.LASF130:
+ARM GAS  C:\Users\Razer\AppData\Local\Temp\ccezM0sq.s 			page 32
+
+
+ 1522 01e0 74784C65 		.ascii	"txLeftToTransmit\000"
+ 1522      6674546F 
+ 1522      5472616E 
+ 1522      736D6974 
+ 1522      00
+ 1523              	.LASF23:
+ 1524 01f1 70726F74 		.ascii	"protBase\000"
+ 1524      42617365 
+ 1524      00
+ 1525              	.LASF35:
+ 1526 01fa 69706356 		.ascii	"ipcVersion\000"
+ 1526      65727369 
+ 1526      6F6E00
+ 1527              	.LASF97:
+ 1528 0205 63707573 		.ascii	"cpussCm0NmiCtlOffset\000"
+ 1528      73436D30 
+ 1528      4E6D6943 
+ 1528      746C4F66 
+ 1528      66736574 
+ 1529              	.LASF110:
+ 1530 021a 63795F63 		.ascii	"cy_cb_scb_spi_handle_events_t\000"
+ 1530      625F7363 
+ 1530      625F7370 
+ 1530      695F6861 
+ 1530      6E646C65 
+ 1531              	.LASF166:
+ 1532 0238 4D3A5C47 		.ascii	"M:\\GIT Folder\\Motor-Controll-PSoC-6\\PSoC6_PWM_Mo"
+ 1532      49542046 
+ 1532      6F6C6465 
+ 1532      725C4D6F 
+ 1532      746F722D 
+ 1533 0268 746F7243 		.ascii	"torControll\\PSoC6_PWM_MotorControll.cydsn\000"
+ 1533      6F6E7472 
+ 1533      6F6C6C5C 
+ 1533      50536F43 
+ 1533      365F5057 
+ 1534              	.LASF24:
+ 1535 0292 6873696F 		.ascii	"hsiomBase\000"
+ 1535      6D426173 
+ 1535      6500
+ 1536              	.LASF132:
+ 1537 029c 63795F73 		.ascii	"cy_stc_tcpwm_pwm_config\000"
+ 1537      74635F74 
+ 1537      6370776D 
+ 1537      5F70776D 
+ 1537      5F636F6E 
+ 1538              	.LASF7:
+ 1539 02b4 6C6F6E67 		.ascii	"long int\000"
+ 1539      20696E74 
+ 1539      00
+ 1540              	.LASF162:
+ 1541 02bd 55415254 		.ascii	"UART_1_context\000"
+ 1541      5F315F63 
+ 1541      6F6E7465 
+ 1541      787400
+ 1542              	.LASF55:
+ 1543 02cc 63727970 		.ascii	"cryptoMemSize\000"
+ARM GAS  C:\Users\Razer\AppData\Local\Temp\ccezM0sq.s 			page 33
+
+
+ 1543      746F4D65 
+ 1543      6D53697A 
+ 1543      6500
+ 1544              	.LASF160:
+ 1545 02da 50574D5F 		.ascii	"PWM_Motor1_config\000"
+ 1545      4D6F746F 
+ 1545      72315F63 
+ 1545      6F6E6669 
+ 1545      6700
+ 1546              	.LASF21:
+ 1547 02ec 70657269 		.ascii	"periBase\000"
+ 1547      42617365 
+ 1547      00
+ 1548              	.LASF53:
+ 1549 02f5 73797350 		.ascii	"sysPmSimoPresent\000"
+ 1549      6D53696D 
+ 1549      6F507265 
+ 1549      73656E74 
+ 1549      00
+ 1550              	.LASF43:
+ 1551 0306 63707573 		.ascii	"cpussFmIrq\000"
+ 1551      73466D49 
+ 1551      727100
+ 1552              	.LASF108:
+ 1553 0311 646F7562 		.ascii	"double\000"
+ 1553      6C6500
+ 1554              	.LASF82:
+ 1555 0318 70657269 		.ascii	"periDiv16_5CtlOffset\000"
+ 1555      44697631 
+ 1555      365F3543 
+ 1555      746C4F66 
+ 1555      66736574 
+ 1556              	.LASF46:
+ 1557 032d 73727373 		.ascii	"srssNumPll\000"
+ 1557      4E756D50 
+ 1557      6C6C00
+ 1558              	.LASF168:
+ 1559 0338 6D61696E 		.ascii	"main\000"
+ 1559      00
+ 1560              	.LASF80:
+ 1561 033d 70657269 		.ascii	"periDiv8CtlOffset\000"
+ 1561      44697638 
+ 1561      43746C4F 
+ 1561      66667365 
+ 1561      7400
+ 1562              	.LASF87:
+ 1563 034f 6770696F 		.ascii	"gpioPrtCfgOutOffset\000"
+ 1563      50727443 
+ 1563      66674F75 
+ 1563      744F6666 
+ 1563      73657400 
+ 1564              	.LASF20:
+ 1565 0363 666C6173 		.ascii	"flashcBase\000"
+ 1565      68634261 
+ 1565      736500
+ 1566              	.LASF8:
+ 1567 036e 5F5F7569 		.ascii	"__uint32_t\000"
+ARM GAS  C:\Users\Razer\AppData\Local\Temp\ccezM0sq.s 			page 34
+
+
+ 1567      6E743332 
+ 1567      5F7400
+ 1568              	.LASF50:
+ 1569 0379 70617373 		.ascii	"passSarChannels\000"
+ 1569      53617243 
+ 1569      68616E6E 
+ 1569      656C7300 
+ 1570              	.LASF4:
+ 1571 0389 5F5F696E 		.ascii	"__int16_t\000"
+ 1571      7431365F 
+ 1571      7400
+ 1572              	.LASF114:
+ 1573 0393 72784275 		.ascii	"rxBufIdx\000"
+ 1573      66496478 
+ 1573      00
+ 1574              	.LASF93:
+ 1575 039c 63707573 		.ascii	"cpussCm4PwrCtlOffset\000"
+ 1575      73436D34 
+ 1575      50777243 
+ 1575      746C4F66 
+ 1575      66736574 
+ 1576              	.LASF116:
+ 1577 03b1 74784275 		.ascii	"txBufSize\000"
+ 1577      6653697A 
+ 1577      6500
+ 1578              	.LASF144:
+ 1579 03bb 696E7465 		.ascii	"interruptSources\000"
+ 1579      72727570 
+ 1579      74536F75 
+ 1579      72636573 
+ 1579      00
+ 1580              	.LASF88:
+ 1581 03cc 6770696F 		.ascii	"gpioPrtCfgSioOffset\000"
+ 1581      50727443 
+ 1581      66675369 
+ 1581      6F4F6666 
+ 1581      73657400 
+ 1582              	.LASF40:
+ 1583 03e0 63707573 		.ascii	"cpussDwChNr\000"
+ 1583      73447743 
+ 1583      684E7200 
+ 1584              	.LASF12:
+ 1585 03ec 756E7369 		.ascii	"unsigned int\000"
+ 1585      676E6564 
+ 1585      20696E74 
+ 1585      00
+ 1586              	.LASF15:
+ 1587 03f9 75696E74 		.ascii	"uint16_t\000"
+ 1587      31365F74 
+ 1587      00
+ 1588              	.LASF73:
+ 1589 0402 70657269 		.ascii	"periTrCmdGrSelMsk\000"
+ 1589      5472436D 
+ 1589      64477253 
+ 1589      656C4D73 
+ 1589      6B00
+ 1590              	.LASF62:
+ARM GAS  C:\Users\Razer\AppData\Local\Temp\ccezM0sq.s 			page 35
+
+
+ 1591 0414 666C6173 		.ascii	"flashCtlMainWs1Freq\000"
+ 1591      6843746C 
+ 1591      4D61696E 
+ 1591      57733146 
+ 1591      72657100 
+ 1592              	.LASF9:
+ 1593 0428 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1593      20756E73 
+ 1593      69676E65 
+ 1593      6420696E 
+ 1593      7400
+ 1594              	.LASF143:
+ 1595 043a 656E6162 		.ascii	"enableCompareSwap\000"
+ 1595      6C65436F 
+ 1595      6D706172 
+ 1595      65537761 
+ 1595      7000
+ 1596              	.LASF121:
+ 1597 044c 63795F63 		.ascii	"cy_cb_scb_uart_handle_events_t\000"
+ 1597      625F7363 
+ 1597      625F7561 
+ 1597      72745F68 
+ 1597      616E646C 
+ 1598              	.LASF38:
+ 1599 046b 63707573 		.ascii	"cpussIpcNr\000"
+ 1599      73497063 
+ 1599      4E7200
+ 1600              	.LASF25:
+ 1601 0476 6770696F 		.ascii	"gpioBase\000"
+ 1601      42617365 
+ 1601      00
+ 1602              	.LASF51:
+ 1603 047f 65704D6F 		.ascii	"epMonitorNr\000"
+ 1603      6E69746F 
+ 1603      724E7200 
+ 1604              	.LASF124:
+ 1605 048b 74785374 		.ascii	"txStatus\000"
+ 1605      61747573 
+ 1605      00
+ 1606              	.LASF148:
+ 1607 0494 73776170 		.ascii	"swapInputMode\000"
+ 1607      496E7075 
+ 1607      744D6F64 
+ 1607      6500
+ 1608              	.LASF74:
+ 1609 04a2 70657269 		.ascii	"periTrGrOffset\000"
+ 1609      54724772 
+ 1609      4F666673 
+ 1609      657400
+ 1610              	.LASF45:
+ 1611 04b1 73727373 		.ascii	"srssNumClkpath\000"
+ 1611      4E756D43 
+ 1611      6C6B7061 
+ 1611      746800
+ 1612              	.LASF101:
+ 1613 04c0 63707573 		.ascii	"cpussRam1Ctl0\000"
+ 1613      7352616D 
+ARM GAS  C:\Users\Razer\AppData\Local\Temp\ccezM0sq.s 			page 36
+
+
+ 1613      3143746C 
+ 1613      3000
+ 1614              	.LASF154:
+ 1615 04ce 6B696C6C 		.ascii	"killInputMode\000"
+ 1615      496E7075 
+ 1615      744D6F64 
+ 1615      6500
+ 1616              	.LASF118:
+ 1617 04dc 63624576 		.ascii	"cbEvents\000"
+ 1617      656E7473 
+ 1617      00
+ 1618              	.LASF75:
+ 1619 04e5 70657269 		.ascii	"periTrGrSize\000"
+ 1619      54724772 
+ 1619      53697A65 
+ 1619      00
+ 1620              	.LASF169:
+ 1621 04f2 43795F53 		.ascii	"Cy_SysEnableCM4\000"
+ 1621      7973456E 
+ 1621      61626C65 
+ 1621      434D3400 
+ 1622              	.LASF33:
+ 1623 0502 6770696F 		.ascii	"gpioVersion\000"
+ 1623      56657273 
+ 1623      696F6E00 
+ 1624              	.LASF105:
+ 1625 050e 63795F73 		.ascii	"cy_stc_device_t\000"
+ 1625      74635F64 
+ 1625      65766963 
+ 1625      655F7400 
+ 1626              	.LASF120:
+ 1627 051e 63795F73 		.ascii	"cy_stc_scb_spi_context_t\000"
+ 1627      74635F73 
+ 1627      63625F73 
+ 1627      70695F63 
+ 1627      6F6E7465 
+ 1628              	.LASF145:
+ 1629 0537 696E7665 		.ascii	"invertPWMOut\000"
+ 1629      72745057 
+ 1629      4D4F7574 
+ 1629      00
+ 1630              	.LASF136:
+ 1631 0544 64656164 		.ascii	"deadTimeClocks\000"
+ 1631      54696D65 
+ 1631      436C6F63 
+ 1631      6B7300
+ 1632              	.LASF128:
+ 1633 0553 72785269 		.ascii	"rxRingBufHead\000"
+ 1633      6E674275 
+ 1633      66486561 
+ 1633      6400
+ 1634              	.LASF94:
+ 1635 0561 63707573 		.ascii	"cpussTrimRamCtlOffset\000"
+ 1635      73547269 
+ 1635      6D52616D 
+ 1635      43746C4F 
+ 1635      66667365 
+ARM GAS  C:\Users\Razer\AppData\Local\Temp\ccezM0sq.s 			page 37
+
+
+ 1636              	.LASF153:
+ 1637 0577 73746172 		.ascii	"startInput\000"
+ 1637      74496E70 
+ 1637      757400
+ 1638              	.LASF29:
+ 1639 0582 63707573 		.ascii	"cpussVersion\000"
+ 1639      73566572 
+ 1639      73696F6E 
+ 1639      00
+ 1640              	.LASF36:
+ 1641 058f 70657269 		.ascii	"periVersion\000"
+ 1641      56657273 
+ 1641      696F6E00 
+ 1642              	.LASF92:
+ 1643 059b 63707573 		.ascii	"cpussCm0StatusOffset\000"
+ 1643      73436D30 
+ 1643      53746174 
+ 1643      75734F66 
+ 1643      66736574 
+ 1644              	.LASF17:
+ 1645 05b0 73697A65 		.ascii	"sizetype\000"
+ 1645      74797065 
+ 1645      00
+ 1646              	.LASF66:
+ 1647 05b9 64774368 		.ascii	"dwChOffset\000"
+ 1647      4F666673 
+ 1647      657400
+ 1648              	.LASF41:
+ 1649 05c4 63707573 		.ascii	"cpussFlashPaSize\000"
+ 1649      73466C61 
+ 1649      73685061 
+ 1649      53697A65 
+ 1649      00
+ 1650              	.LASF79:
+ 1651 05d5 70657269 		.ascii	"periDivCmdPaTypeSelPos\000"
+ 1651      44697643 
+ 1651      6D645061 
+ 1651      54797065 
+ 1651      53656C50 
+ 1652              	.LASF102:
+ 1653 05ec 63707573 		.ascii	"cpussRam2Ctl0\000"
+ 1653      7352616D 
+ 1653      3243746C 
+ 1653      3000
+ 1654              	.LASF70:
+ 1655 05fa 64775374 		.ascii	"dwStatusChIdxPos\000"
+ 1655      61747573 
+ 1655      43684964 
+ 1655      78506F73 
+ 1655      00
+ 1656              	.LASF52:
+ 1657 060b 75646250 		.ascii	"udbPresent\000"
+ 1657      72657365 
+ 1657      6E7400
+ 1658              	.LASF125:
+ 1659 0616 72785374 		.ascii	"rxStatus\000"
+ 1659      61747573 
+ARM GAS  C:\Users\Razer\AppData\Local\Temp\ccezM0sq.s 			page 38
+
+
+ 1659      00
+ 1660              	.LASF32:
+ 1661 061f 666C6173 		.ascii	"flashcVersion\000"
+ 1661      68635665 
+ 1661      7273696F 
+ 1661      6E00
+ 1662              	.LASF28:
+ 1663 062d 63727970 		.ascii	"cryptoBase\000"
+ 1663      746F4261 
+ 1663      736500
+ 1664              	.LASF49:
+ 1665 0638 736D6966 		.ascii	"smifDeviceNr\000"
+ 1665      44657669 
+ 1665      63654E72 
+ 1665      00
+ 1666              	.LASF167:
+ 1667 0645 5F5F656E 		.ascii	"__enable_irq\000"
+ 1667      61626C65 
+ 1667      5F697271 
+ 1667      00
+ 1668              	.LASF133:
+ 1669 0652 70776D4D 		.ascii	"pwmMode\000"
+ 1669      6F646500 
+ 1670              	.LASF107:
+ 1671 065a 666C6F61 		.ascii	"float\000"
+ 1671      7400
+ 1672              	.LASF71:
+ 1673 0660 64775374 		.ascii	"dwStatusChIdxMsk\000"
+ 1673      61747573 
+ 1673      43684964 
+ 1673      784D736B 
+ 1673      00
+ 1674              	.LASF159:
+ 1675 0671 63795F64 		.ascii	"cy_device\000"
+ 1675      65766963 
+ 1675      6500
+ 1676              	.LASF99:
+ 1677 067b 63707573 		.ascii	"cpussRomCtl\000"
+ 1677      73526F6D 
+ 1677      43746C00 
+ 1678              	.LASF69:
+ 1679 0687 64774368 		.ascii	"dwChCtlPreemptablePos\000"
+ 1679      43746C50 
+ 1679      7265656D 
+ 1679      70746162 
+ 1679      6C65506F 
+ 1680              	.LASF147:
+ 1681 069d 6B696C6C 		.ascii	"killMode\000"
+ 1681      4D6F6465 
+ 1681      00
+ 1682              	.LASF22:
+ 1683 06a6 75646242 		.ascii	"udbBase\000"
+ 1683      61736500 
+ 1684              	.LASF109:
+ 1685 06ae 5F426F6F 		.ascii	"_Bool\000"
+ 1685      6C00
+ 1686              	.LASF1:
+ARM GAS  C:\Users\Razer\AppData\Local\Temp\ccezM0sq.s 			page 39
+
+
+ 1687 06b4 756E7369 		.ascii	"unsigned char\000"
+ 1687      676E6564 
+ 1687      20636861 
+ 1687      7200
+ 1688              	.LASF65:
+ 1689 06c2 666C6173 		.ascii	"flashCtlMainWs4Freq\000"
+ 1689      6843746C 
+ 1689      4D61696E 
+ 1689      57733446 
+ 1689      72657100 
+ 1690              	.LASF0:
+ 1691 06d6 73686F72 		.ascii	"short int\000"
+ 1691      7420696E 
+ 1691      7400
+ 1692              	.LASF76:
+ 1693 06e0 70657269 		.ascii	"periDivCmdDivSelMsk\000"
+ 1693      44697643 
+ 1693      6D644469 
+ 1693      7653656C 
+ 1693      4D736B00 
+ 1694              	.LASF63:
+ 1695 06f4 666C6173 		.ascii	"flashCtlMainWs2Freq\000"
+ 1695      6843746C 
+ 1695      4D61696E 
+ 1695      57733246 
+ 1695      72657100 
+ 1696              	.LASF140:
+ 1697 0708 656E6162 		.ascii	"enablePeriodSwap\000"
+ 1697      6C655065 
+ 1697      72696F64 
+ 1697      53776170 
+ 1697      00
+ 1698              	.LASF149:
+ 1699 0719 73776170 		.ascii	"swapInput\000"
+ 1699      496E7075 
+ 1699      7400
+ 1700              	.LASF47:
+ 1701 0723 73727373 		.ascii	"srssNumHfroot\000"
+ 1701      4E756D48 
+ 1701      66726F6F 
+ 1701      7400
+ 1702              	.LASF60:
+ 1703 0731 666C6173 		.ascii	"flashEraseDelay\000"
+ 1703      68457261 
+ 1703      73654465 
+ 1703      6C617900 
+ 1704              	.LASF16:
+ 1705 0741 75696E74 		.ascii	"uint32_t\000"
+ 1705      33325F74 
+ 1705      00
+ 1706              	.LASF98:
+ 1707 074a 63707573 		.ascii	"cpussCm4NmiCtlOffset\000"
+ 1707      73436D34 
+ 1707      4E6D6943 
+ 1707      746C4F66 
+ 1707      66736574 
+ 1708              	.LASF164:
+ARM GAS  C:\Users\Razer\AppData\Local\Temp\ccezM0sq.s 			page 40
+
+
+ 1709 075f 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 1709      43313120 
+ 1709      352E342E 
+ 1709      31203230 
+ 1709      31363036 
+ 1710 0792 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0plus -mthumb -"
+ 1710      20726576 
+ 1710      6973696F 
+ 1710      6E203233 
+ 1710      37373135 
+ 1711 07c5 67202D4F 		.ascii	"g -Og -ffunction-sections -ffat-lto-objects\000"
+ 1711      67202D66 
+ 1711      66756E63 
+ 1711      74696F6E 
+ 1711      2D736563 
+ 1712              	.LASF141:
+ 1713 07f1 636F6D70 		.ascii	"compare0\000"
+ 1713      61726530 
+ 1713      00
+ 1714              	.LASF18:
+ 1715 07fa 6C6F6E67 		.ascii	"long double\000"
+ 1715      20646F75 
+ 1715      626C6500 
+ 1716              	.LASF106:
+ 1717 0806 63686172 		.ascii	"char\000"
+ 1717      00
+ 1718              	.LASF157:
+ 1719 080b 636F756E 		.ascii	"countInput\000"
+ 1719      74496E70 
+ 1719      757400
+ 1720              	.LASF37:
+ 1721 0816 70726F74 		.ascii	"protVersion\000"
+ 1721      56657273 
+ 1721      696F6E00 
+ 1722              	.LASF100:
+ 1723 0822 63707573 		.ascii	"cpussRam0Ctl0\000"
+ 1723      7352616D 
+ 1723      3043746C 
+ 1723      3000
+ 1724              	.LASF5:
+ 1725 0830 5F5F7569 		.ascii	"__uint16_t\000"
+ 1725      6E743136 
+ 1725      5F7400
+ 1726              	.LASF81:
+ 1727 083b 70657269 		.ascii	"periDiv16CtlOffset\000"
+ 1727      44697631 
+ 1727      3643746C 
+ 1727      4F666673 
+ 1727      657400
+ 1728              	.LASF34:
+ 1729 084e 6873696F 		.ascii	"hsiomVersion\000"
+ 1729      6D566572 
+ 1729      73696F6E 
+ 1729      00
+ 1730              	.LASF59:
+ 1731 085b 666C6173 		.ascii	"flashProgramDelay\000"
+ 1731      6850726F 
+ARM GAS  C:\Users\Razer\AppData\Local\Temp\ccezM0sq.s 			page 41
+
+
+ 1731      6772616D 
+ 1731      44656C61 
+ 1731      7900
+ 1732              	.LASF127:
+ 1733 086d 72785269 		.ascii	"rxRingBufSize\000"
+ 1733      6E674275 
+ 1733      6653697A 
+ 1733      6500
+ 1734              	.LASF151:
+ 1735 087b 72656C6F 		.ascii	"reloadInput\000"
+ 1735      6164496E 
+ 1735      70757400 
+ 1736              	.LASF6:
+ 1737 0887 73686F72 		.ascii	"short unsigned int\000"
+ 1737      7420756E 
+ 1737      7369676E 
+ 1737      65642069 
+ 1737      6E7400
+ 1738              	.LASF67:
+ 1739 089a 64774368 		.ascii	"dwChSize\000"
+ 1739      53697A65 
+ 1739      00
+ 1740              	.LASF103:
+ 1741 08a3 69706353 		.ascii	"ipcStructSize\000"
+ 1741      74727563 
+ 1741      7453697A 
+ 1741      6500
+ 1742              	.LASF152:
+ 1743 08b1 73746172 		.ascii	"startInputMode\000"
+ 1743      74496E70 
+ 1743      75744D6F 
+ 1743      646500
+ 1744              	.LASF42:
+ 1745 08c0 63707573 		.ascii	"cpussIpc0Irq\000"
+ 1745      73497063 
+ 1745      30497271 
+ 1745      00
+ 1746              	.LASF138:
+ 1747 08cd 70657269 		.ascii	"period0\000"
+ 1747      6F643000 
+ 1748              	.LASF139:
+ 1749 08d5 70657269 		.ascii	"period1\000"
+ 1749      6F643100 
+ 1750              	.LASF142:
+ 1751 08dd 636F6D70 		.ascii	"compare1\000"
+ 1751      61726531 
+ 1751      00
+ 1752              	.LASF89:
+ 1753 08e6 63707573 		.ascii	"cpussCm0ClockCtlOffset\000"
+ 1753      73436D30 
+ 1753      436C6F63 
+ 1753      6B43746C 
+ 1753      4F666673 
+ 1754              	.LASF85:
+ 1755 08fd 6770696F 		.ascii	"gpioPrtCfgOffset\000"
+ 1755      50727443 
+ 1755      66674F66 
+ARM GAS  C:\Users\Razer\AppData\Local\Temp\ccezM0sq.s 			page 42
+
+
+ 1755      66736574 
+ 1755      00
+ 1756              	.LASF119:
+ 1757 090e 696E6974 		.ascii	"initKey\000"
+ 1757      4B657900 
+ 1758              	.LASF112:
+ 1759 0916 72784275 		.ascii	"rxBuf\000"
+ 1759      6600
+ 1760              	.LASF131:
+ 1761 091c 63795F73 		.ascii	"cy_stc_scb_uart_context_t\000"
+ 1761      74635F73 
+ 1761      63625F75 
+ 1761      6172745F 
+ 1761      636F6E74 
+ 1762              	.LASF111:
+ 1763 0936 73746174 		.ascii	"status\000"
+ 1763      757300
+ 1764              	.LASF44:
+ 1765 093d 63707573 		.ascii	"cpussNotConnectedIrq\000"
+ 1765      734E6F74 
+ 1765      436F6E6E 
+ 1765      65637465 
+ 1765      64497271 
+ 1766              	.LASF146:
+ 1767 0952 696E7665 		.ascii	"invertPWMOutN\000"
+ 1767      72745057 
+ 1767      4D4F7574 
+ 1767      4E00
+ 1768              	.LASF58:
+ 1769 0960 666C6173 		.ascii	"flashWriteDelay\000"
+ 1769      68577269 
+ 1769      74654465 
+ 1769      6C617900 
+ 1770              	.LASF13:
+ 1771 0970 75696E74 		.ascii	"uint8_t\000"
+ 1771      385F7400 
+ 1772              	.LASF161:
+ 1773 0978 50574D5F 		.ascii	"PWM_Motor2_config\000"
+ 1773      4D6F746F 
+ 1773      72325F63 
+ 1773      6F6E6669 
+ 1773      6700
+ 1774              	.LASF91:
+ 1775 098a 63707573 		.ascii	"cpussCm4StatusOffset\000"
+ 1775      73436D34 
+ 1775      53746174 
+ 1775      75734F66 
+ 1775      66736574 
+ 1776              	.LASF84:
+ 1777 099f 6770696F 		.ascii	"gpioPrtIntrCfgOffset\000"
+ 1777      50727449 
+ 1777      6E747243 
+ 1777      66674F66 
+ 1777      66736574 
+ 1778              	.LASF158:
+ 1779 09b4 63795F73 		.ascii	"cy_stc_tcpwm_pwm_config_t\000"
+ 1779      74635F74 
+ARM GAS  C:\Users\Razer\AppData\Local\Temp\ccezM0sq.s 			page 43
+
+
+ 1779      6370776D 
+ 1779      5F70776D 
+ 1779      5F636F6E 
+ 1780              	.LASF150:
+ 1781 09ce 72656C6F 		.ascii	"reloadInputMode\000"
+ 1781      6164496E 
+ 1781      7075744D 
+ 1781      6F646500 
+ 1782              	.LASF129:
+ 1783 09de 72785269 		.ascii	"rxRingBufTail\000"
+ 1783      6E674275 
+ 1783      66546169 
+ 1783      6C00
+ 1784              	.LASF95:
+ 1785 09ec 63707573 		.ascii	"cpussTrimRomCtlOffset\000"
+ 1785      73547269 
+ 1785      6D526F6D 
+ 1785      43746C4F 
+ 1785      66667365 
+ 1786              	.LASF156:
+ 1787 0a02 636F756E 		.ascii	"countInputMode\000"
+ 1787      74496E70 
+ 1787      75744D6F 
+ 1787      646500
+ 1788              	.LASF31:
+ 1789 0a11 64775665 		.ascii	"dwVersion\000"
+ 1789      7273696F 
+ 1789      6E00
+ 1790              	.LASF27:
+ 1791 0a1b 69706342 		.ascii	"ipcBase\000"
+ 1791      61736500 
+ 1792              	.LASF78:
+ 1793 0a23 70657269 		.ascii	"periDivCmdPaDivSelPos\000"
+ 1793      44697643 
+ 1793      6D645061 
+ 1793      44697653 
+ 1793      656C506F 
+ 1794              	.LASF123:
+ 1795 0a39 63795F73 		.ascii	"cy_stc_scb_uart_context\000"
+ 1795      74635F73 
+ 1795      63625F75 
+ 1795      6172745F 
+ 1795      636F6E74 
+ 1796              	.LASF56:
+ 1797 0a51 666C6173 		.ascii	"flashRwwRequired\000"
+ 1797      68527777 
+ 1797      52657175 
+ 1797      69726564 
+ 1797      00
+ 1798              	.LASF117:
+ 1799 0a62 74784275 		.ascii	"txBufIdx\000"
+ 1799      66496478 
+ 1799      00
+ 1800              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+>>>>>>> Stashed changes

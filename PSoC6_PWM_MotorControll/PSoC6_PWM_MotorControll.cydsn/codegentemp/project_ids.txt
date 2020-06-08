@@ -1,6 +1,15 @@
+<<<<<<< Updated upstream
 D:\GIT\Motor Controll PSoC 6\PSoC6_PWM_MotorControll\PSoC6_PWM_MotorControll.cydsn\PSoC6_PWM_MotorControll.cyprj|b547e781-7a60-49bd-bff2-1709917ac271
 C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|a965bee6-221e-443e-b163-9fb103924768
 C:\Users\quint\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|261cf2bd-62e0-4372-845d-269ae1ff0b71
 C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|55362456-da53-4c64-a239-f7a288c0f61f
 C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|277623e6-afc9-4afa-85f4-f2882800a7ff
 C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|f9957dc7-5608-4cbd-bcb0-e417b320fbeb
+=======
+M:\GIT Folder\Motor-Controll-PSoC-6\PSoC6_PWM_MotorControll\PSoC6_PWM_MotorControll.cydsn\PSoC6_PWM_MotorControll.cyprj|a8c0fea2-6d75-43ee-9168-0eb444128d2c
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|07de029d-346a-44d6-b37d-2aea30614c94
+C:\Users\Razer\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|425a0d41-0bcb-44ad-969e-6da7c31f969d
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|fc7e77b4-841e-4643-bfc7-ea2c3b6a3d54
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|31b9941a-ce33-406c-b1f3-f70ff5f6fa2b
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|41bfd78f-de4f-45fa-aab2-cd560e590416
+>>>>>>> Stashed changes

@@ -1,6 +1,10 @@
 (DELAYFILE
  (SDFVERSION "IEEE 1497 4.0")
+<<<<<<< Updated upstream
  (DATE "2020-02-09T23:24:59Z")
+=======
+ (DATE "2020-01-26T07:21:19Z")
+>>>>>>> Stashed changes
  (DESIGN "PSoC6_PWM_MotorControll")
  (VENDOR "Cypress Semiconductor")
  (PROGRAM "PSoC Creator")

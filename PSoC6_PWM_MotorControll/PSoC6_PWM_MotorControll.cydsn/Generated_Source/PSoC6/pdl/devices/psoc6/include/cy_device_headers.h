@@ -5,12 +5,12 @@
 * Common header file to be included by the drivers.
 *
 * \note
-* Generator version: 1.3.0.23
-* Database revision: 8f38ca6
+* Generator version: 1.3.0.27
+* Database revision: cc4063c
 *
 ********************************************************************************
 * \copyright
-* Copyright 2016-2018, Cypress Semiconductor Corporation. All rights reserved.
+* Copyright 2016-2019, Cypress Semiconductor Corporation. All rights reserved.
 * You may use this file only in accordance with the license, terms, conditions,
 * disclaimers, and limitations in the end user license agreement accompanying
 * the software package with which this file was provided.
@@ -123,12 +123,70 @@
     #include "cy8c6247bfi_d54.h"
 #elif defined (CYBLE_416045_02)
     #include "cyble_416045_02.h"
+#elif defined (CY8C6347FMI_BUD53)
+    #include "cy8c6347fmi_bud53.h"
+#elif defined (CY8C6347FMI_BUD13)
+    #include "cy8c6347fmi_bud13.h"
+#elif defined (CY8C6347FMI_BUD43)
+    #include "cy8c6347fmi_bud43.h"
+#elif defined (CY8C6347FMI_BUD33)
+    #include "cy8c6347fmi_bud33.h"
+#elif defined (CY8C6137WI_F54)
+    #include "cy8c6137wi_f54.h"
+#elif defined (CY8C6117WI_F34)
+    #include "cy8c6117wi_f34.h"
+#elif defined (CY8C6247WI_D54)
+    #include "cy8c6247wi_d54.h"
+#elif defined (CY8C6336LQI_BLF02)
+    #include "cy8c6336lqi_blf02.h"
+#elif defined (CY8C6336LQI_BLF42)
+    #include "cy8c6336lqi_blf42.h"
+#elif defined (CY8C6347LQI_BLD52)
+    #include "cy8c6347lqi_bld52.h"
 #elif defined (CY8C624ABZI_D44)
     #include "cy8c624abzi_d44.h"
 #elif defined (CY8C624AAZI_D44)
     #include "cy8c624aazi_d44.h"
 #elif defined (CY8C624AFNI_D43)
     #include "cy8c624afni_d43.h"
+#elif defined (CY8C624ABZI_D04)
+    #include "cy8c624abzi_d04.h"
+#elif defined (CY8C624ABZI_D14)
+    #include "cy8c624abzi_d14.h"
+#elif defined (CY8C624AAZI_D14)
+    #include "cy8c624aazi_d14.h"
+#elif defined (CY8C6248AZI_D14)
+    #include "cy8c6248azi_d14.h"
+#elif defined (CY8C6248BZI_D44)
+    #include "cy8c6248bzi_d44.h"
+#elif defined (CY8C6248AZI_D44)
+    #include "cy8c6248azi_d44.h"
+#elif defined (CY8C6248FNI_D43)
+    #include "cy8c6248fni_d43.h"
+#elif defined (CY8C624ALQI_D42)
+    #include "cy8c624alqi_d42.h"
+#elif defined (CY8C624ABZI_S2D44A0)
+    #include "cy8c624abzi_s2d44a0.h"
+#elif defined (CY8C624ABZI_S2D44)
+    #include "cy8c624abzi_s2d44.h"
+#elif defined (CY8C624AAZI_S2D44)
+    #include "cy8c624aazi_s2d44.h"
+#elif defined (CY8C624AFNI_S2D43)
+    #include "cy8c624afni_s2d43.h"
+#elif defined (CY8C624ABZI_S2D04)
+    #include "cy8c624abzi_s2d04.h"
+#elif defined (CY8C624ABZI_S2D14)
+    #include "cy8c624abzi_s2d14.h"
+#elif defined (CY8C624AAZI_S2D14)
+    #include "cy8c624aazi_s2d14.h"
+#elif defined (CY8C6248AZI_S2D14)
+    #include "cy8c6248azi_s2d14.h"
+#elif defined (CY8C6248BZI_S2D44)
+    #include "cy8c6248bzi_s2d44.h"
+#elif defined (CY8C6248AZI_S2D44)
+    #include "cy8c6248azi_s2d44.h"
+#elif defined (CY8C6248FNI_S2D43)
+    #include "cy8c6248fni_s2d43.h"
 #else
     #include "cy_device_common.h"
 #endif

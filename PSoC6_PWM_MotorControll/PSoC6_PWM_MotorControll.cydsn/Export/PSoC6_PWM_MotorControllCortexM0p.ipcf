@@ -236,7 +236,6 @@
     </group>
     <group name="Header">
       <path>$PROJ_DIR$\cyapicallbacks.h</path>
-      <path>$PROJ_DIR$\cy_ble_config.h</path>
       <path>$PROJ_DIR$\system_psoc6.h</path>
       <path>$PROJ_DIR$\stdio_user.h</path>
     </group>

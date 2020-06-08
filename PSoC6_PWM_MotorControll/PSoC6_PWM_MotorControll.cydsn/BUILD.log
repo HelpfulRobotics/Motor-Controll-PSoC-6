@@ -1,3 +1,9 @@
+<<<<<<< Updated upstream
 --------------- Build Started: 02/09/2020 16:16:57 Project: PSoC6_PWM_MotorControll, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
 Build process unable to delete contents of code gen dir.  Error: Failed to delete D:\GIT\Motor Controll PSoC 6\PSoC6_PWM_MotorControll\PSoC6_PWM_MotorControll.cydsn\codegentemp\cydevicegnu_trm.inc: The process cannot access the file 'D:\GIT\Motor Controll PSoC 6\PSoC6_PWM_MotorControll\PSoC6_PWM_MotorControll.cydsn\codegentemp\cydevicegnu_trm.inc' because it is being used by another process.
 --------------- Build Failed: 02/09/2020 16:16:57 ---------------
+=======
+--------------- Build Started: 02/08/2020 15:57:26 Project: PSoC6_PWM_MotorControll, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
+Build process unable to delete contents of code gen dir.  Error: Failed to delete M:\GIT Folder\Motor-Controll-PSoC-6\PSoC6_PWM_MotorControll\PSoC6_PWM_MotorControll.cydsn\codegentemp\cydevice_trm.h: The process cannot access the file 'M:\GIT Folder\Motor-Controll-PSoC-6\PSoC6_PWM_MotorControll\PSoC6_PWM_MotorControll.cydsn\codegentemp\cydevice_trm.h' because it is being used by another process.
+--------------- Build Failed: 02/08/2020 15:57:26 ---------------
+>>>>>>> Stashed changes

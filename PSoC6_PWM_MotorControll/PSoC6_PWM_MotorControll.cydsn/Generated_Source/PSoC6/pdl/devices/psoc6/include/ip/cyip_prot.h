@@ -5,12 +5,12 @@
 * PROT IP definitions
 *
 * \note
-* Generator version: 1.3.0.23
-* Database revision: 8f38ca6
+* Generator version: 1.3.0.27
+* Database revision: cc4063c
 *
 ********************************************************************************
 * \copyright
-* Copyright 2016-2018, Cypress Semiconductor Corporation. All rights reserved.
+* Copyright 2016-2019, Cypress Semiconductor Corporation. All rights reserved.
 * You may use this file only in accordance with the license, terms, conditions,
 * disclaimers, and limitations in the end user license agreement accompanying
 * the software package with which this file was provided.
@@ -82,7 +82,7 @@ typedef struct {
   */
 typedef struct {
   __IOM uint32_t MS_CTL;                        /*!< 0x00000000 Master control */
-   __IM uint32_t RESERVED[127];
+   __IM uint32_t MS_CTL_READ_MIR[127];          /*!< 0x00000004 Master control read mirror */
         PROT_MPU_MPU_STRUCT_V1_Type MPU_STRUCT[16]; /*!< 0x00000200 MPU structure */
 } PROT_MPU_V1_Type;                             /*!< Size = 1024 (0x400) */
 
@@ -366,6 +366,11 @@ typedef struct {
 #define PROT_MPU_MS_CTL_PC_Msk                  0xFUL
 #define PROT_MPU_MS_CTL_PC_SAVED_Pos            16UL
 #define PROT_MPU_MS_CTL_PC_SAVED_Msk            0xF0000UL
+/* PROT_MPU.MS_CTL_READ_MIR */
+#define PROT_MPU_MS_CTL_READ_MIR_PC_Pos         0UL
+#define PROT_MPU_MS_CTL_READ_MIR_PC_Msk         0xFUL
+#define PROT_MPU_MS_CTL_READ_MIR_PC_SAVED_Pos   16UL
+#define PROT_MPU_MS_CTL_READ_MIR_PC_SAVED_Msk   0xF0000UL
 
 
 #endif /* _CYIP_PROT_H_ */

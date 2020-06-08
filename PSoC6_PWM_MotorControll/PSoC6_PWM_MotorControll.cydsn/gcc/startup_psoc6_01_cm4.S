@@ -401,7 +401,7 @@ Reset_Handler:
 
     /* Update Vector Table Offset Register. */
     ldr r0, =__ramVectors
-     ldr r1, =CY_CPU_VTOR_ADDR
+    ldr r1, =CY_CPU_VTOR_ADDR
     str r0, [r1]
     dsb 0xF
 

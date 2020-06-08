@@ -2,7 +2,11 @@
 --	Conversion of PSoC6_PWM_MotorControll.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
+<<<<<<< Updated upstream
 --	Sun Feb 09 15:24:39 2020
+=======
+--	Sat Jan 25 23:21:05 2020
+>>>>>>> Stashed changes
 --
 
 USE cypress.cypress.all;
